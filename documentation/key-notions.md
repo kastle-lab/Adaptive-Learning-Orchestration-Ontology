@@ -44,7 +44,7 @@
 ---
 
 - **Learning Feeback**
-  - <u><b>Rationale</b></u>: Represents the ability to capture an observation about a learner’s performance or understanding.
+  - <u><b>Rationale</b></u>: Represents the ability to capture an observation about a learner's performance or understanding.
   - <u>**Connected Pattern**</u>: [Observation](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/observation), [Provenance](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/provenance)
 
 ---
@@ -84,3 +84,49 @@
   - <u>**Connected Pattern**</u>: [Provenance](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/provenance), [Agent-Role](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/agent-role)
 
 ---
+
+- **Learner**
+  - <u><b>Rationale</b></u>: Represents the individual learning agent whose goals, preferences, challenges, awareness, and learning situations are modeled for personalization.
+  - <u>**Connected Pattern**</u>: [Agent-Role](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/agent-role)
+
+---
+
+- **Learner Goal**
+  - <u><b>Rationale</b></u>: Represents a learner-specific goal, such as acquiring a skill or reaching a target learning outcome.
+  - <u>**Connected Pattern**</u>: [Name-Stub](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/name-stub), [Description-Situation](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/description-situation)
+
+---
+
+- **Learner Preference**
+  - <u><b>Rationale</b></u>: Represents learner-specific preferences used to personalize instruction, resources, feedback, delivery and recommendations (complementary to challenge).
+  - <u>**Connected Pattern**</u>: [Name-Stub](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/name-stub)
+
+---
+
+- **Learning Challenge**
+  - <u><b>Rationale</b></u>: Represents constraints, barriers, or needs that may affect a learner's ability to engage with instruction or learning material or process (complementary to preference).
+  - <u>**Connected Pattern**</u>: [Name-Stub](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/name-stub)
+
+---
+
+- **Accessibility Challenge**
+  - <u><b>Rationale</b></u>: Represents a specialized (subclass of) learning challenge related to accessibility needs, such as captions, screen-reader compatibility, alternative media, or extended time.
+  - <u>**Connected Pattern**</u>: [Name-Stub](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/name-stub)
+
+---
+
+- **Awareness Observation**
+  - <u><b>Rationale</b></u>: Represents an observation or assessment event that estimates a learner's awareness of a topic or skill
+  - <u>**Connected Pattern**</u>: [Quantity](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/quantity), [Observation](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/observation), [Provenance](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/provenance)
+
+---
+
+- **Skill**
+  - <u><b>Rationale</b></u>: Represents a lightweight bridge concept connecting learner goals, learning objectives, topics, and future alignment acorss external skill or labor market ontologies.
+  - <u>**Connected Pattern**</u>:
+
+---
+
+- **Evaluation Assessment Exercise**
+  - <u><b>Rationale</b></u>: Represents an assessment activity or exercise through which a learner's understanding, awareness, or performance is evaluated with respect to a topic, skill, or learning objective.
+  - <u>**Connected Pattern**</u>: [Observation](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/observation), [Provenance](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/provenance)
