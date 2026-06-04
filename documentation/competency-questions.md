@@ -1,0 +1,42 @@
+# Competency Questions
+- What are all the available pedagogial frameworks?
+- What are all the available pedagogical techniques?
+- What pedagogical elements are a pedagogical framework?
+- What pedagogical element(s) follows another pedagogical element?
+- What pedagogical framework(s) contain pedagogical element 'X'?
+- What pedagogical element(s) can help in achieving a learning objective?
+- What learning objectives does a assessment exercise evaluate?
+- What modules are aligned to a learning objective?
+- What media are aligned to a learning objective?
+- What learning objectives require prior knowledge of a topic?
+- What learning objectives develop a skill?
+- What learning objectives are assessed by an evaluation technique?
+- What evaluation metrics are used by an evaluation technique?
+- What evaluation technique type does an evaluation technique belong to?
+- What are the available assessment exercises that use a given evaluation technique?
+- What modules contain assessment exercises?
+- What media resources contain assessment exercises?
+- What topics are evaluated by an assessment exercise?
+- What learning feedback was given from an evaluation technique?
+- What types of learning feedback are available/retrieved?
+- When is the feedback delivered?
+- When is the response delivered?
+- What feedbacks are corrective?
+- What feedbacks are motivational?
+- What responses originated from a human?
+- What learner goals does a learner have?
+- What skills are targeted by a learner goal?
+- What learner preferences does a learner have?
+- What learner challenges does a learner have?
+- What accessibility issues does a learner have?
+- What learning objectives should be pursued by a learner for a target goal?
+- What learning objectives should be pursued by a learner for a target skill?
+- What topics require prior knowledge for a learner for their goal?
+- What is the learner's current awareness level for a topic?
+- What is the learner's current awareness level of a skill?
+- What topics have low awareness for a learner?
+- What skills have low awareness for a learner?
+- What awareness observations are most latest?
+- What media satisfy both learner preferences and accessibility challenges?
+- What module(s) satisfy both learner preferences and accessibility challenges?
+- What evaluation result(s) contribute to a learner awareness observation?

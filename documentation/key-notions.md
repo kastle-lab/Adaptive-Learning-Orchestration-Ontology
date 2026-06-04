@@ -116,8 +116,14 @@
 ---
 
 - **Awareness Observation**
-  - <u><b>Rationale</b></u>: Represents an observation or assessment event that estimates a learner's awareness of a topic or skill
+  - <u><b>Rationale</b></u>: Represents an observation or assessment event that estimates a learner's awareness of a topic or skill.
   - <u>**Connected Pattern**</u>: [Quantity](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/quantity), [Observation](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/observation), [Provenance](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/provenance)
+
+---
+
+- **Awareness Level**
+  - <u><b>Rationale</b></u>: Represents a controlled vocabulary level that models a learner's awareness on a topic or skill.
+  - <u>**Connected Pattern**</u>: [Observation](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/observation)
 
 ---
 
