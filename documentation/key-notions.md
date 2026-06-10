@@ -13,8 +13,26 @@
 
 ---
 
+- **First Pedagogical Element**
+  - <u><b>Rationale</b></u>: Represents the first element in an ordered pedagogical framework sequence.
+  - <u>**Connected Pattern**</u>: [Sequence](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/sequence)
+
+---
+
+- **Last Pedagogical Element**
+  - <u><b>Rationale</b></u>: Represents the last element in an ordered pedagogical framework sequence.
+  - <u>**Connected Pattern**</u>: [Sequence](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/sequence)
+
+---
+
 - **Pedagogical Technique**
-  - <u><b>Rationale</b></u>: Represents the ability to capture a specific instructional method that is used in instruction design
+  - <u><b>Rationale</b></u>: Represents the ability to capture a specific instructional method that is used in instructional design
+  - <u>**Connected Pattern**</u>: [Name-Stub](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/name-stub), [Description-Situation](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/description-situation)
+
+---
+
+- **Pedagogical Objective**
+  - <u><b>Rationale</b></u>: Represents the ability to capture an intended instructional effect or educational purpose that a pedagogical technique is designed to achieve, such as retention, recall, engagement, misconception diagnosis, knowledge transfer, or deeper conceptual understanding.
   - <u>**Connected Pattern**</u>: [Name-Stub](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/name-stub)
 
 ---
@@ -26,7 +44,7 @@
 ---
 
 - **Learning Situation**
-  - <u><b>Rationale</b></u>: Represents the ability to capture the current state or situation of learner (eg. prior knowledge etc).
+  - <u><b>Rationale</b></u>: Represents the ability to capture the current state or situation of a learner (e.g. learner context, prior knowledge, etc.).
   - <u>**Connected Pattern**</u>: [Description-Situation](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/description-situation)
 
 ---
@@ -39,17 +57,17 @@
 
 - **Response**
   - <u><b>Rationale</b></u>: Represents the ability to capture an explicit feedback message or system output delivered to a learner.
-  - <u>**Connected Pattern**</u>: [Rporting-Event](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/reporting-event), [Provenance](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/provenance)
+  - <u>**Connected Pattern**</u>: [Reporting-Event](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/reporting-event), [Provenance](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/provenance)
 
 ---
 
-- **Learning Feeback**
+- **Learning Feedback**
   - <u><b>Rationale</b></u>: Represents the ability to capture an observation about a learner's performance or understanding.
   - <u>**Connected Pattern**</u>: [Observation](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/observation), [Provenance](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/provenance)
 
 ---
 
-- **Learning Feeback Type**
+- **Learning Feedback Type**
   - <u><b>Rationale</b></u>: Represents the ability to capture categories of feedback like "corrective feedback", "motivational feedback", etc. These are controlled vocabulary classifications.
   - <u>**Connected Pattern**</u>: [Name-Stub](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/name-stub), [Taxonomy-Alignment](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/taxonomy-alignment)
 
@@ -63,7 +81,7 @@
 
 - **Evaluation Metric**
   - <u><b>Rationale</b></u>: Represents the ability to capture what type of measurable unit of evaluation techniques was utilized.
-  - <u>**Connected Pattern**</u>: [Quantity](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/quantity), [Observation](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/observation),
+  - <u>**Connected Pattern**</u>: [Name-Stub](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/name-stub), [Quantity](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/quantity)
 
 ---
 
@@ -74,7 +92,7 @@
 ---
 
 - **Evaluation Technique Type**
-  - <u><b>Rationale</b></u>: Represents the abiltiy to capture categories of evaluation techniques, like "summative/formative", "automated", etc. These are controlled vocabulary classifications.
+  - <u><b>Rationale</b></u>: Represents the ability to capture categories of evaluation techniques, like "summative/formative", "automated", etc. These are controlled vocabulary classifications.
   - <u>**Connected Pattern**</u>: [Name-Stub](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/name-stub), [Taxonomy-Alignment](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/taxonomy-alignment)
 
 ---
@@ -117,22 +135,34 @@
 
 - **Awareness Observation**
   - <u><b>Rationale</b></u>: Represents an observation or assessment event that estimates a learner's awareness of a topic or skill.
-  - <u>**Connected Pattern**</u>: [Quantity](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/quantity), [Observation](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/observation), [Provenance](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/provenance)
+  - <u>**Connected Pattern**</u>: [Observation](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/observation)
+
+---
+
+- **Current Awareness Observation**
+  - <u><b>Rationale</b></u>: Represents the current or active awareness observation used to describe a learner's present awareness observation over a scope.
+  - <u>**Connected Pattern**</u>: [Observation](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/observation)
 
 ---
 
 - **Awareness Level**
   - <u><b>Rationale</b></u>: Represents a controlled vocabulary level that models a learner's awareness on a topic or skill.
-  - <u>**Connected Pattern**</u>: [Observation](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/observation)
+  - <u>**Connected Pattern**</u>: [Name-Stub](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/name-stub), [Taxonomy-Alignment](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/taxonomy-alignment)
 
 ---
 
 - **Skill**
-  - <u><b>Rationale</b></u>: Represents a lightweight bridge concept connecting learner goals, learning objectives, topics, and future alignment acorss external skill or labor market ontologies.
-  - <u>**Connected Pattern**</u>:
+  - <u><b>Rationale</b></u>: Represents a lightweight bridge concept connecting learner goals, learning objectives, topics, and future alignment across external skill or labor market ontologies.
+  - <u>**Connected Pattern**</u>: [Name-Stub](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/name-stub), [Taxonomy-Alignment](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/taxonomy-alignment)
 
 ---
 
 - **Evaluation Assessment Exercise**
   - <u><b>Rationale</b></u>: Represents an assessment activity or exercise through which a learner's understanding, awareness, or performance is evaluated with respect to a topic, skill, or learning objective.
-  - <u>**Connected Pattern**</u>: [Observation](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/observation), [Provenance](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/provenance)
+  - <u>**Connected Pattern**</u>: [Name-Stub](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/name-stub), [Provenance](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/provenance)
+
+---
+
+- **Workload Level**
+  - <u><b>Rationale</b></u>: Represents a controlled vocabulary level that models the estimated effort, time commitment, or assessment burden associated.
+  - <u>**Connected Pattern**</u>: [Name-Stub](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/name-stub), [Taxonomy-Alignment](https://github.com/kastle-lab/modular-ontology-design-library/tree/master/modl/taxonomy-alignment)

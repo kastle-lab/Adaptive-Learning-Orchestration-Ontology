@@ -1,11 +1,11 @@
 # Competency Questions
-- What are all the available pedagogial frameworks?
+- What are all the available pedagogical frameworks?
 - What are all the available pedagogical techniques?
 - What pedagogical elements are a pedagogical framework?
 - What pedagogical element(s) follows another pedagogical element?
 - What pedagogical framework(s) contain pedagogical element 'X'?
 - What pedagogical element(s) can help in achieving a learning objective?
-- What learning objectives does a assessment exercise evaluate?
+- What learning objectives does an assessment exercise evaluate?
 - What modules are aligned to a learning objective?
 - What media are aligned to a learning objective?
 - What learning objectives require prior knowledge of a topic?
@@ -38,5 +38,4 @@
 - What skills have low awareness for a learner?
 - What awareness observations are most latest?
 - What media satisfy both learner preferences and accessibility challenges?
-- What module(s) satisfy both learner preferences and accessibility challenges?
-- What evaluation result(s) contribute to a learner awareness observation?
+- What module(s) satisfy both learner preferences and accessibility challenges?- What evaluation result(s) contribute to a learner awareness observation?
