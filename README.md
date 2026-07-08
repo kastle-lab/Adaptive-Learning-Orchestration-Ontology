@@ -1,4 +1,4 @@
-# Autonomous Learning Orchestration Ontology
+# Adaptive Learning Orchestration Ontology
 This repository contains an ontology and supporting artifacts for modeling pedagogical frameworks, learning objectives, learner state, and evaluation concepts.
 
 ## Repository Layout
