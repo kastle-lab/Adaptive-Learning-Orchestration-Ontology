@@ -1,0 +1,57 @@
+Module,Learning Objective Situation,Learning Objectives,Assessment Exercises
+What is Metadata?,Foundational Semantic Web Study,Recall core metadata terminology,Metadata Concept Check
+What is Metadata?,Knowledge Graph Foundations Orientation,Recall metadata vocabulary,Metadata Example Sort
+What is an Ontology?,Foundational Semantic Web Study,Explain what an ontology represents,Ontology Explanation Review
+What is an Ontology?,Developer Knowledge Graph Implementation Practice,Explain ontology components,Ontology Component Walkthrough
+What is a Knowledge Graph?,Foundational Semantic Web Study,Describe the purpose of a knowledge graph,Knowledge Graph Purpose Check
+What is a Knowledge Graph?,Data Science KG Modeling Foundations,Describe knowledge graph structure,Knowledge Graph Structure Sketch
+What is an Identifier?,Identifier Practice Session,Identify URI namespace and hash or slash patterns,Identifier Pattern Check
+What is an Identifier?,Collaborative KG Delivery Planning,Identify identifier patterns,Identifier Pattern Sorting Task
+RDF,RDF Practice Session,Interpret RDF triple components,RDF Triple Interpretation Quiz
+RDF,Educational KG Facilitation Planning,Interpret RDF graph statements,RDF Graph Annotation Task
+RDFS,RDFS Schema Practice,Apply RDFS domain and range constraints,RDFS Schema Reasoning Exercise
+RDFS,KG Resource Development Practice,Apply RDFS vocabulary reasoning,RDFS Vocabulary Inference Review
+RDF Serializations,RDF Practice Session,Compare RDF serialization formats,RDF Serialization Comparison
+RDF Serializations,User Engagement KG Demonstration Planning,Compare RDF serialization choices,Serialization Format Comparison Brief
+SPARQL,SPARQL Query Practice,Construct a basic SPARQL SELECT query,SPARQL Select Query Exercise
+SPARQL,Developer Knowledge Graph Implementation Practice,Construct SPARQL query patterns,SPARQL Query Repair Task
+OWL,OWL Modeling Practice,Differentiate OWL data and object properties | Analyze OWL axioms in a modeling scenario | Revise an ontology model after feedback,OWL Modeling Review
+OWL,RDFS Schema Practice,Demonstrate mastery of RDF and RDFS basics,RDF RDFS Mastery Reassessment
+OWL,KG Research Representation Study,Analyze OWL modeling constraints,OWL Constraint Modeling Review
+Introduction to Logic,Data Science KG Modeling Foundations,Recognize logic operators,Logic Operator Mini Quiz
+Propositional Logic,Ontology Contribution Modeling Practice,Interpret propositional statements,Proposition Truth Table Task
+Datalog,Data Analysis KG Modeling Practice,Interpret Datalog rules,Datalog Rule Trace
+Predicate Logic,Executive KG Value Review,Interpret predicate logic statements,Predicate Translation Task
+Description Logic,Data Science KG Modeling Foundations,Analyze description logic constraints,Description Logic Constraint Review
+Rules,Consulting KG Opportunity Review,Explain rule based inference,Rule Inference Trace
+Introduction to Set Theory,KG Curriculum Design Studio,Apply set relationships,Set Relationship Diagram Task
+Introduction to Discrete Mathematics,Ontology Vocabulary Modeling Review,Recognize discrete relation properties,Relation Property Classification
+Open World Assumption vs Closed World Assumption,Data Analysis KG Modeling Practice,Compare open and closed world assumptions,Assumption Boundary Scenario
+RDF Star,Secure KG Implementation Training,Explain RDF star statement annotations,RDF Star Annotation Exercise
+SWRL,Supply Chain KG Use Case Review,Explain SWRL rule inferences,SWRL Inference Review
+OWL Dialects,Executive KG Outcome Framing,Compare OWL dialect tradeoffs,OWL Dialect Selection Brief
+Manchester Syntax,Data Analysis KG Modeling Practice,Translate Manchester syntax axioms,Manchester Axiom Translation
+SHACL,Knowledge Graph Foundations Orientation,Validate RDF shapes with SHACL,SHACL Shape Validation Task
+Schema.org,Ontology Contribution Modeling Practice,Align Schema.org vocabulary terms,Schema.org Alignment Exercise
+Dublin Core,Executive KG Value Review,Map Dublin Core metadata fields,Dublin Core Metadata Mapping Task
+SOSA & SSN,Consulting KG Opportunity Review,Model observations with SOSA SSN,Observation Modeling Scenario
+PROV-O,Collaborative KG Delivery Planning,Model provenance relationships with PROV-O,Provenance Chain Modeling Task
+SKOS,Ontology Vocabulary Modeling Review,Model SKOS concept schemes,Concept Scheme Modeling Task
+Survey of Modeling Tools,Ontology Contribution Modeling Practice,Select ontology modeling tools,Modeling Tool Selection Matrix
+Protege,Educational KG Facilitation Planning,Edit ontology models in Protege,Protege Editing Lab
+Deploying a Knowledge Graph,Ontology Contribution Modeling Practice,Plan knowledge graph deployment,KG Deployment Readiness Review
+Introduction to Knowledge Engineering,KG Curriculum Design Studio,Plan a knowledge engineering workflow,Knowledge Engineering Workflow Plan
+Reification,Data Analysis KG Modeling Practice,Model statements with reification,Reification Modeling Scenario
+GraphQL,KG Resource Development Practice,Map GraphQL query needs,GraphQL Mapping Exercise
+Survey of Documentation Practices,Ontology Contribution Modeling Practice,Plan knowledge graph documentation,Documentation Coverage Review
+Survey of Visualization Tools,User Engagement KG Demonstration Planning,Select KG visualization tools,Visualization Tool Selection Brief
+Introduction to Upper Ontologies,Secure KG Implementation Training,Align models with upper ontology concepts,Upper Ontology Alignment Review
+Introduction to Modular Ontologies,Ontology Contribution Modeling Practice,Design modular ontology components,Modular Ontology Boundary Review
+Survey of Triplestores,Data Analysis KG Modeling Practice,Compare triplestore options,Triplestore Selection Matrix
+History of the Semantic Web,Supply Chain KG Use Case Review,Explain Semantic Web evolution,Semantic Web Timeline Explanation
+Property Graphs,KG Research Representation Study,Compare property graph representations,Property Graph Comparison Brief
+Nanopublications,Executive KG Outcome Framing,Model nanopublication claims,Nanopublication Claim Card
+Survey of Reasoners,Knowledge Graph Foundations Orientation,Compare reasoning tool capabilities,Reasoner Capability Matrix
+Entailment Regimes,Developer Knowledge Graph Implementation Practice,Select entailment regimes,Entailment Regime Selection Scenario
+RDF Plus,Executive KG Value Review,Explain RDF Plus property reasoning,RDF Plus Property Reasoning Drill
+Open Graph Protocol,Consulting KG Opportunity Review,Map Open Graph metadata,Open Graph Metadata Audit

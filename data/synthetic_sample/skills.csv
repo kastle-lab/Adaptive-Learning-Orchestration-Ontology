@@ -1,0 +1,59 @@
+Skill,Requires Topics
+Semantic Web Vocabulary Recall,Metadata | Ontology | Knowledge Graph
+Ontology Concept Explanation,Ontology | Class | Property | Axiom
+Knowledge Graph Purpose Explanation,Knowledge Graph | Schema | Triple | Statements
+Linked Data Identifier Recognition,URI | Namespace | Linked Data
+RDF Triple Interpretation,Triple | Subject | Predicate | Object
+RDF Serialization Comparison,RDF/XML | JSON-LD | Turtle
+RDFS Schema Reasoning,Schema | Domain | Range | Subclass | Subproperty
+SPARQL Query Construction,Query | Select
+OWL Property Differentiation,OWL | Data Properties | Object Properties
+OWL Axiom Analysis,OWL | Axiom | Cardinality | Equivalence | Disjointness
+Ontology Model Revision,Ontology | Property | Axiom
+RDF RDFS Mastery Demonstration,Triple | Schema | Domain | Range
+Metadata Vocabulary Recall,Metadata
+Ontology Component Explanation,Ontology | Linked Data | Taxonomy | Schema | Statement | Triple
+Knowledge Graph Structure Explanation,Schema | Statement | Triple
+Identifier Pattern Recognition,URI | Hash or Slash | Namespace
+Logic Operator Recognition,Conjunction | Disjunction | Boolean Arithmetic
+Propositional Statement Reasoning,Conjunction | Disjunction | Boolean Arithmetic
+Datalog Rule Interpretation,Inference
+Predicate Logic Statement Interpretation,Predicate | Subject | Object
+Description Logic Constraint Reasoning,Expressivity | Inference
+Rule Based Inference Explanation,Inference
+Set Relationship Reasoning,Union | Disjunction | Disjointness | Intersection | Cardinality | Tuple | Graph
+Discrete Relation Property Recognition,Functionality | Reflexivity | Transitivity | Inverse | Domain | Range
+Open Closed World Assumption Comparison,Inference
+RDF Graph Interpretation,Triple | Subject | Object | Predicate | Class | Type | Namespace | Literals | Blank Nodes | Property | Namespaces | Blank Node
+RDFS Vocabulary Reasoning,Subclass | Subproperty | Domain Restrictions | Range Restrictions
+RDF Serialization Format Comparison,RDF/XML | JSON-LD | Turtle
+RDF Star Statement Annotation,Triple | Statement
+SPARQL Query Pattern Construction,Query | Select | Update | Delete | Insert | Construct | Explain
+SWRL Rule Inference Explanation,OWL | Inference
+OWL Modeling Constraint Analysis,OWL | OWL2 | Datatypes | Data Properties | Object Properties | Axiom | Equivalence | Anonymous Class | Annotations
+OWL Dialect Selection,Expressivity | OWL EL | OWL QL | OWL RL | OWL DL | OWL Full
+Manchester Syntax Translation,Axiom
+SHACL Constraint Validation,Schema
+Schema.org Vocabulary Alignment,rangeIncludes | domainIncludes
+Dublin Core Metadata Mapping,Metadata
+Observation Ontology Modeling,Ontology
+Provenance Relationship Modeling,Provenance | Lineage
+SKOS Concept Scheme Modeling,Taxonomy
+Ontology Tool Selection,Protege | TopBraid Composer | PoolParty | DataWorld
+Protege Ontology Editing,Ontology
+Knowledge Graph Deployment Planning,Knowledge Graph
+Knowledge Engineering Workflow Planning,Knowledge Graph
+Reification Pattern Modeling,N-ary Relations | Blank Nodes
+GraphQL Query Mapping,Query
+Knowledge Graph Documentation Planning,Metadata
+Knowledge Graph Visualization Tool Selection,Knowledge Graph
+Upper Ontology Alignment,Ontology
+Modular Ontology Design,Ontology
+Triplestore Selection,Query
+Semantic Web History Explanation,Ontology | Semantic Web | Taxonomy | Linked Data | Knowledge Graph
+Property Graph Comparison,Graph
+Nanopublication Claim Modeling,Provenance
+Reasoner Capability Comparison,Complexity | Inference
+Entailment Regime Selection,Inference
+RDF Plus Property Reasoning,Property
+Open Graph Metadata Mapping,Metadata

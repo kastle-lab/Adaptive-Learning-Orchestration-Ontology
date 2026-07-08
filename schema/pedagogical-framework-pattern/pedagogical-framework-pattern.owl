@@ -1,0 +1,361 @@
+@prefix : <https://pedagogicalontology.cs.wright.edu/lod/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix pf-r: <https://pedagogicalontology.cs.wright.edu/lod/resource#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix pf-ont: <https://pedagogicalontology.cs.wright.edu/lod/ontology#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://pedagogicalontology.cs.wright.edu/lod/ontology#> .
+
+<https://pedagogicalontology.cs.wright.edu/lod/ontology> rdf:type owl:Ontology ;
+                                                          dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                                          rdfs:comment "Ontology pattern for representing pedagogical frameworks, ordered pedagogical elements, pedagogical objectives, and pedagogical techniques." .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#alignedWith
+pf-ont:alignedWith rdf:type owl:ObjectProperty ;
+                   owl:inverseOf pf-ont:isAlignmentFor ;
+                   rdf:type owl:AsymmetricProperty ,
+                            owl:IrreflexiveProperty ;
+                   rdfs:domain pf-ont:LearningObjective ;
+                   rdfs:range pf-ont:PedagogicalElement ;
+                   rdfs:comment "Relates a learning objective to a pedagogical element with which the objective is aligned." ;
+                   rdfs:label "alignedWith" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasElement
+pf-ont:hasElement rdf:type owl:ObjectProperty ;
+                  owl:inverseOf pf-ont:isElementOf ;
+                  rdf:type owl:AsymmetricProperty ,
+                           owl:IrreflexiveProperty ;
+                  rdfs:domain pf-ont:PedagogicalFramework ;
+                  rdfs:range pf-ont:PedagogicalElement ;
+                  rdfs:comment "Relates a pedagogical framework to an element contained in that framework." ;
+                  rdfs:label "hasElement" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasNextPedagogicalElement
+pf-ont:hasNextPedagogicalElement rdf:type owl:ObjectProperty ;
+                                 owl:inverseOf pf-ont:hasPreviousPedagogicalElement ;
+                                 rdf:type owl:AsymmetricProperty ,
+                                          owl:TransitiveProperty ,
+                                          owl:IrreflexiveProperty ;
+                                 rdfs:domain pf-ont:PedagogicalElement ;
+                                 rdfs:range pf-ont:PedagogicalElement ;
+                                 rdfs:comment "Relates a pedagogical element to a later element in an ordered framework sequence." ;
+                                 rdfs:label "hasNextPedagogicalElement" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasPreviousPedagogicalElement
+pf-ont:hasPreviousPedagogicalElement rdf:type owl:ObjectProperty ,
+                                              owl:AsymmetricProperty ,
+                                              owl:TransitiveProperty ,
+                                              owl:IrreflexiveProperty ;
+                                     rdfs:domain pf-ont:PedagogicalElement ;
+                                     rdfs:range pf-ont:PedagogicalElement ;
+                                     rdfs:comment "Relates a pedagogical element to an earlier element in an ordered framework sequence." ;
+                                     rdfs:label "hasPreviousPedagogicalElement" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isAlignmentFor
+pf-ont:isAlignmentFor rdf:type owl:ObjectProperty ,
+                               owl:AsymmetricProperty ,
+                               owl:IrreflexiveProperty ;
+                      rdfs:domain pf-ont:PedagogicalElement ;
+                      rdfs:range pf-ont:LearningObjective ;
+                      rdfs:comment "Inverse of alignedWith; relates a pedagogical element to learning objectives aligned with it." ;
+                      rdfs:label "isAlignmentFor" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isElementOf
+pf-ont:isElementOf rdf:type owl:ObjectProperty ,
+                            owl:AsymmetricProperty ,
+                            owl:IrreflexiveProperty ;
+                   rdfs:domain pf-ont:PedagogicalElement ;
+                   rdfs:range pf-ont:PedagogicalFramework ;
+                   rdfs:comment "Inverse of hasElement; relates a pedagogical element to the framework that contains it." ;
+                   rdfs:label "isElementOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isLearningObjectiveTargetedBy
+pf-ont:isLearningObjectiveTargetedBy rdf:type owl:ObjectProperty ;
+                                     owl:inverseOf pf-ont:targetsLearningObjective ;
+                                     rdf:type owl:AsymmetricProperty ,
+                                              owl:IrreflexiveProperty ;
+                                     rdfs:domain pf-ont:LearningObjective ;
+                                     rdfs:range pf-ont:PedagogicalTechnique ;
+                                     rdfs:comment "Inverse of targetsLearningObjective; relates a learning objective to pedagogical techniques that target it." ;
+                                     rdfs:label "isLearningObjectiveTargetedBy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isPedagogicalElementSupportedBy
+pf-ont:isPedagogicalElementSupportedBy rdf:type owl:ObjectProperty ;
+                                       owl:inverseOf pf-ont:supportsPedagogicalElement ;
+                                       rdf:type owl:AsymmetricProperty ,
+                                                owl:IrreflexiveProperty ;
+                                       rdfs:domain pf-ont:PedagogicalElement ;
+                                       rdfs:range pf-ont:PedagogicalTechnique ;
+                                       rdfs:comment "Inverse of supportsPedagogicalElement; relates a pedagogical element to techniques that support it." ;
+                                       rdfs:label "isPedagogicalElementSupportedBy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isPedagogicalObjectiveServedBy
+pf-ont:isPedagogicalObjectiveServedBy rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf pf-ont:servesPedagogicalObjective ;
+                                      rdf:type owl:AsymmetricProperty ,
+                                               owl:IrreflexiveProperty ;
+                                      rdfs:domain pf-ont:PedagogicalObjective ;
+                                      rdfs:range pf-ont:PedagogicalTechnique ;
+                                      rdfs:comment "Inverse of servesPedagogicalObjective; relates a pedagogical objective to techniques that serve it." ;
+                                      rdfs:label "isPedagogicalObjectiveServedBy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#servesPedagogicalObjective
+pf-ont:servesPedagogicalObjective rdf:type owl:ObjectProperty ,
+                                           owl:AsymmetricProperty ,
+                                           owl:IrreflexiveProperty ;
+                                  rdfs:domain pf-ont:PedagogicalTechnique ;
+                                  rdfs:range pf-ont:PedagogicalObjective ;
+                                  rdfs:comment "Relates a pedagogical technique to an instructional objective that the technique serves." ;
+                                  rdfs:label "servesPedagogicalObjective" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#supportsPedagogicalElement
+pf-ont:supportsPedagogicalElement rdf:type owl:ObjectProperty ,
+                                           owl:AsymmetricProperty ,
+                                           owl:IrreflexiveProperty ;
+                                  rdfs:domain pf-ont:PedagogicalTechnique ;
+                                  rdfs:range pf-ont:PedagogicalElement ;
+                                  rdfs:comment "Relates a pedagogical technique to a pedagogical element that the technique supports." ;
+                                  rdfs:label "supportsPedagogicalElement" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#targetsLearningObjective
+pf-ont:targetsLearningObjective rdf:type owl:ObjectProperty ,
+                                         owl:AsymmetricProperty ,
+                                         owl:IrreflexiveProperty ;
+                                rdfs:domain pf-ont:PedagogicalTechnique ;
+                                rdfs:range pf-ont:LearningObjective ;
+                                rdfs:comment "Relates a pedagogical technique to a learning objective targeted by that technique." ;
+                                rdfs:label "targetsLearningObjective" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasDescription
+pf-ont:hasDescription rdf:type owl:DatatypeProperty ;
+                      rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( pf-ont:PedagogicalElement
+                                                  pf-ont:PedagogicalFramework
+                                                  pf-ont:PedagogicalObjective
+                                                  pf-ont:PedagogicalTechnique
+                                                )
+                                  ] ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "Provides an optional textual description for a pedagogical element, framework, objective, or technique." ;
+                      rdfs:label "hasDescription" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasName
+pf-ont:hasName rdf:type owl:DatatypeProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( pf-ont:PedagogicalElement
+                                           pf-ont:PedagogicalFramework
+                                           pf-ont:PedagogicalObjective
+                                           pf-ont:PedagogicalTechnique
+                                         )
+                           ] ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Provides the required textual name for a pedagogical element, framework, objective, or technique." ;
+               rdfs:label "hasName" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#FirstPedagogicalElement
+pf-ont:FirstPedagogicalElement rdf:type owl:Class ;
+                               rdfs:subClassOf pf-ont:PedagogicalElement ;
+                               rdfs:comment "Represents the first element in an ordered pedagogical framework sequence." ;
+                               rdfs:label "FirstPedagogicalElement" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#LastPedagogicalElement
+pf-ont:LastPedagogicalElement rdf:type owl:Class ;
+                              rdfs:subClassOf pf-ont:PedagogicalElement ;
+                              rdfs:comment "Represents the last element in an ordered pedagogical framework sequence." ;
+                              rdfs:label "LastPedagogicalElement" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#LearningObjective
+pf-ont:LearningObjective rdf:type owl:Class ;
+                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                           owl:onProperty pf-ont:alignedWith ;
+                                           owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                           owl:onClass pf-ont:PedagogicalElement
+                                         ] ;
+                         owl:disjointWith pf-ont:PedagogicalElement ,
+                                          pf-ont:PedagogicalFramework ,
+                                          pf-ont:PedagogicalObjective ,
+                                          pf-ont:PedagogicalTechnique ;
+                         rdfs:comment "Represents the ability to capture a target learning outcome." ;
+                         rdfs:label "LearningObjective" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#PedagogicalElement
+pf-ont:PedagogicalElement rdf:type owl:Class ;
+                          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                            owl:onProperty pf-ont:hasNextPedagogicalElement ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onClass pf-ont:PedagogicalElement
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty pf-ont:hasPreviousPedagogicalElement ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onClass pf-ont:PedagogicalElement
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty pf-ont:isElementOf ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onClass pf-ont:PedagogicalFramework
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty pf-ont:hasName ;
+                                            owl:someValuesFrom xsd:string
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty pf-ont:hasDescription ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onDataRange xsd:string
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty pf-ont:hasDescription ;
+                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onDataRange xsd:string
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty pf-ont:hasName ;
+                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onDataRange xsd:string
+                                          ] ;
+                          owl:disjointWith pf-ont:PedagogicalFramework ,
+                                           pf-ont:PedagogicalObjective ,
+                                           pf-ont:PedagogicalTechnique ;
+                          rdfs:comment "Represents the atomic finite element that is part of a pedagogical framework" ;
+                          rdfs:label "PedagogicalElement" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#PedagogicalFramework
+pf-ont:PedagogicalFramework rdf:type owl:Class ;
+                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasElement ;
+                                              owl:someValuesFrom pf-ont:PedagogicalElement
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasName ;
+                                              owl:someValuesFrom xsd:string
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasDescription ;
+                                              owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasDescription ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasName ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] ;
+                            owl:disjointWith pf-ont:PedagogicalObjective ,
+                                             pf-ont:PedagogicalTechnique ;
+                            rdfs:comment "Represents the ability to capture a pedagogical framework used for instructional design" ;
+                            rdfs:label "PedagogicalFramework" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#PedagogicalObjective
+pf-ont:PedagogicalObjective rdf:type owl:Class ;
+                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasName ;
+                                              owl:someValuesFrom xsd:string
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasDescription ;
+                                              owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasDescription ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasName ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] ;
+                            owl:disjointWith pf-ont:PedagogicalTechnique ;
+                            rdfs:comment "Represents the ability to capture an intended instructional effect or educational purpose that a pedagogical technique is designed to achieve, such as retention, recall, engagement, misconception diagnosis, knowledge transfer, or deeper conceptual understanding." ;
+                            rdfs:label "PedagogicalObjective" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#PedagogicalTechnique
+pf-ont:PedagogicalTechnique rdf:type owl:Class ;
+                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:servesPedagogicalObjective ;
+                                              owl:someValuesFrom pf-ont:PedagogicalObjective
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:supportsPedagogicalElement ;
+                                              owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                              owl:onClass pf-ont:PedagogicalElement
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:targetsLearningObjective ;
+                                              owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                              owl:onClass pf-ont:LearningObjective
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasName ;
+                                              owl:someValuesFrom xsd:string
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasDescription ;
+                                              owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasDescription ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasName ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] ;
+                            rdfs:comment "Represents the ability to capture a specific instructional method that is used in instructional design" ;
+                            rdfs:label "PedagogicalTechnique" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,65 @@
+Pedagogical Element,Pedagogical Element Description,Previous Pedagogical Element,Next Pedagogical Element,Associated Pedagogical Framework,Supported By Pedagogical Techniques
+Remember,Retrieve recognize or recall relevant knowledge from memory,,Understand,Bloom's Taxonomy,Retrieval Practice | Advance Organizer
+Understand,Construct meaning by explaining summarizing classifying or interpreting,Remember,Apply,Bloom's Taxonomy,Concept Mapping | Dual Coding
+Apply,Use knowledge or procedures in a familiar or new situation,Understand,Analyze,Bloom's Taxonomy,Guided Practice | Faded Worked Example
+Analyze,Break material into parts and determine relationships or structure,Apply,Evaluate,Bloom's Taxonomy,Concept Mapping | Socratic Questioning | Data Walkthrough | Error Analysis
+Evaluate,Make judgments based on criteria standards or evidence,Analyze,Create,Bloom's Taxonomy,Socratic Questioning | Rubric Based Review | Analogical Comparison | Debate Protocol
+Create,Generate plan or produce something new from learned components,Evaluate,,Bloom's Taxonomy,Extension Challenge | Prototype Design | Public Product Review | Design Critique
+Engage,Elicit curiosity prior knowledge and a reason to investigate,,Explore,Instructional Model,Relevance Framing | Advance Organizer
+Explore,Let learners investigate phenomena or examples before formal explanation,Engage,Explain,Instructional Model,Simulation Exercise | Data Walkthrough
+Explain,Introduce formal concepts vocabulary and reasoning after exploration,Explore,Elaborate,Instructional Model,Worked Example | Dual Coding | Think Aloud Modeling | Concept Mapping
+Elaborate,Extend learning to new situations examples or applications,Explain,Evaluate,Instructional Model,Peer Explanation | Transfer Task | Analogical Comparison
+Evaluate,Assess understanding and provide evidence of learning,Elaborate,,Instructional Model,Rubric Based Review | Public Product Review | Portfolio Reflection
+Activate Prior Knowledge,Surface what learners already know and where misconceptions may exist,,Guided Investigation,Scaffolded Inquiry,Advance Organizer | Misconception Probe
+Guided Investigation,Support learners while they inspect examples evidence or tasks,Activate Prior Knowledge,Concept Explanation,Scaffolded Inquiry,Guided Practice | Data Walkthrough | Collaborative Annotation
+Concept Explanation,Clarify concepts and connect observed patterns to formal ideas,Guided Investigation,Independent Practice,Scaffolded Inquiry,Concept Mapping
+Independent Practice,Ask learners to apply the idea with reduced guidance,Concept Explanation,Reflection,Scaffolded Inquiry,Transfer Task | Progress Monitoring Checklist
+Reflection,Ask learners to explain what changed and what remains uncertain,Independent Practice,,Scaffolded Inquiry,Reflection Prompt
+I Do,Instructor models the target task or reasoning process,,We Do,Gradual Release of Responsibility,Worked Example | Think Aloud Modeling
+We Do,Instructor and learners complete the task together with high support,I Do,You Do Together,Gradual Release of Responsibility,Guided Practice | Faded Worked Example
+You Do Together,Learners practice collaboratively while support is still available,We Do,You Do Independently,Gradual Release of Responsibility,Peer Explanation | Peer Review Protocol | Collaborative Annotation
+You Do Independently,Learners complete the task independently to demonstrate control,You Do Together,,Gradual Release of Responsibility,Transfer Task | Progress Monitoring Checklist
+Problem Presentation,Introduce an authentic problem that motivates inquiry,,Problem Analysis,Problem Based Learning,Project Brief
+Problem Analysis,Identify what is known unknown and needed to address the problem,Problem Presentation,Self Directed Learning,Problem Based Learning,Socratic Questioning | Data Walkthrough | Debate Protocol
+Self Directed Learning,Learners research study or practice needed concepts,Problem Analysis,Solution Development,Problem Based Learning,Learning Contract | Progress Monitoring Checklist
+Solution Development,Learners construct and justify a possible solution,Self Directed Learning,Presentation and Reflection,Problem Based Learning,Prototype Design | Design Critique
+Presentation and Reflection,Learners present their solution and reflect on evidence process and limitations,Solution Development,,Problem Based Learning,Reflection Prompt
+Initial Instruction,Teach the target concept or skill before checking progress,,Formative Check,Mastery Learning,Worked Example | Advance Organizer
+Formative Check,Assess learner progress against mastery criteria,Initial Instruction,Corrective Support,Mastery Learning,Retrieval Practice
+Corrective Support,Provide targeted help based on formative evidence,Formative Check,Reassessment,Mastery Learning,Corrective Mini Lesson | Error Analysis
+Reassessment,Check whether corrective support produced mastery,Corrective Support,Enrichment,Mastery Learning,Rubric Based Review | Retrieval Practice
+Enrichment,Offer extension tasks once mastery is demonstrated,Reassessment,,Mastery Learning,Extension Challenge | Transfer Task | Public Product Review
+Concrete Experience,Engage learners in an authentic case tool output simulation or artifact before formal abstraction,,Reflective Observation,Experiential Learning Cycle,Case Based Scenario | Simulation Exercise
+Reflective Observation,Ask learners to examine what happened what evidence mattered and what uncertainty remains,Concrete Experience,Abstract Conceptualization,Experiential Learning Cycle,Reflective Debrief | Learning Journal
+Abstract Conceptualization,Connect experience to concepts patterns principles or vocabulary that explain the observed case,Reflective Observation,Active Experimentation,Experiential Learning Cycle,Concept Mapping | Analogical Comparison
+Active Experimentation,Apply the refined concept in a new decision task prototype query model or implementation check,Abstract Conceptualization,,Experiential Learning Cycle,Transfer Task | Prototype Design
+Engagement Options,Offer meaningful choices relevance cues or collaboration paths that help learners sustain effort,,,Universal Design for Learning,Choice Board | Relevance Framing
+Representation Options,Represent concepts through multiple formats examples annotations or visual structures,,,Universal Design for Learning,Multiple Means Representation | Dual Coding
+Action and Expression Options,Allow learners to demonstrate understanding through varied artifacts tools explanations or accessibility-aware outputs,,,Universal Design for Learning,Alternative Demonstration | Accessibility Checkpoint
+Social Presence,Support learner identity trust interaction and accountable participation in a shared learning space,,,Community of Inquiry,Jigsaw Activity | Group Synthesis
+Cognitive Presence,Support sustained meaning making through inquiry evidence exchange integration and resolution,,,Community of Inquiry,Debate Protocol | Collaborative Annotation | Socratic Questioning
+Teaching Presence,Design facilitate and direct learning activity so the inquiry stays coherent and purposeful,,,Community of Inquiry,Instructor Facilitation Move | Advance Organizer
+Modeling,Make expert reasoning visible by demonstrating the target task decisions and tradeoffs,,Coaching,Cognitive Apprenticeship,Think Aloud Modeling | Worked Example
+Coaching,Observe learner performance and provide prompts hints or corrections while the task is underway,Modeling,Scaffolding,Cognitive Apprenticeship,Guided Practice | Error Analysis
+Scaffolding,Provide temporary structure that lets learners complete a task just beyond independent ability,Coaching,Articulation,Cognitive Apprenticeship,Faded Worked Example | Guided Practice
+Articulation,Require learners to explain their reasoning decisions assumptions and evidence explicitly,Scaffolding,Reflection,Cognitive Apprenticeship,Self Explanation | Socratic Questioning
+Reflection,Compare learner reasoning or products against expert examples peer work or prior attempts,Articulation,Exploration,Cognitive Apprenticeship,Reflective Debrief | Metacognitive Journal
+Exploration,Invite learners to extend the skill to a less constrained problem or unfamiliar context,Reflection,,Cognitive Apprenticeship,Transfer Task | Prototype Design
+Goal Setting,Define a specific learning aim success criteria and intended skill target,,Strategic Planning,Self-Regulated Learning,Goal Setting Prompt | Learning Contract
+Strategic Planning,Select resources tactics sequencing and checkpoints for reaching the learning goal,Goal Setting,Self Monitoring,Self-Regulated Learning,Learning Contract | Strategy Revision Plan
+Self Monitoring,Track progress evidence confidence and confusion while learning is underway,Strategic Planning,Self Evaluation,Self-Regulated Learning,Progress Monitoring Checklist | Metacognitive Journal
+Self Evaluation,Judge current performance against criteria evidence or prior goals,Self Monitoring,Strategy Adjustment,Self-Regulated Learning,Rubric Based Review | Metacognitive Journal
+Strategy Adjustment,Change learning tactics based on feedback progress evidence or persistent misconceptions,Self Evaluation,,Self-Regulated Learning,Strategy Revision Plan | Corrective Mini Lesson
+Shared Problem Framing,Develop a common understanding of the task constraints success criteria and knowledge gaps,,Peer Negotiation,Collaborative Learning,Jigsaw Activity | Project Brief
+Peer Negotiation,Use peer discussion to compare interpretations challenge assumptions and refine decisions,Shared Problem Framing,Joint Construction,Collaborative Learning,Peer Review Protocol | Debate Protocol
+Joint Construction,Create a shared model explanation query artifact or design decision through coordinated contribution,Peer Negotiation,Group Reflection,Collaborative Learning,Collaborative Annotation | Group Synthesis
+Group Reflection,Review group evidence decisions tensions and next improvements after collaborative work,Joint Construction,,Collaborative Learning,Reflective Debrief | Portfolio Reflection
+Driving Question,Frame learning around a meaningful question problem or audience need,,Sustained Inquiry,Project Based Learning,Project Brief | Relevance Framing
+Sustained Inquiry,Iteratively investigate resources evidence examples and constraints needed for the project,Driving Question,Critique and Revision,Project Based Learning,Data Walkthrough | Learning Contract
+Critique and Revision,Use criteria peer review or expert feedback to improve the project artifact or decision,Sustained Inquiry,Public Product,Project Based Learning,Design Critique | Peer Review Protocol | Tool Comparison Matrix
+Public Product,Produce a shareable artifact demonstration model or recommendation for an authentic audience,Critique and Revision,Project Reflection,Project Based Learning,Public Product Review | Prototype Design
+Project Reflection,Explain what the project evidence shows what changed and what should be improved next,Public Product,,Project Based Learning,Portfolio Reflection | Reflective Debrief
+Prior Conception Elicitation,Surface the learner current idea example boundary or misconception before direct correction,,Cognitive Conflict,Conceptual Change,Misconception Probe | Advance Organizer
+Cognitive Conflict,Present evidence or examples that make an existing misconception difficult to maintain,Prior Conception Elicitation,Concept Reconstruction,Conceptual Change,Conceptual Conflict Prompt | Socratic Questioning
+Concept Reconstruction,Help learners build a more accurate concept relationship or explanatory model,Cognitive Conflict,Transfer Check,Conceptual Change,Analogical Comparison | Concept Mapping
+Transfer Check,Check whether the reconstructed concept works in a new example or decision context,Concept Reconstruction,,Conceptual Change,Transfer Task | Error Analysis

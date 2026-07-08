@@ -1,0 +1,1585 @@
+@prefix : <https://pedagogicalontology.cs.wright.edu/lod/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pf-ont: <https://pedagogicalontology.cs.wright.edu/lod/ontology#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@base <https://pedagogicalontology.cs.wright.edu/lod/ontology> .
+
+<https://pedagogicalontology.cs.wright.edu/lod/ontology> rdf:type owl:Ontology ;
+                                                          dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                                          rdfs:comment "Merged ontology containing the evaluation, learner model, learning objective, and pedagogical framework patterns for autonomous learning orchestration." ,
+                                                                       "Ontology pattern for representing evaluation activities, assessment exercises, evaluation metrics, feedback, responses, and related provenance." ,
+                                                                       "Ontology pattern for representing learner state, goals, preferences, challenges, awareness observations, skills, topics, and learning situations" ,
+                                                                       "Ontology pattern for representing learning objectives, learning strategies, learning situations, pedagogical techniques, and supporting media or module resources." ,
+                                                                       "Ontology pattern for representing pedagogical frameworks, ordered pedagogical elements, pedagogical objectives, and pedagogical techniques." .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#affectsAwarenessObservation
+pf-ont:affectsAwarenessObservation rdf:type owl:ObjectProperty ;
+                                   owl:inverseOf pf-ont:isAwarenessObservationAffectedBy ;
+                                   rdf:type owl:AsymmetricProperty ,
+                                            owl:IrreflexiveProperty ;
+                                   rdfs:domain pf-ont:Response ;
+                                   rdfs:range pf-ont:AwarenessObservation ;
+                                   rdfs:comment "Relates a response or evaluation result to an awareness observation that the response influences or updates." ;
+                                   rdfs:label "affectsAwarenessObservation" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#affectsStrategy
+pf-ont:affectsStrategy rdf:type owl:ObjectProperty ;
+                       owl:inverseOf pf-ont:isStrategyAffectedBy ;
+                       rdf:type owl:AsymmetricProperty ,
+                                owl:IrreflexiveProperty ;
+                       rdfs:domain pf-ont:LearningFeedback ;
+                       rdfs:range pf-ont:LearningStrategy ;
+                       rdfs:comment "Relates learning feedback to a learning strategy that the feedback may influence." ;
+                       rdfs:label "affectsStrategy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#alignedWith
+pf-ont:alignedWith rdf:type owl:ObjectProperty ;
+                   owl:inverseOf pf-ont:isAlignmentFor ;
+                   rdf:type owl:AsymmetricProperty ,
+                            owl:IrreflexiveProperty ;
+                   rdfs:domain pf-ont:LearningObjective ;
+                   rdfs:range pf-ont:PedagogicalElement ;
+                   rdfs:comment "Relates a learning objective to a pedagogical element with which the objective is aligned." ;
+                   rdfs:label "alignedWith" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#assessesLearningFeedback
+pf-ont:assessesLearningFeedback rdf:type owl:ObjectProperty ;
+                                owl:inverseOf pf-ont:isLearningFeedbackAssessedBy ;
+                                rdf:type owl:AsymmetricProperty ,
+                                         owl:IrreflexiveProperty ;
+                                rdfs:domain pf-ont:EvaluationTechnique ;
+                                rdfs:range pf-ont:LearningFeedback ;
+                                rdfs:comment "Relates an evaluation technique to learning feedback that the technique assesses." ;
+                                rdfs:label "assessesLearningFeedback" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#assessesLearningObjective
+pf-ont:assessesLearningObjective rdf:type owl:ObjectProperty ;
+                                 owl:inverseOf pf-ont:isLearningObjectiveAssessedBy ;
+                                 rdf:type owl:AsymmetricProperty ,
+                                          owl:IrreflexiveProperty ;
+                                 rdfs:domain pf-ont:EvaluationTechnique ;
+                                 rdfs:range pf-ont:LearningObjective ;
+                                 rdfs:comment "Relates an evaluation technique to a learning objective that the technique assesses." ;
+                                 rdfs:label "assessesLearningObjective" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#atTime
+pf-ont:atTime rdf:type owl:ObjectProperty ;
+              owl:inverseOf pf-ont:isTimeOfAwarenessObservation ;
+              rdf:type owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain pf-ont:AwarenessObservation ;
+              rdfs:range pf-ont:TemporalExtent ;
+              rdfs:comment "Relates an awareness observation to the time point, interval, or duration at which it was made." ;
+              rdfs:label "atTime" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#developsSkill
+pf-ont:developsSkill rdf:type owl:ObjectProperty ;
+                     owl:inverseOf pf-ont:isSkillDevelopedBy ;
+                     rdf:type owl:AsymmetricProperty ,
+                              owl:IrreflexiveProperty ;
+                     rdfs:domain pf-ont:LearningObjective ;
+                     rdfs:range pf-ont:Skill ;
+                     rdfs:comment "Relates a learning objective to a skill that the objective is intended to develop." ;
+                     rdfs:label "developsSkill" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#evaluatesTopicAwarenessOf
+pf-ont:evaluatesTopicAwarenessOf rdf:type owl:ObjectProperty ;
+                                 owl:inverseOf pf-ont:isTopicAwarenessEvaluatedBy ;
+                                 rdf:type owl:AsymmetricProperty ,
+                                          owl:IrreflexiveProperty ;
+                                 rdfs:domain pf-ont:EvaluationAssessmentExercise ;
+                                 rdfs:range edu-ont:Topic ;
+                                 rdfs:comment "Relates an assessment exercise to the topic whose learner awareness is being evaluated." ;
+                                 rdfs:label "evaluatesTopicAwarenessOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasAssessmentExercise
+pf-ont:hasAssessmentExercise rdf:type owl:ObjectProperty ;
+                             owl:inverseOf pf-ont:isAssessmentExerciseOf ;
+                             rdf:type owl:AsymmetricProperty ,
+                                      owl:IrreflexiveProperty ;
+                             rdfs:domain [ rdf:type owl:Class ;
+                                           owl:unionOf ( edu-ont:Media
+                                                         edu-ont:Module
+                                                       )
+                                         ] ;
+                             rdfs:range pf-ont:EvaluationAssessmentExercise ;
+                             rdfs:comment "Relates a module or media resource to an assessment exercise included in or associated with that learning resource." ;
+                             rdfs:label "hasAssessmentExercise" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasAwarenessLevel
+pf-ont:hasAwarenessLevel rdf:type owl:ObjectProperty ;
+                         owl:inverseOf pf-ont:isAwarenessLevelOf ;
+                         rdf:type owl:AsymmetricProperty ,
+                                  owl:IrreflexiveProperty ;
+                         rdfs:domain pf-ont:AwarenessObservation ;
+                         rdfs:range pf-ont:AwarenessLevel ;
+                         rdfs:comment "Relates an awareness observation to the controlled awareness level assigned to it." ;
+                         rdfs:label "hasAwarenessLevel" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasAwarenessObservation
+pf-ont:hasAwarenessObservation rdf:type owl:ObjectProperty ;
+                               owl:inverseOf pf-ont:isAwarenessObservationOf ;
+                               rdf:type owl:AsymmetricProperty ,
+                                        owl:IrreflexiveProperty ;
+                               rdfs:domain pf-ont:Learner ;
+                               rdfs:range pf-ont:AwarenessObservation ;
+                               rdfs:comment "Relates a learner to awareness observations recorded for that learner." ;
+                               rdfs:label "hasAwarenessObservation" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasElement
+pf-ont:hasElement rdf:type owl:ObjectProperty ;
+                  owl:inverseOf pf-ont:isElementOf ;
+                  rdf:type owl:AsymmetricProperty ,
+                           owl:IrreflexiveProperty ;
+                  rdfs:domain pf-ont:PedagogicalFramework ;
+                  rdfs:range pf-ont:PedagogicalElement ;
+                  rdfs:comment "Relates a pedagogical framework to an element contained in that framework." ;
+                  rdfs:label "hasElement" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasEvaluationMetric
+pf-ont:hasEvaluationMetric rdf:type owl:ObjectProperty ;
+                           owl:inverseOf pf-ont:isEvaluationMetricOf ;
+                           rdf:type owl:AsymmetricProperty ,
+                                    owl:IrreflexiveProperty ;
+                           rdfs:domain pf-ont:EvaluationTechnique ;
+                           rdfs:range pf-ont:EvaluationMetric ;
+                           rdfs:comment "Relates an evaluation technique to the metric used to measure or report its result." ;
+                           rdfs:label "hasEvaluationMetric" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasEvaluationTechniqueType
+pf-ont:hasEvaluationTechniqueType rdf:type owl:ObjectProperty ;
+                                  owl:inverseOf pf-ont:isEvaluationTechniqueTypeOf ;
+                                  rdf:type owl:AsymmetricProperty ,
+                                           owl:IrreflexiveProperty ;
+                                  rdfs:domain pf-ont:EvaluationTechnique ;
+                                  rdfs:range pf-ont:EvaluationTechniqueType ;
+                                  rdfs:comment "Relates an evaluation technique to a controlled type or category for that technique." ;
+                                  rdfs:label "hasEvaluationTechniqueType" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasGoal
+pf-ont:hasGoal rdf:type owl:ObjectProperty ;
+               owl:inverseOf pf-ont:isGoalOf ;
+               rdf:type owl:AsymmetricProperty ,
+                        owl:IrreflexiveProperty ;
+               rdfs:domain pf-ont:Learner ;
+               rdfs:range pf-ont:LearnerGoal ;
+               rdfs:comment "Relates a learner to a learner-specific goal." ;
+               rdfs:label "hasGoal" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasLearnerPreference
+pf-ont:hasLearnerPreference rdf:type owl:ObjectProperty ;
+                            owl:inverseOf pf-ont:isLearnerPreferenceOf ;
+                            rdf:type owl:AsymmetricProperty ,
+                                     owl:IrreflexiveProperty ;
+                            rdfs:domain pf-ont:Learner ;
+                            rdfs:range pf-ont:LearnerPreference ;
+                            rdfs:comment "Relates a learner to a preference used for personalization." ;
+                            rdfs:label "hasLearnerPreference" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasLearningChallenge
+pf-ont:hasLearningChallenge rdf:type owl:ObjectProperty ;
+                            owl:inverseOf pf-ont:isLearningChallengeOf ;
+                            rdf:type owl:AsymmetricProperty ,
+                                     owl:IrreflexiveProperty ;
+                            rdfs:domain pf-ont:Learner ;
+                            rdfs:range pf-ont:LearningChallenge ;
+                            rdfs:comment "Relates a learner to a learning challenge, barrier, or need that may affect learning." ;
+                            rdfs:label "hasLearningChallenge" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasLearningFeedbackType
+pf-ont:hasLearningFeedbackType rdf:type owl:ObjectProperty ;
+                               owl:inverseOf pf-ont:isLearningFeedbackTypeOf ;
+                               rdf:type owl:AsymmetricProperty ,
+                                        owl:IrreflexiveProperty ;
+                               rdfs:domain pf-ont:LearningFeedback ;
+                               rdfs:range pf-ont:LearningFeedbackType ;
+                               rdfs:comment "Relates learning feedback to a controlled feedback type or category." ;
+                               rdfs:label "hasLearningFeedbackType" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasLearningObjective
+pf-ont:hasLearningObjective rdf:type owl:ObjectProperty ;
+                            owl:inverseOf pf-ont:isLearningObjectiveOf ;
+                            rdf:type owl:AsymmetricProperty ,
+                                     owl:IrreflexiveProperty ;
+                            rdfs:domain [ rdf:type owl:Class ;
+                                          owl:unionOf ( edu-ont:Module
+                                                        pf-ont:LearningStrategy
+                                                      )
+                                        ] ;
+                            rdfs:range pf-ont:LearningObjective ;
+                            rdfs:comment "Relates a module or learning strategy to a learning objective it includes." ,
+                                         "Relates an instructional module to a learning objective included in that module." ;
+                            rdfs:label "hasLearningObjective" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasNextPedagogicalElement
+pf-ont:hasNextPedagogicalElement rdf:type owl:ObjectProperty ;
+                                 owl:inverseOf pf-ont:hasPreviousPedagogicalElement ;
+                                 rdf:type owl:AsymmetricProperty ,
+                                          owl:TransitiveProperty ,
+                                          owl:IrreflexiveProperty ;
+                                 rdfs:domain pf-ont:PedagogicalElement ;
+                                 rdfs:range pf-ont:PedagogicalElement ;
+                                 rdfs:comment "Relates a pedagogical element to a later element in an ordered framework sequence." ;
+                                 rdfs:label "hasNextPedagogicalElement" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasPedagogicalTechnique
+pf-ont:hasPedagogicalTechnique rdf:type owl:ObjectProperty ;
+                               owl:inverseOf pf-ont:isPedagogicalTechniqueOf ;
+                               rdf:type owl:AsymmetricProperty ,
+                                        owl:IrreflexiveProperty ;
+                               rdfs:domain pf-ont:LearningStrategy ;
+                               rdfs:range pf-ont:PedagogicalTechnique ;
+                               rdfs:comment "Relates a learning strategy to a pedagogical technique used by that strategy." ;
+                               rdfs:label "hasPedagogicalTechnique" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasPreviousPedagogicalElement
+pf-ont:hasPreviousPedagogicalElement rdf:type owl:ObjectProperty ,
+                                              owl:AsymmetricProperty ,
+                                              owl:TransitiveProperty ,
+                                              owl:IrreflexiveProperty ;
+                                     rdfs:domain pf-ont:PedagogicalElement ;
+                                     rdfs:range pf-ont:PedagogicalElement ;
+                                     rdfs:comment "Relates a pedagogical element to an earlier element in an ordered framework sequence." ;
+                                     rdfs:label "hasPreviousPedagogicalElement" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasResponseTime
+pf-ont:hasResponseTime rdf:type owl:ObjectProperty ;
+                       owl:inverseOf pf-ont:isResponseTimeOf ;
+                       rdf:type owl:AsymmetricProperty ,
+                                owl:IrreflexiveProperty ;
+                       rdfs:domain pf-ont:Response ;
+                       rdfs:range pf-ont:TemporalExtent ;
+                       rdfs:comment "Relates a response or evaluation result to the time or duration associated with that response." ;
+                       rdfs:label "hasResponseTime" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasSituation
+pf-ont:hasSituation rdf:type owl:ObjectProperty ;
+                    owl:inverseOf pf-ont:isSituationOf ;
+                    rdf:type owl:AsymmetricProperty ,
+                             owl:IrreflexiveProperty ;
+                    rdfs:domain pf-ont:Learner ;
+                    rdfs:range pf-ont:LearningSituation ;
+                    rdfs:comment "Relates a learner to a current or relevant learning situation." ;
+                    rdfs:label "hasSituation" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasSource
+pf-ont:hasSource rdf:type owl:ObjectProperty ;
+                 owl:inverseOf pf-ont:isSourceOf ;
+                 rdf:type owl:AsymmetricProperty ,
+                          owl:IrreflexiveProperty ;
+                 rdfs:domain pf-ont:Response ;
+                 rdfs:range pf-ont:Source ;
+                 rdfs:comment "Relates a response to the source or agentive origin that produced it." ;
+                 rdfs:label "hasSource" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasUnit
+pf-ont:hasUnit rdf:type owl:ObjectProperty ;
+               owl:inverseOf pf-ont:isUnitOf ;
+               rdf:type owl:AsymmetricProperty ,
+                        owl:IrreflexiveProperty ;
+               rdfs:domain pf-ont:EvaluationResult ;
+               rdfs:range pf-ont:EvaluationMetric ;
+               rdfs:comment "Relates an evaluation result to the metric or unit in which the result is expressed." ;
+               rdfs:label "hasUnit" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasWorkloadLevel
+pf-ont:hasWorkloadLevel rdf:type owl:ObjectProperty ;
+                        owl:inverseOf pf-ont:isWorkloadLevelOf ;
+                        rdf:type owl:AsymmetricProperty ,
+                                 owl:IrreflexiveProperty ;
+                        rdfs:domain pf-ont:EvaluationAssessmentExercise ;
+                        rdfs:range pf-ont:WorkloadLevel ;
+                        rdfs:comment "Relates an assessment exercise to the controlled workload level assigned to it." ;
+                        rdfs:label "hasWorkloadLevel" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isAlignmentFor
+pf-ont:isAlignmentFor rdf:type owl:ObjectProperty ,
+                               owl:AsymmetricProperty ,
+                               owl:IrreflexiveProperty ;
+                      rdfs:domain pf-ont:PedagogicalElement ;
+                      rdfs:range pf-ont:LearningObjective ;
+                      rdfs:comment "Inverse of alignedWith; relates a pedagogical element to learning objectives aligned with it." ;
+                      rdfs:label "isAlignmentFor" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isAssessmentExerciseOf
+pf-ont:isAssessmentExerciseOf rdf:type owl:ObjectProperty ,
+                                       owl:AsymmetricProperty ,
+                                       owl:IrreflexiveProperty ;
+                              rdfs:domain pf-ont:EvaluationAssessmentExercise ;
+                              rdfs:range [ rdf:type owl:Class ;
+                                           owl:unionOf ( edu-ont:Media
+                                                         edu-ont:Module
+                                                       )
+                                         ] ;
+                              rdfs:comment "Inverse of hasAssessmentExercise; relates an assessment exercise back to the media or module that includes it." ;
+                              rdfs:label "isAssessmentExerciseOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isAwarenessLevelOf
+pf-ont:isAwarenessLevelOf rdf:type owl:ObjectProperty ,
+                                   owl:AsymmetricProperty ,
+                                   owl:IrreflexiveProperty ;
+                          rdfs:domain pf-ont:AwarenessLevel ;
+                          rdfs:range pf-ont:AwarenessObservation ;
+                          rdfs:comment "Inverse of hasAwarenessLevel; relates an awareness level to observations assigned that level." ;
+                          rdfs:label "isAwarenessLevelOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isAwarenessObservationAffectedBy
+pf-ont:isAwarenessObservationAffectedBy rdf:type owl:ObjectProperty ,
+                                                 owl:AsymmetricProperty ,
+                                                 owl:IrreflexiveProperty ;
+                                        rdfs:domain pf-ont:AwarenessObservation ;
+                                        rdfs:range pf-ont:Response ;
+                                        rdfs:comment "Inverse of affectsAwarenessObservation; relates an awareness observation to the response that influences it." ;
+                                        rdfs:label "isAwarenessObservationAffectedBy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isAwarenessObservationOf
+pf-ont:isAwarenessObservationOf rdf:type owl:ObjectProperty ,
+                                         owl:AsymmetricProperty ,
+                                         owl:IrreflexiveProperty ;
+                                rdfs:domain pf-ont:AwarenessObservation ;
+                                rdfs:range pf-ont:Learner ;
+                                rdfs:comment "Inverse of hasAwarenessObservation; relates an awareness observation to the learner it describes." ;
+                                rdfs:label "isAwarenessObservationOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isElementOf
+pf-ont:isElementOf rdf:type owl:ObjectProperty ,
+                            owl:AsymmetricProperty ,
+                            owl:IrreflexiveProperty ;
+                   rdfs:domain pf-ont:PedagogicalElement ;
+                   rdfs:range pf-ont:PedagogicalFramework ;
+                   rdfs:comment "Inverse of hasElement; relates a pedagogical element to the framework that contains it." ;
+                   rdfs:label "isElementOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isEvaluationMetricOf
+pf-ont:isEvaluationMetricOf rdf:type owl:ObjectProperty ,
+                                     owl:AsymmetricProperty ,
+                                     owl:IrreflexiveProperty ;
+                            rdfs:domain pf-ont:EvaluationMetric ;
+                            rdfs:range pf-ont:EvaluationTechnique ;
+                            rdfs:comment "Inverse of hasEvaluationMetric; relates an evaluation metric to the technique that uses it." ;
+                            rdfs:label "isEvaluationMetricOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isEvaluationTechniqueTypeOf
+pf-ont:isEvaluationTechniqueTypeOf rdf:type owl:ObjectProperty ,
+                                            owl:AsymmetricProperty ,
+                                            owl:IrreflexiveProperty ;
+                                   rdfs:domain pf-ont:EvaluationTechniqueType ;
+                                   rdfs:range pf-ont:EvaluationTechnique ;
+                                   rdfs:comment "Inverse of hasEvaluationTechniqueType; relates a technique type to evaluation techniques classified by it." ;
+                                   rdfs:label "isEvaluationTechniqueTypeOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isFeedbackProvidedBy
+pf-ont:isFeedbackProvidedBy rdf:type owl:ObjectProperty ;
+                            owl:inverseOf pf-ont:provideFeedback ;
+                            rdf:type owl:AsymmetricProperty ,
+                                     owl:IrreflexiveProperty ;
+                            rdfs:domain pf-ont:Response ;
+                            rdfs:range pf-ont:EvaluationTechnique ;
+                            rdfs:comment "Inverse of provideFeedback; relates a response or feedback artifact to the evaluation technique that produced it." ;
+                            rdfs:label "isFeedbackProvidedBy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isGoalOf
+pf-ont:isGoalOf rdf:type owl:ObjectProperty ,
+                         owl:AsymmetricProperty ,
+                         owl:IrreflexiveProperty ;
+                rdfs:domain pf-ont:LearnerGoal ;
+                rdfs:range pf-ont:Learner ;
+                rdfs:comment "Inverse of hasGoal; relates a learner goal to the learner who has that goal." ;
+                rdfs:label "isGoalOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isLearnerPreferenceOf
+pf-ont:isLearnerPreferenceOf rdf:type owl:ObjectProperty ,
+                                      owl:AsymmetricProperty ,
+                                      owl:IrreflexiveProperty ;
+                             rdfs:domain pf-ont:LearnerPreference ;
+                             rdfs:range pf-ont:Learner ;
+                             rdfs:comment "Inverse of hasLearnerPreference; relates a learner preference to the learner it personalizes." ;
+                             rdfs:label "isLearnerPreferenceOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isLearningChallengeOf
+pf-ont:isLearningChallengeOf rdf:type owl:ObjectProperty ,
+                                      owl:AsymmetricProperty ,
+                                      owl:IrreflexiveProperty ;
+                             rdfs:domain pf-ont:LearningChallenge ;
+                             rdfs:range pf-ont:Learner ;
+                             rdfs:comment "Inverse of hasLearningChallenge; relates a learning challenge to the learner affected by it." ;
+                             rdfs:label "isLearningChallengeOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isLearningFeedbackAssessedBy
+pf-ont:isLearningFeedbackAssessedBy rdf:type owl:ObjectProperty ,
+                                             owl:AsymmetricProperty ,
+                                             owl:IrreflexiveProperty ;
+                                    rdfs:domain pf-ont:LearningFeedback ;
+                                    rdfs:range pf-ont:EvaluationTechnique ;
+                                    rdfs:comment "Inverse of assessesLearningFeedback; relates learning feedback to an evaluation technique that assesses it." ;
+                                    rdfs:label "isLearningFeedbackAssessedBy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isLearningFeedbackTypeOf
+pf-ont:isLearningFeedbackTypeOf rdf:type owl:ObjectProperty ,
+                                         owl:AsymmetricProperty ,
+                                         owl:IrreflexiveProperty ;
+                                rdfs:domain pf-ont:LearningFeedbackType ;
+                                rdfs:range pf-ont:LearningFeedback ;
+                                rdfs:comment "Inverse of hasLearningFeedbackType; relates a feedback type to feedback instances classified by it." ;
+                                rdfs:label "isLearningFeedbackTypeOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isLearningObjectiveAssessedBy
+pf-ont:isLearningObjectiveAssessedBy rdf:type owl:ObjectProperty ,
+                                              owl:AsymmetricProperty ,
+                                              owl:IrreflexiveProperty ;
+                                     rdfs:domain pf-ont:LearningObjective ;
+                                     rdfs:range pf-ont:EvaluationTechnique ;
+                                     rdfs:comment "Inverse of assessesLearningObjective; relates a learning objective to an evaluation technique that assesses it." ;
+                                     rdfs:label "isLearningObjectiveAssessedBy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isLearningObjectiveOf
+pf-ont:isLearningObjectiveOf rdf:type owl:ObjectProperty ,
+                                      owl:AsymmetricProperty ,
+                                      owl:IrreflexiveProperty ;
+                             rdfs:domain pf-ont:LearningObjective ;
+                             rdfs:range [ rdf:type owl:Class ;
+                                          owl:unionOf ( edu-ont:Module
+                                                        pf-ont:LearningStrategy
+                                                      )
+                                        ] ;
+                             rdfs:comment "Inverse of hasLearningObjective; relates a learning objective to a module or learning strategy that includes it." ;
+                             rdfs:label "isLearningObjectiveOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isLearningObjectiveSupportedBy
+pf-ont:isLearningObjectiveSupportedBy rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf pf-ont:supportsLearningObjective ;
+                                      rdf:type owl:AsymmetricProperty ,
+                                               owl:IrreflexiveProperty ;
+                                      rdfs:domain pf-ont:LearningObjective ;
+                                      rdfs:range edu-ont:Media ;
+                                      rdfs:comment "Inverse of supportsLearningObjective; relates a learning objective to media that supports it." ;
+                                      rdfs:label "isLearningObjectiveSupportedBy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isLearningObjectiveTargetedBy
+pf-ont:isLearningObjectiveTargetedBy rdf:type owl:ObjectProperty ;
+                                     owl:inverseOf pf-ont:targetsLearningObjective ;
+                                     rdf:type owl:AsymmetricProperty ,
+                                              owl:IrreflexiveProperty ;
+                                     rdfs:domain pf-ont:LearningObjective ;
+                                     rdfs:range pf-ont:PedagogicalTechnique ;
+                                     rdfs:comment "Inverse of targetsLearningObjective; relates a learning objective to pedagogical techniques that target it." ;
+                                     rdfs:label "isLearningObjectiveTargetedBy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isPedagogicalElementSupportedBy
+pf-ont:isPedagogicalElementSupportedBy rdf:type owl:ObjectProperty ;
+                                       owl:inverseOf pf-ont:supportsPedagogicalElement ;
+                                       rdf:type owl:AsymmetricProperty ,
+                                                owl:IrreflexiveProperty ;
+                                       rdfs:domain pf-ont:PedagogicalElement ;
+                                       rdfs:range pf-ont:PedagogicalTechnique ;
+                                       rdfs:comment "Inverse of supportsPedagogicalElement; relates a pedagogical element to techniques that support it." ;
+                                       rdfs:label "isPedagogicalElementSupportedBy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isPedagogicalObjectiveServedBy
+pf-ont:isPedagogicalObjectiveServedBy rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf pf-ont:servesPedagogicalObjective ;
+                                      rdf:type owl:AsymmetricProperty ,
+                                               owl:IrreflexiveProperty ;
+                                      rdfs:domain pf-ont:PedagogicalObjective ;
+                                      rdfs:range pf-ont:PedagogicalTechnique ;
+                                      rdfs:comment "Inverse of servesPedagogicalObjective; relates a pedagogical objective to techniques that serve it." ;
+                                      rdfs:label "isPedagogicalObjectiveServedBy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isPedagogicalTechniqueOf
+pf-ont:isPedagogicalTechniqueOf rdf:type owl:ObjectProperty ,
+                                         owl:AsymmetricProperty ,
+                                         owl:IrreflexiveProperty ;
+                                rdfs:domain pf-ont:PedagogicalTechnique ;
+                                rdfs:range pf-ont:LearningStrategy ;
+                                rdfs:comment "Inverse of hasPedagogicalTechnique; relates a pedagogical technique to learning strategies that use it." ;
+                                rdfs:label "isPedagogicalTechniqueOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isPersonaScopeOf
+pf-ont:isPersonaScopeOf rdf:type owl:ObjectProperty ;
+                        owl:inverseOf pf-ont:scopes ;
+                        rdf:type owl:AsymmetricProperty ,
+                                 owl:IrreflexiveProperty ;
+                        rdfs:domain edu-ont:Persona ;
+                        rdfs:range pf-ont:LearningSituation ;
+                        rdfs:comment "Inverse of scopes; relates a persona to learning situations scoped by it." ;
+                        rdfs:label "isPersonaScopeOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isPriorTopicKnowledgeFor
+pf-ont:isPriorTopicKnowledgeFor rdf:type owl:ObjectProperty ;
+                                owl:inverseOf pf-ont:requiresPriorTopicKnowledge ;
+                                rdf:type owl:AsymmetricProperty ,
+                                         owl:IrreflexiveProperty ;
+                                rdfs:domain edu-ont:Topic ;
+                                rdfs:range pf-ont:LearningSituation ;
+                                rdfs:comment "Inverse of requiresPriorTopicKnowledge; relates a topic to learning situations requiring prior knowledge of it." ;
+                                rdfs:label "isPriorTopicKnowledgeFor" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isResponseTimeOf
+pf-ont:isResponseTimeOf rdf:type owl:ObjectProperty ,
+                                 owl:AsymmetricProperty ,
+                                 owl:IrreflexiveProperty ;
+                        rdfs:domain pf-ont:TemporalExtent ;
+                        rdfs:range pf-ont:Response ;
+                        rdfs:comment "Inverse of hasResponseTime; relates a temporal extent to the response timed by it." ;
+                        rdfs:label "isResponseTimeOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isSituationOf
+pf-ont:isSituationOf rdf:type owl:ObjectProperty ,
+                              owl:AsymmetricProperty ,
+                              owl:IrreflexiveProperty ;
+                     rdfs:domain pf-ont:LearningSituation ;
+                     rdfs:range pf-ont:Learner ;
+                     rdfs:comment "Inverse of hasSituation; relates a learning situation to the learner it describes." ;
+                     rdfs:label "isSituationOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isSituationWorkedOnBy
+pf-ont:isSituationWorkedOnBy rdf:type owl:ObjectProperty ;
+                             owl:inverseOf pf-ont:worksOnSituation ;
+                             rdf:type owl:AsymmetricProperty ,
+                                      owl:IrreflexiveProperty ;
+                             rdfs:domain pf-ont:LearningSituation ;
+                             rdfs:range pf-ont:LearningObjective ;
+                             rdfs:comment "Inverse of worksOnSituation; relates a learning situation to learning objectives that address it." ;
+                             rdfs:label "isSituationWorkedOnBy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isSkillDevelopedBy
+pf-ont:isSkillDevelopedBy rdf:type owl:ObjectProperty ,
+                                   owl:AsymmetricProperty ,
+                                   owl:IrreflexiveProperty ;
+                          rdfs:domain pf-ont:Skill ;
+                          rdfs:range pf-ont:LearningObjective ;
+                          rdfs:comment "Inverse of developsSkill; relates a skill to learning objectives that develop it." ;
+                          rdfs:label "isSkillDevelopedBy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isSkillObservedBy
+pf-ont:isSkillObservedBy rdf:type owl:ObjectProperty ;
+                         owl:inverseOf pf-ont:onSkill ;
+                         rdf:type owl:AsymmetricProperty ,
+                                  owl:IrreflexiveProperty ;
+                         rdfs:domain pf-ont:Skill ;
+                         rdfs:range pf-ont:AwarenessObservation ;
+                         rdfs:comment "Inverse of onSkill; relates a skill to awareness observations about that skill." ;
+                         rdfs:label "isSkillObservedBy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isSourceOf
+pf-ont:isSourceOf rdf:type owl:ObjectProperty ,
+                           owl:AsymmetricProperty ,
+                           owl:IrreflexiveProperty ;
+                  rdfs:domain pf-ont:Source ;
+                  rdfs:range pf-ont:Response ;
+                  rdfs:comment "Inverse of hasSource; relates a source to a response produced by that source." ;
+                  rdfs:label "isSourceOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isStrategyAffectedBy
+pf-ont:isStrategyAffectedBy rdf:type owl:ObjectProperty ,
+                                     owl:AsymmetricProperty ,
+                                     owl:IrreflexiveProperty ;
+                            rdfs:domain pf-ont:LearningStrategy ;
+                            rdfs:range pf-ont:LearningFeedback ;
+                            rdfs:comment "Inverse of affectsStrategy; relates a learning strategy to feedback that may influence it." ;
+                            rdfs:label "isStrategyAffectedBy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isTargetSkillOf
+pf-ont:isTargetSkillOf rdf:type owl:ObjectProperty ;
+                       owl:inverseOf pf-ont:targetsSkill ;
+                       rdf:type owl:AsymmetricProperty ,
+                                owl:IrreflexiveProperty ;
+                       rdfs:domain pf-ont:Skill ;
+                       rdfs:range pf-ont:LearnerGoal ;
+                       rdfs:comment "Inverse of targetsSkill; relates a skill to learner goals that target it." ;
+                       rdfs:label "isTargetSkillOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isTechniqueUsedBy
+pf-ont:isTechniqueUsedBy rdf:type owl:ObjectProperty ;
+                         owl:inverseOf pf-ont:usesTechnique ;
+                         rdf:type owl:AsymmetricProperty ,
+                                  owl:IrreflexiveProperty ;
+                         rdfs:domain pf-ont:EvaluationTechnique ;
+                         rdfs:range pf-ont:EvaluationAssessmentExercise ;
+                         rdfs:comment "Inverse of usesTechnique; relates an evaluation technique to an assessment exercise that uses it." ;
+                         rdfs:label "isTechniqueUsedBy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isTimeOfAwarenessObservation
+pf-ont:isTimeOfAwarenessObservation rdf:type owl:ObjectProperty ,
+                                             owl:AsymmetricProperty ,
+                                             owl:IrreflexiveProperty ;
+                                    rdfs:domain pf-ont:TemporalExtent ;
+                                    rdfs:range pf-ont:AwarenessObservation ;
+                                    rdfs:comment "Inverse of atTime; relates a temporal extent to awareness observations recorded at that time." ;
+                                    rdfs:label "isTimeOfAwarenessObservation" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isTopicAwarenessEvaluatedBy
+pf-ont:isTopicAwarenessEvaluatedBy rdf:type owl:ObjectProperty ,
+                                            owl:AsymmetricProperty ,
+                                            owl:IrreflexiveProperty ;
+                                   rdfs:domain edu-ont:Topic ;
+                                   rdfs:range pf-ont:EvaluationAssessmentExercise ;
+                                   rdfs:comment "Inverse of evaluatesTopicAwarenessOf; relates a topic to an assessment exercise evaluating awareness of it." ;
+                                   rdfs:label "isTopicAwarenessEvaluatedBy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isTopicObservedBy
+pf-ont:isTopicObservedBy rdf:type owl:ObjectProperty ;
+                         owl:inverseOf pf-ont:onTopic ;
+                         rdf:type owl:AsymmetricProperty ,
+                                  owl:IrreflexiveProperty ;
+                         rdfs:domain edu-ont:Topic ;
+                         rdfs:range pf-ont:AwarenessObservation ;
+                         rdfs:comment "Inverse of onTopic; relates a topic to awareness observations about that topic." ;
+                         rdfs:label "isTopicObservedBy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isTopicRequiredBy
+pf-ont:isTopicRequiredBy rdf:type owl:ObjectProperty ;
+                         owl:inverseOf pf-ont:requiresTopic ;
+                         rdf:type owl:AsymmetricProperty ,
+                                  owl:IrreflexiveProperty ;
+                         rdfs:domain edu-ont:Topic ;
+                         rdfs:range pf-ont:Skill ;
+                         rdfs:comment "Inverse of requiresTopic; relates a topic to skills that require it." ;
+                         rdfs:label "isTopicRequiredBy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isUnitOf
+pf-ont:isUnitOf rdf:type owl:ObjectProperty ,
+                         owl:AsymmetricProperty ,
+                         owl:IrreflexiveProperty ;
+                rdfs:domain pf-ont:EvaluationMetric ;
+                rdfs:range pf-ont:EvaluationResult ;
+                rdfs:comment "Inverse of hasUnit; relates an evaluation metric to an evaluation result expressed with that metric." ;
+                rdfs:label "isUnitOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isWorkloadLevelOf
+pf-ont:isWorkloadLevelOf rdf:type owl:ObjectProperty ,
+                                  owl:AsymmetricProperty ,
+                                  owl:IrreflexiveProperty ;
+                         rdfs:domain pf-ont:WorkloadLevel ;
+                         rdfs:range pf-ont:EvaluationAssessmentExercise ;
+                         rdfs:comment "Inverse of hasWorkloadLevel; relates a workload level to an assessment exercise assigned that level." ;
+                         rdfs:label "isWorkloadLevelOf" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#onSkill
+pf-ont:onSkill rdf:type owl:ObjectProperty ,
+                        owl:AsymmetricProperty ,
+                        owl:IrreflexiveProperty ;
+               rdfs:domain pf-ont:AwarenessObservation ;
+               rdfs:range pf-ont:Skill ;
+               rdfs:comment "Relates an awareness observation to the skill that the observation is about." ;
+               rdfs:label "onSkill" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#onTopic
+pf-ont:onTopic rdf:type owl:ObjectProperty ,
+                        owl:AsymmetricProperty ,
+                        owl:IrreflexiveProperty ;
+               rdfs:domain pf-ont:AwarenessObservation ;
+               rdfs:range edu-ont:Topic ;
+               rdfs:comment "Relates an awareness observation to the topic that the observation is about." ;
+               rdfs:label "onTopic" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#provideFeedback
+pf-ont:provideFeedback rdf:type owl:ObjectProperty ,
+                                owl:AsymmetricProperty ,
+                                owl:IrreflexiveProperty ;
+                       rdfs:domain pf-ont:EvaluationTechnique ;
+                       rdfs:range pf-ont:Response ;
+                       rdfs:comment "Relates an evaluation technique to a response or feedback artifact produced by that technique." ;
+                       rdfs:label "provideFeedback" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#requiresPriorTopicKnowledge
+pf-ont:requiresPriorTopicKnowledge rdf:type owl:ObjectProperty ,
+                                            owl:AsymmetricProperty ,
+                                            owl:IrreflexiveProperty ;
+                                   rdfs:domain pf-ont:LearningSituation ;
+                                   rdfs:range edu-ont:Topic ;
+                                   rdfs:comment "Relates a learning situation to a topic that should be known beforehand." ;
+                                   rdfs:label "requiresPriorTopicKnowledge" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#requiresTopic
+pf-ont:requiresTopic rdf:type owl:ObjectProperty ,
+                              owl:AsymmetricProperty ,
+                              owl:IrreflexiveProperty ;
+                     rdfs:domain pf-ont:Skill ;
+                     rdfs:range edu-ont:Topic ;
+                     rdfs:comment "Relates a skill to a topic required for developing or applying that skill." ;
+                     rdfs:label "requiresTopic" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#scopes
+pf-ont:scopes rdf:type owl:ObjectProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain pf-ont:LearningSituation ;
+              rdfs:range edu-ont:Persona ;
+              rdfs:comment "Relates a learning situation to a persona that scopes or contextualizes it." ;
+              rdfs:label "scopes" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#servesPedagogicalObjective
+pf-ont:servesPedagogicalObjective rdf:type owl:ObjectProperty ,
+                                           owl:AsymmetricProperty ,
+                                           owl:IrreflexiveProperty ;
+                                  rdfs:domain pf-ont:PedagogicalTechnique ;
+                                  rdfs:range pf-ont:PedagogicalObjective ;
+                                  rdfs:comment "Relates a pedagogical technique to an instructional objective that the technique serves." ;
+                                  rdfs:label "servesPedagogicalObjective" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#supportsLearningObjective
+pf-ont:supportsLearningObjective rdf:type owl:ObjectProperty ,
+                                          owl:AsymmetricProperty ,
+                                          owl:IrreflexiveProperty ;
+                                 rdfs:domain edu-ont:Media ;
+                                 rdfs:range pf-ont:LearningObjective ;
+                                 rdfs:comment "Relates a media resource to a learning objective supported by that resource." ;
+                                 rdfs:label "supportsLearningObjective" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#supportsPedagogicalElement
+pf-ont:supportsPedagogicalElement rdf:type owl:ObjectProperty ,
+                                           owl:AsymmetricProperty ,
+                                           owl:IrreflexiveProperty ;
+                                  rdfs:domain pf-ont:PedagogicalTechnique ;
+                                  rdfs:range pf-ont:PedagogicalElement ;
+                                  rdfs:comment "Relates a pedagogical technique to a pedagogical element that the technique supports." ;
+                                  rdfs:label "supportsPedagogicalElement" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#targetsLearningObjective
+pf-ont:targetsLearningObjective rdf:type owl:ObjectProperty ,
+                                         owl:AsymmetricProperty ,
+                                         owl:IrreflexiveProperty ;
+                                rdfs:domain pf-ont:PedagogicalTechnique ;
+                                rdfs:range pf-ont:LearningObjective ;
+                                rdfs:comment "Relates a pedagogical technique to a learning objective targeted by that technique." ;
+                                rdfs:label "targetsLearningObjective" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#targetsSkill
+pf-ont:targetsSkill rdf:type owl:ObjectProperty ,
+                             owl:AsymmetricProperty ,
+                             owl:IrreflexiveProperty ;
+                    rdfs:domain pf-ont:LearnerGoal ;
+                    rdfs:range pf-ont:Skill ;
+                    rdfs:comment "Relates a learner goal to the skill targeted by that goal." ;
+                    rdfs:label "targetsSkill" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#usesTechnique
+pf-ont:usesTechnique rdf:type owl:ObjectProperty ,
+                              owl:AsymmetricProperty ,
+                              owl:IrreflexiveProperty ;
+                     rdfs:domain pf-ont:EvaluationAssessmentExercise ;
+                     rdfs:range pf-ont:EvaluationTechnique ;
+                     rdfs:comment "Relates an assessment exercise to the evaluation technique used by that exercise." ;
+                     rdfs:label "usesTechnique" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#worksOnSituation
+pf-ont:worksOnSituation rdf:type owl:ObjectProperty ,
+                                 owl:AsymmetricProperty ,
+                                 owl:IrreflexiveProperty ;
+                        rdfs:domain pf-ont:LearningObjective ;
+                        rdfs:range pf-ont:LearningSituation ;
+                        rdfs:comment "Relates a learning objective to a learning situation addressed by that objective." ;
+                        rdfs:label "worksOnSituation" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#asString
+pf-ont:asString rdf:type owl:DatatypeProperty ;
+                rdfs:domain pf-ont:EvaluationMetric ;
+                rdfs:range rdfs:Literal ;
+                rdfs:comment "Provides a literal string representation for an evaluation metric." ;
+                rdfs:label "asString" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasDescription
+pf-ont:hasDescription rdf:type owl:DatatypeProperty ;
+                      rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( pf-ont:LearningObjective
+                                                  pf-ont:LearningStrategy
+                                                  pf-ont:PedagogicalElement
+                                                  pf-ont:PedagogicalFramework
+                                                  pf-ont:PedagogicalObjective
+                                                  pf-ont:PedagogicalTechnique
+                                                )
+                                  ] ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "Provides an optional textual description for a learning objective or learning strategy." ,
+                                   "Provides an optional textual description for a pedagogical element, framework, objective, or technique." ;
+                      rdfs:label "hasDescription" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasName
+pf-ont:hasName rdf:type owl:DatatypeProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( pf-ont:LearningObjective
+                                           pf-ont:LearningStrategy
+                                           pf-ont:PedagogicalElement
+                                           pf-ont:PedagogicalFramework
+                                           pf-ont:PedagogicalObjective
+                                           pf-ont:PedagogicalTechnique
+                                         )
+                           ] ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Provides the required textual name for a learning objective or learning strategy." ,
+                            "Provides the required textual name for a pedagogical element, framework, objective, or technique." ;
+               rdfs:label "hasName" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasValue
+pf-ont:hasValue rdf:type owl:DatatypeProperty ;
+                rdfs:domain pf-ont:EvaluationResult ;
+                rdfs:range rdfs:Literal ;
+                rdfs:comment "Provides the literal value recorded for an evaluation result." ;
+                rdfs:label "hasValue" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://edugate.cs.wright.edu/lod/ontology#Media
+edu-ont:Media rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty pf-ont:supportsLearningObjective ;
+                                owl:someValuesFrom pf-ont:LearningObjective
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty pf-ont:hasAssessmentExercise ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onClass pf-ont:EvaluationAssessmentExercise
+                              ] ;
+              rdfs:comment "Represents a learning media resource that can support one or more learning objectives." ,
+                           "Represents a learning media resource that may include or be associated with assessment exercises." ,
+                           "Represents a learning media resource that supports one or more learning objectives." ;
+              rdfs:label "Media" .
+
+
+###  https://edugate.cs.wright.edu/lod/ontology#Module
+edu-ont:Module rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty pf-ont:hasAssessmentExercise ;
+                                 owl:someValuesFrom pf-ont:EvaluationAssessmentExercise
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty pf-ont:hasLearningObjective ;
+                                 owl:someValuesFrom pf-ont:LearningObjective
+                               ] ;
+               rdfs:comment "Represents an instructional module that can include one or more learning objectives." ,
+                            "Represents an instructional module that includes one or more assessment exercises." ,
+                            "Represents an instructional module that includes one or more learning objectives." ;
+               rdfs:label "Module" .
+
+
+###  https://edugate.cs.wright.edu/lod/ontology#Persona
+edu-ont:Persona rdf:type owl:Class ;
+                rdfs:comment "Represents a learner persona used to scope or contextualize a learning situation." ;
+                rdfs:label "Persona" .
+
+
+###  https://edugate.cs.wright.edu/lod/ontology#Topic
+edu-ont:Topic rdf:type owl:Class ;
+              owl:disjointWith pf-ont:Agent ,
+                               pf-ont:AwarenessObservation ,
+                               pf-ont:EvaluationAssessmentExercise ,
+                               pf-ont:LearnerGoal ,
+                               pf-ont:LearningObjective ,
+                               pf-ont:LearningSituation ,
+                               pf-ont:LearningStrategy ,
+                               pf-ont:PedagogicalElement ,
+                               pf-ont:PedagogicalTechnique ,
+                               pf-ont:Response ;
+              rdfs:comment "Represents a subject matter topic required by skills or observed in learner awareness." ,
+                           "Represents a subject matter topic that can be evaluated for learner awareness or understanding." ,
+                           "Represents a subject matter topic that can be required as prior knowledge for a learning situation." ;
+              rdfs:label "Topic" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#AccessibilityChallenge
+pf-ont:AccessibilityChallenge rdf:type owl:Class ;
+                              rdfs:subClassOf pf-ont:LearningChallenge ;
+                              rdfs:comment "Represents a specialized (subclass of) learning challenge related to accessibility needs, such as captions, screen-reader compatibility, alternative media, or extended time." ;
+                              rdfs:label "AccessibilityChallenge" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#Agent
+pf-ont:Agent rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty pf-ont:hasSituation ;
+                               owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                               owl:onClass pf-ont:LearningSituation
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty pf-ont:isSourceOf ;
+                               owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                               owl:onClass pf-ont:Response
+                             ] ;
+             owl:disjointWith pf-ont:AwarenessObservation ,
+                              pf-ont:EvaluationAssessmentExercise ,
+                              pf-ont:EvaluationMetric ,
+                              pf-ont:LearnerGoal ,
+                              pf-ont:LearningChallenge ,
+                              pf-ont:LearningObjective ,
+                              pf-ont:LearningSituation ,
+                              pf-ont:Response ,
+                              pf-ont:Skill ,
+                              pf-ont:TemporalExtent ;
+             rdfs:comment "Represents an actor or agentive entity, including learners, whose learning state can be modeled." ,
+                          "Represents an actor or agentive entity, such as a person, system, or service, that can originate a response." ;
+             rdfs:label "Agent" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#AwarenessLevel
+pf-ont:AwarenessLevel rdf:type owl:Class ;
+                      rdfs:comment "Represents a controlled vocabulary level that models a learner's awareness on a topic or skill." ;
+                      rdfs:label "AwarenessLevel" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#AwarenessObservation
+pf-ont:AwarenessObservation rdf:type owl:Class ;
+                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasAwarenessLevel ;
+                                              owl:someValuesFrom pf-ont:AwarenessLevel
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:atTime ;
+                                              owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                              owl:onClass pf-ont:TemporalExtent
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:onSkill ;
+                                              owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                              owl:onClass pf-ont:Skill
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:onTopic ;
+                                              owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                              owl:onClass edu-ont:Topic
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:atTime ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onClass pf-ont:TemporalExtent
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasAwarenessLevel ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onClass pf-ont:AwarenessLevel
+                                            ] ;
+                            rdfs:comment "Represents an observation or assessment event that estimates a learner's awareness of a topic or skill." ;
+                            rdfs:label "AwarenessObservation" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#CurrentAwarenessObservation
+pf-ont:CurrentAwarenessObservation rdf:type owl:Class ;
+                                   rdfs:subClassOf pf-ont:AwarenessObservation ;
+                                   rdfs:comment "Represents the current or active awareness observation used to describe a learner's present awareness observation over a scope." ;
+                                   rdfs:label "CurrentAwarenessObservation" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#EvaluationAssessmentExercise
+pf-ont:EvaluationAssessmentExercise rdf:type owl:Class ;
+                                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                      owl:onProperty pf-ont:evaluatesTopicAwarenessOf ;
+                                                      owl:someValuesFrom edu-ont:Topic
+                                                    ] ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty pf-ont:hasWorkloadLevel ;
+                                                      owl:someValuesFrom pf-ont:WorkloadLevel
+                                                    ] ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty pf-ont:usesTechnique ;
+                                                      owl:someValuesFrom pf-ont:EvaluationTechnique
+                                                    ] ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty pf-ont:hasWorkloadLevel ;
+                                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                      owl:onClass pf-ont:WorkloadLevel
+                                                    ] ;
+                                    rdfs:comment "Represents an assessment activity or exercise through which a learner's understanding, awareness, or performance is evaluated with respect to a topic, skill, or learning objective." ;
+                                    rdfs:label "EvaluationAssessmentExercise" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#EvaluationMetric
+pf-ont:EvaluationMetric rdf:type owl:Class ;
+                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty pf-ont:asString ;
+                                          owl:someValuesFrom rdfs:Literal
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty pf-ont:asString ;
+                                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                        ] ;
+                        rdfs:comment "Represents the ability to capture what type of measurable unit of evaluation techniques was utilized." ;
+                        rdfs:label "EvaluationMetric" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#EvaluationResult
+pf-ont:EvaluationResult rdf:type owl:Class ;
+                        rdfs:subClassOf pf-ont:Response ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty pf-ont:hasUnit ;
+                                          owl:someValuesFrom pf-ont:EvaluationMetric
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty pf-ont:hasValue ;
+                                          owl:someValuesFrom rdfs:Literal
+                                        ] ;
+                        rdfs:comment "Represents the ability to capture what measurable value of evaluation technique was utilized." ;
+                        rdfs:label "EvaluationResult" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#EvaluationTechnique
+pf-ont:EvaluationTechnique rdf:type owl:Class ;
+                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                             owl:onProperty pf-ont:hasEvaluationMetric ;
+                                             owl:someValuesFrom pf-ont:EvaluationMetric
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty pf-ont:hasEvaluationTechniqueType ;
+                                             owl:someValuesFrom pf-ont:EvaluationTechniqueType
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty pf-ont:assessesLearningFeedback ;
+                                             owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                             owl:onClass pf-ont:LearningFeedback
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty pf-ont:assessesLearningObjective ;
+                                             owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                             owl:onClass pf-ont:LearningObjective
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty pf-ont:provideFeedback ;
+                                             owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                             owl:onClass pf-ont:Response
+                                           ] ;
+                           rdfs:comment "Represents the ability to capture what evaluation methods are utilized for assessment." ;
+                           rdfs:label "EvaluationTechnique" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#EvaluationTechniqueType
+pf-ont:EvaluationTechniqueType rdf:type owl:Class ;
+                               rdfs:comment "Represents the ability to capture categories of evaluation techniques, like \"summative/formative\", \"automated\", etc. These are controlled vocabulary classifications." ;
+                               rdfs:label "EvaluationTechniqueType" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#FirstPedagogicalElement
+pf-ont:FirstPedagogicalElement rdf:type owl:Class ;
+                               rdfs:subClassOf pf-ont:PedagogicalElement ;
+                               rdfs:comment "Represents the first element in an ordered pedagogical framework sequence." ;
+                               rdfs:label "FirstPedagogicalElement" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#LastPedagogicalElement
+pf-ont:LastPedagogicalElement rdf:type owl:Class ;
+                              rdfs:subClassOf pf-ont:PedagogicalElement ;
+                              rdfs:comment "Represents the last element in an ordered pedagogical framework sequence." ;
+                              rdfs:label "LastPedagogicalElement" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#Learner
+pf-ont:Learner rdf:type owl:Class ;
+               rdfs:subClassOf pf-ont:Agent ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty pf-ont:hasSituation ;
+                                 owl:someValuesFrom pf-ont:LearningSituation
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty pf-ont:hasAwarenessObservation ;
+                                 owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                 owl:onClass pf-ont:AwarenessObservation
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty pf-ont:hasGoal ;
+                                 owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                 owl:onClass pf-ont:LearnerGoal
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty pf-ont:hasLearnerPreference ;
+                                 owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                 owl:onClass pf-ont:LearnerPreference
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty pf-ont:hasLearningChallenge ;
+                                 owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                 owl:onClass pf-ont:LearningChallenge
+                               ] ;
+               rdfs:comment "Represents the individual learning agent whose goals, preferences, challenges, awareness, and learning situations are modeled for personalization." ;
+               rdfs:label "Learner" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#LearnerGoal
+pf-ont:LearnerGoal rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty pf-ont:targetsSkill ;
+                                     owl:someValuesFrom pf-ont:Skill
+                                   ] ;
+                   rdfs:comment "Represents a learner-specific goal, such as acquiring a skill or reaching a target learning outcome." ;
+                   rdfs:label "LearnerGoal" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#LearnerPreference
+pf-ont:LearnerPreference rdf:type owl:Class ;
+                         owl:disjointWith pf-ont:LearningChallenge ;
+                         rdfs:comment "Represents learner-specific preferences used to personalize instruction, resources, feedback, delivery and recommendations (complementary to challenge)." ;
+                         rdfs:label "LearnerPreference" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#LearningChallenge
+pf-ont:LearningChallenge rdf:type owl:Class ;
+                         rdfs:comment "Represents constraints, barriers, or needs that may affect a learner's ability to engage with instruction or learning material or process (complementary to preference)." ;
+                         rdfs:label "LearningChallenge" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#LearningFeedback
+pf-ont:LearningFeedback rdf:type owl:Class ;
+                        rdfs:subClassOf pf-ont:Response ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty pf-ont:hasLearningFeedbackType ;
+                                          owl:someValuesFrom pf-ont:LearningFeedbackType
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty pf-ont:affectsStrategy ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onClass pf-ont:LearningStrategy
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty pf-ont:hasLearningFeedbackType ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass pf-ont:LearningFeedbackType
+                                        ] ;
+                        rdfs:comment "Represents the ability to capture an observation about a learner's performance or understanding." ;
+                        rdfs:label "LearningFeedback" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#LearningFeedbackType
+pf-ont:LearningFeedbackType rdf:type owl:Class ;
+                            rdfs:comment "Represents the ability to capture categories of feedback like \"corrective feedback\", \"motivational feedback\", etc. These are controlled vocabulary classifications." ;
+                            rdfs:label "LearningFeedbackType" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#LearningObjective
+pf-ont:LearningObjective rdf:type owl:Class ;
+                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                           owl:onProperty pf-ont:developsSkill ;
+                                           owl:someValuesFrom pf-ont:Skill
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty pf-ont:alignedWith ;
+                                           owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                           owl:onClass pf-ont:PedagogicalElement
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty pf-ont:worksOnSituation ;
+                                           owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                           owl:onClass pf-ont:LearningSituation
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty pf-ont:hasName ;
+                                           owl:someValuesFrom xsd:string
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty pf-ont:hasDescription ;
+                                           owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                           owl:onDataRange xsd:string
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty pf-ont:hasDescription ;
+                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           owl:onDataRange xsd:string
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty pf-ont:hasName ;
+                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           owl:onDataRange xsd:string
+                                         ] ;
+                         owl:disjointWith pf-ont:LearningSituation ,
+                                          pf-ont:LearningStrategy ,
+                                          pf-ont:PedagogicalElement ,
+                                          pf-ont:PedagogicalFramework ,
+                                          pf-ont:PedagogicalObjective ,
+                                          pf-ont:PedagogicalTechnique ;
+                         rdfs:comment "Represents the ability to capture a target learning outcome." ;
+                         rdfs:label "LearningObjective" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#LearningSituation
+pf-ont:LearningSituation rdf:type owl:Class ;
+                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                           owl:onProperty pf-ont:requiresPriorTopicKnowledge ;
+                                           owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                           owl:onClass edu-ont:Topic
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty pf-ont:scopes ;
+                                           owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                           owl:onClass edu-ont:Persona
+                                         ] ;
+                         owl:disjointWith pf-ont:LearningStrategy ,
+                                          pf-ont:PedagogicalElement ,
+                                          pf-ont:PedagogicalTechnique ;
+                         rdfs:comment "Represents the ability to capture the current state or situation of a learner (e.g. learner context, prior knowledge, etc.)." ;
+                         rdfs:label "LearningSituation" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#LearningStrategy
+pf-ont:LearningStrategy rdf:type owl:Class ;
+                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty pf-ont:hasLearningObjective ;
+                                          owl:someValuesFrom pf-ont:LearningObjective
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty pf-ont:hasPedagogicalTechnique ;
+                                          owl:someValuesFrom pf-ont:PedagogicalTechnique
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty pf-ont:hasName ;
+                                          owl:someValuesFrom xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty pf-ont:hasDescription ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty pf-ont:hasDescription ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty pf-ont:hasName ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:string
+                                        ] ;
+                        owl:disjointWith pf-ont:PedagogicalElement ;
+                        rdfs:comment "Represents the ability to capture how instructional components come together in a teaching plan." ;
+                        rdfs:label "LearningStrategy" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#PedagogicalElement
+pf-ont:PedagogicalElement rdf:type owl:Class ;
+                          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                            owl:onProperty pf-ont:hasNextPedagogicalElement ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onClass pf-ont:PedagogicalElement
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty pf-ont:hasPreviousPedagogicalElement ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onClass pf-ont:PedagogicalElement
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty pf-ont:isElementOf ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onClass pf-ont:PedagogicalFramework
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty pf-ont:hasName ;
+                                            owl:someValuesFrom xsd:string
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty pf-ont:hasDescription ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onDataRange xsd:string
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty pf-ont:hasDescription ;
+                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onDataRange xsd:string
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty pf-ont:hasName ;
+                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onDataRange xsd:string
+                                          ] ;
+                          owl:disjointWith pf-ont:PedagogicalFramework ,
+                                           pf-ont:PedagogicalObjective ,
+                                           pf-ont:PedagogicalTechnique ;
+                          rdfs:comment "Represents the atomic finite element that is part of a pedagogical framework" ;
+                          rdfs:label "PedagogicalElement" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#PedagogicalFramework
+pf-ont:PedagogicalFramework rdf:type owl:Class ;
+                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasElement ;
+                                              owl:someValuesFrom pf-ont:PedagogicalElement
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasName ;
+                                              owl:someValuesFrom xsd:string
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasDescription ;
+                                              owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasDescription ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasName ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] ;
+                            owl:disjointWith pf-ont:PedagogicalObjective ,
+                                             pf-ont:PedagogicalTechnique ;
+                            rdfs:comment "Represents the ability to capture a pedagogical framework used for instructional design" ;
+                            rdfs:label "PedagogicalFramework" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#PedagogicalObjective
+pf-ont:PedagogicalObjective rdf:type owl:Class ;
+                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasName ;
+                                              owl:someValuesFrom xsd:string
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasDescription ;
+                                              owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasDescription ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasName ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] ;
+                            owl:disjointWith pf-ont:PedagogicalTechnique ;
+                            rdfs:comment "Represents the ability to capture an intended instructional effect or educational purpose that a pedagogical technique is designed to achieve, such as retention, recall, engagement, misconception diagnosis, knowledge transfer, or deeper conceptual understanding." ;
+                            rdfs:label "PedagogicalObjective" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#PedagogicalTechnique
+pf-ont:PedagogicalTechnique rdf:type owl:Class ;
+                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:servesPedagogicalObjective ;
+                                              owl:someValuesFrom pf-ont:PedagogicalObjective
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:supportsPedagogicalElement ;
+                                              owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                              owl:onClass pf-ont:PedagogicalElement
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:targetsLearningObjective ;
+                                              owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                              owl:onClass pf-ont:LearningObjective
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasName ;
+                                              owl:someValuesFrom xsd:string
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasDescription ;
+                                              owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasDescription ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty pf-ont:hasName ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] ;
+                            rdfs:comment "Represents the ability to capture a specific instructional method that is used in instructional design" ;
+                            rdfs:label "PedagogicalTechnique" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#Response
+pf-ont:Response rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty pf-ont:hasSource ;
+                                  owl:someValuesFrom pf-ont:Source
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty pf-ont:affectsAwarenessObservation ;
+                                  owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                  owl:onClass pf-ont:AwarenessObservation
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty pf-ont:hasResponseTime ;
+                                  owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                  owl:onClass pf-ont:TemporalExtent
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty pf-ont:hasResponseTime ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass pf-ont:TemporalExtent
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty pf-ont:hasSource ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass pf-ont:Source
+                                ] ;
+                rdfs:comment "Represents the ability to capture an explicit feedback message or system output delivered to a learner." ;
+                rdfs:label "Response" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#Skill
+pf-ont:Skill rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty pf-ont:requiresTopic ;
+                               owl:someValuesFrom edu-ont:Topic
+                             ] ;
+             rdfs:comment "Represents a lightweight bridge concept connecting learner goals, learning objectives, topics, and future alignment across external skill or labor market ontologies." ;
+             rdfs:label "Skill" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#Source
+pf-ont:Source rdf:type owl:Class ;
+              rdfs:subClassOf pf-ont:Agent ;
+              rdfs:comment "Represents the ability to capture an entity (teacher, LLM) that produced a Response." ;
+              rdfs:label "Source" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#TemporalExtent
+pf-ont:TemporalExtent rdf:type owl:Class ;
+                      rdfs:comment "Represents a time point, interval, or duration associated with a response or evaluation event." ,
+                                   "Represents a time point, interval, or duration associated with an awareness observation." ;
+                      rdfs:label "TemporalExtent" .
+
+
+###  https://pedagogicalontology.cs.wright.edu/lod/ontology#WorkloadLevel
+pf-ont:WorkloadLevel rdf:type owl:Class ;
+                     rdfs:comment "Represents a controlled vocabulary level that models the estimated effort, time commitment, or assessment burden associated." ;
+                     rdfs:label "WorkloadLevel" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty pf-ont:assessesLearningFeedback ;
+  owl:someValuesFrom pf-ont:LearningFeedback ;
+  rdfs:subClassOf pf-ont:EvaluationTechnique
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty pf-ont:assessesLearningObjective ;
+  owl:someValuesFrom pf-ont:LearningObjective ;
+  rdfs:subClassOf pf-ont:EvaluationTechnique
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty pf-ont:evaluatesTopicAwarenessOf ;
+  owl:someValuesFrom edu-ont:Topic ;
+  rdfs:subClassOf pf-ont:EvaluationAssessmentExercise
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty pf-ont:hasEvaluationTechniqueType ;
+  owl:someValuesFrom pf-ont:EvaluationTechniqueType ;
+  rdfs:subClassOf pf-ont:EvaluationTechnique
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty pf-ont:provideFeedback ;
+  owl:someValuesFrom pf-ont:Response ;
+  rdfs:subClassOf pf-ont:EvaluationTechnique
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

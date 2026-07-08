@@ -1,0 +1,57 @@
+Evaluation Assessment Exercise Context,Evaluation Assessment Exercise,Evaluates Topic Awareness Of,Workload Level,Uses Evaluation Techniques
+What is Metadata?,Metadata Concept Check,Metadata,Low Workload,Auto Scored Concept Check
+What is an Ontology?,Ontology Explanation Review,Ontology,Moderate Workload,Short Explanation Rubric
+What is a Knowledge Graph?,Knowledge Graph Purpose Check,Knowledge Graph,Low Workload,Auto Scored Concept Check
+What is an Identifier?,Identifier Pattern Check,URI,Low Workload,Auto Scored Concept Check
+RDF,RDF Triple Interpretation Quiz,Triple,Moderate Workload,Triple Interpretation Quiz
+RDFS,RDFS Schema Reasoning Exercise,Schema,Moderate Workload,Schema Reasoning Review
+RDF Serializations,RDF Serialization Comparison,RDF/XML,Moderate Workload,Short Explanation Rubric
+SPARQL,SPARQL Select Query Exercise,Query,Moderate Workload,Query Practice Check
+OWL,OWL Modeling Review,OWL,Moderate Workload,Ontology Modeling Review
+OWL,RDF RDFS Mastery Reassessment,Schema,Moderate Workload,Mastery Reassessment
+What is Metadata?,Metadata Example Sort,Metadata,Low Workload,Auto Scored Concept Check
+What is an Ontology?,Ontology Component Walkthrough,Ontology | Linked Data | Taxonomy | Schema,Moderate Workload,Short Explanation Rubric
+What is a Knowledge Graph?,Knowledge Graph Structure Sketch,Schema | Statement | Triple,Low Workload,Auto Scored Concept Check
+What is an Identifier?,Identifier Pattern Sorting Task,URI | Hash or Slash | Namespace,Low Workload,Auto Scored Concept Check
+Introduction to Logic,Logic Operator Mini Quiz,Conjunction | Disjunction | Boolean Arithmetic,Low Workload,Auto Scored Concept Check
+Propositional Logic,Proposition Truth Table Task,Conjunction | Disjunction | Boolean Arithmetic,Low Workload,Auto Scored Concept Check
+Datalog,Datalog Rule Trace,Inference,Low Workload,Auto Scored Concept Check
+Predicate Logic,Predicate Translation Task,Predicate | Subject | Object,Low Workload,Auto Scored Concept Check
+Description Logic,Description Logic Constraint Review,Expressivity | Inference,High Workload,Ontology Modeling Review
+Rules,Rule Inference Trace,Inference,Low Workload,Auto Scored Concept Check
+Introduction to Set Theory,Set Relationship Diagram Task,Union | Disjunction | Disjointness | Intersection,Low Workload,Auto Scored Concept Check
+Introduction to Discrete Mathematics,Relation Property Classification,Functionality | Reflexivity | Transitivity | Inverse,Moderate Workload,Short Explanation Rubric
+Open World Assumption vs Closed World Assumption,Assumption Boundary Scenario,Inference,Low Workload,Auto Scored Concept Check
+RDF,RDF Graph Annotation Task,Triple | Subject | Object | Predicate,Low Workload,Auto Scored Concept Check
+RDFS,RDFS Vocabulary Inference Review,Subclass | Subproperty | Domain Restrictions | Range Restrictions,Low Workload,Auto Scored Concept Check
+RDF Serializations,Serialization Format Comparison Brief,RDF/XML | JSON-LD | Turtle,Low Workload,Auto Scored Concept Check
+RDF Star,RDF Star Annotation Exercise,Triple | Statement,Low Workload,Auto Scored Concept Check
+SPARQL,SPARQL Query Repair Task,Query | Select | Update | Delete,Low Workload,Auto Scored Concept Check
+SWRL,SWRL Inference Review,OWL | Inference,Moderate Workload,Short Explanation Rubric
+OWL,OWL Constraint Modeling Review,OWL | OWL2 | Datatypes | Data Properties,Moderate Workload,Short Explanation Rubric
+OWL Dialects,OWL Dialect Selection Brief,Expressivity | OWL EL | OWL QL | OWL RL,Moderate Workload,Short Explanation Rubric
+Manchester Syntax,Manchester Axiom Translation,Axiom,Moderate Workload,Short Explanation Rubric
+SHACL,SHACL Shape Validation Task,Schema,Moderate Workload,Short Explanation Rubric
+Schema.org,Schema.org Alignment Exercise,rangeIncludes | domainIncludes,Low Workload,Auto Scored Concept Check
+Dublin Core,Dublin Core Metadata Mapping Task,Metadata,Low Workload,Auto Scored Concept Check
+SOSA & SSN,Observation Modeling Scenario,Ontology,Moderate Workload,Short Explanation Rubric
+PROV-O,Provenance Chain Modeling Task,Provenance | Lineage,Moderate Workload,Short Explanation Rubric
+SKOS,Concept Scheme Modeling Task,Taxonomy,Moderate Workload,Short Explanation Rubric
+Survey of Modeling Tools,Modeling Tool Selection Matrix,Protege | TopBraid Composer | PoolParty | DataWorld,Moderate Workload,Short Explanation Rubric
+Protege,Protege Editing Lab,Ontology,Moderate Workload,Short Explanation Rubric
+Deploying a Knowledge Graph,KG Deployment Readiness Review,Knowledge Graph,Moderate Workload,Short Explanation Rubric
+Introduction to Knowledge Engineering,Knowledge Engineering Workflow Plan,Knowledge Graph,Moderate Workload,Short Explanation Rubric
+Reification,Reification Modeling Scenario,N-ary Relations | Blank Nodes,Moderate Workload,Short Explanation Rubric
+GraphQL,GraphQL Mapping Exercise,Query,Moderate Workload,Short Explanation Rubric
+Survey of Documentation Practices,Documentation Coverage Review,Metadata,Moderate Workload,Short Explanation Rubric
+Survey of Visualization Tools,Visualization Tool Selection Brief,Knowledge Graph,Moderate Workload,Short Explanation Rubric
+Introduction to Upper Ontologies,Upper Ontology Alignment Review,Ontology,High Workload,Ontology Modeling Review
+Introduction to Modular Ontologies,Modular Ontology Boundary Review,Ontology,High Workload,Ontology Modeling Review
+Survey of Triplestores,Triplestore Selection Matrix,Query,Moderate Workload,Short Explanation Rubric
+History of the Semantic Web,Semantic Web Timeline Explanation,Ontology | Semantic Web | Taxonomy | Linked Data,Low Workload,Auto Scored Concept Check
+Property Graphs,Property Graph Comparison Brief,Graph,Moderate Workload,Short Explanation Rubric
+Nanopublications,Nanopublication Claim Card,Provenance,Moderate Workload,Short Explanation Rubric
+Survey of Reasoners,Reasoner Capability Matrix,Complexity | Inference,Moderate Workload,Short Explanation Rubric
+Entailment Regimes,Entailment Regime Selection Scenario,Inference,Moderate Workload,Short Explanation Rubric
+RDF Plus,RDF Plus Property Reasoning Drill,Property,Moderate Workload,Short Explanation Rubric
+Open Graph Protocol,Open Graph Metadata Audit,Metadata,Low Workload,Auto Scored Concept Check

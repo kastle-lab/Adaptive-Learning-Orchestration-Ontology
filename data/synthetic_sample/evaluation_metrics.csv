@@ -1,0 +1,5 @@
+Evaluation Metric,Evaluation Metric asString
+Score Percent,percentage score
+Correctness Flag,correct or incorrect
+Rubric Level,rubric level 1 to 4
+Confidence Rating,confidence rating 1 to 5

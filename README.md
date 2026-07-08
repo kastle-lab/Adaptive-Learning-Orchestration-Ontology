@@ -13,3 +13,9 @@ This repository contains an ontology and supporting artifacts for modeling pedag
 - `axioms/`
   - Constraint and axiom definitions in tabular form.
   - `axioms.csv` is the main reference for relationships, cardinalities, and rule rationale.
+
+<p>
+	<a href="http://oops.linkeddata.es">
+	<img src="https://oops.linkeddata.es/images/conformance/oops_free.png"
+alt="free pitfalls were found" height="69.6" width="100" /></a>
+</p>
