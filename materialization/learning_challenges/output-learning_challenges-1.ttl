@@ -1,0 +1,9 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningChallenge.Low%20Confidence%20With%20Formal%20Syntax a aplo-ont:LearningChallenge ;
+    rdf:value "LearningChallenge"^^xsd:string,
+        "Low Confidence With Formal Syntax"^^xsd:string .
+

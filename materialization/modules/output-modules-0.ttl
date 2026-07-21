@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:module.What%20is%20Metadata%3F a edu-ont:Module ;
+    rdf:value "What is Metadata?"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.What%20is%20Metadata%3F.Metadata%20Concept%20Check ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Foundational%20Semantic%20Web%20Study.Recall%20core%20metadata%20terminology .
+
+aplo-r:evaluationAssessmentExercise.What%20is%20Metadata%3F.Metadata%20Concept%20Check a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Metadata Concept Check"^^xsd:string .
+
+aplo-r:learningObjective.Foundational%20Semantic%20Web%20Study.Recall%20core%20metadata%20terminology a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Recall core metadata terminology"^^xsd:string .
+

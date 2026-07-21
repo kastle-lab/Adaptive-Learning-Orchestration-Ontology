@@ -1,0 +1,33 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Ronnie a aplo-ont:Learner ;
+    rdf:value "Learner Ronnie"^^xsd:string ;
+    aplo-ont:hasAwarenessObservation aplo-r:awarenessObservation.Learner%20Ronnie.Subclass.RDFS%20Vocabulary%20Reasoning.RDFS%20Vocabulary%20Reasoning%20Rubric%20Update .
+
+aplo-r:awarenessLevel.Mastery%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Mastery Awareness"^^xsd:string .
+
+aplo-r:awarenessObservation.Learner%20Ronnie.Subclass.RDFS%20Vocabulary%20Reasoning.RDFS%20Vocabulary%20Reasoning%20Rubric%20Update a aplo-ont:AwarenessObservation ;
+    rdf:value "RDFS Vocabulary Reasoning Rubric Update"^^xsd:string ;
+    aplo-ont:atTime aplo-r:temporalExtent.Learner%20Ronnie.Subclass.RDFS%20Vocabulary%20Reasoning.RDFS%20Vocabulary%20Reasoning%20Rubric%20Update.2026-02-15T14%3A03%3A00Z%20to%202026-02-15T14%3A28%3A00Z ;
+    aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Mastery%20Awareness ;
+    aplo-ont:onSkill aplo-r:skill.RDFS%20Vocabulary%20Reasoning ;
+    aplo-ont:onTopic edu-r:topic.Subclass .
+
+aplo-r:skill.RDFS%20Vocabulary%20Reasoning a aplo-ont:Skill ;
+    rdf:value "RDFS Vocabulary Reasoning"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Ronnie.Subclass.RDFS%20Vocabulary%20Reasoning.RDFS%20Vocabulary%20Reasoning%20Rubric%20Update.2026-02-15T14%3A03%3A00Z%20to%202026-02-15T14%3A28%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "2026-02-15T14:03:00+00:00"^^xsd:dateTime,
+        "2026-02-15T14:28:00+00:00"^^xsd:dateTime,
+        "ISO 8601 UTC"^^xsd:string,
+        "TimeInterval"^^xsd:string .
+
+edu-r:topic.Subclass a edu-ont:Topic ;
+    rdf:value "Subclass"^^xsd:string .
+

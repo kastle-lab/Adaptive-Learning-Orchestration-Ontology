@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:media.OWL a edu-ont:Media ;
+    rdf:value "OWL"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.OWL.RDF%20RDFS%20Mastery%20Reassessment ;
+    aplo-ont:supportsLearningObjective aplo-r:learningObjective.RDFS%20Schema%20Practice.Demonstrate%20mastery%20of%20RDF%20and%20RDFS%20basics .
+
+aplo-r:evaluationAssessmentExercise.OWL.RDF%20RDFS%20Mastery%20Reassessment a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "RDF RDFS Mastery Reassessment"^^xsd:string .
+
+aplo-r:learningObjective.RDFS%20Schema%20Practice.Demonstrate%20mastery%20of%20RDF%20and%20RDFS%20basics a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Demonstrate mastery of RDF and RDFS basics"^^xsd:string .
+

@@ -1,0 +1,32 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningStrategy.KG%20Curriculum%20Design%20Studio.Curriculum%20KG%20Foundations%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasDescription "Turn curriculum design into a self-regulated plan with learning contracts checkpoints and deliberate strategy revision."^^xsd:string ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.KG%20Curriculum%20Design%20Studio.Apply%20set%20relationships,
+        aplo-r:learningObjective.KG%20Curriculum%20Design%20Studio.Plan%20a%20knowledge%20engineering%20workflow ;
+    aplo-ont:hasName "Curriculum KG Foundations Strategy"^^xsd:string ;
+    aplo-ont:hasPedagogicalTechnique aplo-r:pedagogicalTechnique.Goal%20Setting%20Prompt,
+        aplo-r:pedagogicalTechnique.Learning%20Contract,
+        aplo-r:pedagogicalTechnique.Progress%20Monitoring%20Checklist,
+        aplo-r:pedagogicalTechnique.Strategy%20Revision%20Plan .
+
+aplo-r:learningObjective.KG%20Curriculum%20Design%20Studio.Apply%20set%20relationships a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Apply set relationships"^^xsd:string .
+
+aplo-r:learningObjective.KG%20Curriculum%20Design%20Studio.Plan%20a%20knowledge%20engineering%20workflow a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Plan a knowledge engineering workflow"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Goal%20Setting%20Prompt a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Goal Setting Prompt"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Learning%20Contract a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Learning Contract"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Progress%20Monitoring%20Checklist a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Progress Monitoring Checklist"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Strategy%20Revision%20Plan a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Strategy Revision Plan"^^xsd:string .
+

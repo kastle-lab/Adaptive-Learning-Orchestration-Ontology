@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Secure%20KG%20Implementation%20Training.Explain%20RDF%20star%20statement%20annotations a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Understand ;
+    aplo-ont:developsSkill aplo-r:skill.RDF%20Star%20Statement%20Annotation ;
+    aplo-ont:hasDescription "RDF Star Statement Annotation in RDF Star: Trace the reasoning path from source concept to modeled statement."^^xsd:string ;
+    aplo-ont:hasName "Explain RDF star statement annotations"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Secure%20KG%20Implementation%20Training .
+
+aplo-r:learningSituation.Secure%20KG%20Implementation%20Training a aplo-ont:LearningSituation ;
+    rdf:value "Secure KG Implementation Training"^^xsd:string .
+
+aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Understand a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Understand"^^xsd:string .
+
+aplo-r:skill.RDF%20Star%20Statement%20Annotation a aplo-ont:Skill ;
+    rdf:value "RDF Star Statement Annotation"^^xsd:string .
+

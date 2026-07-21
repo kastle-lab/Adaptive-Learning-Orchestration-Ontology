@@ -1,0 +1,33 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Blair a aplo-ont:Learner ;
+    rdf:value "Learner Blair"^^xsd:string ;
+    aplo-ont:hasAwarenessObservation aplo-r:awarenessObservation.Learner%20Blair.RDF%2FXML.RDF%20Serialization%20Comparison.RDF%20Serialization%20Current%20Awareness .
+
+aplo-r:awarenessLevel.Low%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Low Awareness"^^xsd:string .
+
+aplo-r:awarenessObservation.Learner%20Blair.RDF%2FXML.RDF%20Serialization%20Comparison.RDF%20Serialization%20Current%20Awareness a aplo-ont:AwarenessObservation ;
+    rdf:value "RDF Serialization Current Awareness"^^xsd:string ;
+    aplo-ont:atTime aplo-r:temporalExtent.Learner%20Blair.RDF%2FXML.RDF%20Serialization%20Comparison.RDF%20Serialization%20Current%20Awareness.2026-01-17T12%3A00%3A00Z ;
+    aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Low%20Awareness ;
+    aplo-ont:onSkill aplo-r:skill.RDF%20Serialization%20Comparison ;
+    aplo-ont:onTopic edu-r:topic.RDF%2FXML .
+
+aplo-r:skill.RDF%20Serialization%20Comparison a aplo-ont:Skill ;
+    rdf:value "RDF Serialization Comparison"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Blair.RDF%2FXML.RDF%20Serialization%20Comparison.RDF%20Serialization%20Current%20Awareness.2026-01-17T12%3A00%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-01-17T12:00:00+00:00"^^xsd:dateTime .
+
+edu-r:topic.RDF%2FXML a edu-ont:Topic ;
+    rdf:value "RDF/XML"^^xsd:string .
+

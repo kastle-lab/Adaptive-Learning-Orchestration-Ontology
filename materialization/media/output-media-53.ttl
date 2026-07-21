@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:media.Entailment%20Regimes a edu-ont:Media ;
+    rdf:value "Entailment Regimes"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.Entailment%20Regimes.Entailment%20Regime%20Selection%20Scenario ;
+    aplo-ont:supportsLearningObjective aplo-r:learningObjective.Developer%20Knowledge%20Graph%20Implementation%20Practice.Select%20entailment%20regimes .
+
+aplo-r:evaluationAssessmentExercise.Entailment%20Regimes.Entailment%20Regime%20Selection%20Scenario a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Entailment Regime Selection Scenario"^^xsd:string .
+
+aplo-r:learningObjective.Developer%20Knowledge%20Graph%20Implementation%20Practice.Select%20entailment%20regimes a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Select entailment regimes"^^xsd:string .
+

@@ -1,0 +1,33 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Kai a aplo-ont:Learner ;
+    rdf:value "Learner Kai"^^xsd:string ;
+    aplo-ont:hasAwarenessObservation aplo-r:awarenessObservation.Learner%20Kai.Graph.Property%20Graph%20Comparison.Property%20Graph%20Comparison%20Checkpoint .
+
+aplo-r:awarenessLevel.Working%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Working Awareness"^^xsd:string .
+
+aplo-r:awarenessObservation.Learner%20Kai.Graph.Property%20Graph%20Comparison.Property%20Graph%20Comparison%20Checkpoint a aplo-ont:AwarenessObservation ;
+    rdf:value "Property Graph Comparison Checkpoint"^^xsd:string ;
+    aplo-ont:atTime aplo-r:temporalExtent.Learner%20Kai.Graph.Property%20Graph%20Comparison.Property%20Graph%20Comparison%20Checkpoint.2026-03-13T13%3A35%3A00Z%20to%202026-03-13T14%3A00%3A00Z ;
+    aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Working%20Awareness ;
+    aplo-ont:onSkill aplo-r:skill.Property%20Graph%20Comparison ;
+    aplo-ont:onTopic edu-r:topic.Graph .
+
+aplo-r:skill.Property%20Graph%20Comparison a aplo-ont:Skill ;
+    rdf:value "Property Graph Comparison"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Kai.Graph.Property%20Graph%20Comparison.Property%20Graph%20Comparison%20Checkpoint.2026-03-13T13%3A35%3A00Z%20to%202026-03-13T14%3A00%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "2026-03-13T13:35:00+00:00"^^xsd:dateTime,
+        "2026-03-13T14:00:00+00:00"^^xsd:dateTime,
+        "ISO 8601 UTC"^^xsd:string,
+        "TimeInterval"^^xsd:string .
+
+edu-r:topic.Graph a edu-ont:Topic ;
+    rdf:value "Graph"^^xsd:string .
+

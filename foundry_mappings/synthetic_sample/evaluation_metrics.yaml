@@ -1,0 +1,17 @@
+metadata:
+  name: "Synthetic Evaluation Metrics"
+  source_ext: "csv"
+
+root:
+  type: "aplo-ont:EvaluationMetric"
+  uri: "aplo-r:evaluationMetric"
+  varids: ["Evaluation Metric"]
+  connections:
+    - p: "rdf:value"
+      o:
+        datatype: "xsd:string"
+        val_source: "Evaluation Metric"
+    - p: "aplo-ont:asString"
+      o:
+        datatype: "xsd:string"
+        val_source: "Evaluation Metric asString"

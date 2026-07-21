@@ -1,0 +1,24 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:response.Learner%20Edward.Adaptive%20Tutor.Predicate%20Logic%20Statement%20Interpretation%20Extension%20Prompt a aplo-ont:Response ;
+    rdf:value "Predicate Logic Statement Interpretation Extension Prompt"^^xsd:string,
+        "Predicate Logic Statement Interpretation: use a contrasting example to test the claim using the Predicate evidence from Predicate Translation Task."^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Edward.Predicate.Predicate%20Logic%20Statement%20Interpretation.Predicate%20Logic%20Statement%20Interpretation%20Application%20Snapshot ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Edward.Adaptive%20Tutor.Predicate%20Logic%20Statement%20Interpretation%20Extension%20Prompt.2026-02-08T14%3A14%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Adaptive%20Tutor .
+
+aplo-r:awarenessObservation.Learner%20Edward.Predicate.Predicate%20Logic%20Statement%20Interpretation.Predicate%20Logic%20Statement%20Interpretation%20Application%20Snapshot a aplo-ont:AwarenessObservation ;
+    rdf:value "Predicate Logic Statement Interpretation Application Snapshot"^^xsd:string .
+
+aplo-r:source.Adaptive%20Tutor a aplo-ont:Source ;
+    rdf:value "Adaptive Tutor"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Edward.Adaptive%20Tutor.Predicate%20Logic%20Statement%20Interpretation%20Extension%20Prompt.2026-02-08T14%3A14%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-02-08T14:14:00+00:00"^^xsd:dateTime .
+

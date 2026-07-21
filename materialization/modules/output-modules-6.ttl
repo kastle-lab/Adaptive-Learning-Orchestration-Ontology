@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:module.What%20is%20an%20Identifier%3F a edu-ont:Module ;
+    rdf:value "What is an Identifier?"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.What%20is%20an%20Identifier%3F.Identifier%20Pattern%20Check ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Identifier%20Practice%20Session.Identify%20URI%20namespace%20and%20hash%20or%20slash%20patterns .
+
+aplo-r:evaluationAssessmentExercise.What%20is%20an%20Identifier%3F.Identifier%20Pattern%20Check a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Identifier Pattern Check"^^xsd:string .
+
+aplo-r:learningObjective.Identifier%20Practice%20Session.Identify%20URI%20namespace%20and%20hash%20or%20slash%20patterns a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Identify URI namespace and hash or slash patterns"^^xsd:string .
+

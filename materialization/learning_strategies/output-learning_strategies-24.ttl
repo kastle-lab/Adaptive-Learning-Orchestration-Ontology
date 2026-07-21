@@ -1,0 +1,32 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningStrategy.Executive%20KG%20Outcome%20Framing.Executive%20Engagement%20KG%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasDescription "Use relevance framing case-based reasoning and portfolio-style review to translate representation tradeoffs into outcomes."^^xsd:string ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Executive%20KG%20Outcome%20Framing.Compare%20OWL%20dialect%20tradeoffs,
+        aplo-r:learningObjective.Executive%20KG%20Outcome%20Framing.Model%20nanopublication%20claims ;
+    aplo-ont:hasName "Executive Engagement KG Strategy"^^xsd:string ;
+    aplo-ont:hasPedagogicalTechnique aplo-r:pedagogicalTechnique.Case%20Based%20Scenario,
+        aplo-r:pedagogicalTechnique.Portfolio%20Reflection,
+        aplo-r:pedagogicalTechnique.Public%20Product%20Review,
+        aplo-r:pedagogicalTechnique.Relevance%20Framing .
+
+aplo-r:learningObjective.Executive%20KG%20Outcome%20Framing.Compare%20OWL%20dialect%20tradeoffs a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Compare OWL dialect tradeoffs"^^xsd:string .
+
+aplo-r:learningObjective.Executive%20KG%20Outcome%20Framing.Model%20nanopublication%20claims a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Model nanopublication claims"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Case%20Based%20Scenario a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Case Based Scenario"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Portfolio%20Reflection a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Portfolio Reflection"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Public%20Product%20Review a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Public Product Review"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Relevance%20Framing a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Relevance Framing"^^xsd:string .
+

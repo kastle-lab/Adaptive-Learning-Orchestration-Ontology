@@ -1,0 +1,16 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Experiential%20Learning%20Cycle.Active%20Experimentation a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Apply the refined concept in a new decision task prototype query model or implementation check"^^xsd:string ;
+    aplo-ont:hasName "Active Experimentation"^^xsd:string ;
+    aplo-ont:hasPreviousPedagogicalElement aplo-r:pedagogicalElement.Experiential%20Learning%20Cycle.Abstract%20Conceptualization ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Experiential%20Learning%20Cycle .
+
+aplo-r:pedagogicalElement.Experiential%20Learning%20Cycle.Abstract%20Conceptualization a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Abstract Conceptualization"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Experiential%20Learning%20Cycle a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Experiential Learning Cycle"^^xsd:string .
+

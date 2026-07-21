@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Supply%20Chain%20KG%20Use%20Case%20Review.Explain%20Semantic%20Web%20evolution a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Community%20of%20Inquiry.Teaching%20Presence ;
+    aplo-ont:developsSkill aplo-r:skill.Semantic%20Web%20History%20Explanation ;
+    aplo-ont:hasDescription "Semantic Web History Explanation in History of the Semantic Web: Compare two alternatives and select the one that best supports the task."^^xsd:string ;
+    aplo-ont:hasName "Explain Semantic Web evolution"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Supply%20Chain%20KG%20Use%20Case%20Review .
+
+aplo-r:learningSituation.Supply%20Chain%20KG%20Use%20Case%20Review a aplo-ont:LearningSituation ;
+    rdf:value "Supply Chain KG Use Case Review"^^xsd:string .
+
+aplo-r:pedagogicalElement.Community%20of%20Inquiry.Teaching%20Presence a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Teaching Presence"^^xsd:string .
+
+aplo-r:skill.Semantic%20Web%20History%20Explanation a aplo-ont:Skill ;
+    rdf:value "Semantic Web History Explanation"^^xsd:string .
+

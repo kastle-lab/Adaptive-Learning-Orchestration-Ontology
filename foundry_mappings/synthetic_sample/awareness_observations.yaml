@@ -1,0 +1,104 @@
+metadata:
+  name: "Synthetic Awareness Observations"
+  source_ext: "csv"
+
+cvs:
+  - type: "aplo-ont:AwarenessLevel"
+    uri: "aplo-r:awarenessLevel"
+    instances:
+      - "Low Awareness"
+      - "Basic Awareness"
+      - "Working Awareness"
+      - "Proficient Awareness"
+      - "Mastery Awareness"
+
+root:
+  type: "aplo-ont:Learner"
+  uri: "aplo-r:learner"
+  varids: ["Learner"]
+  connections:
+    - p: "rdf:value"
+      o:
+        datatype: "xsd:string"
+        val_source: "Learner"
+    - p: "aplo-ont:hasAwarenessObservation"
+      o:
+        type: "aplo-ont:AwarenessObservation"
+        uri: "aplo-r:awarenessObservation"
+        varids: ["Learner", "Topic", "Skill", "Awareness Observation"]
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Awareness Observation"
+          - p: "aplo-ont:hasAwarenessLevel"
+            o:
+              type: "aplo-ont:AwarenessLevel"
+              uri: "aplo-r:awarenessLevel"
+              varids: ["Awareness Level"]
+              connections:
+                - p: "rdf:value"
+                  o:
+                    datatype: "xsd:string"
+                    val_source: "Awareness Level"
+          - p: "aplo-ont:onTopic"
+            o:
+              type: "edu-ont:Topic"
+              uri: "edu-r:topic"
+              varids: ["Topic"]
+              connections:
+                - p: "rdf:value"
+                  o:
+                    datatype: "xsd:string"
+                    val_source: "Topic"
+          - p: "aplo-ont:onSkill"
+            o:
+              type: "aplo-ont:Skill"
+              uri: "aplo-r:skill"
+              varids: ["Skill"]
+              connections:
+                - p: "rdf:value"
+                  o:
+                    datatype: "xsd:string"
+                    val_source: "Skill"
+          - p: "aplo-ont:atTime"
+            o:
+              type: "aplo-ont:TemporalExtent"
+              uri: "aplo-r:temporalExtent"
+              varids:
+                [
+                  "Learner",
+                  "Topic",
+                  "Skill",
+                  "Awareness Observation",
+                  "Temporal Extent Key",
+                ]
+              connections:
+                - p: "rdf:value"
+                  o:
+                    datatype: "xsd:string"
+                    val_source: "Temporal Extent Type"
+                - p: "rdf:value"
+                  o:
+                    datatype: "xsd:string"
+                    val_source: "Temporal Extent Point In Time Reference System"
+                - p: "rdf:value"
+                  o:
+                    datatype: "xsd:dateTime"
+                    val_source: "Temporal Extent Interval Start Value"
+                - p: "rdf:value"
+                  o:
+                    datatype: "xsd:string"
+                    val_source: "Temporal Extent Interval Start Reference System"
+                - p: "rdf:value"
+                  o:
+                    datatype: "xsd:dateTime"
+                    val_source: "Temporal Extent Interval End Value"
+                - p: "rdf:value"
+                  o:
+                    datatype: "xsd:string"
+                    val_source: "Temporal Extent Interval End Reference System"
+                - p: "time:inXSDDateTime"
+                  o:
+                    datatype: "xsd:dateTime"
+                    val_source: "Temporal Extent Point In Time Value"

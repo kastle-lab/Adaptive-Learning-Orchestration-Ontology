@@ -1,0 +1,20 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Project%20Based%20Learning.Sustained%20Inquiry a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Iteratively investigate resources evidence examples and constraints needed for the project"^^xsd:string ;
+    aplo-ont:hasName "Sustained Inquiry"^^xsd:string ;
+    aplo-ont:hasNextPedagogicalElement aplo-r:pedagogicalElement.Project%20Based%20Learning.Critique%20and%20Revision ;
+    aplo-ont:hasPreviousPedagogicalElement aplo-r:pedagogicalElement.Project%20Based%20Learning.Driving%20Question ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Project%20Based%20Learning .
+
+aplo-r:pedagogicalElement.Project%20Based%20Learning.Critique%20and%20Revision a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Critique and Revision"^^xsd:string .
+
+aplo-r:pedagogicalElement.Project%20Based%20Learning.Driving%20Question a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Driving Question"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Project%20Based%20Learning a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Project Based Learning"^^xsd:string .
+

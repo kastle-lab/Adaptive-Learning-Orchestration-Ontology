@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Select%20ontology%20modeling%20tools a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Project%20Based%20Learning.Critique%20and%20Revision ;
+    aplo-ont:developsSkill aplo-r:skill.Ontology%20Tool%20Selection ;
+    aplo-ont:hasDescription "Ontology Tool Selection in Survey of Modeling Tools: Trace the reasoning path from source concept to modeled statement."^^xsd:string ;
+    aplo-ont:hasName "Select ontology modeling tools"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Ontology%20Contribution%20Modeling%20Practice .
+
+aplo-r:learningSituation.Ontology%20Contribution%20Modeling%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "Ontology Contribution Modeling Practice"^^xsd:string .
+
+aplo-r:pedagogicalElement.Project%20Based%20Learning.Critique%20and%20Revision a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Critique and Revision"^^xsd:string .
+
+aplo-r:skill.Ontology%20Tool%20Selection a aplo-ont:Skill ;
+    rdf:value "Ontology Tool Selection"^^xsd:string .
+

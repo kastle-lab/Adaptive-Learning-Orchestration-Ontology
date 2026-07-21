@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:module.Introduction%20to%20Modular%20Ontologies a edu-ont:Module ;
+    rdf:value "Introduction to Modular Ontologies"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.Introduction%20to%20Modular%20Ontologies.Modular%20Ontology%20Boundary%20Review ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Design%20modular%20ontology%20components .
+
+aplo-r:evaluationAssessmentExercise.Introduction%20to%20Modular%20Ontologies.Modular%20Ontology%20Boundary%20Review a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Modular Ontology Boundary Review"^^xsd:string .
+
+aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Design%20modular%20ontology%20components a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Design modular ontology components"^^xsd:string .
+

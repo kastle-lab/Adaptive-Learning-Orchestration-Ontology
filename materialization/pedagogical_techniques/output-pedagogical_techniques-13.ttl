@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Dual%20Coding a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Pair verbal explanations with diagrams tables examples or visual encodings so learners can process the same idea in multiple forms"^^xsd:string ;
+    aplo-ont:hasName "Dual Coding"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Strengthen%20Representation .
+
+aplo-r:pedagogicalObjective.Strengthen%20Representation a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Improve understanding by representing a concept through complementary modes"^^xsd:string ;
+    aplo-ont:hasName "Strengthen Representation"^^xsd:string .
+

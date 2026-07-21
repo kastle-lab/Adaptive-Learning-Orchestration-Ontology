@@ -1,0 +1,40 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationTechnique.Auto%20Scored%20Concept%20Check a aplo-ont:EvaluationTechnique ;
+    rdf:value "Auto Scored Concept Check"^^xsd:string ;
+    aplo-ont:assessesLearningFeedback aplo-r:learningFeedback.Learner%20Chris.Learning%20Platform.Open%20Graph%20Metadata%20Mapping%20Next%20Step%20Note ;
+    aplo-ont:assessesLearningObjective aplo-r:learningObjective.Consulting%20KG%20Opportunity%20Review.Map%20Open%20Graph%20metadata ;
+    aplo-ont:hasEvaluationMetric aplo-r:evaluationMetric.Correctness%20Flag,
+        aplo-r:evaluationMetric.Score%20Percent ;
+    aplo-ont:hasEvaluationTechniqueType aplo-r:evaluationTechniqueType.Automated,
+        aplo-r:evaluationTechniqueType.Formative,
+        aplo-r:evaluationTechniqueType.Low%20Stakes ;
+    aplo-ont:provideFeedback aplo-r:response.Learner%20Chris.Adaptive%20Tutor.Open%20Graph%20Metadata%20Mapping%20Tutor%20Note .
+
+aplo-r:evaluationMetric.Correctness%20Flag a aplo-ont:EvaluationMetric ;
+    rdf:value "Correctness Flag"^^xsd:string .
+
+aplo-r:evaluationMetric.Score%20Percent a aplo-ont:EvaluationMetric ;
+    rdf:value "Score Percent"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Automated a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Automated"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Formative a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Formative"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Low%20Stakes a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Low Stakes"^^xsd:string .
+
+aplo-r:learningFeedback.Learner%20Chris.Learning%20Platform.Open%20Graph%20Metadata%20Mapping%20Next%20Step%20Note a aplo-ont:LearningFeedback ;
+    rdf:value "Open Graph Metadata Mapping Next Step Note"^^xsd:string .
+
+aplo-r:learningObjective.Consulting%20KG%20Opportunity%20Review.Map%20Open%20Graph%20metadata a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Map Open Graph metadata"^^xsd:string .
+
+aplo-r:response.Learner%20Chris.Adaptive%20Tutor.Open%20Graph%20Metadata%20Mapping%20Tutor%20Note a aplo-ont:Response ;
+    rdf:value "Open Graph Metadata Mapping Tutor Note"^^xsd:string .
+

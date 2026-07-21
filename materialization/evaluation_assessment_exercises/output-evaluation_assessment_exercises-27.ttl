@@ -1,0 +1,35 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationAssessmentExercise.SPARQL.SPARQL%20Query%20Repair%20Task a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "SPARQL"^^xsd:string,
+        "SPARQL Query Repair Task"^^xsd:string ;
+    aplo-ont:evaluatesTopicAwarenessOf edu-r:topic.Delete,
+        edu-r:topic.Query,
+        edu-r:topic.Select,
+        edu-r:topic.Update ;
+    aplo-ont:hasWorkloadLevel aplo-r:workloadLevel.Low%20Workload ;
+    aplo-ont:usesTechnique aplo-r:evaluationTechnique.Auto%20Scored%20Concept%20Check .
+
+edu-r:topic.Delete a edu-ont:Topic ;
+    rdf:value "Delete"^^xsd:string .
+
+edu-r:topic.Query a edu-ont:Topic ;
+    rdf:value "Query"^^xsd:string .
+
+edu-r:topic.Select a edu-ont:Topic ;
+    rdf:value "Select"^^xsd:string .
+
+edu-r:topic.Update a edu-ont:Topic ;
+    rdf:value "Update"^^xsd:string .
+
+aplo-r:evaluationTechnique.Auto%20Scored%20Concept%20Check a aplo-ont:EvaluationTechnique ;
+    rdf:value "Auto Scored Concept Check"^^xsd:string .
+
+aplo-r:workloadLevel.Low%20Workload a aplo-ont:WorkloadLevel ;
+    rdf:value "Low Workload"^^xsd:string .
+

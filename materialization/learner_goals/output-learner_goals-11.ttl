@@ -1,0 +1,16 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learnerGoal.Refine%20Ontology%20Vocabulary%20Modeling a aplo-ont:LearnerGoal ;
+    rdf:value "Refine Ontology Vocabulary Modeling"^^xsd:string ;
+    aplo-ont:targetsSkill aplo-r:skill.Discrete%20Relation%20Property%20Recognition,
+        aplo-r:skill.SKOS%20Concept%20Scheme%20Modeling .
+
+aplo-r:skill.Discrete%20Relation%20Property%20Recognition a aplo-ont:Skill ;
+    rdf:value "Discrete Relation Property Recognition"^^xsd:string .
+
+aplo-r:skill.SKOS%20Concept%20Scheme%20Modeling a aplo-ont:Skill ;
+    rdf:value "SKOS Concept Scheme Modeling"^^xsd:string .
+

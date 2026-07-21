@@ -1,0 +1,16 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Instructional%20Model.Engage a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Elicit curiosity prior knowledge and a reason to investigate"^^xsd:string ;
+    aplo-ont:hasName "Engage"^^xsd:string ;
+    aplo-ont:hasNextPedagogicalElement aplo-r:pedagogicalElement.Instructional%20Model.Explore ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Instructional%20Model .
+
+aplo-r:pedagogicalElement.Instructional%20Model.Explore a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Explore"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Instructional%20Model a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Instructional Model"^^xsd:string .
+

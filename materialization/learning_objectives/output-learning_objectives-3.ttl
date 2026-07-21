@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Identifier%20Practice%20Session.Identify%20URI%20namespace%20and%20hash%20or%20slash%20patterns a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Coaching ;
+    aplo-ont:developsSkill aplo-r:skill.Linked%20Data%20Identifier%20Recognition ;
+    aplo-ont:hasDescription "Recognize identifier patterns used in linked data resources"^^xsd:string ;
+    aplo-ont:hasName "Identify URI namespace and hash or slash patterns"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Identifier%20Practice%20Session .
+
+aplo-r:learningSituation.Identifier%20Practice%20Session a aplo-ont:LearningSituation ;
+    rdf:value "Identifier Practice Session"^^xsd:string .
+
+aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Coaching a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Coaching"^^xsd:string .
+
+aplo-r:skill.Linked%20Data%20Identifier%20Recognition a aplo-ont:Skill ;
+    rdf:value "Linked Data Identifier Recognition"^^xsd:string .
+

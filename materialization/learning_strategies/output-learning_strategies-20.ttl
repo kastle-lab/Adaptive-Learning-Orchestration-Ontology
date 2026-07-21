@@ -1,0 +1,32 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningStrategy.User%20Engagement%20KG%20Demonstration%20Planning.User%20Engagement%20Demonstration%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasDescription "Use UDL-oriented representation choice accessibility checks and public product review for user-facing KG demonstrations."^^xsd:string ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.User%20Engagement%20KG%20Demonstration%20Planning.Compare%20RDF%20serialization%20choices,
+        aplo-r:learningObjective.User%20Engagement%20KG%20Demonstration%20Planning.Select%20KG%20visualization%20tools ;
+    aplo-ont:hasName "User Engagement Demonstration Strategy"^^xsd:string ;
+    aplo-ont:hasPedagogicalTechnique aplo-r:pedagogicalTechnique.Accessibility%20Checkpoint,
+        aplo-r:pedagogicalTechnique.Choice%20Board,
+        aplo-r:pedagogicalTechnique.Multiple%20Means%20Representation,
+        aplo-r:pedagogicalTechnique.Public%20Product%20Review .
+
+aplo-r:learningObjective.User%20Engagement%20KG%20Demonstration%20Planning.Compare%20RDF%20serialization%20choices a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Compare RDF serialization choices"^^xsd:string .
+
+aplo-r:learningObjective.User%20Engagement%20KG%20Demonstration%20Planning.Select%20KG%20visualization%20tools a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Select KG visualization tools"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Accessibility%20Checkpoint a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Accessibility Checkpoint"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Choice%20Board a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Choice Board"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Multiple%20Means%20Representation a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Multiple Means Representation"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Public%20Product%20Review a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Public Product Review"^^xsd:string .
+

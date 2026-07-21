@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Conceptual%20Conflict%20Prompt a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Present a counterexample or incompatible case that challenges the learner current explanation"^^xsd:string ;
+    aplo-ont:hasName "Conceptual Conflict Prompt"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Create%20Productive%20Conflict .
+
+aplo-r:pedagogicalObjective.Create%20Productive%20Conflict a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Motivate reconstruction of an inaccurate concept through evidence"^^xsd:string ;
+    aplo-ont:hasName "Create Productive Conflict"^^xsd:string .
+

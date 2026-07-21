@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Faded%20Worked%20Example a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Start with a completed example and gradually remove steps so learners assume more of the reasoning load"^^xsd:string ;
+    aplo-ont:hasName "Faded Worked Example"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Fade%20Instructional%20Support .
+
+aplo-r:pedagogicalObjective.Fade%20Instructional%20Support a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Move learners from example study toward independent task completion"^^xsd:string ;
+    aplo-ont:hasName "Fade Instructional Support"^^xsd:string .
+

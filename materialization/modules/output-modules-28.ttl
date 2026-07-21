@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:module.RDF%20Star a edu-ont:Module ;
+    rdf:value "RDF Star"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.RDF%20Star.RDF%20Star%20Annotation%20Exercise ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Secure%20KG%20Implementation%20Training.Explain%20RDF%20star%20statement%20annotations .
+
+aplo-r:evaluationAssessmentExercise.RDF%20Star.RDF%20Star%20Annotation%20Exercise a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "RDF Star Annotation Exercise"^^xsd:string .
+
+aplo-r:learningObjective.Secure%20KG%20Implementation%20Training.Explain%20RDF%20star%20statement%20annotations a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Explain RDF star statement annotations"^^xsd:string .
+

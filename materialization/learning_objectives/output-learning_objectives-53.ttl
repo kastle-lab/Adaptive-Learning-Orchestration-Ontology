@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Executive%20KG%20Outcome%20Framing.Model%20nanopublication%20claims a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Project%20Based%20Learning.Public%20Product ;
+    aplo-ont:developsSkill aplo-r:skill.Nanopublication%20Claim%20Modeling ;
+    aplo-ont:hasDescription "Nanopublication Claim Modeling in Nanopublications: Revise a flawed example until the terminology and relation choices line up."^^xsd:string ;
+    aplo-ont:hasName "Model nanopublication claims"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Executive%20KG%20Outcome%20Framing .
+
+aplo-r:learningSituation.Executive%20KG%20Outcome%20Framing a aplo-ont:LearningSituation ;
+    rdf:value "Executive KG Outcome Framing"^^xsd:string .
+
+aplo-r:pedagogicalElement.Project%20Based%20Learning.Public%20Product a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Public Product"^^xsd:string .
+
+aplo-r:skill.Nanopublication%20Claim%20Modeling a aplo-ont:Skill ;
+    rdf:value "Nanopublication Claim Modeling"^^xsd:string .
+

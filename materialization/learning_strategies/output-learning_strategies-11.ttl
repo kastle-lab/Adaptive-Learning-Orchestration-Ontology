@@ -1,0 +1,48 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningStrategy.Ontology%20Contribution%20Modeling%20Practice.Ontology%20Contribution%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasDescription "Use peer critique tool comparison and artifact review so contributors can improve shared ontology modeling outputs."^^xsd:string ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Align%20Schema.org%20vocabulary%20terms,
+        aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Design%20modular%20ontology%20components,
+        aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Interpret%20propositional%20statements,
+        aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Plan%20knowledge%20graph%20deployment,
+        aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Plan%20knowledge%20graph%20documentation,
+        aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Select%20ontology%20modeling%20tools ;
+    aplo-ont:hasName "Ontology Contribution Strategy"^^xsd:string ;
+    aplo-ont:hasPedagogicalTechnique aplo-r:pedagogicalTechnique.Design%20Critique,
+        aplo-r:pedagogicalTechnique.Peer%20Review%20Protocol,
+        aplo-r:pedagogicalTechnique.Portfolio%20Reflection,
+        aplo-r:pedagogicalTechnique.Tool%20Comparison%20Matrix .
+
+aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Align%20Schema.org%20vocabulary%20terms a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Align Schema.org vocabulary terms"^^xsd:string .
+
+aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Design%20modular%20ontology%20components a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Design modular ontology components"^^xsd:string .
+
+aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Interpret%20propositional%20statements a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Interpret propositional statements"^^xsd:string .
+
+aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Plan%20knowledge%20graph%20deployment a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Plan knowledge graph deployment"^^xsd:string .
+
+aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Plan%20knowledge%20graph%20documentation a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Plan knowledge graph documentation"^^xsd:string .
+
+aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Select%20ontology%20modeling%20tools a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Select ontology modeling tools"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Design%20Critique a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Design Critique"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Peer%20Review%20Protocol a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Peer Review Protocol"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Portfolio%20Reflection a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Portfolio Reflection"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Tool%20Comparison%20Matrix a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Tool Comparison Matrix"^^xsd:string .
+

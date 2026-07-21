@@ -1,0 +1,77 @@
+metadata:
+  name: "Synthetic Responses"
+  source_ext: "csv"
+
+root:
+  type: "aplo-ont:Response"
+  uri: "aplo-r:response"
+  varids: ["Learner", "Source", "Response"]
+  connections:
+    - p: "rdf:value"
+      o:
+        datatype: "xsd:string"
+        val_source: "Response"
+    - p: "rdf:value"
+      o:
+        datatype: "xsd:string"
+        val_source: "Response Content"
+    - p: "aplo-ont:hasSource"
+      o:
+        type: "aplo-ont:Source"
+        uri: "aplo-r:source"
+        varids: ["Source"]
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Source"
+    - p: "aplo-ont:affectsAwarenessObservation"
+      o:
+        type: "aplo-ont:AwarenessObservation"
+        uri: "aplo-r:awarenessObservation"
+        varids:
+          [
+            "Learner",
+            "Affects Awareness Observation Topic",
+            "Affects Awareness Observation Skill",
+            "Affects Awareness Observation",
+          ]
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Affects Awareness Observation"
+    - p: "aplo-ont:hasResponseTime"
+      o:
+        type: "aplo-ont:TemporalExtent"
+        uri: "aplo-r:temporalExtent"
+        varids: ["Learner", "Source", "Response", "Response Time Key"]
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Response Time Type"
+          - p: "time:inXSDDateTime"
+            o:
+              datatype: "xsd:dateTime"
+              val_source: "Point In Time Value"
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Point In Time Reference System"
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:dateTime"
+              val_source: "Interval Start Value"
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Interval Start Reference System"
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:dateTime"
+              val_source: "Interval End Value"
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Interval End Reference System"

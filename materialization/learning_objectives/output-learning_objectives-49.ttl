@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Design%20modular%20ontology%20components a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Project%20Based%20Learning.Public%20Product ;
+    aplo-ont:developsSkill aplo-r:skill.Modular%20Ontology%20Design ;
+    aplo-ont:hasDescription "Modular Ontology Design in Introduction to Modular Ontologies: Explain the representation choice, then test it against a second example."^^xsd:string ;
+    aplo-ont:hasName "Design modular ontology components"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Ontology%20Contribution%20Modeling%20Practice .
+
+aplo-r:learningSituation.Ontology%20Contribution%20Modeling%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "Ontology Contribution Modeling Practice"^^xsd:string .
+
+aplo-r:pedagogicalElement.Project%20Based%20Learning.Public%20Product a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Public Product"^^xsd:string .
+
+aplo-r:skill.Modular%20Ontology%20Design a aplo-ont:Skill ;
+    rdf:value "Modular Ontology Design"^^xsd:string .
+

@@ -1,0 +1,16 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Mastery%20Learning.Enrichment a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Offer extension tasks once mastery is demonstrated"^^xsd:string ;
+    aplo-ont:hasName "Enrichment"^^xsd:string ;
+    aplo-ont:hasPreviousPedagogicalElement aplo-r:pedagogicalElement.Mastery%20Learning.Reassessment ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Mastery%20Learning .
+
+aplo-r:pedagogicalElement.Mastery%20Learning.Reassessment a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Reassessment"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Mastery%20Learning a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Mastery Learning"^^xsd:string .
+

@@ -1,0 +1,35 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationAssessmentExercise.History%20of%20the%20Semantic%20Web.Semantic%20Web%20Timeline%20Explanation a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "History of the Semantic Web"^^xsd:string,
+        "Semantic Web Timeline Explanation"^^xsd:string ;
+    aplo-ont:evaluatesTopicAwarenessOf edu-r:topic.Linked%20Data,
+        edu-r:topic.Ontology,
+        edu-r:topic.Semantic%20Web,
+        edu-r:topic.Taxonomy ;
+    aplo-ont:hasWorkloadLevel aplo-r:workloadLevel.Low%20Workload ;
+    aplo-ont:usesTechnique aplo-r:evaluationTechnique.Auto%20Scored%20Concept%20Check .
+
+edu-r:topic.Linked%20Data a edu-ont:Topic ;
+    rdf:value "Linked Data"^^xsd:string .
+
+edu-r:topic.Ontology a edu-ont:Topic ;
+    rdf:value "Ontology"^^xsd:string .
+
+edu-r:topic.Semantic%20Web a edu-ont:Topic ;
+    rdf:value "Semantic Web"^^xsd:string .
+
+edu-r:topic.Taxonomy a edu-ont:Topic ;
+    rdf:value "Taxonomy"^^xsd:string .
+
+aplo-r:evaluationTechnique.Auto%20Scored%20Concept%20Check a aplo-ont:EvaluationTechnique ;
+    rdf:value "Auto Scored Concept Check"^^xsd:string .
+
+aplo-r:workloadLevel.Low%20Workload a aplo-ont:WorkloadLevel ;
+    rdf:value "Low Workload"^^xsd:string .
+

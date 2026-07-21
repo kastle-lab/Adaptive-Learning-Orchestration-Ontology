@@ -1,0 +1,24 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:response.Learner%20Debbie.Adaptive%20Tutor.SPARQL%20Query%20Pattern%20Construction%20Review%20Guidance a aplo-ont:Response ;
+    rdf:value "SPARQL Query Pattern Construction Review Guidance"^^xsd:string,
+        "SPARQL Query Pattern Construction: check whether the example supports the conclusion using the Query evidence from SPARQL Query Repair Task."^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Debbie.Query.SPARQL%20Query%20Pattern%20Construction.SPARQL%20Query%20Pattern%20Construction%20Review ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Debbie.Adaptive%20Tutor.SPARQL%20Query%20Pattern%20Construction%20Review%20Guidance.2026-02-18T14%3A14%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Adaptive%20Tutor .
+
+aplo-r:awarenessObservation.Learner%20Debbie.Query.SPARQL%20Query%20Pattern%20Construction.SPARQL%20Query%20Pattern%20Construction%20Review a aplo-ont:AwarenessObservation ;
+    rdf:value "SPARQL Query Pattern Construction Review"^^xsd:string .
+
+aplo-r:source.Adaptive%20Tutor a aplo-ont:Source ;
+    rdf:value "Adaptive Tutor"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Debbie.Adaptive%20Tutor.SPARQL%20Query%20Pattern%20Construction%20Review%20Guidance.2026-02-18T14%3A14%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-02-18T14:14:00+00:00"^^xsd:dateTime .
+

@@ -1,0 +1,28 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningStrategy.SPARQL%20Query%20Practice.Query%20Construction%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasDescription "Model query construction aloud then fade support until learners can transfer the pattern to a new graph question."^^xsd:string ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.SPARQL%20Query%20Practice.Construct%20a%20basic%20SPARQL%20SELECT%20query ;
+    aplo-ont:hasName "Query Construction Strategy"^^xsd:string ;
+    aplo-ont:hasPedagogicalTechnique aplo-r:pedagogicalTechnique.Faded%20Worked%20Example,
+        aplo-r:pedagogicalTechnique.Guided%20Practice,
+        aplo-r:pedagogicalTechnique.Think%20Aloud%20Modeling,
+        aplo-r:pedagogicalTechnique.Transfer%20Task .
+
+aplo-r:learningObjective.SPARQL%20Query%20Practice.Construct%20a%20basic%20SPARQL%20SELECT%20query a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Construct a basic SPARQL SELECT query"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Faded%20Worked%20Example a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Faded Worked Example"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Guided%20Practice a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Guided Practice"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Think%20Aloud%20Modeling a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Think Aloud Modeling"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Transfer%20Task a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Transfer Task"^^xsd:string .
+

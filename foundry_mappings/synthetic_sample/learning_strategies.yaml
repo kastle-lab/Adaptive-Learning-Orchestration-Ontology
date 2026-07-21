@@ -1,0 +1,39 @@
+metadata:
+  name: "Synthetic Learning Strategies"
+  source_ext: "csv"
+
+root:
+  type: "aplo-ont:LearningStrategy"
+  uri: "aplo-r:learningStrategy"
+  varids: ["Learning Situation", "Learning Strategy"]
+  connections:
+    - p: "aplo-ont:hasName"
+      o:
+        datatype: "xsd:string"
+        val_source: "Learning Strategy"
+    - p: "aplo-ont:hasDescription"
+      o:
+        datatype: "xsd:string"
+        val_source: "Learning Strategy Description"
+    - p: "aplo-ont:hasLearningObjective"
+      o:
+        type: "aplo-ont:LearningObjective"
+        uri: "aplo-r:learningObjective"
+        varids: ["Learning Situation", "Learning Objectives"]
+        split: " | "
+        connections:
+          - p: "aplo-ont:hasName"
+            o:
+              datatype: "xsd:string"
+              val_source: "Learning Objectives"
+    - p: "aplo-ont:hasPedagogicalTechnique"
+      o:
+        type: "aplo-ont:PedagogicalTechnique"
+        uri: "aplo-r:pedagogicalTechnique"
+        varids: ["Pedagogical Techniques"]
+        split: " | "
+        connections:
+          - p: "aplo-ont:hasName"
+            o:
+              datatype: "xsd:string"
+              val_source: "Pedagogical Techniques"

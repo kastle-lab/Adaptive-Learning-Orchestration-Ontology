@@ -1,0 +1,24 @@
+metadata:
+  name: "Synthetic Skills"
+  source_ext: "csv"
+
+root:
+  type: "aplo-ont:Skill"
+  uri: "aplo-r:skill"
+  varids: ["Skill"]
+  connections:
+    - p: "rdf:value"
+      o:
+        datatype: "xsd:string"
+        val_source: "Skill"
+    - p: "aplo-ont:requiresTopic"
+      o:
+        type: "edu-ont:Topic"
+        uri: "edu-r:topic"
+        varids: ["Requires Topics"]
+        split: " | "
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Requires Topics"

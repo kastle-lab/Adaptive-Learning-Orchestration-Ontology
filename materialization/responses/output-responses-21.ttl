@@ -1,0 +1,24 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:response.Learner%20Blair.Learner%20Blair.Learner%20SPARQL%20Query%20Attempt a aplo-ont:Response ;
+    rdf:value "Learner SPARQL Query Attempt"^^xsd:string,
+        "SELECT ?s WHERE { ?s a ?type }"^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Blair.Query.SPARQL%20Query%20Construction.SPARQL%20Awareness%20After%20Practice ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Blair.Learner%20Blair.Learner%20SPARQL%20Query%20Attempt.2026-01-19T13%3A00%3A00Z%20to%202026-01-19T13%3A20%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Learner%20Blair .
+
+aplo-r:awarenessObservation.Learner%20Blair.Query.SPARQL%20Query%20Construction.SPARQL%20Awareness%20After%20Practice a aplo-ont:AwarenessObservation ;
+    rdf:value "SPARQL Awareness After Practice"^^xsd:string .
+
+aplo-r:source.Learner%20Blair a aplo-ont:Source ;
+    rdf:value "Learner Blair"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Blair.Learner%20Blair.Learner%20SPARQL%20Query%20Attempt.2026-01-19T13%3A00%3A00Z%20to%202026-01-19T13%3A20%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "2026-01-19T13:00:00+00:00"^^xsd:dateTime,
+        "2026-01-19T13:20:00+00:00"^^xsd:dateTime,
+        "ISO 8601 UTC"^^xsd:string,
+        "TimeInterval"^^xsd:string .
+

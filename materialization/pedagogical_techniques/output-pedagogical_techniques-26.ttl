@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Reflective%20Debrief a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Guide learners to review evidence decisions confidence and remaining questions after a task or experience"^^xsd:string ;
+    aplo-ont:hasName "Reflective Debrief"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Consolidate%20Learning .
+
+aplo-r:pedagogicalObjective.Consolidate%20Learning a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Turn activity outcomes into explicit learning claims and next steps"^^xsd:string ;
+    aplo-ont:hasName "Consolidate Learning"^^xsd:string .
+

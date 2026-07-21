@@ -1,0 +1,34 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningSituation.Secure%20KG%20Implementation%20Training a aplo-ont:LearningSituation ;
+    rdf:value "Secure KG Implementation Training"^^xsd:string ;
+    aplo-ont:requiresTopicKnowledge edu-r:topic.Graph,
+        edu-r:topic.Knowledge%20Graph,
+        edu-r:topic.OWL,
+        edu-r:topic.Ontology,
+        edu-r:topic.Schema ;
+    aplo-ont:scopes edu-r:persona.Stella .
+
+edu-r:persona.Stella a edu-ont:Persona ;
+    rdf:value "Stella"^^xsd:string .
+
+edu-r:topic.Graph a edu-ont:Topic ;
+    rdf:value "Graph"^^xsd:string .
+
+edu-r:topic.Knowledge%20Graph a edu-ont:Topic ;
+    rdf:value "Knowledge Graph"^^xsd:string .
+
+edu-r:topic.OWL a edu-ont:Topic ;
+    rdf:value "OWL"^^xsd:string .
+
+edu-r:topic.Ontology a edu-ont:Topic ;
+    rdf:value "Ontology"^^xsd:string .
+
+edu-r:topic.Schema a edu-ont:Topic ;
+    rdf:value "Schema"^^xsd:string .
+

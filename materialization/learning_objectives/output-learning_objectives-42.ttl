@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Plan%20knowledge%20graph%20deployment a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Problem%20Based%20Learning.Solution%20Development ;
+    aplo-ont:developsSkill aplo-r:skill.Knowledge%20Graph%20Deployment%20Planning ;
+    aplo-ont:hasDescription "Knowledge Graph Deployment Planning in Deploying a Knowledge Graph: Classify the evidence, then state the implication for a KG workflow."^^xsd:string ;
+    aplo-ont:hasName "Plan knowledge graph deployment"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Ontology%20Contribution%20Modeling%20Practice .
+
+aplo-r:learningSituation.Ontology%20Contribution%20Modeling%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "Ontology Contribution Modeling Practice"^^xsd:string .
+
+aplo-r:pedagogicalElement.Problem%20Based%20Learning.Solution%20Development a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Solution Development"^^xsd:string .
+
+aplo-r:skill.Knowledge%20Graph%20Deployment%20Planning a aplo-ont:Skill ;
+    rdf:value "Knowledge Graph Deployment Planning"^^xsd:string .
+

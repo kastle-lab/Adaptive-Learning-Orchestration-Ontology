@@ -1,0 +1,20 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learnerGoal.Apply%20Logic%20to%20Knowledge%20Graph%20Modeling a aplo-ont:LearnerGoal ;
+    rdf:value "Apply Logic to Knowledge Graph Modeling"^^xsd:string ;
+    aplo-ont:targetsSkill aplo-r:skill.Description%20Logic%20Constraint%20Reasoning,
+        aplo-r:skill.Knowledge%20Graph%20Structure%20Explanation,
+        aplo-r:skill.Logic%20Operator%20Recognition .
+
+aplo-r:skill.Description%20Logic%20Constraint%20Reasoning a aplo-ont:Skill ;
+    rdf:value "Description Logic Constraint Reasoning"^^xsd:string .
+
+aplo-r:skill.Knowledge%20Graph%20Structure%20Explanation a aplo-ont:Skill ;
+    rdf:value "Knowledge Graph Structure Explanation"^^xsd:string .
+
+aplo-r:skill.Logic%20Operator%20Recognition a aplo-ont:Skill ;
+    rdf:value "Logic Operator Recognition"^^xsd:string .
+

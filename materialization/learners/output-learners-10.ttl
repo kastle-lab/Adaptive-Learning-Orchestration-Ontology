@@ -1,0 +1,28 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Carla a aplo-ont:Learner ;
+    rdf:value "Learner Carla"^^xsd:string ;
+    aplo-ont:hasGoal aplo-r:learnerGoal.Coordinate%20Collaborative%20KG%20Delivery ;
+    aplo-ont:hasLearnerPreference aplo-r:learnerPreference.Collaborative%20Review%20Preference,
+        aplo-r:learnerPreference.Documentation%20Example%20Preference ;
+    aplo-ont:hasLearningChallenge aplo-r:learningChallenge.Limited%20Study%20Time ;
+    aplo-ont:hasSituation aplo-r:learningSituation.Collaborative%20KG%20Delivery%20Planning .
+
+aplo-r:learnerGoal.Coordinate%20Collaborative%20KG%20Delivery a aplo-ont:LearnerGoal ;
+    rdf:value "Coordinate Collaborative KG Delivery"^^xsd:string .
+
+aplo-r:learnerPreference.Collaborative%20Review%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Collaborative Review Preference"^^xsd:string .
+
+aplo-r:learnerPreference.Documentation%20Example%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Documentation Example Preference"^^xsd:string .
+
+aplo-r:learningChallenge.Limited%20Study%20Time a aplo-ont:LearningChallenge ;
+    rdf:value "Limited Study Time"^^xsd:string .
+
+aplo-r:learningSituation.Collaborative%20KG%20Delivery%20Planning a aplo-ont:LearningSituation ;
+    rdf:value "Collaborative KG Delivery Planning"^^xsd:string .
+

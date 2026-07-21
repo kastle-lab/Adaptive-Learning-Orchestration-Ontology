@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Tool%20Comparison%20Matrix a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Use explicit criteria to compare tools platforms or representations against task requirements"^^xsd:string ;
+    aplo-ont:hasName "Tool Comparison Matrix"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Support%20Selection%20Judgment .
+
+aplo-r:pedagogicalObjective.Support%20Selection%20Judgment a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Help learners justify tool or representation choices with consistent evidence"^^xsd:string ;
+    aplo-ont:hasName "Support Selection Judgment"^^xsd:string .
+

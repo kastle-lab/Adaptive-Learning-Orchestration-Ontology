@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:media.Schema.org a edu-ont:Media ;
+    rdf:value "Schema.org"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.Schema.org.Schema.org%20Alignment%20Exercise ;
+    aplo-ont:supportsLearningObjective aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Align%20Schema.org%20vocabulary%20terms .
+
+aplo-r:evaluationAssessmentExercise.Schema.org.Schema.org%20Alignment%20Exercise a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Schema.org Alignment Exercise"^^xsd:string .
+
+aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Align%20Schema.org%20vocabulary%20terms a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Align Schema.org vocabulary terms"^^xsd:string .
+

@@ -1,0 +1,44 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Cameron a aplo-ont:Learner ;
+    rdf:value "Learner Cameron"^^xsd:string ;
+    aplo-ont:hasGoal aplo-r:learnerGoal.Design%20KG%20Curriculum%20Sequence ;
+    aplo-ont:hasLearnerPreference aplo-r:learnerPreference.Guided%20Practice%20Preference,
+        aplo-r:learnerPreference.Scaffolded%20Sequence%20Preference,
+        aplo-r:learnerPreference.Tooling%20Example%20Preference,
+        aplo-r:learnerPreference.Worked%20Examples%20Preference ;
+    aplo-ont:hasLearningChallenge aplo-r:learningChallenge.Needs%20Documentation%20Examples,
+        aplo-r:learningChallenge.Needs%20Query%20Practice,
+        aplo-r:learningChallenge.Needs%20Tooling%20Setup%20Support ;
+    aplo-ont:hasSituation aplo-r:learningSituation.KG%20Curriculum%20Design%20Studio .
+
+aplo-r:learnerGoal.Design%20KG%20Curriculum%20Sequence a aplo-ont:LearnerGoal ;
+    rdf:value "Design KG Curriculum Sequence"^^xsd:string .
+
+aplo-r:learnerPreference.Guided%20Practice%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Guided Practice Preference"^^xsd:string .
+
+aplo-r:learnerPreference.Scaffolded%20Sequence%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Scaffolded Sequence Preference"^^xsd:string .
+
+aplo-r:learnerPreference.Tooling%20Example%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Tooling Example Preference"^^xsd:string .
+
+aplo-r:learnerPreference.Worked%20Examples%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Worked Examples Preference"^^xsd:string .
+
+aplo-r:learningChallenge.Needs%20Documentation%20Examples a aplo-ont:LearningChallenge ;
+    rdf:value "Needs Documentation Examples"^^xsd:string .
+
+aplo-r:learningChallenge.Needs%20Query%20Practice a aplo-ont:LearningChallenge ;
+    rdf:value "Needs Query Practice"^^xsd:string .
+
+aplo-r:learningChallenge.Needs%20Tooling%20Setup%20Support a aplo-ont:LearningChallenge ;
+    rdf:value "Needs Tooling Setup Support"^^xsd:string .
+
+aplo-r:learningSituation.KG%20Curriculum%20Design%20Studio a aplo-ont:LearningSituation ;
+    rdf:value "KG Curriculum Design Studio"^^xsd:string .
+

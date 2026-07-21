@@ -1,0 +1,16 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Conceptual%20Change.Prior%20Conception%20Elicitation a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Surface the learner current idea example boundary or misconception before direct correction"^^xsd:string ;
+    aplo-ont:hasName "Prior Conception Elicitation"^^xsd:string ;
+    aplo-ont:hasNextPedagogicalElement aplo-r:pedagogicalElement.Conceptual%20Change.Cognitive%20Conflict ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Conceptual%20Change .
+
+aplo-r:pedagogicalElement.Conceptual%20Change.Cognitive%20Conflict a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Cognitive Conflict"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Conceptual%20Change a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Conceptual Change"^^xsd:string .
+

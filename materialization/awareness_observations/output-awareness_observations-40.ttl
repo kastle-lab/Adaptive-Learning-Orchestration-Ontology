@@ -1,0 +1,33 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Connie a aplo-ont:Learner ;
+    rdf:value "Learner Connie"^^xsd:string ;
+    aplo-ont:hasAwarenessObservation aplo-r:awarenessObservation.Learner%20Connie.Knowledge%20Graph.Knowledge%20Graph%20Deployment%20Planning.Knowledge%20Graph%20Deployment%20Planning%20Rubric%20Update .
+
+aplo-r:awarenessLevel.Working%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Working Awareness"^^xsd:string .
+
+aplo-r:awarenessObservation.Learner%20Connie.Knowledge%20Graph.Knowledge%20Graph%20Deployment%20Planning.Knowledge%20Graph%20Deployment%20Planning%20Rubric%20Update a aplo-ont:AwarenessObservation ;
+    rdf:value "Knowledge Graph Deployment Planning Rubric Update"^^xsd:string ;
+    aplo-ont:atTime aplo-r:temporalExtent.Learner%20Connie.Knowledge%20Graph.Knowledge%20Graph%20Deployment%20Planning.Knowledge%20Graph%20Deployment%20Planning%20Rubric%20Update.2026-03-03T13%3A35%3A00Z%20to%202026-03-03T14%3A00%3A00Z ;
+    aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Working%20Awareness ;
+    aplo-ont:onSkill aplo-r:skill.Knowledge%20Graph%20Deployment%20Planning ;
+    aplo-ont:onTopic edu-r:topic.Knowledge%20Graph .
+
+aplo-r:skill.Knowledge%20Graph%20Deployment%20Planning a aplo-ont:Skill ;
+    rdf:value "Knowledge Graph Deployment Planning"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Connie.Knowledge%20Graph.Knowledge%20Graph%20Deployment%20Planning.Knowledge%20Graph%20Deployment%20Planning%20Rubric%20Update.2026-03-03T13%3A35%3A00Z%20to%202026-03-03T14%3A00%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "2026-03-03T13:35:00+00:00"^^xsd:dateTime,
+        "2026-03-03T14:00:00+00:00"^^xsd:dateTime,
+        "ISO 8601 UTC"^^xsd:string,
+        "TimeInterval"^^xsd:string .
+
+edu-r:topic.Knowledge%20Graph a edu-ont:Topic ;
+    rdf:value "Knowledge Graph"^^xsd:string .
+

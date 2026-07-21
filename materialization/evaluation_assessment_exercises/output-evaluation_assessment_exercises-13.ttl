@@ -1,0 +1,31 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationAssessmentExercise.What%20is%20an%20Identifier%3F.Identifier%20Pattern%20Sorting%20Task a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Identifier Pattern Sorting Task"^^xsd:string,
+        "What is an Identifier?"^^xsd:string ;
+    aplo-ont:evaluatesTopicAwarenessOf edu-r:topic.Hash%20or%20Slash,
+        edu-r:topic.Namespace,
+        edu-r:topic.URI ;
+    aplo-ont:hasWorkloadLevel aplo-r:workloadLevel.Low%20Workload ;
+    aplo-ont:usesTechnique aplo-r:evaluationTechnique.Auto%20Scored%20Concept%20Check .
+
+edu-r:topic.Hash%20or%20Slash a edu-ont:Topic ;
+    rdf:value "Hash or Slash"^^xsd:string .
+
+edu-r:topic.Namespace a edu-ont:Topic ;
+    rdf:value "Namespace"^^xsd:string .
+
+edu-r:topic.URI a edu-ont:Topic ;
+    rdf:value "URI"^^xsd:string .
+
+aplo-r:evaluationTechnique.Auto%20Scored%20Concept%20Check a aplo-ont:EvaluationTechnique ;
+    rdf:value "Auto Scored Concept Check"^^xsd:string .
+
+aplo-r:workloadLevel.Low%20Workload a aplo-ont:WorkloadLevel ;
+    rdf:value "Low Workload"^^xsd:string .
+

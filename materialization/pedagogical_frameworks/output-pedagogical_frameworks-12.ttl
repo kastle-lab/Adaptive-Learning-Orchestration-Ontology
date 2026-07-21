@@ -1,0 +1,30 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalFramework.Project%20Based%20Learning a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasDescription "A framework centered on sustained inquiry that leads to critique revision and a public learning product"^^xsd:string ;
+    aplo-ont:hasElement aplo-r:pedagogicalElement.Project%20Based%20Learning.Critique%20and%20Revision,
+        aplo-r:pedagogicalElement.Project%20Based%20Learning.Driving%20Question,
+        aplo-r:pedagogicalElement.Project%20Based%20Learning.Project%20Reflection,
+        aplo-r:pedagogicalElement.Project%20Based%20Learning.Public%20Product,
+        aplo-r:pedagogicalElement.Project%20Based%20Learning.Sustained%20Inquiry ;
+    aplo-ont:hasName "Project Based Learning"^^xsd:string .
+
+aplo-r:pedagogicalElement.Project%20Based%20Learning.Critique%20and%20Revision a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Critique and Revision"^^xsd:string .
+
+aplo-r:pedagogicalElement.Project%20Based%20Learning.Driving%20Question a aplo-ont:FirstPedagogicalElement,
+        aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Driving Question"^^xsd:string .
+
+aplo-r:pedagogicalElement.Project%20Based%20Learning.Project%20Reflection a aplo-ont:LastPedagogicalElement,
+        aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Project Reflection"^^xsd:string .
+
+aplo-r:pedagogicalElement.Project%20Based%20Learning.Public%20Product a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Public Product"^^xsd:string .
+
+aplo-r:pedagogicalElement.Project%20Based%20Learning.Sustained%20Inquiry a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Sustained Inquiry"^^xsd:string .
+

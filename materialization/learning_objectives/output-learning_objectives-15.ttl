@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Collaborative%20KG%20Delivery%20Planning.Identify%20identifier%20patterns a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Coaching ;
+    aplo-ont:developsSkill aplo-r:skill.Identifier%20Pattern%20Recognition ;
+    aplo-ont:hasDescription "Identifier Pattern Recognition in What is an Identifier?: Compare two alternatives and select the one that best supports the task."^^xsd:string ;
+    aplo-ont:hasName "Identify identifier patterns"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Collaborative%20KG%20Delivery%20Planning .
+
+aplo-r:learningSituation.Collaborative%20KG%20Delivery%20Planning a aplo-ont:LearningSituation ;
+    rdf:value "Collaborative KG Delivery Planning"^^xsd:string .
+
+aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Coaching a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Coaching"^^xsd:string .
+
+aplo-r:skill.Identifier%20Pattern%20Recognition a aplo-ont:Skill ;
+    rdf:value "Identifier Pattern Recognition"^^xsd:string .
+

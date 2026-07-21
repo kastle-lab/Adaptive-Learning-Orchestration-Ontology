@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.KG%20Resource%20Development%20Practice.Apply%20RDFS%20vocabulary%20reasoning a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Scaffolded%20Inquiry.Guided%20Investigation ;
+    aplo-ont:developsSkill aplo-r:skill.RDFS%20Vocabulary%20Reasoning ;
+    aplo-ont:hasDescription "RDFS Vocabulary Reasoning in RDFS: Annotate a partial artifact and justify the missing KG decision."^^xsd:string ;
+    aplo-ont:hasName "Apply RDFS vocabulary reasoning"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.KG%20Resource%20Development%20Practice .
+
+aplo-r:learningSituation.KG%20Resource%20Development%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "KG Resource Development Practice"^^xsd:string .
+
+aplo-r:pedagogicalElement.Scaffolded%20Inquiry.Guided%20Investigation a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Guided Investigation"^^xsd:string .
+
+aplo-r:skill.RDFS%20Vocabulary%20Reasoning a aplo-ont:Skill ;
+    rdf:value "RDFS Vocabulary Reasoning"^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Extension%20Challenge a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Provide an advanced task after learners meet mastery expectations"^^xsd:string ;
+    aplo-ont:hasName "Extension Challenge"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Extend%20Mastery .
+
+aplo-r:pedagogicalObjective.Extend%20Mastery a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Deepen or broaden learning after core mastery is demonstrated"^^xsd:string ;
+    aplo-ont:hasName "Extend Mastery"^^xsd:string .
+

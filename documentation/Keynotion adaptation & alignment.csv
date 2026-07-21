@@ -1,0 +1,19 @@
+﻿Key notion,Source pattern(s),Adaptation decision,Related external notion
+PedagogicalFramework,"Part-Whole, Sequence",framework as composed and ordered structure,instructional design process/framework in Chimalakonda & Nori; instructional methods in Sicilia et al.
+PedagogicalElement,"Part-Whole, Sequence",atomic instructional element; supports next/previous order,learning-design activity/process element
+PedagogicalTechnique,"Name-Stub, Description-Situation",named instructional method that targets objectives and supports elements,instructional method/process in Sicilia et al.; process pattern in Chimalakonda & Nori
+PedagogicalObjective,Name-Stub,instructional effect of a technique,goal in instructional-design ontology
+LearningObjective,"Name-Stub, Description-Situation",target learner outcome and cross-module interface,learning objective in Chetitah & von Mammen; learning goal in EduCOR
+LearningSituation,Description-Situation,contextual learner state/situation,condition/situation in instructional-design ontologies
+Module,Curriculum interface,link to curriculum unit,Curriculum KG Module
+Media,Curriculum interface,link to learning material/resource,Curriculum KG learning material; EduCOR educational resource
+Topic,"Curriculum interface, possible taxonomy alignment",subject/concept scope for objectives and awareness,Curriculum KG Topic; EduCOR knowledge topic
+LearningFeedback,"Observation, Provenance",observation about performance/understanding,evidence in learner modeling / OLM
+Response,"Reporting-Event, Provenance",delivered feedback/system output,report/message event
+EvaluationMetric,"Name-Stub, Quantity",measured type/unit of evaluation,test/assessment metric
+EvaluationResult,"Quantity, Observation",measured value from evaluation,assessment/test result
+Source,"Provenance, Agent-Role",human/AI source of response,agent/provider
+Learner,Agent-Role,learner as modeled educational agent,EduCOR user/user profile
+LearnerGoal,"Name-Stub, Description-Situation",learner-specific target,EduCOR learning goal
+Skill,"Name-Stub, Taxonomy-Alignment","bridge among goals, objectives, and topics",EduCOR skill / labor-market skill
+AwarenessObservation,Observation,time-scoped estimate of topic/skill awareness,inspectable learner-state evidence in OLM

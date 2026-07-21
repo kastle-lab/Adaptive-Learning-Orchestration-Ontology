@@ -1,0 +1,20 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Scaffolded%20Inquiry.Guided%20Investigation a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Support learners while they inspect examples evidence or tasks"^^xsd:string ;
+    aplo-ont:hasName "Guided Investigation"^^xsd:string ;
+    aplo-ont:hasNextPedagogicalElement aplo-r:pedagogicalElement.Scaffolded%20Inquiry.Concept%20Explanation ;
+    aplo-ont:hasPreviousPedagogicalElement aplo-r:pedagogicalElement.Scaffolded%20Inquiry.Activate%20Prior%20Knowledge ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Scaffolded%20Inquiry .
+
+aplo-r:pedagogicalElement.Scaffolded%20Inquiry.Activate%20Prior%20Knowledge a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Activate Prior Knowledge"^^xsd:string .
+
+aplo-r:pedagogicalElement.Scaffolded%20Inquiry.Concept%20Explanation a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Concept Explanation"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Scaffolded%20Inquiry a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Scaffolded Inquiry"^^xsd:string .
+

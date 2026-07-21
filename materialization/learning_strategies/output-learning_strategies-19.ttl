@@ -1,0 +1,32 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningStrategy.KG%20Resource%20Development%20Practice.Resource%20Development%20KG%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasDescription "Move from faded examples into guided resource production and public review of reusable KG learning artifacts."^^xsd:string ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.KG%20Resource%20Development%20Practice.Apply%20RDFS%20vocabulary%20reasoning,
+        aplo-r:learningObjective.KG%20Resource%20Development%20Practice.Map%20GraphQL%20query%20needs ;
+    aplo-ont:hasName "Resource Development KG Strategy"^^xsd:string ;
+    aplo-ont:hasPedagogicalTechnique aplo-r:pedagogicalTechnique.Faded%20Worked%20Example,
+        aplo-r:pedagogicalTechnique.Guided%20Practice,
+        aplo-r:pedagogicalTechnique.Public%20Product%20Review,
+        aplo-r:pedagogicalTechnique.Transfer%20Task .
+
+aplo-r:learningObjective.KG%20Resource%20Development%20Practice.Apply%20RDFS%20vocabulary%20reasoning a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Apply RDFS vocabulary reasoning"^^xsd:string .
+
+aplo-r:learningObjective.KG%20Resource%20Development%20Practice.Map%20GraphQL%20query%20needs a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Map GraphQL query needs"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Faded%20Worked%20Example a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Faded Worked Example"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Guided%20Practice a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Guided Practice"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Public%20Product%20Review a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Public Product Review"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Transfer%20Task a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Transfer Task"^^xsd:string .
+

@@ -1,0 +1,16 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learnerGoal.Demonstrate%20KG%20Tool%20Value%20to%20Users a aplo-ont:LearnerGoal ;
+    rdf:value "Demonstrate KG Tool Value to Users"^^xsd:string ;
+    aplo-ont:targetsSkill aplo-r:skill.Knowledge%20Graph%20Visualization%20Tool%20Selection,
+        aplo-r:skill.RDF%20Serialization%20Format%20Comparison .
+
+aplo-r:skill.Knowledge%20Graph%20Visualization%20Tool%20Selection a aplo-ont:Skill ;
+    rdf:value "Knowledge Graph Visualization Tool Selection"^^xsd:string .
+
+aplo-r:skill.RDF%20Serialization%20Format%20Comparison a aplo-ont:Skill ;
+    rdf:value "RDF Serialization Format Comparison"^^xsd:string .
+

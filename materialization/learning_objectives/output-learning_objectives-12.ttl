@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Knowledge%20Graph%20Foundations%20Orientation.Recall%20metadata%20vocabulary a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Remember ;
+    aplo-ont:developsSkill aplo-r:skill.Metadata%20Vocabulary%20Recall ;
+    aplo-ont:hasDescription "Metadata Vocabulary Recall in What is Metadata?: Sort examples and define the boundary conditions for Metadata."^^xsd:string ;
+    aplo-ont:hasName "Recall metadata vocabulary"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Knowledge%20Graph%20Foundations%20Orientation .
+
+aplo-r:learningSituation.Knowledge%20Graph%20Foundations%20Orientation a aplo-ont:LearningSituation ;
+    rdf:value "Knowledge Graph Foundations Orientation"^^xsd:string .
+
+aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Remember a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Remember"^^xsd:string .
+
+aplo-r:skill.Metadata%20Vocabulary%20Recall a aplo-ont:Skill ;
+    rdf:value "Metadata Vocabulary Recall"^^xsd:string .
+

@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:module.Datalog a edu-ont:Module ;
+    rdf:value "Datalog"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.Datalog.Datalog%20Rule%20Trace ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Data%20Analysis%20KG%20Modeling%20Practice.Interpret%20Datalog%20rules .
+
+aplo-r:evaluationAssessmentExercise.Datalog.Datalog%20Rule%20Trace a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Datalog Rule Trace"^^xsd:string .
+
+aplo-r:learningObjective.Data%20Analysis%20KG%20Modeling%20Practice.Interpret%20Datalog%20rules a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Interpret Datalog rules"^^xsd:string .
+

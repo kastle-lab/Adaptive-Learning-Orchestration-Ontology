@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:media.SHACL a edu-ont:Media ;
+    rdf:value "SHACL"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.SHACL.SHACL%20Shape%20Validation%20Task ;
+    aplo-ont:supportsLearningObjective aplo-r:learningObjective.Knowledge%20Graph%20Foundations%20Orientation.Validate%20RDF%20shapes%20with%20SHACL .
+
+aplo-r:evaluationAssessmentExercise.SHACL.SHACL%20Shape%20Validation%20Task a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "SHACL Shape Validation Task"^^xsd:string .
+
+aplo-r:learningObjective.Knowledge%20Graph%20Foundations%20Orientation.Validate%20RDF%20shapes%20with%20SHACL a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Validate RDF shapes with SHACL"^^xsd:string .
+

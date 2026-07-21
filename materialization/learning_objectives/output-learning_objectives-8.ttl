@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.OWL%20Modeling%20Practice.Differentiate%20OWL%20data%20and%20object%20properties a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Instructional%20Model.Explain ;
+    aplo-ont:developsSkill aplo-r:skill.OWL%20Property%20Differentiation ;
+    aplo-ont:hasDescription "Explain how OWL data properties and object properties connect individuals to values or resources"^^xsd:string ;
+    aplo-ont:hasName "Differentiate OWL data and object properties"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.OWL%20Modeling%20Practice .
+
+aplo-r:learningSituation.OWL%20Modeling%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "OWL Modeling Practice"^^xsd:string .
+
+aplo-r:pedagogicalElement.Instructional%20Model.Explain a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Explain"^^xsd:string .
+
+aplo-r:skill.OWL%20Property%20Differentiation a aplo-ont:Skill ;
+    rdf:value "OWL Property Differentiation"^^xsd:string .
+

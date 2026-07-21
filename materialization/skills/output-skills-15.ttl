@@ -1,0 +1,22 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:skill.Identifier%20Pattern%20Recognition a aplo-ont:Skill ;
+    rdf:value "Identifier Pattern Recognition"^^xsd:string ;
+    aplo-ont:requiresTopic edu-r:topic.Hash%20or%20Slash,
+        edu-r:topic.Namespace,
+        edu-r:topic.URI .
+
+edu-r:topic.Hash%20or%20Slash a edu-ont:Topic ;
+    rdf:value "Hash or Slash"^^xsd:string .
+
+edu-r:topic.Namespace a edu-ont:Topic ;
+    rdf:value "Namespace"^^xsd:string .
+
+edu-r:topic.URI a edu-ont:Topic ;
+    rdf:value "URI"^^xsd:string .
+

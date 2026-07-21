@@ -1,0 +1,24 @@
+metadata:
+  name: "Synthetic Learner Goals"
+  source_ext: "csv"
+
+root:
+  type: "aplo-ont:LearnerGoal"
+  uri: "aplo-r:learnerGoal"
+  varids: ["Learner Goal"]
+  connections:
+    - p: "rdf:value"
+      o:
+        datatype: "xsd:string"
+        val_source: "Learner Goal"
+    - p: "aplo-ont:targetsSkill"
+      o:
+        type: "aplo-ont:Skill"
+        uri: "aplo-r:skill"
+        varids: ["Targets Skills"]
+        split: " | "
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Targets Skills"

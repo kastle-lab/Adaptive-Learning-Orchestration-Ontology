@@ -1,0 +1,30 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningSituation.Developer%20Knowledge%20Graph%20Implementation%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "Developer Knowledge Graph Implementation Practice"^^xsd:string ;
+    aplo-ont:requiresTopicKnowledge edu-r:topic.Namespace,
+        edu-r:topic.Query,
+        edu-r:topic.Triple,
+        edu-r:topic.URI ;
+    aplo-ont:scopes edu-r:persona.Carla .
+
+edu-r:persona.Carla a edu-ont:Persona ;
+    rdf:value "Carla"^^xsd:string .
+
+edu-r:topic.Namespace a edu-ont:Topic ;
+    rdf:value "Namespace"^^xsd:string .
+
+edu-r:topic.Query a edu-ont:Topic ;
+    rdf:value "Query"^^xsd:string .
+
+edu-r:topic.Triple a edu-ont:Topic ;
+    rdf:value "Triple"^^xsd:string .
+
+edu-r:topic.URI a edu-ont:Topic ;
+    rdf:value "URI"^^xsd:string .
+

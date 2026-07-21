@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:media.Manchester%20Syntax a edu-ont:Media ;
+    rdf:value "Manchester Syntax"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.Manchester%20Syntax.Manchester%20Axiom%20Translation ;
+    aplo-ont:supportsLearningObjective aplo-r:learningObjective.Data%20Analysis%20KG%20Modeling%20Practice.Translate%20Manchester%20syntax%20axioms .
+
+aplo-r:evaluationAssessmentExercise.Manchester%20Syntax.Manchester%20Axiom%20Translation a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Manchester Axiom Translation"^^xsd:string .
+
+aplo-r:learningObjective.Data%20Analysis%20KG%20Modeling%20Practice.Translate%20Manchester%20syntax%20axioms a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Translate Manchester syntax axioms"^^xsd:string .
+

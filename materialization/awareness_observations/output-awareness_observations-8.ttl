@@ -1,0 +1,33 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Casey a aplo-ont:Learner ;
+    rdf:value "Learner Casey"^^xsd:string ;
+    aplo-ont:hasAwarenessObservation aplo-r:awarenessObservation.Learner%20Casey.OWL.OWL%20Axiom%20Analysis.OWL%20Modeling%20Awareness%20After%20Review .
+
+aplo-r:awarenessLevel.Basic%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Basic Awareness"^^xsd:string .
+
+aplo-r:awarenessObservation.Learner%20Casey.OWL.OWL%20Axiom%20Analysis.OWL%20Modeling%20Awareness%20After%20Review a aplo-ont:AwarenessObservation ;
+    rdf:value "OWL Modeling Awareness After Review"^^xsd:string ;
+    aplo-ont:atTime aplo-r:temporalExtent.Learner%20Casey.OWL.OWL%20Axiom%20Analysis.OWL%20Modeling%20Awareness%20After%20Review.2026-01-20T16%3A00%3A00Z%20to%202026-01-20T16%3A40%3A00Z ;
+    aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Basic%20Awareness ;
+    aplo-ont:onSkill aplo-r:skill.OWL%20Axiom%20Analysis ;
+    aplo-ont:onTopic edu-r:topic.OWL .
+
+aplo-r:skill.OWL%20Axiom%20Analysis a aplo-ont:Skill ;
+    rdf:value "OWL Axiom Analysis"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Casey.OWL.OWL%20Axiom%20Analysis.OWL%20Modeling%20Awareness%20After%20Review.2026-01-20T16%3A00%3A00Z%20to%202026-01-20T16%3A40%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "2026-01-20T16:00:00+00:00"^^xsd:dateTime,
+        "2026-01-20T16:40:00+00:00"^^xsd:dateTime,
+        "ISO 8601 UTC"^^xsd:string,
+        "TimeInterval"^^xsd:string .
+
+edu-r:topic.OWL a edu-ont:Topic ;
+    rdf:value "OWL"^^xsd:string .
+

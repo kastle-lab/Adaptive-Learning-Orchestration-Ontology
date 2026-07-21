@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Metacognitive%20Journal a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Ask learners to record what strategy they used why they used it and how well it worked"^^xsd:string ;
+    aplo-ont:hasName "Metacognitive Journal"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Build%20Metacognitive%20Control .
+
+aplo-r:pedagogicalObjective.Build%20Metacognitive%20Control a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Improve learner ability to select and adapt strategies intentionally"^^xsd:string ;
+    aplo-ont:hasName "Build Metacognitive Control"^^xsd:string .
+

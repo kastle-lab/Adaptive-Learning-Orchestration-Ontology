@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Supply%20Chain%20KG%20Use%20Case%20Review.Explain%20SWRL%20rule%20inferences a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Experiential%20Learning%20Cycle.Abstract%20Conceptualization ;
+    aplo-ont:developsSkill aplo-r:skill.SWRL%20Rule%20Inference%20Explanation ;
+    aplo-ont:hasDescription "SWRL Rule Inference Explanation in SWRL: Classify the evidence, then state the implication for a KG workflow."^^xsd:string ;
+    aplo-ont:hasName "Explain SWRL rule inferences"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Supply%20Chain%20KG%20Use%20Case%20Review .
+
+aplo-r:learningSituation.Supply%20Chain%20KG%20Use%20Case%20Review a aplo-ont:LearningSituation ;
+    rdf:value "Supply Chain KG Use Case Review"^^xsd:string .
+
+aplo-r:pedagogicalElement.Experiential%20Learning%20Cycle.Abstract%20Conceptualization a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Abstract Conceptualization"^^xsd:string .
+
+aplo-r:skill.SWRL%20Rule%20Inference%20Explanation a aplo-ont:Skill ;
+    rdf:value "SWRL Rule Inference Explanation"^^xsd:string .
+

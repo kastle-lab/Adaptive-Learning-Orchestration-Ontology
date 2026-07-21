@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Data%20Science%20KG%20Modeling%20Foundations.Recognize%20logic%20operators a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Remember ;
+    aplo-ont:developsSkill aplo-r:skill.Logic%20Operator%20Recognition ;
+    aplo-ont:hasDescription "Logic Operator Recognition in Introduction to Logic: Trace the reasoning path from source concept to modeled statement."^^xsd:string ;
+    aplo-ont:hasName "Recognize logic operators"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Data%20Science%20KG%20Modeling%20Foundations .
+
+aplo-r:learningSituation.Data%20Science%20KG%20Modeling%20Foundations a aplo-ont:LearningSituation ;
+    rdf:value "Data Science KG Modeling Foundations"^^xsd:string .
+
+aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Remember a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Remember"^^xsd:string .
+
+aplo-r:skill.Logic%20Operator%20Recognition a aplo-ont:Skill ;
+    rdf:value "Logic Operator Recognition"^^xsd:string .
+

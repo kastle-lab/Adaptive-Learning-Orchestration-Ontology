@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Learning%20Contract a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Have learners define commitments resources milestones and evidence for a learning path"^^xsd:string ;
+    aplo-ont:hasName "Learning Contract"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Structure%20Self%20Direction .
+
+aplo-r:pedagogicalObjective.Structure%20Self%20Direction a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Support self-directed learning with clear expectations and checkpoints"^^xsd:string ;
+    aplo-ont:hasName "Structure Self Direction"^^xsd:string .
+

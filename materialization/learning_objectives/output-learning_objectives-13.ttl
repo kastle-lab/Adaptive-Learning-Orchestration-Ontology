@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Developer%20Knowledge%20Graph%20Implementation%20Practice.Explain%20ontology%20components a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Modeling ;
+    aplo-ont:developsSkill aplo-r:skill.Ontology%20Component%20Explanation ;
+    aplo-ont:hasDescription "Ontology Component Explanation in What is an Ontology?: Explain the representation choice, then test it against a second example."^^xsd:string ;
+    aplo-ont:hasName "Explain ontology components"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Developer%20Knowledge%20Graph%20Implementation%20Practice .
+
+aplo-r:learningSituation.Developer%20Knowledge%20Graph%20Implementation%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "Developer Knowledge Graph Implementation Practice"^^xsd:string .
+
+aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Modeling a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Modeling"^^xsd:string .
+
+aplo-r:skill.Ontology%20Component%20Explanation a aplo-ont:Skill ;
+    rdf:value "Ontology Component Explanation"^^xsd:string .
+

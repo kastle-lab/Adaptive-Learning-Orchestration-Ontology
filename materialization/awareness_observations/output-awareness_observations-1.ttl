@@ -1,0 +1,33 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Alex a aplo-ont:Learner ;
+    rdf:value "Learner Alex"^^xsd:string ;
+    aplo-ont:hasAwarenessObservation aplo-r:awarenessObservation.Learner%20Alex.Metadata.Semantic%20Web%20Vocabulary%20Recall.Metadata%20Awareness%20After%20Check .
+
+aplo-r:awarenessLevel.Working%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Working Awareness"^^xsd:string .
+
+aplo-r:awarenessObservation.Learner%20Alex.Metadata.Semantic%20Web%20Vocabulary%20Recall.Metadata%20Awareness%20After%20Check a aplo-ont:AwarenessObservation ;
+    rdf:value "Metadata Awareness After Check"^^xsd:string ;
+    aplo-ont:atTime aplo-r:temporalExtent.Learner%20Alex.Metadata.Semantic%20Web%20Vocabulary%20Recall.Metadata%20Awareness%20After%20Check.2026-01-15T09%3A30%3A00Z%20to%202026-01-15T09%3A45%3A00Z ;
+    aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Working%20Awareness ;
+    aplo-ont:onSkill aplo-r:skill.Semantic%20Web%20Vocabulary%20Recall ;
+    aplo-ont:onTopic edu-r:topic.Metadata .
+
+aplo-r:skill.Semantic%20Web%20Vocabulary%20Recall a aplo-ont:Skill ;
+    rdf:value "Semantic Web Vocabulary Recall"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Alex.Metadata.Semantic%20Web%20Vocabulary%20Recall.Metadata%20Awareness%20After%20Check.2026-01-15T09%3A30%3A00Z%20to%202026-01-15T09%3A45%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "2026-01-15T09:30:00+00:00"^^xsd:dateTime,
+        "2026-01-15T09:45:00+00:00"^^xsd:dateTime,
+        "ISO 8601 UTC"^^xsd:string,
+        "TimeInterval"^^xsd:string .
+
+edu-r:topic.Metadata a edu-ont:Topic ;
+    rdf:value "Metadata"^^xsd:string .
+

@@ -1,0 +1,16 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Self-Regulated%20Learning.Strategy%20Adjustment a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Change learning tactics based on feedback progress evidence or persistent misconceptions"^^xsd:string ;
+    aplo-ont:hasName "Strategy Adjustment"^^xsd:string ;
+    aplo-ont:hasPreviousPedagogicalElement aplo-r:pedagogicalElement.Self-Regulated%20Learning.Self%20Evaluation ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Self-Regulated%20Learning .
+
+aplo-r:pedagogicalElement.Self-Regulated%20Learning.Self%20Evaluation a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Self Evaluation"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Self-Regulated%20Learning a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Self-Regulated Learning"^^xsd:string .
+

@@ -1,4 +1,4 @@
-# Adaptive Learning Orchestration Ontology
+# Adaptive Pedagogical Learning Orchestration (APLO) Ontology
 This repository contains an ontology and supporting artifacts for modeling pedagogical frameworks, learning objectives, learner state, and evaluation concepts.
 
 ## Repository Layout

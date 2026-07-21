@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Knowledge%20Graph%20Foundations%20Orientation.Validate%20RDF%20shapes%20with%20SHACL a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Coaching ;
+    aplo-ont:developsSkill aplo-r:skill.SHACL%20Constraint%20Validation ;
+    aplo-ont:hasDescription "SHACL Constraint Validation in SHACL: Use the module artifact to defend one explicit design choice."^^xsd:string ;
+    aplo-ont:hasName "Validate RDF shapes with SHACL"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Knowledge%20Graph%20Foundations%20Orientation .
+
+aplo-r:learningSituation.Knowledge%20Graph%20Foundations%20Orientation a aplo-ont:LearningSituation ;
+    rdf:value "Knowledge Graph Foundations Orientation"^^xsd:string .
+
+aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Coaching a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Coaching"^^xsd:string .
+
+aplo-r:skill.SHACL%20Constraint%20Validation a aplo-ont:Skill ;
+    rdf:value "SHACL Constraint Validation"^^xsd:string .
+

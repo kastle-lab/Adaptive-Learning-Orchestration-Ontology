@@ -1,0 +1,27 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationAssessmentExercise.RDF%20Star.RDF%20Star%20Annotation%20Exercise a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "RDF Star"^^xsd:string,
+        "RDF Star Annotation Exercise"^^xsd:string ;
+    aplo-ont:evaluatesTopicAwarenessOf edu-r:topic.Statement,
+        edu-r:topic.Triple ;
+    aplo-ont:hasWorkloadLevel aplo-r:workloadLevel.Low%20Workload ;
+    aplo-ont:usesTechnique aplo-r:evaluationTechnique.Auto%20Scored%20Concept%20Check .
+
+edu-r:topic.Statement a edu-ont:Topic ;
+    rdf:value "Statement"^^xsd:string .
+
+edu-r:topic.Triple a edu-ont:Topic ;
+    rdf:value "Triple"^^xsd:string .
+
+aplo-r:evaluationTechnique.Auto%20Scored%20Concept%20Check a aplo-ont:EvaluationTechnique ;
+    rdf:value "Auto Scored Concept Check"^^xsd:string .
+
+aplo-r:workloadLevel.Low%20Workload a aplo-ont:WorkloadLevel ;
+    rdf:value "Low Workload"^^xsd:string .
+

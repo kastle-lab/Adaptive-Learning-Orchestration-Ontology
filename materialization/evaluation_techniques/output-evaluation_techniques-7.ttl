@@ -1,0 +1,36 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationTechnique.Query%20Practice%20Check a aplo-ont:EvaluationTechnique ;
+    rdf:value "Query Practice Check"^^xsd:string ;
+    aplo-ont:assessesLearningFeedback aplo-r:learningFeedback.Learner%20Blair.Learning%20Platform.Corrective%20Feedback%20on%20SPARQL%20Pattern ;
+    aplo-ont:assessesLearningObjective aplo-r:learningObjective.SPARQL%20Query%20Practice.Construct%20a%20basic%20SPARQL%20SELECT%20query ;
+    aplo-ont:hasEvaluationMetric aplo-r:evaluationMetric.Correctness%20Flag,
+        aplo-r:evaluationMetric.Score%20Percent ;
+    aplo-ont:hasEvaluationTechniqueType aplo-r:evaluationTechniqueType.Automated,
+        aplo-r:evaluationTechniqueType.Formative ;
+    aplo-ont:provideFeedback aplo-r:response.Learner%20Blair.Learning%20Platform.SPARQL%20Pattern%20Hint%20Response .
+
+aplo-r:evaluationMetric.Correctness%20Flag a aplo-ont:EvaluationMetric ;
+    rdf:value "Correctness Flag"^^xsd:string .
+
+aplo-r:evaluationMetric.Score%20Percent a aplo-ont:EvaluationMetric ;
+    rdf:value "Score Percent"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Automated a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Automated"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Formative a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Formative"^^xsd:string .
+
+aplo-r:learningFeedback.Learner%20Blair.Learning%20Platform.Corrective%20Feedback%20on%20SPARQL%20Pattern a aplo-ont:LearningFeedback ;
+    rdf:value "Corrective Feedback on SPARQL Pattern"^^xsd:string .
+
+aplo-r:learningObjective.SPARQL%20Query%20Practice.Construct%20a%20basic%20SPARQL%20SELECT%20query a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Construct a basic SPARQL SELECT query"^^xsd:string .
+
+aplo-r:response.Learner%20Blair.Learning%20Platform.SPARQL%20Pattern%20Hint%20Response a aplo-ont:Response ;
+    rdf:value "SPARQL Pattern Hint Response"^^xsd:string .
+

@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.RDFS%20Schema%20Practice.Demonstrate%20mastery%20of%20RDF%20and%20RDFS%20basics a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Mastery%20Learning.Reassessment ;
+    aplo-ont:developsSkill aplo-r:skill.RDF%20RDFS%20Mastery%20Demonstration ;
+    aplo-ont:hasDescription "Show mastery by interpreting RDF triples and RDFS schema constraints after reassessment"^^xsd:string ;
+    aplo-ont:hasName "Demonstrate mastery of RDF and RDFS basics"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.RDFS%20Schema%20Practice .
+
+aplo-r:learningSituation.RDFS%20Schema%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "RDFS Schema Practice"^^xsd:string .
+
+aplo-r:pedagogicalElement.Mastery%20Learning.Reassessment a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Reassessment"^^xsd:string .
+
+aplo-r:skill.RDF%20RDFS%20Mastery%20Demonstration a aplo-ont:Skill ;
+    rdf:value "RDF RDFS Mastery Demonstration"^^xsd:string .
+

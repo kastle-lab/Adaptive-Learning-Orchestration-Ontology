@@ -1,0 +1,51 @@
+metadata:
+  name: "Synthetic Pedagogical Frameworks"
+  source_ext: "csv"
+
+root:
+  type: "aplo-ont:PedagogicalFramework"
+  uri: "aplo-r:pedagogicalFramework"
+  varids: ["Pedagogical Framework"]
+  connections:
+    - p: "aplo-ont:hasName"
+      o:
+        datatype: "xsd:string"
+        val_source: "Pedagogical Framework"
+    - p: "aplo-ont:hasDescription"
+      o:
+        datatype: "xsd:string"
+        val_source: "Pedagogical Framework Description"
+    - p: "aplo-ont:hasElement"
+      o:
+        type: "aplo-ont:PedagogicalElement"
+        uri: "aplo-r:pedagogicalElement"
+        varids: ["Pedagogical Framework", "Pedagogical Elements"]
+        split: " | "
+        connections:
+          - p: "aplo-ont:hasName"
+            o:
+              datatype: "xsd:string"
+              val_source: "Pedagogical Elements"
+    - p: "aplo-ont:hasElement"
+      o:
+        type:
+          ["aplo-ont:PedagogicalElement", "aplo-ont:FirstPedagogicalElement"]
+        uri: "aplo-r:pedagogicalElement"
+        varids: ["Pedagogical Framework", "First Element"]
+        split: " | "
+        connections:
+          - p: "aplo-ont:hasName"
+            o:
+              datatype: "xsd:string"
+              val_source: "First Element"
+    - p: "aplo-ont:hasElement"
+      o:
+        type: ["aplo-ont:PedagogicalElement", "aplo-ont:LastPedagogicalElement"]
+        uri: "aplo-r:pedagogicalElement"
+        varids: ["Pedagogical Framework", "Last Element"]
+        split: " | "
+        connections:
+          - p: "aplo-ont:hasName"
+            o:
+              datatype: "xsd:string"
+              val_source: "Last Element"

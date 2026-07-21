@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Data%20Analysis%20KG%20Modeling%20Practice.Compare%20triplestore%20options a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Project%20Based%20Learning.Critique%20and%20Revision ;
+    aplo-ont:developsSkill aplo-r:skill.Triplestore%20Selection ;
+    aplo-ont:hasDescription "Triplestore Selection in Survey of Triplestores: Annotate a partial artifact and justify the missing KG decision."^^xsd:string ;
+    aplo-ont:hasName "Compare triplestore options"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Data%20Analysis%20KG%20Modeling%20Practice .
+
+aplo-r:learningSituation.Data%20Analysis%20KG%20Modeling%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "Data Analysis KG Modeling Practice"^^xsd:string .
+
+aplo-r:pedagogicalElement.Project%20Based%20Learning.Critique%20and%20Revision a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Critique and Revision"^^xsd:string .
+
+aplo-r:skill.Triplestore%20Selection a aplo-ont:Skill ;
+    rdf:value "Triplestore Selection"^^xsd:string .
+

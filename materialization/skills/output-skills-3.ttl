@@ -1,0 +1,22 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:skill.Linked%20Data%20Identifier%20Recognition a aplo-ont:Skill ;
+    rdf:value "Linked Data Identifier Recognition"^^xsd:string ;
+    aplo-ont:requiresTopic edu-r:topic.Linked%20Data,
+        edu-r:topic.Namespace,
+        edu-r:topic.URI .
+
+edu-r:topic.Linked%20Data a edu-ont:Topic ;
+    rdf:value "Linked Data"^^xsd:string .
+
+edu-r:topic.Namespace a edu-ont:Topic ;
+    rdf:value "Namespace"^^xsd:string .
+
+edu-r:topic.URI a edu-ont:Topic ;
+    rdf:value "URI"^^xsd:string .
+

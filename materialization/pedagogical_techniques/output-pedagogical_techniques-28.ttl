@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Goal%20Setting%20Prompt a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Ask learners to formulate a specific target skill success criterion and time-bounded learning intention"^^xsd:string ;
+    aplo-ont:hasName "Goal Setting Prompt"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Clarify%20Learning%20Aim .
+
+aplo-r:pedagogicalObjective.Clarify%20Learning%20Aim a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Make the learning goal explicit enough to guide strategy selection"^^xsd:string ;
+    aplo-ont:hasName "Clarify Learning Aim"^^xsd:string .
+

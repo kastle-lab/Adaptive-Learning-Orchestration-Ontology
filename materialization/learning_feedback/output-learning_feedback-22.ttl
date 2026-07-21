@@ -1,0 +1,31 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningFeedback.Learner%20Usman.Learning%20Platform.RDF%20Serialization%20Format%20Comparison%20Extension%20Prompt a aplo-ont:LearningFeedback ;
+    rdf:value "RDF Serialization Format Comparison Extension Prompt"^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Usman.RDF%2FXML.RDF%20Serialization%20Format%20Comparison.RDF%20Serialization%20Format%20Comparison%20Application%20Snapshot ;
+    aplo-ont:affectsStrategy aplo-r:learningStrategy.User%20Engagement%20KG%20Demonstration%20Planning.User%20Engagement%20Demonstration%20Strategy ;
+    aplo-ont:hasLearningFeedbackType aplo-r:learningFeedbackType.Corrective%20Feedback ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Usman.Learning%20Platform.RDF%20Serialization%20Format%20Comparison%20Extension%20Prompt.2026-02-16T14%3A00%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Learning%20Platform .
+
+aplo-r:awarenessObservation.Learner%20Usman.RDF%2FXML.RDF%20Serialization%20Format%20Comparison.RDF%20Serialization%20Format%20Comparison%20Application%20Snapshot a aplo-ont:AwarenessObservation ;
+    rdf:value "RDF Serialization Format Comparison Application Snapshot"^^xsd:string .
+
+aplo-r:learningFeedbackType.Corrective%20Feedback a aplo-ont:LearningFeedbackType ;
+    rdf:value "Corrective Feedback"^^xsd:string .
+
+aplo-r:learningStrategy.User%20Engagement%20KG%20Demonstration%20Planning.User%20Engagement%20Demonstration%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasName "User Engagement Demonstration Strategy"^^xsd:string .
+
+aplo-r:source.Learning%20Platform a aplo-ont:Source ;
+    rdf:value "Learning Platform"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Usman.Learning%20Platform.RDF%20Serialization%20Format%20Comparison%20Extension%20Prompt.2026-02-16T14%3A00%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-02-16T14:00:00+00:00"^^xsd:dateTime .
+

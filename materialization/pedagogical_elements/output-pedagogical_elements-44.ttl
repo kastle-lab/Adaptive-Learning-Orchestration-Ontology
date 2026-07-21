@@ -1,0 +1,20 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Reflection a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Compare learner reasoning or products against expert examples peer work or prior attempts"^^xsd:string ;
+    aplo-ont:hasName "Reflection"^^xsd:string ;
+    aplo-ont:hasNextPedagogicalElement aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Exploration ;
+    aplo-ont:hasPreviousPedagogicalElement aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Articulation ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Cognitive%20Apprenticeship .
+
+aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Articulation a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Articulation"^^xsd:string .
+
+aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Exploration a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Exploration"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Cognitive%20Apprenticeship a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Cognitive Apprenticeship"^^xsd:string .
+

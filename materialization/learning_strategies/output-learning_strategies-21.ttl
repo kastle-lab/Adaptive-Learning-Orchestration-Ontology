@@ -1,0 +1,32 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningStrategy.Secure%20KG%20Implementation%20Training.Secure%20KG%20Training%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasDescription "Model secure KG decisions aloud then use implementation error analysis and transfer checks for unfamiliar statement-annotation cases."^^xsd:string ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Secure%20KG%20Implementation%20Training.Align%20models%20with%20upper%20ontology%20concepts,
+        aplo-r:learningObjective.Secure%20KG%20Implementation%20Training.Explain%20RDF%20star%20statement%20annotations ;
+    aplo-ont:hasName "Secure KG Training Strategy"^^xsd:string ;
+    aplo-ont:hasPedagogicalTechnique aplo-r:pedagogicalTechnique.Accessibility%20Checkpoint,
+        aplo-r:pedagogicalTechnique.Error%20Analysis,
+        aplo-r:pedagogicalTechnique.Think%20Aloud%20Modeling,
+        aplo-r:pedagogicalTechnique.Transfer%20Task .
+
+aplo-r:learningObjective.Secure%20KG%20Implementation%20Training.Align%20models%20with%20upper%20ontology%20concepts a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Align models with upper ontology concepts"^^xsd:string .
+
+aplo-r:learningObjective.Secure%20KG%20Implementation%20Training.Explain%20RDF%20star%20statement%20annotations a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Explain RDF star statement annotations"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Accessibility%20Checkpoint a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Accessibility Checkpoint"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Error%20Analysis a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Error Analysis"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Think%20Aloud%20Modeling a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Think Aloud Modeling"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Transfer%20Task a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Transfer Task"^^xsd:string .
+

@@ -1,0 +1,27 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationAssessmentExercise.Description%20Logic.Description%20Logic%20Constraint%20Review a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Description Logic"^^xsd:string,
+        "Description Logic Constraint Review"^^xsd:string ;
+    aplo-ont:evaluatesTopicAwarenessOf edu-r:topic.Expressivity,
+        edu-r:topic.Inference ;
+    aplo-ont:hasWorkloadLevel aplo-r:workloadLevel.High%20Workload ;
+    aplo-ont:usesTechnique aplo-r:evaluationTechnique.Ontology%20Modeling%20Review .
+
+edu-r:topic.Expressivity a edu-ont:Topic ;
+    rdf:value "Expressivity"^^xsd:string .
+
+edu-r:topic.Inference a edu-ont:Topic ;
+    rdf:value "Inference"^^xsd:string .
+
+aplo-r:evaluationTechnique.Ontology%20Modeling%20Review a aplo-ont:EvaluationTechnique ;
+    rdf:value "Ontology Modeling Review"^^xsd:string .
+
+aplo-r:workloadLevel.High%20Workload a aplo-ont:WorkloadLevel ;
+    rdf:value "High Workload"^^xsd:string .
+

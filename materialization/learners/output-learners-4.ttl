@@ -1,0 +1,32 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Debbie a aplo-ont:Learner ;
+    rdf:value "Learner Debbie"^^xsd:string ;
+    aplo-ont:hasGoal aplo-r:learnerGoal.Implement%20Knowledge%20Graph%20Developer%20Workflow ;
+    aplo-ont:hasLearnerPreference aplo-r:learnerPreference.Guided%20Practice%20Preference,
+        aplo-r:learnerPreference.Tooling%20Example%20Preference ;
+    aplo-ont:hasLearningChallenge aplo-r:learningChallenge.Needs%20Query%20Practice,
+        aplo-r:learningChallenge.Needs%20Tooling%20Setup%20Support ;
+    aplo-ont:hasSituation aplo-r:learningSituation.Developer%20Knowledge%20Graph%20Implementation%20Practice .
+
+aplo-r:learnerGoal.Implement%20Knowledge%20Graph%20Developer%20Workflow a aplo-ont:LearnerGoal ;
+    rdf:value "Implement Knowledge Graph Developer Workflow"^^xsd:string .
+
+aplo-r:learnerPreference.Guided%20Practice%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Guided Practice Preference"^^xsd:string .
+
+aplo-r:learnerPreference.Tooling%20Example%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Tooling Example Preference"^^xsd:string .
+
+aplo-r:learningChallenge.Needs%20Query%20Practice a aplo-ont:LearningChallenge ;
+    rdf:value "Needs Query Practice"^^xsd:string .
+
+aplo-r:learningChallenge.Needs%20Tooling%20Setup%20Support a aplo-ont:LearningChallenge ;
+    rdf:value "Needs Tooling Setup Support"^^xsd:string .
+
+aplo-r:learningSituation.Developer%20Knowledge%20Graph%20Implementation%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "Developer Knowledge Graph Implementation Practice"^^xsd:string .
+

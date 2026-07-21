@@ -1,0 +1,33 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Riley a aplo-ont:Learner ;
+    rdf:value "Learner Riley"^^xsd:string ;
+    aplo-ont:hasAwarenessObservation aplo-r:awarenessObservation.Learner%20Riley.Triple.RDF%20Graph%20Interpretation.KG%20Facilitation%20Planning%20Awareness .
+
+aplo-r:awarenessLevel.Working%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Working Awareness"^^xsd:string .
+
+aplo-r:awarenessObservation.Learner%20Riley.Triple.RDF%20Graph%20Interpretation.KG%20Facilitation%20Planning%20Awareness a aplo-ont:AwarenessObservation ;
+    rdf:value "KG Facilitation Planning Awareness"^^xsd:string ;
+    aplo-ont:atTime aplo-r:temporalExtent.Learner%20Riley.Triple.RDF%20Graph%20Interpretation.KG%20Facilitation%20Planning%20Awareness.2026-03-23T14%3A20%3A00Z ;
+    aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Working%20Awareness ;
+    aplo-ont:onSkill aplo-r:skill.RDF%20Graph%20Interpretation ;
+    aplo-ont:onTopic edu-r:topic.Triple .
+
+aplo-r:skill.RDF%20Graph%20Interpretation a aplo-ont:Skill ;
+    rdf:value "RDF Graph Interpretation"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Riley.Triple.RDF%20Graph%20Interpretation.KG%20Facilitation%20Planning%20Awareness.2026-03-23T14%3A20%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-03-23T14:20:00+00:00"^^xsd:dateTime .
+
+edu-r:topic.Triple a edu-ont:Topic ;
+    rdf:value "Triple"^^xsd:string .
+

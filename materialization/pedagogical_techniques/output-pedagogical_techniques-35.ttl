@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Jigsaw%20Activity a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Assign learners complementary parts of a topic and require them to teach or integrate their part with peers"^^xsd:string ;
+    aplo-ont:hasName "Jigsaw Activity"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Distribute%20Expertise .
+
+aplo-r:pedagogicalObjective.Distribute%20Expertise a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Create interdependence while covering multiple aspects of a concept or task"^^xsd:string ;
+    aplo-ont:hasName "Distribute Expertise"^^xsd:string .
+

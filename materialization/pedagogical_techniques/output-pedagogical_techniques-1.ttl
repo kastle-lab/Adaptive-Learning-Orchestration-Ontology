@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Concept%20Mapping a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Ask learners to organize concepts and relationships visually"^^xsd:string ;
+    aplo-ont:hasName "Concept Mapping"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Build%20Conceptual%20Understanding .
+
+aplo-r:pedagogicalObjective.Build%20Conceptual%20Understanding a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Help learners connect concepts and explain relationships among ideas"^^xsd:string ;
+    aplo-ont:hasName "Build Conceptual Understanding"^^xsd:string .
+

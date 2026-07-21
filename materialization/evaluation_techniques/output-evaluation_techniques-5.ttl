@@ -1,0 +1,32 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationTechnique.Schema%20Reasoning%20Review a aplo-ont:EvaluationTechnique ;
+    rdf:value "Schema Reasoning Review"^^xsd:string ;
+    aplo-ont:assessesLearningFeedback aplo-r:learningFeedback.Learner%20Casey.Instructor%20Reviewer.Strategic%20Feedback%20on%20Schema%20Reasoning ;
+    aplo-ont:assessesLearningObjective aplo-r:learningObjective.RDFS%20Schema%20Practice.Apply%20RDFS%20domain%20and%20range%20constraints ;
+    aplo-ont:hasEvaluationMetric aplo-r:evaluationMetric.Rubric%20Level ;
+    aplo-ont:hasEvaluationTechniqueType aplo-r:evaluationTechniqueType.Formative,
+        aplo-r:evaluationTechniqueType.Instructor%20Reviewed ;
+    aplo-ont:provideFeedback aplo-r:response.Learner%20Casey.Instructor%20Reviewer.Schema%20Reasoning%20Response .
+
+aplo-r:evaluationMetric.Rubric%20Level a aplo-ont:EvaluationMetric ;
+    rdf:value "Rubric Level"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Formative a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Formative"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Instructor%20Reviewed a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Instructor Reviewed"^^xsd:string .
+
+aplo-r:learningFeedback.Learner%20Casey.Instructor%20Reviewer.Strategic%20Feedback%20on%20Schema%20Reasoning a aplo-ont:LearningFeedback ;
+    rdf:value "Strategic Feedback on Schema Reasoning"^^xsd:string .
+
+aplo-r:learningObjective.RDFS%20Schema%20Practice.Apply%20RDFS%20domain%20and%20range%20constraints a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Apply RDFS domain and range constraints"^^xsd:string .
+
+aplo-r:response.Learner%20Casey.Instructor%20Reviewer.Schema%20Reasoning%20Response a aplo-ont:Response ;
+    rdf:value "Schema Reasoning Response"^^xsd:string .
+

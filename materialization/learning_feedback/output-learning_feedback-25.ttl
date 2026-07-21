@@ -1,0 +1,31 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningFeedback.Learner%20Silas.Instructor%20Reviewer.SWRL%20Rule%20Inference%20Explanation%20Coaching%20Note a aplo-ont:LearningFeedback ;
+    rdf:value "SWRL Rule Inference Explanation Coaching Note"^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Silas.OWL.SWRL%20Rule%20Inference%20Explanation.SWRL%20Rule%20Inference%20Explanation%20Practice%20Update ;
+    aplo-ont:affectsStrategy aplo-r:learningStrategy.Supply%20Chain%20KG%20Use%20Case%20Review.Supply%20Chain%20KG%20Value%20Strategy ;
+    aplo-ont:hasLearningFeedbackType aplo-r:learningFeedbackType.Motivational%20Feedback ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Silas.Instructor%20Reviewer.SWRL%20Rule%20Inference%20Explanation%20Coaching%20Note.2026-02-19T14%3A21%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Instructor%20Reviewer .
+
+aplo-r:awarenessObservation.Learner%20Silas.OWL.SWRL%20Rule%20Inference%20Explanation.SWRL%20Rule%20Inference%20Explanation%20Practice%20Update a aplo-ont:AwarenessObservation ;
+    rdf:value "SWRL Rule Inference Explanation Practice Update"^^xsd:string .
+
+aplo-r:learningFeedbackType.Motivational%20Feedback a aplo-ont:LearningFeedbackType ;
+    rdf:value "Motivational Feedback"^^xsd:string .
+
+aplo-r:learningStrategy.Supply%20Chain%20KG%20Use%20Case%20Review.Supply%20Chain%20KG%20Value%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasName "Supply Chain KG Value Strategy"^^xsd:string .
+
+aplo-r:source.Instructor%20Reviewer a aplo-ont:Source ;
+    rdf:value "Instructor Reviewer"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Silas.Instructor%20Reviewer.SWRL%20Rule%20Inference%20Explanation%20Coaching%20Note.2026-02-19T14%3A21%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-02-19T14:21:00+00:00"^^xsd:dateTime .
+

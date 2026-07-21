@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Accessibility%20Checkpoint a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Ask learners to inspect whether a resource artifact or explanation remains usable under accessibility constraints"^^xsd:string ;
+    aplo-ont:hasName "Accessibility Checkpoint"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Improve%20Inclusive%20Design .
+
+aplo-r:pedagogicalObjective.Improve%20Inclusive%20Design a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Connect learning products to accessibility-aware judgment and revision"^^xsd:string ;
+    aplo-ont:hasName "Improve Inclusive Design"^^xsd:string .
+

@@ -1,0 +1,24 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learnerGoal.Interpret%20RDF%20Graph%20Data a aplo-ont:LearnerGoal ;
+    rdf:value "Interpret RDF Graph Data"^^xsd:string ;
+    aplo-ont:targetsSkill aplo-r:skill.Linked%20Data%20Identifier%20Recognition,
+        aplo-r:skill.RDF%20Serialization%20Comparison,
+        aplo-r:skill.RDF%20Triple%20Interpretation,
+        aplo-r:skill.SPARQL%20Query%20Construction .
+
+aplo-r:skill.Linked%20Data%20Identifier%20Recognition a aplo-ont:Skill ;
+    rdf:value "Linked Data Identifier Recognition"^^xsd:string .
+
+aplo-r:skill.RDF%20Serialization%20Comparison a aplo-ont:Skill ;
+    rdf:value "RDF Serialization Comparison"^^xsd:string .
+
+aplo-r:skill.RDF%20Triple%20Interpretation a aplo-ont:Skill ;
+    rdf:value "RDF Triple Interpretation"^^xsd:string .
+
+aplo-r:skill.SPARQL%20Query%20Construction a aplo-ont:Skill ;
+    rdf:value "SPARQL Query Construction"^^xsd:string .
+

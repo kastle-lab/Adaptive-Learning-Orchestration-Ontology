@@ -1,0 +1,33 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Chris a aplo-ont:Learner ;
+    rdf:value "Learner Chris"^^xsd:string ;
+    aplo-ont:hasAwarenessObservation aplo-r:awarenessObservation.Learner%20Chris.Inference.Rule%20Based%20Inference%20Explanation.Rule%20Based%20Inference%20Explanation%20Review .
+
+aplo-r:awarenessLevel.Mastery%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Mastery Awareness"^^xsd:string .
+
+aplo-r:awarenessObservation.Learner%20Chris.Inference.Rule%20Based%20Inference%20Explanation.Rule%20Based%20Inference%20Explanation%20Review a aplo-ont:AwarenessObservation ;
+    rdf:value "Rule Based Inference Explanation Review"^^xsd:string ;
+    aplo-ont:atTime aplo-r:temporalExtent.Learner%20Chris.Inference.Rule%20Based%20Inference%20Explanation.Rule%20Based%20Inference%20Explanation%20Review.2026-02-10T14%3A03%3A00Z%20to%202026-02-10T14%3A28%3A00Z ;
+    aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Mastery%20Awareness ;
+    aplo-ont:onSkill aplo-r:skill.Rule%20Based%20Inference%20Explanation ;
+    aplo-ont:onTopic edu-r:topic.Inference .
+
+aplo-r:skill.Rule%20Based%20Inference%20Explanation a aplo-ont:Skill ;
+    rdf:value "Rule Based Inference Explanation"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Chris.Inference.Rule%20Based%20Inference%20Explanation.Rule%20Based%20Inference%20Explanation%20Review.2026-02-10T14%3A03%3A00Z%20to%202026-02-10T14%3A28%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "2026-02-10T14:03:00+00:00"^^xsd:dateTime,
+        "2026-02-10T14:28:00+00:00"^^xsd:dateTime,
+        "ISO 8601 UTC"^^xsd:string,
+        "TimeInterval"^^xsd:string .
+
+edu-r:topic.Inference a edu-ont:Topic ;
+    rdf:value "Inference"^^xsd:string .
+

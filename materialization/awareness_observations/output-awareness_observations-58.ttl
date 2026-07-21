@@ -1,0 +1,33 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Morgan a aplo-ont:Learner ;
+    rdf:value "Learner Morgan"^^xsd:string ;
+    aplo-ont:hasAwarenessObservation aplo-r:awarenessObservation.Learner%20Morgan.Metadata.Dublin%20Core%20Metadata%20Mapping.Executive%20KG%20Value%20Framing%20Awareness .
+
+aplo-r:awarenessLevel.Basic%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Basic Awareness"^^xsd:string .
+
+aplo-r:awarenessObservation.Learner%20Morgan.Metadata.Dublin%20Core%20Metadata%20Mapping.Executive%20KG%20Value%20Framing%20Awareness a aplo-ont:AwarenessObservation ;
+    rdf:value "Executive KG Value Framing Awareness"^^xsd:string ;
+    aplo-ont:atTime aplo-r:temporalExtent.Learner%20Morgan.Metadata.Dublin%20Core%20Metadata%20Mapping.Executive%20KG%20Value%20Framing%20Awareness.2026-03-21T13%3A40%3A00Z ;
+    aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Basic%20Awareness ;
+    aplo-ont:onSkill aplo-r:skill.Dublin%20Core%20Metadata%20Mapping ;
+    aplo-ont:onTopic edu-r:topic.Metadata .
+
+aplo-r:skill.Dublin%20Core%20Metadata%20Mapping a aplo-ont:Skill ;
+    rdf:value "Dublin Core Metadata Mapping"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Morgan.Metadata.Dublin%20Core%20Metadata%20Mapping.Executive%20KG%20Value%20Framing%20Awareness.2026-03-21T13%3A40%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-03-21T13:40:00+00:00"^^xsd:dateTime .
+
+edu-r:topic.Metadata a edu-ont:Topic ;
+    rdf:value "Metadata"^^xsd:string .
+

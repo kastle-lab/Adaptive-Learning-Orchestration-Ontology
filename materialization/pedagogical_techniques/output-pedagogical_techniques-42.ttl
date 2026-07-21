@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Relevance%20Framing a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Connect the learning task to a role goal use case stakeholder need or decision consequence"^^xsd:string ;
+    aplo-ont:hasName "Relevance Framing"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Increase%20Relevance .
+
+aplo-r:pedagogicalObjective.Increase%20Relevance a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Help learners see why the objective matters in a meaningful context"^^xsd:string ;
+    aplo-ont:hasName "Increase Relevance"^^xsd:string .
+

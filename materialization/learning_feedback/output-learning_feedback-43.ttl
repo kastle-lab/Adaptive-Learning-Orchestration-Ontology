@@ -1,0 +1,31 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningFeedback.Learner%20Stella.Instructor%20Reviewer.Upper%20Ontology%20Alignment%20Review%20Comment a aplo-ont:LearningFeedback ;
+    rdf:value "Upper Ontology Alignment Review Comment"^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Stella.Ontology.Upper%20Ontology%20Alignment.Upper%20Ontology%20Alignment%20Task%20Evidence ;
+    aplo-ont:affectsStrategy aplo-r:learningStrategy.Secure%20KG%20Implementation%20Training.Secure%20KG%20Training%20Strategy ;
+    aplo-ont:hasLearningFeedbackType aplo-r:learningFeedbackType.Strategic%20Feedback ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Stella.Instructor%20Reviewer.Upper%20Ontology%20Alignment%20Review%20Comment.2026-03-09T14%3A07%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Instructor%20Reviewer .
+
+aplo-r:awarenessObservation.Learner%20Stella.Ontology.Upper%20Ontology%20Alignment.Upper%20Ontology%20Alignment%20Task%20Evidence a aplo-ont:AwarenessObservation ;
+    rdf:value "Upper Ontology Alignment Task Evidence"^^xsd:string .
+
+aplo-r:learningFeedbackType.Strategic%20Feedback a aplo-ont:LearningFeedbackType ;
+    rdf:value "Strategic Feedback"^^xsd:string .
+
+aplo-r:learningStrategy.Secure%20KG%20Implementation%20Training.Secure%20KG%20Training%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasName "Secure KG Training Strategy"^^xsd:string .
+
+aplo-r:source.Instructor%20Reviewer a aplo-ont:Source ;
+    rdf:value "Instructor Reviewer"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Stella.Instructor%20Reviewer.Upper%20Ontology%20Alignment%20Review%20Comment.2026-03-09T14%3A07%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-03-09T14:07:00+00:00"^^xsd:dateTime .
+

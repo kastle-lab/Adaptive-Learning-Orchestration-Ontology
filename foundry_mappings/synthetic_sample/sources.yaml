@@ -1,0 +1,13 @@
+metadata:
+  name: "Synthetic Sources"
+  source_ext: "csv"
+
+root:
+  type: "aplo-ont:Source"
+  uri: "aplo-r:source"
+  varids: ["Source"]
+  connections:
+    - p: "rdf:value"
+      o:
+        datatype: "xsd:string"
+        val_source: "Source"

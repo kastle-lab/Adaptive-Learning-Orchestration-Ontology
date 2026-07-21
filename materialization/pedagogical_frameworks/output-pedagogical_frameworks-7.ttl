@@ -1,0 +1,20 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalFramework.Universal%20Design%20for%20Learning a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasDescription "A design framework for reducing learning barriers through varied engagement representation and expression options"^^xsd:string ;
+    aplo-ont:hasElement aplo-r:pedagogicalElement.Universal%20Design%20for%20Learning.Action%20and%20Expression%20Options,
+        aplo-r:pedagogicalElement.Universal%20Design%20for%20Learning.Engagement%20Options,
+        aplo-r:pedagogicalElement.Universal%20Design%20for%20Learning.Representation%20Options ;
+    aplo-ont:hasName "Universal Design for Learning"^^xsd:string .
+
+aplo-r:pedagogicalElement.Universal%20Design%20for%20Learning.Action%20and%20Expression%20Options a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Action and Expression Options"^^xsd:string .
+
+aplo-r:pedagogicalElement.Universal%20Design%20for%20Learning.Engagement%20Options a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Engagement Options"^^xsd:string .
+
+aplo-r:pedagogicalElement.Universal%20Design%20for%20Learning.Representation%20Options a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Representation Options"^^xsd:string .
+

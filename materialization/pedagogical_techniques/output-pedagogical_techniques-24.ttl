@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Simulation%20Exercise a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Let learners manipulate a simplified system workflow or scenario and observe the consequences of decisions"^^xsd:string ;
+    aplo-ont:hasName "Simulation Exercise"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Promote%20Experiential%20Practice .
+
+aplo-r:pedagogicalObjective.Promote%20Experiential%20Practice a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Support understanding through active experimentation with feedback from the scenario"^^xsd:string ;
+    aplo-ont:hasName "Promote Experiential Practice"^^xsd:string .
+

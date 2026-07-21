@@ -1,0 +1,35 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationAssessmentExercise.What%20is%20an%20Ontology%3F.Ontology%20Component%20Walkthrough a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Ontology Component Walkthrough"^^xsd:string,
+        "What is an Ontology?"^^xsd:string ;
+    aplo-ont:evaluatesTopicAwarenessOf edu-r:topic.Linked%20Data,
+        edu-r:topic.Ontology,
+        edu-r:topic.Schema,
+        edu-r:topic.Taxonomy ;
+    aplo-ont:hasWorkloadLevel aplo-r:workloadLevel.Moderate%20Workload ;
+    aplo-ont:usesTechnique aplo-r:evaluationTechnique.Short%20Explanation%20Rubric .
+
+edu-r:topic.Linked%20Data a edu-ont:Topic ;
+    rdf:value "Linked Data"^^xsd:string .
+
+edu-r:topic.Ontology a edu-ont:Topic ;
+    rdf:value "Ontology"^^xsd:string .
+
+edu-r:topic.Schema a edu-ont:Topic ;
+    rdf:value "Schema"^^xsd:string .
+
+edu-r:topic.Taxonomy a edu-ont:Topic ;
+    rdf:value "Taxonomy"^^xsd:string .
+
+aplo-r:evaluationTechnique.Short%20Explanation%20Rubric a aplo-ont:EvaluationTechnique ;
+    rdf:value "Short Explanation Rubric"^^xsd:string .
+
+aplo-r:workloadLevel.Moderate%20Workload a aplo-ont:WorkloadLevel ;
+    rdf:value "Moderate Workload"^^xsd:string .
+

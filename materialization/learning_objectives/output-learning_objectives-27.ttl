@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.User%20Engagement%20KG%20Demonstration%20Planning.Compare%20RDF%20serialization%20choices a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Community%20of%20Inquiry.Cognitive%20Presence ;
+    aplo-ont:developsSkill aplo-r:skill.RDF%20Serialization%20Format%20Comparison ;
+    aplo-ont:hasDescription "RDF Serialization Format Comparison in RDF Serializations: Compare two alternatives and select the one that best supports the task."^^xsd:string ;
+    aplo-ont:hasName "Compare RDF serialization choices"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.User%20Engagement%20KG%20Demonstration%20Planning .
+
+aplo-r:learningSituation.User%20Engagement%20KG%20Demonstration%20Planning a aplo-ont:LearningSituation ;
+    rdf:value "User Engagement KG Demonstration Planning"^^xsd:string .
+
+aplo-r:pedagogicalElement.Community%20of%20Inquiry.Cognitive%20Presence a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Cognitive Presence"^^xsd:string .
+
+aplo-r:skill.RDF%20Serialization%20Format%20Comparison a aplo-ont:Skill ;
+    rdf:value "RDF Serialization Format Comparison"^^xsd:string .
+

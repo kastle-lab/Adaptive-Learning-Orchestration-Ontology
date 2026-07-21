@@ -1,0 +1,92 @@
+metadata:
+  name: "Synthetic Evaluation Techniques"
+  source_ext: "csv"
+
+cvs:
+  - type: "aplo-ont:EvaluationTechniqueType"
+    uri: "aplo-r:evaluationTechniqueType"
+    instances:
+      - "Formative"
+      - "Automated"
+      - "Low Stakes"
+      - "Instructor Reviewed"
+      - "Explanation Based"
+      - "Summative"
+      - "Modeling Artifact"
+
+root:
+  type: "aplo-ont:EvaluationTechnique"
+  uri: "aplo-r:evaluationTechnique"
+  varids: ["Evaluation Technique"]
+  connections:
+    - p: "rdf:value"
+      o:
+        datatype: "xsd:string"
+        val_source: "Evaluation Technique"
+    - p: "aplo-ont:hasEvaluationTechniqueType"
+      o:
+        type: "aplo-ont:EvaluationTechniqueType"
+        uri: "aplo-r:evaluationTechniqueType"
+        varids: ["Evaluation Technique Types"]
+        split: " | "
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Evaluation Technique Types"
+    - p: "aplo-ont:hasEvaluationMetric"
+      o:
+        type: "aplo-ont:EvaluationMetric"
+        uri: "aplo-r:evaluationMetric"
+        varids: ["Evaluation Metrics"]
+        split: " | "
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Evaluation Metrics"
+    - p: "aplo-ont:assessesLearningObjective"
+      o:
+        type: "aplo-ont:LearningObjective"
+        uri: "aplo-r:learningObjective"
+        varids:
+          [
+            "Assesses Learning Objective Situation",
+            "Assesses Learning Objectives",
+          ]
+        split: " | "
+        connections:
+          - p: "aplo-ont:hasName"
+            o:
+              datatype: "xsd:string"
+              val_source: "Assesses Learning Objectives"
+    - p: "aplo-ont:assessesLearningFeedback"
+      o:
+        type: "aplo-ont:LearningFeedback"
+        uri: "aplo-r:learningFeedback"
+        varids:
+          [
+            "Assesses Learning Feedback Learner",
+            "Assesses Learning Feedback Source",
+            "Assesses Learning Feedback",
+          ]
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Assesses Learning Feedback"
+    - p: "aplo-ont:provideFeedback"
+      o:
+        type: "aplo-ont:Response"
+        uri: "aplo-r:response"
+        varids:
+          [
+            "Provides Response Learner",
+            "Provides Response Source",
+            "Provides Responses",
+          ]
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Provides Responses"

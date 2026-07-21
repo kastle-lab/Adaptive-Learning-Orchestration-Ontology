@@ -1,0 +1,33 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Carla a aplo-ont:Learner ;
+    rdf:value "Learner Carla"^^xsd:string ;
+    aplo-ont:hasAwarenessObservation aplo-r:awarenessObservation.Learner%20Carla.Provenance.Provenance%20Relationship%20Modeling.Provenance%20Relationship%20Modeling%20Practice%20Update .
+
+aplo-r:awarenessLevel.Working%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Working Awareness"^^xsd:string .
+
+aplo-r:awarenessObservation.Learner%20Carla.Provenance.Provenance%20Relationship%20Modeling.Provenance%20Relationship%20Modeling%20Practice%20Update a aplo-ont:AwarenessObservation ;
+    rdf:value "Provenance Relationship Modeling Practice Update"^^xsd:string ;
+    aplo-ont:atTime aplo-r:temporalExtent.Learner%20Carla.Provenance.Provenance%20Relationship%20Modeling.Provenance%20Relationship%20Modeling%20Practice%20Update.2026-02-27T13%3A42%3A00Z%20to%202026-02-27T14%3A07%3A00Z ;
+    aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Working%20Awareness ;
+    aplo-ont:onSkill aplo-r:skill.Provenance%20Relationship%20Modeling ;
+    aplo-ont:onTopic edu-r:topic.Provenance .
+
+aplo-r:skill.Provenance%20Relationship%20Modeling a aplo-ont:Skill ;
+    rdf:value "Provenance Relationship Modeling"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Carla.Provenance.Provenance%20Relationship%20Modeling.Provenance%20Relationship%20Modeling%20Practice%20Update.2026-02-27T13%3A42%3A00Z%20to%202026-02-27T14%3A07%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "2026-02-27T13:42:00+00:00"^^xsd:dateTime,
+        "2026-02-27T14:07:00+00:00"^^xsd:dateTime,
+        "ISO 8601 UTC"^^xsd:string,
+        "TimeInterval"^^xsd:string .
+
+edu-r:topic.Provenance a edu-ont:Topic ;
+    rdf:value "Provenance"^^xsd:string .
+

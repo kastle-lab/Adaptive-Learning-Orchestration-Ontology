@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:media.What%20is%20an%20Ontology%3F a edu-ont:Media ;
+    rdf:value "What is an Ontology?"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.What%20is%20an%20Ontology%3F.Ontology%20Component%20Walkthrough ;
+    aplo-ont:supportsLearningObjective aplo-r:learningObjective.Developer%20Knowledge%20Graph%20Implementation%20Practice.Explain%20ontology%20components .
+
+aplo-r:evaluationAssessmentExercise.What%20is%20an%20Ontology%3F.Ontology%20Component%20Walkthrough a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Ontology Component Walkthrough"^^xsd:string .
+
+aplo-r:learningObjective.Developer%20Knowledge%20Graph%20Implementation%20Practice.Explain%20ontology%20components a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Explain ontology components"^^xsd:string .
+

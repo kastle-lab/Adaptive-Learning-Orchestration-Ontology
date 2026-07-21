@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:module.Predicate%20Logic a edu-ont:Module ;
+    rdf:value "Predicate Logic"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.Predicate%20Logic.Predicate%20Translation%20Task ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Executive%20KG%20Value%20Review.Interpret%20predicate%20logic%20statements .
+
+aplo-r:evaluationAssessmentExercise.Predicate%20Logic.Predicate%20Translation%20Task a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Predicate Translation Task"^^xsd:string .
+
+aplo-r:learningObjective.Executive%20KG%20Value%20Review.Interpret%20predicate%20logic%20statements a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Interpret predicate logic statements"^^xsd:string .
+

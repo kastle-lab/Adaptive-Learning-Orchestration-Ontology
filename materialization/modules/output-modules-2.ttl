@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:module.What%20is%20an%20Ontology%3F a edu-ont:Module ;
+    rdf:value "What is an Ontology?"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.What%20is%20an%20Ontology%3F.Ontology%20Explanation%20Review ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Foundational%20Semantic%20Web%20Study.Explain%20what%20an%20ontology%20represents .
+
+aplo-r:evaluationAssessmentExercise.What%20is%20an%20Ontology%3F.Ontology%20Explanation%20Review a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Ontology Explanation Review"^^xsd:string .
+
+aplo-r:learningObjective.Foundational%20Semantic%20Web%20Study.Explain%20what%20an%20ontology%20represents a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Explain what an ontology represents"^^xsd:string .
+

@@ -1,0 +1,35 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationAssessmentExercise.OWL%20Dialects.OWL%20Dialect%20Selection%20Brief a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "OWL Dialect Selection Brief"^^xsd:string,
+        "OWL Dialects"^^xsd:string ;
+    aplo-ont:evaluatesTopicAwarenessOf edu-r:topic.Expressivity,
+        edu-r:topic.OWL%20EL,
+        edu-r:topic.OWL%20QL,
+        edu-r:topic.OWL%20RL ;
+    aplo-ont:hasWorkloadLevel aplo-r:workloadLevel.Moderate%20Workload ;
+    aplo-ont:usesTechnique aplo-r:evaluationTechnique.Short%20Explanation%20Rubric .
+
+edu-r:topic.Expressivity a edu-ont:Topic ;
+    rdf:value "Expressivity"^^xsd:string .
+
+edu-r:topic.OWL%20EL a edu-ont:Topic ;
+    rdf:value "OWL EL"^^xsd:string .
+
+edu-r:topic.OWL%20QL a edu-ont:Topic ;
+    rdf:value "OWL QL"^^xsd:string .
+
+edu-r:topic.OWL%20RL a edu-ont:Topic ;
+    rdf:value "OWL RL"^^xsd:string .
+
+aplo-r:evaluationTechnique.Short%20Explanation%20Rubric a aplo-ont:EvaluationTechnique ;
+    rdf:value "Short Explanation Rubric"^^xsd:string .
+
+aplo-r:workloadLevel.Moderate%20Workload a aplo-ont:WorkloadLevel ;
+    rdf:value "Moderate Workload"^^xsd:string .
+

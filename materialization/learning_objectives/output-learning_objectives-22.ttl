@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.KG%20Curriculum%20Design%20Studio.Apply%20set%20relationships a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Scaffolding ;
+    aplo-ont:developsSkill aplo-r:skill.Set%20Relationship%20Reasoning ;
+    aplo-ont:hasDescription "Set Relationship Reasoning in Introduction to Set Theory: Use the module artifact to defend one explicit design choice."^^xsd:string ;
+    aplo-ont:hasName "Apply set relationships"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.KG%20Curriculum%20Design%20Studio .
+
+aplo-r:learningSituation.KG%20Curriculum%20Design%20Studio a aplo-ont:LearningSituation ;
+    rdf:value "KG Curriculum Design Studio"^^xsd:string .
+
+aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Scaffolding a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Scaffolding"^^xsd:string .
+
+aplo-r:skill.Set%20Relationship%20Reasoning a aplo-ont:Skill ;
+    rdf:value "Set Relationship Reasoning"^^xsd:string .
+

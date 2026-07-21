@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Portfolio%20Reflection a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Ask learners to select artifacts and explain evidence of growth quality and next improvement"^^xsd:string ;
+    aplo-ont:hasName "Portfolio Reflection"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Document%20Learning%20Growth .
+
+aplo-r:pedagogicalObjective.Document%20Learning%20Growth a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Make progress visible across multiple learning products or attempts"^^xsd:string ;
+    aplo-ont:hasName "Document Learning Growth"^^xsd:string .
+

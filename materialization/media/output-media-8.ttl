@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:media.RDF a edu-ont:Media ;
+    rdf:value "RDF"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.RDF.RDF%20Triple%20Interpretation%20Quiz ;
+    aplo-ont:supportsLearningObjective aplo-r:learningObjective.RDF%20Practice%20Session.Interpret%20RDF%20triple%20components .
+
+aplo-r:evaluationAssessmentExercise.RDF.RDF%20Triple%20Interpretation%20Quiz a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "RDF Triple Interpretation Quiz"^^xsd:string .
+
+aplo-r:learningObjective.RDF%20Practice%20Session.Interpret%20RDF%20triple%20components a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Interpret RDF triple components"^^xsd:string .
+

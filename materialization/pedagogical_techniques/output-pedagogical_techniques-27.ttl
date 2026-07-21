@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Learning%20Journal a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Ask learners to maintain short entries about progress confusion examples and strategy choices across time"^^xsd:string ;
+    aplo-ont:hasName "Learning Journal"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Support%20Ongoing%20Reflection .
+
+aplo-r:pedagogicalObjective.Support%20Ongoing%20Reflection a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Help learners monitor learning over multiple activities or modules"^^xsd:string ;
+    aplo-ont:hasName "Support Ongoing Reflection"^^xsd:string .
+

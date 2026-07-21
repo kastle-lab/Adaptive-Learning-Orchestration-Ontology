@@ -1,0 +1,56 @@
+metadata:
+  name: "Synthetic Learners"
+  source_ext: "csv"
+
+root:
+  type: "aplo-ont:Learner"
+  uri: "aplo-r:learner"
+  varids: ["Learner"]
+  connections:
+    - p: "rdf:value"
+      o:
+        datatype: "xsd:string"
+        val_source: "Learner"
+    - p: "aplo-ont:hasSituation"
+      o:
+        type: "aplo-ont:LearningSituation"
+        uri: "aplo-r:learningSituation"
+        varids: ["Learning Situation"]
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Learning Situation"
+    - p: "aplo-ont:hasGoal"
+      o:
+        type: "aplo-ont:LearnerGoal"
+        uri: "aplo-r:learnerGoal"
+        varids: ["Learner Goals"]
+        split: " | "
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Learner Goals"
+    - p: "aplo-ont:hasLearnerPreference"
+      o:
+        type: "aplo-ont:LearnerPreference"
+        uri: "aplo-r:learnerPreference"
+        varids: ["Learner Preferences"]
+        split: " | "
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Learner Preferences"
+    - p: "aplo-ont:hasLearningChallenge"
+      o:
+        type: "aplo-ont:LearningChallenge"
+        uri: "aplo-r:learningChallenge"
+        varids: ["Learning Challenges"]
+        split: " | "
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Learning Challenges"

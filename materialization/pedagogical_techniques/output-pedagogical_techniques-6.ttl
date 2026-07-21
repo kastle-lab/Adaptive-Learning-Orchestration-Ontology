@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Reflection%20Prompt a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Ask learners to describe what they learned how they learned it and what remains unclear"^^xsd:string ;
+    aplo-ont:hasName "Reflection Prompt"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Build%20Metacognition .
+
+aplo-r:pedagogicalObjective.Build%20Metacognition a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Help learners monitor understanding strategy and next steps"^^xsd:string ;
+    aplo-ont:hasName "Build Metacognition"^^xsd:string .
+

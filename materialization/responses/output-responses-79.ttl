@@ -1,0 +1,24 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:response.Learner%20Kai.Adaptive%20Tutor.OWL%20Modeling%20Constraint%20Analysis%20Practice%20Prompt a aplo-ont:Response ;
+    rdf:value "OWL Modeling Constraint Analysis Practice Prompt"^^xsd:string,
+        "OWL Modeling Constraint Analysis: use a contrasting example to test the claim using the OWL evidence from OWL Constraint Modeling Review."^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Kai.OWL.OWL%20Modeling%20Constraint%20Analysis.OWL%20Modeling%20Constraint%20Analysis%20Scenario%20Update ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Kai.Adaptive%20Tutor.OWL%20Modeling%20Constraint%20Analysis%20Practice%20Prompt.2026-02-20T14%3A28%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Adaptive%20Tutor .
+
+aplo-r:awarenessObservation.Learner%20Kai.OWL.OWL%20Modeling%20Constraint%20Analysis.OWL%20Modeling%20Constraint%20Analysis%20Scenario%20Update a aplo-ont:AwarenessObservation ;
+    rdf:value "OWL Modeling Constraint Analysis Scenario Update"^^xsd:string .
+
+aplo-r:source.Adaptive%20Tutor a aplo-ont:Source ;
+    rdf:value "Adaptive Tutor"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Kai.Adaptive%20Tutor.OWL%20Modeling%20Constraint%20Analysis%20Practice%20Prompt.2026-02-20T14%3A28%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-02-20T14:28:00+00:00"^^xsd:dateTime .
+

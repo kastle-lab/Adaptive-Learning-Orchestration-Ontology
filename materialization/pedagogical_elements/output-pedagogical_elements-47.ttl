@@ -1,0 +1,20 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Self-Regulated%20Learning.Strategic%20Planning a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Select resources tactics sequencing and checkpoints for reaching the learning goal"^^xsd:string ;
+    aplo-ont:hasName "Strategic Planning"^^xsd:string ;
+    aplo-ont:hasNextPedagogicalElement aplo-r:pedagogicalElement.Self-Regulated%20Learning.Self%20Monitoring ;
+    aplo-ont:hasPreviousPedagogicalElement aplo-r:pedagogicalElement.Self-Regulated%20Learning.Goal%20Setting ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Self-Regulated%20Learning .
+
+aplo-r:pedagogicalElement.Self-Regulated%20Learning.Goal%20Setting a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Goal Setting"^^xsd:string .
+
+aplo-r:pedagogicalElement.Self-Regulated%20Learning.Self%20Monitoring a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Self Monitoring"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Self-Regulated%20Learning a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Self-Regulated Learning"^^xsd:string .
+

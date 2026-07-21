@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Guided%20Practice a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Provide partially supported practice with prompts hints or checkpoints"^^xsd:string ;
+    aplo-ont:hasName "Guided Practice"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Support%20Skill%20Development .
+
+aplo-r:pedagogicalObjective.Support%20Skill%20Development a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Help learners move from modeled reasoning toward independent performance"^^xsd:string ;
+    aplo-ont:hasName "Support Skill Development"^^xsd:string .
+

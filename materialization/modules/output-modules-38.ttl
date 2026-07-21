@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:module.Survey%20of%20Modeling%20Tools a edu-ont:Module ;
+    rdf:value "Survey of Modeling Tools"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.Survey%20of%20Modeling%20Tools.Modeling%20Tool%20Selection%20Matrix ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Select%20ontology%20modeling%20tools .
+
+aplo-r:evaluationAssessmentExercise.Survey%20of%20Modeling%20Tools.Modeling%20Tool%20Selection%20Matrix a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Modeling Tool Selection Matrix"^^xsd:string .
+
+aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Select%20ontology%20modeling%20tools a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Select ontology modeling tools"^^xsd:string .
+

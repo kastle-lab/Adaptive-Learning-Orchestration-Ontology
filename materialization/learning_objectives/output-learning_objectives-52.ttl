@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.KG%20Research%20Representation%20Study.Compare%20property%20graph%20representations a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Community%20of%20Inquiry.Cognitive%20Presence ;
+    aplo-ont:developsSkill aplo-r:skill.Property%20Graph%20Comparison ;
+    aplo-ont:hasDescription "Property Graph Comparison in Property Graphs: Trace the reasoning path from source concept to modeled statement."^^xsd:string ;
+    aplo-ont:hasName "Compare property graph representations"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.KG%20Research%20Representation%20Study .
+
+aplo-r:learningSituation.KG%20Research%20Representation%20Study a aplo-ont:LearningSituation ;
+    rdf:value "KG Research Representation Study"^^xsd:string .
+
+aplo-r:pedagogicalElement.Community%20of%20Inquiry.Cognitive%20Presence a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Cognitive Presence"^^xsd:string .
+
+aplo-r:skill.Property%20Graph%20Comparison a aplo-ont:Skill ;
+    rdf:value "Property Graph Comparison"^^xsd:string .
+

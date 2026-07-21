@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:media.SWRL a edu-ont:Media ;
+    rdf:value "SWRL"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.SWRL.SWRL%20Inference%20Review ;
+    aplo-ont:supportsLearningObjective aplo-r:learningObjective.Supply%20Chain%20KG%20Use%20Case%20Review.Explain%20SWRL%20rule%20inferences .
+
+aplo-r:evaluationAssessmentExercise.SWRL.SWRL%20Inference%20Review a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "SWRL Inference Review"^^xsd:string .
+
+aplo-r:learningObjective.Supply%20Chain%20KG%20Use%20Case%20Review.Explain%20SWRL%20rule%20inferences a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Explain SWRL rule inferences"^^xsd:string .
+

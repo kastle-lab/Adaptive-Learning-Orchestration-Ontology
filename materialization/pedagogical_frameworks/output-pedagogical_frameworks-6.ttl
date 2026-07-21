@@ -1,0 +1,26 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalFramework.Experiential%20Learning%20Cycle a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasDescription "A cyclical framework that moves learners from concrete experience through reflection conceptualization and experimentation"^^xsd:string ;
+    aplo-ont:hasElement aplo-r:pedagogicalElement.Experiential%20Learning%20Cycle.Abstract%20Conceptualization,
+        aplo-r:pedagogicalElement.Experiential%20Learning%20Cycle.Active%20Experimentation,
+        aplo-r:pedagogicalElement.Experiential%20Learning%20Cycle.Concrete%20Experience,
+        aplo-r:pedagogicalElement.Experiential%20Learning%20Cycle.Reflective%20Observation ;
+    aplo-ont:hasName "Experiential Learning Cycle"^^xsd:string .
+
+aplo-r:pedagogicalElement.Experiential%20Learning%20Cycle.Abstract%20Conceptualization a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Abstract Conceptualization"^^xsd:string .
+
+aplo-r:pedagogicalElement.Experiential%20Learning%20Cycle.Active%20Experimentation a aplo-ont:LastPedagogicalElement,
+        aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Active Experimentation"^^xsd:string .
+
+aplo-r:pedagogicalElement.Experiential%20Learning%20Cycle.Concrete%20Experience a aplo-ont:FirstPedagogicalElement,
+        aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Concrete Experience"^^xsd:string .
+
+aplo-r:pedagogicalElement.Experiential%20Learning%20Cycle.Reflective%20Observation a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Reflective Observation"^^xsd:string .
+

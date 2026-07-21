@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:media.RDF%20Serializations a edu-ont:Media ;
+    rdf:value "RDF Serializations"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.RDF%20Serializations.Serialization%20Format%20Comparison%20Brief ;
+    aplo-ont:supportsLearningObjective aplo-r:learningObjective.User%20Engagement%20KG%20Demonstration%20Planning.Compare%20RDF%20serialization%20choices .
+
+aplo-r:evaluationAssessmentExercise.RDF%20Serializations.Serialization%20Format%20Comparison%20Brief a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Serialization Format Comparison Brief"^^xsd:string .
+
+aplo-r:learningObjective.User%20Engagement%20KG%20Demonstration%20Planning.Compare%20RDF%20serialization%20choices a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Compare RDF serialization choices"^^xsd:string .
+

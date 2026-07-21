@@ -1,0 +1,44 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationTechnique.Short%20Explanation%20Rubric a aplo-ont:EvaluationTechnique ;
+    rdf:value "Short Explanation Rubric"^^xsd:string ;
+    aplo-ont:assessesLearningFeedback aplo-r:learningFeedback.Learner%20Kai.Instructor%20Reviewer.OWL%20Modeling%20Constraint%20Analysis%20Practice%20Cue ;
+    aplo-ont:assessesLearningObjective aplo-r:learningObjective.KG%20Research%20Representation%20Study.Analyze%20OWL%20modeling%20constraints ;
+    aplo-ont:hasEvaluationMetric aplo-r:evaluationMetric.Confidence%20Rating,
+        aplo-r:evaluationMetric.Rubric%20Level,
+        aplo-r:evaluationMetric.Score%20Percent ;
+    aplo-ont:hasEvaluationTechniqueType aplo-r:evaluationTechniqueType.Explanation%20Based,
+        aplo-r:evaluationTechniqueType.Formative,
+        aplo-r:evaluationTechniqueType.Instructor%20Reviewed ;
+    aplo-ont:provideFeedback aplo-r:response.Learner%20Kai.Adaptive%20Tutor.OWL%20Modeling%20Constraint%20Analysis%20Practice%20Prompt .
+
+aplo-r:evaluationMetric.Confidence%20Rating a aplo-ont:EvaluationMetric ;
+    rdf:value "Confidence Rating"^^xsd:string .
+
+aplo-r:evaluationMetric.Rubric%20Level a aplo-ont:EvaluationMetric ;
+    rdf:value "Rubric Level"^^xsd:string .
+
+aplo-r:evaluationMetric.Score%20Percent a aplo-ont:EvaluationMetric ;
+    rdf:value "Score Percent"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Explanation%20Based a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Explanation Based"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Formative a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Formative"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Instructor%20Reviewed a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Instructor Reviewed"^^xsd:string .
+
+aplo-r:learningFeedback.Learner%20Kai.Instructor%20Reviewer.OWL%20Modeling%20Constraint%20Analysis%20Practice%20Cue a aplo-ont:LearningFeedback ;
+    rdf:value "OWL Modeling Constraint Analysis Practice Cue"^^xsd:string .
+
+aplo-r:learningObjective.KG%20Research%20Representation%20Study.Analyze%20OWL%20modeling%20constraints a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Analyze OWL modeling constraints"^^xsd:string .
+
+aplo-r:response.Learner%20Kai.Adaptive%20Tutor.OWL%20Modeling%20Constraint%20Analysis%20Practice%20Prompt a aplo-ont:Response ;
+    rdf:value "OWL Modeling Constraint Analysis Practice Prompt"^^xsd:string .
+

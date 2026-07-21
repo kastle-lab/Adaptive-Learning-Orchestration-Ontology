@@ -1,0 +1,58 @@
+metadata:
+  name: "Synthetic Evaluation Assessment Exercises"
+  source_ext: "csv"
+
+cvs:
+  - type: "aplo-ont:WorkloadLevel"
+    uri: "aplo-r:workloadLevel"
+    instances:
+      - "Low Workload"
+      - "Moderate Workload"
+      - "High Workload"
+
+root:
+  type: "aplo-ont:EvaluationAssessmentExercise"
+  uri: "aplo-r:evaluationAssessmentExercise"
+  varids:
+    ["Evaluation Assessment Exercise Context", "Evaluation Assessment Exercise"]
+  connections:
+    - p: "rdf:value"
+      o:
+        datatype: "xsd:string"
+        val_source: "Evaluation Assessment Exercise"
+    - p: "rdf:value"
+      o:
+        datatype: "xsd:string"
+        val_source: "Evaluation Assessment Exercise Context"
+    - p: "aplo-ont:evaluatesTopicAwarenessOf"
+      o:
+        type: "edu-ont:Topic"
+        uri: "edu-r:topic"
+        varids: ["Evaluates Topic Awareness Of"]
+        split: " | "
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Evaluates Topic Awareness Of"
+    - p: "aplo-ont:hasWorkloadLevel"
+      o:
+        type: "aplo-ont:WorkloadLevel"
+        uri: "aplo-r:workloadLevel"
+        varids: ["Workload Level"]
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Workload Level"
+    - p: "aplo-ont:usesTechnique"
+      o:
+        type: "aplo-ont:EvaluationTechnique"
+        uri: "aplo-r:evaluationTechnique"
+        varids: ["Uses Evaluation Techniques"]
+        split: " | "
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Uses Evaluation Techniques"

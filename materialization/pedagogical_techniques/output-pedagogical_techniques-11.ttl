@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Prototype%20Design a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Ask learners to produce a draft artifact solution model or plan"^^xsd:string ;
+    aplo-ont:hasName "Prototype Design"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Support%20Creative%20Production .
+
+aplo-r:pedagogicalObjective.Support%20Creative%20Production a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Move learners from understanding and evaluation toward original production"^^xsd:string ;
+    aplo-ont:hasName "Support Creative Production"^^xsd:string .
+

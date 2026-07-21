@@ -1,0 +1,24 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:response.Learner%20Carla.Instructor%20Reviewer.Provenance%20Chain%20Modeling%20Task%20Checkpoint%20Score a aplo-ont:Response ;
+    rdf:value "Provenance Chain Modeling Task Checkpoint Score"^^xsd:string,
+        "Provenance Chain Modeling Task assessment entry: 81 Score Percent for Provenance Relationship Modeling."^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Carla.Provenance.Provenance%20Relationship%20Modeling.Provenance%20Relationship%20Modeling%20Practice%20Update ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Carla.Instructor%20Reviewer.Provenance%20Chain%20Modeling%20Task%20Checkpoint%20Score.2026-02-27T14%3A07%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Instructor%20Reviewer .
+
+aplo-r:awarenessObservation.Learner%20Carla.Provenance.Provenance%20Relationship%20Modeling.Provenance%20Relationship%20Modeling%20Practice%20Update a aplo-ont:AwarenessObservation ;
+    rdf:value "Provenance Relationship Modeling Practice Update"^^xsd:string .
+
+aplo-r:source.Instructor%20Reviewer a aplo-ont:Source ;
+    rdf:value "Instructor Reviewer"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Carla.Instructor%20Reviewer.Provenance%20Chain%20Modeling%20Task%20Checkpoint%20Score.2026-02-27T14%3A07%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-02-27T14:07:00+00:00"^^xsd:dateTime .
+

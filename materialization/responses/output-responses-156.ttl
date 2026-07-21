@@ -1,0 +1,24 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:response.Learner%20Edward.Instructor%20Reviewer.RDF%20Plus%20Property%20Reasoning%20Drill%20Assessment%20Value a aplo-ont:Response ;
+    rdf:value "RDF Plus Property Reasoning Drill Assessment Value"^^xsd:string,
+        "RDF Plus Property Reasoning Drill scored artifact: 75 Score Percent for RDF Plus Property Reasoning."^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Edward.Property.RDF%20Plus%20Property%20Reasoning.RDF%20Plus%20Property%20Reasoning%20Task%20Evidence ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Edward.Instructor%20Reviewer.RDF%20Plus%20Property%20Reasoning%20Drill%20Assessment%20Value.2026-03-17T14%3A28%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Instructor%20Reviewer .
+
+aplo-r:awarenessObservation.Learner%20Edward.Property.RDF%20Plus%20Property%20Reasoning.RDF%20Plus%20Property%20Reasoning%20Task%20Evidence a aplo-ont:AwarenessObservation ;
+    rdf:value "RDF Plus Property Reasoning Task Evidence"^^xsd:string .
+
+aplo-r:source.Instructor%20Reviewer a aplo-ont:Source ;
+    rdf:value "Instructor Reviewer"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Edward.Instructor%20Reviewer.RDF%20Plus%20Property%20Reasoning%20Drill%20Assessment%20Value.2026-03-17T14%3A28%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-03-17T14:28:00+00:00"^^xsd:dateTime .
+

@@ -1,0 +1,32 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningStrategy.Supply%20Chain%20KG%20Use%20Case%20Review.Supply%20Chain%20KG%20Value%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasDescription "Use supply-chain cases data walkthroughs and public product review to relate interoperability and traceability to KG value."^^xsd:string ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Supply%20Chain%20KG%20Use%20Case%20Review.Explain%20SWRL%20rule%20inferences,
+        aplo-r:learningObjective.Supply%20Chain%20KG%20Use%20Case%20Review.Explain%20Semantic%20Web%20evolution ;
+    aplo-ont:hasName "Supply Chain KG Value Strategy"^^xsd:string ;
+    aplo-ont:hasPedagogicalTechnique aplo-r:pedagogicalTechnique.Case%20Based%20Scenario,
+        aplo-r:pedagogicalTechnique.Data%20Walkthrough,
+        aplo-r:pedagogicalTechnique.Project%20Brief,
+        aplo-r:pedagogicalTechnique.Public%20Product%20Review .
+
+aplo-r:learningObjective.Supply%20Chain%20KG%20Use%20Case%20Review.Explain%20SWRL%20rule%20inferences a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Explain SWRL rule inferences"^^xsd:string .
+
+aplo-r:learningObjective.Supply%20Chain%20KG%20Use%20Case%20Review.Explain%20Semantic%20Web%20evolution a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Explain Semantic Web evolution"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Case%20Based%20Scenario a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Case Based Scenario"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Data%20Walkthrough a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Data Walkthrough"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Project%20Brief a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Project Brief"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Public%20Product%20Review a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Public Product Review"^^xsd:string .
+

@@ -1,0 +1,40 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningStrategy.OWL%20Modeling%20Practice.OWL%20Modeling%20Revision%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasDescription "Surface modeling misconceptions with conflict cases then use error analysis and corrective support to improve OWL decisions."^^xsd:string ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.OWL%20Modeling%20Practice.Analyze%20OWL%20axioms%20in%20a%20modeling%20scenario,
+        aplo-r:learningObjective.OWL%20Modeling%20Practice.Differentiate%20OWL%20data%20and%20object%20properties,
+        aplo-r:learningObjective.OWL%20Modeling%20Practice.Revise%20an%20ontology%20model%20after%20feedback ;
+    aplo-ont:hasName "OWL Modeling Revision Strategy"^^xsd:string ;
+    aplo-ont:hasPedagogicalTechnique aplo-r:pedagogicalTechnique.Conceptual%20Conflict%20Prompt,
+        aplo-r:pedagogicalTechnique.Corrective%20Mini%20Lesson,
+        aplo-r:pedagogicalTechnique.Error%20Analysis,
+        aplo-r:pedagogicalTechnique.Misconception%20Probe,
+        aplo-r:pedagogicalTechnique.Rubric%20Based%20Review .
+
+aplo-r:learningObjective.OWL%20Modeling%20Practice.Analyze%20OWL%20axioms%20in%20a%20modeling%20scenario a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Analyze OWL axioms in a modeling scenario"^^xsd:string .
+
+aplo-r:learningObjective.OWL%20Modeling%20Practice.Differentiate%20OWL%20data%20and%20object%20properties a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Differentiate OWL data and object properties"^^xsd:string .
+
+aplo-r:learningObjective.OWL%20Modeling%20Practice.Revise%20an%20ontology%20model%20after%20feedback a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Revise an ontology model after feedback"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Conceptual%20Conflict%20Prompt a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Conceptual Conflict Prompt"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Corrective%20Mini%20Lesson a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Corrective Mini Lesson"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Error%20Analysis a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Error Analysis"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Misconception%20Probe a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Misconception Probe"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Rubric%20Based%20Review a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Rubric Based Review"^^xsd:string .
+

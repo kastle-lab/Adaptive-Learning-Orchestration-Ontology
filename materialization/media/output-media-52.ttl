@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:media.Survey%20of%20Reasoners a edu-ont:Media ;
+    rdf:value "Survey of Reasoners"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.Survey%20of%20Reasoners.Reasoner%20Capability%20Matrix ;
+    aplo-ont:supportsLearningObjective aplo-r:learningObjective.Knowledge%20Graph%20Foundations%20Orientation.Compare%20reasoning%20tool%20capabilities .
+
+aplo-r:evaluationAssessmentExercise.Survey%20of%20Reasoners.Reasoner%20Capability%20Matrix a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Reasoner Capability Matrix"^^xsd:string .
+
+aplo-r:learningObjective.Knowledge%20Graph%20Foundations%20Orientation.Compare%20reasoning%20tool%20capabilities a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Compare reasoning tool capabilities"^^xsd:string .
+

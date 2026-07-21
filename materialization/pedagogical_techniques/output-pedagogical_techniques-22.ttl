@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Analogical%20Comparison a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Compare two structurally related examples to identify shared principles and important differences"^^xsd:string ;
+    aplo-ont:hasName "Analogical Comparison"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Support%20Transfer .
+
+aplo-r:pedagogicalObjective.Support%20Transfer a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Help learners abstract a concept across examples without losing contextual detail"^^xsd:string ;
+    aplo-ont:hasName "Support Transfer"^^xsd:string .
+

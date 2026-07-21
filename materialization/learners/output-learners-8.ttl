@@ -1,0 +1,32 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Edward a aplo-ont:Learner ;
+    rdf:value "Learner Edward"^^xsd:string ;
+    aplo-ont:hasGoal aplo-r:learnerGoal.Evaluate%20Knowledge%20Graph%20Business%20Value ;
+    aplo-ont:hasLearnerPreference aplo-r:learnerPreference.Business%20Outcome%20Preference,
+        aplo-r:learnerPreference.Concise%20Summary%20Preference ;
+    aplo-ont:hasLearningChallenge aplo-r:learningChallenge.Limited%20Study%20Time,
+        aplo-r:learningChallenge.Needs%20Business%20Relevance%20Framing ;
+    aplo-ont:hasSituation aplo-r:learningSituation.Executive%20KG%20Value%20Review .
+
+aplo-r:learnerGoal.Evaluate%20Knowledge%20Graph%20Business%20Value a aplo-ont:LearnerGoal ;
+    rdf:value "Evaluate Knowledge Graph Business Value"^^xsd:string .
+
+aplo-r:learnerPreference.Business%20Outcome%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Business Outcome Preference"^^xsd:string .
+
+aplo-r:learnerPreference.Concise%20Summary%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Concise Summary Preference"^^xsd:string .
+
+aplo-r:learningChallenge.Limited%20Study%20Time a aplo-ont:LearningChallenge ;
+    rdf:value "Limited Study Time"^^xsd:string .
+
+aplo-r:learningChallenge.Needs%20Business%20Relevance%20Framing a aplo-ont:LearningChallenge ;
+    rdf:value "Needs Business Relevance Framing"^^xsd:string .
+
+aplo-r:learningSituation.Executive%20KG%20Value%20Review a aplo-ont:LearningSituation ;
+    rdf:value "Executive KG Value Review"^^xsd:string .
+

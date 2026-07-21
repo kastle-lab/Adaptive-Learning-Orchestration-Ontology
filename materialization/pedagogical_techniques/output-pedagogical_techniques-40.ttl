@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Misconception%20Probe a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Pose a diagnostic example or question designed to reveal a likely misunderstanding"^^xsd:string ;
+    aplo-ont:hasName "Misconception Probe"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Surface%20Misconception .
+
+aplo-r:pedagogicalObjective.Surface%20Misconception a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Identify incorrect prior conceptions before instruction or correction"^^xsd:string ;
+    aplo-ont:hasName "Surface Misconception"^^xsd:string .
+

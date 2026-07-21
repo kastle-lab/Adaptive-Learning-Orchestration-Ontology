@@ -1,0 +1,31 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningFeedback.Learner%20Casey.Learning%20Platform.Mastery%20Feedback%20on%20RDF%20RDFS%20Basics a aplo-ont:LearningFeedback ;
+    rdf:value "Mastery Feedback on RDF RDFS Basics"^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Casey.Schema.RDF%20RDFS%20Mastery%20Demonstration.RDF%20RDFS%20Mastery%20Awareness ;
+    aplo-ont:affectsStrategy aplo-r:learningStrategy.RDFS%20Schema%20Practice.OWL%20Modeling%20Revision%20Strategy ;
+    aplo-ont:hasLearningFeedbackType aplo-r:learningFeedbackType.Motivational%20Feedback ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Casey.Learning%20Platform.Mastery%20Feedback%20on%20RDF%20RDFS%20Basics.2026-01-21T10%3A35%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Learning%20Platform .
+
+aplo-r:awarenessObservation.Learner%20Casey.Schema.RDF%20RDFS%20Mastery%20Demonstration.RDF%20RDFS%20Mastery%20Awareness a aplo-ont:AwarenessObservation ;
+    rdf:value "RDF RDFS Mastery Awareness"^^xsd:string .
+
+aplo-r:learningFeedbackType.Motivational%20Feedback a aplo-ont:LearningFeedbackType ;
+    rdf:value "Motivational Feedback"^^xsd:string .
+
+aplo-r:learningStrategy.RDFS%20Schema%20Practice.OWL%20Modeling%20Revision%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasName "OWL Modeling Revision Strategy"^^xsd:string .
+
+aplo-r:source.Learning%20Platform a aplo-ont:Source ;
+    rdf:value "Learning Platform"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Casey.Learning%20Platform.Mastery%20Feedback%20on%20RDF%20RDFS%20Basics.2026-01-21T10%3A35%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-01-21T10:35:00+00:00"^^xsd:dateTime .
+

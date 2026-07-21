@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.User%20Engagement%20KG%20Demonstration%20Planning.Select%20KG%20visualization%20tools a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Project%20Based%20Learning.Critique%20and%20Revision ;
+    aplo-ont:developsSkill aplo-r:skill.Knowledge%20Graph%20Visualization%20Tool%20Selection ;
+    aplo-ont:hasDescription "Knowledge Graph Visualization Tool Selection in Survey of Visualization Tools: Translate the concept into a concrete check a reviewer could apply."^^xsd:string ;
+    aplo-ont:hasName "Select KG visualization tools"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.User%20Engagement%20KG%20Demonstration%20Planning .
+
+aplo-r:learningSituation.User%20Engagement%20KG%20Demonstration%20Planning a aplo-ont:LearningSituation ;
+    rdf:value "User Engagement KG Demonstration Planning"^^xsd:string .
+
+aplo-r:pedagogicalElement.Project%20Based%20Learning.Critique%20and%20Revision a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Critique and Revision"^^xsd:string .
+
+aplo-r:skill.Knowledge%20Graph%20Visualization%20Tool%20Selection a aplo-ont:Skill ;
+    rdf:value "Knowledge Graph Visualization Tool Selection"^^xsd:string .
+

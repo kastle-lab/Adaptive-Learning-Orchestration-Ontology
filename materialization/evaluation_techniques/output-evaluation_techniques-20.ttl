@@ -1,0 +1,40 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationTechnique.Auto%20Scored%20Concept%20Check a aplo-ont:EvaluationTechnique ;
+    rdf:value "Auto Scored Concept Check"^^xsd:string ;
+    aplo-ont:assessesLearningFeedback aplo-r:learningFeedback.Learner%20Cameron.Learning%20Platform.Set%20Relationship%20Reasoning%20Coaching%20Note ;
+    aplo-ont:assessesLearningObjective aplo-r:learningObjective.KG%20Curriculum%20Design%20Studio.Apply%20set%20relationships ;
+    aplo-ont:hasEvaluationMetric aplo-r:evaluationMetric.Correctness%20Flag,
+        aplo-r:evaluationMetric.Score%20Percent ;
+    aplo-ont:hasEvaluationTechniqueType aplo-r:evaluationTechniqueType.Automated,
+        aplo-r:evaluationTechniqueType.Formative,
+        aplo-r:evaluationTechniqueType.Low%20Stakes ;
+    aplo-ont:provideFeedback aplo-r:response.Learner%20Cameron.Adaptive%20Tutor.Set%20Relationship%20Reasoning%20Next%20Step .
+
+aplo-r:evaluationMetric.Correctness%20Flag a aplo-ont:EvaluationMetric ;
+    rdf:value "Correctness Flag"^^xsd:string .
+
+aplo-r:evaluationMetric.Score%20Percent a aplo-ont:EvaluationMetric ;
+    rdf:value "Score Percent"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Automated a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Automated"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Formative a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Formative"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Low%20Stakes a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Low Stakes"^^xsd:string .
+
+aplo-r:learningFeedback.Learner%20Cameron.Learning%20Platform.Set%20Relationship%20Reasoning%20Coaching%20Note a aplo-ont:LearningFeedback ;
+    rdf:value "Set Relationship Reasoning Coaching Note"^^xsd:string .
+
+aplo-r:learningObjective.KG%20Curriculum%20Design%20Studio.Apply%20set%20relationships a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Apply set relationships"^^xsd:string .
+
+aplo-r:response.Learner%20Cameron.Adaptive%20Tutor.Set%20Relationship%20Reasoning%20Next%20Step a aplo-ont:Response ;
+    rdf:value "Set Relationship Reasoning Next Step"^^xsd:string .
+

@@ -1,0 +1,32 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningStrategy.Educational%20KG%20Facilitation%20Planning.Educational%20Facilitation%20KG%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasDescription "Use varied representations facilitation moves and alternative demonstrations so RDF and tooling examples can be taught accessibly."^^xsd:string ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Educational%20KG%20Facilitation%20Planning.Edit%20ontology%20models%20in%20Protege,
+        aplo-r:learningObjective.Educational%20KG%20Facilitation%20Planning.Interpret%20RDF%20graph%20statements ;
+    aplo-ont:hasName "Educational Facilitation KG Strategy"^^xsd:string ;
+    aplo-ont:hasPedagogicalTechnique aplo-r:pedagogicalTechnique.Alternative%20Demonstration,
+        aplo-r:pedagogicalTechnique.Instructor%20Facilitation%20Move,
+        aplo-r:pedagogicalTechnique.Multiple%20Means%20Representation,
+        aplo-r:pedagogicalTechnique.Reflective%20Debrief .
+
+aplo-r:learningObjective.Educational%20KG%20Facilitation%20Planning.Edit%20ontology%20models%20in%20Protege a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Edit ontology models in Protege"^^xsd:string .
+
+aplo-r:learningObjective.Educational%20KG%20Facilitation%20Planning.Interpret%20RDF%20graph%20statements a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Interpret RDF graph statements"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Alternative%20Demonstration a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Alternative Demonstration"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Instructor%20Facilitation%20Move a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Instructor Facilitation Move"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Multiple%20Means%20Representation a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Multiple Means Representation"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Reflective%20Debrief a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Reflective Debrief"^^xsd:string .
+

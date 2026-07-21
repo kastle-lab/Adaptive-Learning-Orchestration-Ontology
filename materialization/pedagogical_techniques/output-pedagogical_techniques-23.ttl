@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Case%20Based%20Scenario a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Ground learning in a realistic case with actors constraints evidence and a decision that must be justified"^^xsd:string ;
+    aplo-ont:hasName "Case Based Scenario"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Contextualize%20Learning .
+
+aplo-r:pedagogicalObjective.Contextualize%20Learning a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Help learners connect concepts to authentic situations and consequences"^^xsd:string ;
+    aplo-ont:hasName "Contextualize Learning"^^xsd:string .
+

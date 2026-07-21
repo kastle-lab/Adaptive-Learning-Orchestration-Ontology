@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Consulting%20KG%20Opportunity%20Review.Map%20Open%20Graph%20metadata a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Universal%20Design%20for%20Learning.Representation%20Options ;
+    aplo-ont:developsSkill aplo-r:skill.Open%20Graph%20Metadata%20Mapping ;
+    aplo-ont:hasDescription "Open Graph Metadata Mapping in Open Graph Protocol: Separate vocabulary recall from modeling judgment in the final answer."^^xsd:string ;
+    aplo-ont:hasName "Map Open Graph metadata"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Consulting%20KG%20Opportunity%20Review .
+
+aplo-r:learningSituation.Consulting%20KG%20Opportunity%20Review a aplo-ont:LearningSituation ;
+    rdf:value "Consulting KG Opportunity Review"^^xsd:string .
+
+aplo-r:pedagogicalElement.Universal%20Design%20for%20Learning.Representation%20Options a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Representation Options"^^xsd:string .
+
+aplo-r:skill.Open%20Graph%20Metadata%20Mapping a aplo-ont:Skill ;
+    rdf:value "Open Graph Metadata Mapping"^^xsd:string .
+

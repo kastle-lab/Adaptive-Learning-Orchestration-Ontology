@@ -1,0 +1,16 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learnerGoal.Frame%20KG%20Outcomes%20for%20Executives a aplo-ont:LearnerGoal ;
+    rdf:value "Frame KG Outcomes for Executives"^^xsd:string ;
+    aplo-ont:targetsSkill aplo-r:skill.Nanopublication%20Claim%20Modeling,
+        aplo-r:skill.OWL%20Dialect%20Selection .
+
+aplo-r:skill.Nanopublication%20Claim%20Modeling a aplo-ont:Skill ;
+    rdf:value "Nanopublication Claim Modeling"^^xsd:string .
+
+aplo-r:skill.OWL%20Dialect%20Selection a aplo-ont:Skill ;
+    rdf:value "OWL Dialect Selection"^^xsd:string .
+

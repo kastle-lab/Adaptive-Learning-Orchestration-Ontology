@@ -1,0 +1,40 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationTechnique.Auto%20Scored%20Concept%20Check a aplo-ont:EvaluationTechnique ;
+    rdf:value "Auto Scored Concept Check"^^xsd:string ;
+    aplo-ont:assessesLearningFeedback aplo-r:learningFeedback.Learner%20Usman.Learning%20Platform.RDF%20Serialization%20Format%20Comparison%20Extension%20Prompt ;
+    aplo-ont:assessesLearningObjective aplo-r:learningObjective.User%20Engagement%20KG%20Demonstration%20Planning.Compare%20RDF%20serialization%20choices ;
+    aplo-ont:hasEvaluationMetric aplo-r:evaluationMetric.Correctness%20Flag,
+        aplo-r:evaluationMetric.Score%20Percent ;
+    aplo-ont:hasEvaluationTechniqueType aplo-r:evaluationTechniqueType.Automated,
+        aplo-r:evaluationTechniqueType.Formative,
+        aplo-r:evaluationTechniqueType.Low%20Stakes ;
+    aplo-ont:provideFeedback aplo-r:response.Learner%20Usman.Adaptive%20Tutor.RDF%20Serialization%20Format%20Comparison%20Extension%20Prompt .
+
+aplo-r:evaluationMetric.Correctness%20Flag a aplo-ont:EvaluationMetric ;
+    rdf:value "Correctness Flag"^^xsd:string .
+
+aplo-r:evaluationMetric.Score%20Percent a aplo-ont:EvaluationMetric ;
+    rdf:value "Score Percent"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Automated a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Automated"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Formative a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Formative"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Low%20Stakes a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Low Stakes"^^xsd:string .
+
+aplo-r:learningFeedback.Learner%20Usman.Learning%20Platform.RDF%20Serialization%20Format%20Comparison%20Extension%20Prompt a aplo-ont:LearningFeedback ;
+    rdf:value "RDF Serialization Format Comparison Extension Prompt"^^xsd:string .
+
+aplo-r:learningObjective.User%20Engagement%20KG%20Demonstration%20Planning.Compare%20RDF%20serialization%20choices a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Compare RDF serialization choices"^^xsd:string .
+
+aplo-r:response.Learner%20Usman.Adaptive%20Tutor.RDF%20Serialization%20Format%20Comparison%20Extension%20Prompt a aplo-ont:Response ;
+    rdf:value "RDF Serialization Format Comparison Extension Prompt"^^xsd:string .
+

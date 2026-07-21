@@ -1,0 +1,36 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningStrategy.Consulting%20KG%20Opportunity%20Review.Consulting%20KG%20Value%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasDescription "Use client-style cases simulations and transfer tasks to connect rule reasoning observation models and metadata recommendations."^^xsd:string ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Consulting%20KG%20Opportunity%20Review.Explain%20rule%20based%20inference,
+        aplo-r:learningObjective.Consulting%20KG%20Opportunity%20Review.Map%20Open%20Graph%20metadata,
+        aplo-r:learningObjective.Consulting%20KG%20Opportunity%20Review.Model%20observations%20with%20SOSA%20SSN ;
+    aplo-ont:hasName "Consulting KG Value Strategy"^^xsd:string ;
+    aplo-ont:hasPedagogicalTechnique aplo-r:pedagogicalTechnique.Case%20Based%20Scenario,
+        aplo-r:pedagogicalTechnique.Relevance%20Framing,
+        aplo-r:pedagogicalTechnique.Simulation%20Exercise,
+        aplo-r:pedagogicalTechnique.Transfer%20Task .
+
+aplo-r:learningObjective.Consulting%20KG%20Opportunity%20Review.Explain%20rule%20based%20inference a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Explain rule based inference"^^xsd:string .
+
+aplo-r:learningObjective.Consulting%20KG%20Opportunity%20Review.Map%20Open%20Graph%20metadata a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Map Open Graph metadata"^^xsd:string .
+
+aplo-r:learningObjective.Consulting%20KG%20Opportunity%20Review.Model%20observations%20with%20SOSA%20SSN a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Model observations with SOSA SSN"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Case%20Based%20Scenario a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Case Based Scenario"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Relevance%20Framing a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Relevance Framing"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Simulation%20Exercise a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Simulation Exercise"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Transfer%20Task a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Transfer Task"^^xsd:string .
+

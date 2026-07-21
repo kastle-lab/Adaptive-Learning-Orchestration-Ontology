@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Multiple%20Means%20Representation a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Offer the same concept through alternative examples diagrams text demonstrations and annotated artifacts"^^xsd:string ;
+    aplo-ont:hasName "Multiple Means Representation"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Reduce%20Access%20Barriers .
+
+aplo-r:pedagogicalObjective.Reduce%20Access%20Barriers a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Make core learning content available through varied forms of representation"^^xsd:string ;
+    aplo-ont:hasName "Reduce Access Barriers"^^xsd:string .
+

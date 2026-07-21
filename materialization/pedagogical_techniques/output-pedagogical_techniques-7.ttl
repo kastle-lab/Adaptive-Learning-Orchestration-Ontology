@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Rubric%20Based%20Review a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Use explicit criteria to evaluate work and guide revision"^^xsd:string ;
+    aplo-ont:hasName "Rubric Based Review"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Improve%20Judgment .
+
+aplo-r:pedagogicalObjective.Improve%20Judgment a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Help learners judge quality using transparent criteria or standards"^^xsd:string ;
+    aplo-ont:hasName "Improve Judgment"^^xsd:string .
+

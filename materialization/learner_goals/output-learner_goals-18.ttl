@@ -1,0 +1,16 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learnerGoal.Compare%20KG%20Research%20Representations a aplo-ont:LearnerGoal ;
+    rdf:value "Compare KG Research Representations"^^xsd:string ;
+    aplo-ont:targetsSkill aplo-r:skill.OWL%20Modeling%20Constraint%20Analysis,
+        aplo-r:skill.Property%20Graph%20Comparison .
+
+aplo-r:skill.OWL%20Modeling%20Constraint%20Analysis a aplo-ont:Skill ;
+    rdf:value "OWL Modeling Constraint Analysis"^^xsd:string .
+
+aplo-r:skill.Property%20Graph%20Comparison a aplo-ont:Skill ;
+    rdf:value "Property Graph Comparison"^^xsd:string .
+

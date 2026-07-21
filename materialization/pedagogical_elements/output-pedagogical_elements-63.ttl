@@ -1,0 +1,16 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Conceptual%20Change.Transfer%20Check a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Check whether the reconstructed concept works in a new example or decision context"^^xsd:string ;
+    aplo-ont:hasName "Transfer Check"^^xsd:string ;
+    aplo-ont:hasPreviousPedagogicalElement aplo-r:pedagogicalElement.Conceptual%20Change.Concept%20Reconstruction ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Conceptual%20Change .
+
+aplo-r:pedagogicalElement.Conceptual%20Change.Concept%20Reconstruction a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Concept Reconstruction"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Conceptual%20Change a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Conceptual Change"^^xsd:string .
+

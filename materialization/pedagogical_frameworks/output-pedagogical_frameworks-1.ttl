@@ -1,0 +1,30 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalFramework.Instructional%20Model a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasDescription "An inquiry-based instructional sequence that moves learners through engagement exploration explanation elaboration and evaluation"^^xsd:string ;
+    aplo-ont:hasElement aplo-r:pedagogicalElement.Instructional%20Model.Elaborate,
+        aplo-r:pedagogicalElement.Instructional%20Model.Engage,
+        aplo-r:pedagogicalElement.Instructional%20Model.Evaluate,
+        aplo-r:pedagogicalElement.Instructional%20Model.Explain,
+        aplo-r:pedagogicalElement.Instructional%20Model.Explore ;
+    aplo-ont:hasName "Instructional Model"^^xsd:string .
+
+aplo-r:pedagogicalElement.Instructional%20Model.Elaborate a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Elaborate"^^xsd:string .
+
+aplo-r:pedagogicalElement.Instructional%20Model.Engage a aplo-ont:FirstPedagogicalElement,
+        aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Engage"^^xsd:string .
+
+aplo-r:pedagogicalElement.Instructional%20Model.Evaluate a aplo-ont:LastPedagogicalElement,
+        aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Evaluate"^^xsd:string .
+
+aplo-r:pedagogicalElement.Instructional%20Model.Explain a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Explain"^^xsd:string .
+
+aplo-r:pedagogicalElement.Instructional%20Model.Explore a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Explore"^^xsd:string .
+

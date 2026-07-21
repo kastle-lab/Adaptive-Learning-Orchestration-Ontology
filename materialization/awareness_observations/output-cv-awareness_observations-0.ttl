@@ -1,0 +1,20 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:awarenessLevel.Basic%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Basic Awareness"^^xsd:string .
+
+aplo-r:awarenessLevel.Low%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Low Awareness"^^xsd:string .
+
+aplo-r:awarenessLevel.Mastery%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Mastery Awareness"^^xsd:string .
+
+aplo-r:awarenessLevel.Proficient%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Proficient Awareness"^^xsd:string .
+
+aplo-r:awarenessLevel.Working%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Working Awareness"^^xsd:string .
+

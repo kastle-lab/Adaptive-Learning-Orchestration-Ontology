@@ -1,0 +1,20 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Understand a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Construct meaning by explaining summarizing classifying or interpreting"^^xsd:string ;
+    aplo-ont:hasName "Understand"^^xsd:string ;
+    aplo-ont:hasNextPedagogicalElement aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Apply ;
+    aplo-ont:hasPreviousPedagogicalElement aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Remember ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Bloom%27s%20Taxonomy .
+
+aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Apply a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Apply"^^xsd:string .
+
+aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Remember a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Remember"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Bloom%27s%20Taxonomy a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Bloom's Taxonomy"^^xsd:string .
+

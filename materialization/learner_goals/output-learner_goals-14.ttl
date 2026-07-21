@@ -1,0 +1,16 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learnerGoal.Develop%20KG%20Learning%20Resources a aplo-ont:LearnerGoal ;
+    rdf:value "Develop KG Learning Resources"^^xsd:string ;
+    aplo-ont:targetsSkill aplo-r:skill.GraphQL%20Query%20Mapping,
+        aplo-r:skill.RDFS%20Vocabulary%20Reasoning .
+
+aplo-r:skill.GraphQL%20Query%20Mapping a aplo-ont:Skill ;
+    rdf:value "GraphQL Query Mapping"^^xsd:string .
+
+aplo-r:skill.RDFS%20Vocabulary%20Reasoning a aplo-ont:Skill ;
+    rdf:value "RDFS Vocabulary Reasoning"^^xsd:string .
+

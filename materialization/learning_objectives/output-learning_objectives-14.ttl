@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Data%20Science%20KG%20Modeling%20Foundations.Describe%20knowledge%20graph%20structure a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Universal%20Design%20for%20Learning.Representation%20Options ;
+    aplo-ont:developsSkill aplo-r:skill.Knowledge%20Graph%20Structure%20Explanation ;
+    aplo-ont:hasDescription "Knowledge Graph Structure Explanation in What is a Knowledge Graph?: Annotate a partial artifact and justify the missing KG decision."^^xsd:string ;
+    aplo-ont:hasName "Describe knowledge graph structure"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Data%20Science%20KG%20Modeling%20Foundations .
+
+aplo-r:learningSituation.Data%20Science%20KG%20Modeling%20Foundations a aplo-ont:LearningSituation ;
+    rdf:value "Data Science KG Modeling Foundations"^^xsd:string .
+
+aplo-r:pedagogicalElement.Universal%20Design%20for%20Learning.Representation%20Options a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Representation Options"^^xsd:string .
+
+aplo-r:skill.Knowledge%20Graph%20Structure%20Explanation a aplo-ont:Skill ;
+    rdf:value "Knowledge Graph Structure Explanation"^^xsd:string .
+

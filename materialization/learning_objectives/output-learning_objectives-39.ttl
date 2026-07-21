@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Ontology%20Vocabulary%20Modeling%20Review.Model%20SKOS%20concept%20schemes a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Collaborative%20Learning.Joint%20Construction ;
+    aplo-ont:developsSkill aplo-r:skill.SKOS%20Concept%20Scheme%20Modeling ;
+    aplo-ont:hasDescription "SKOS Concept Scheme Modeling in SKOS: Compare two alternatives and select the one that best supports the task."^^xsd:string ;
+    aplo-ont:hasName "Model SKOS concept schemes"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Ontology%20Vocabulary%20Modeling%20Review .
+
+aplo-r:learningSituation.Ontology%20Vocabulary%20Modeling%20Review a aplo-ont:LearningSituation ;
+    rdf:value "Ontology Vocabulary Modeling Review"^^xsd:string .
+
+aplo-r:pedagogicalElement.Collaborative%20Learning.Joint%20Construction a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Joint Construction"^^xsd:string .
+
+aplo-r:skill.SKOS%20Concept%20Scheme%20Modeling a aplo-ont:Skill ;
+    rdf:value "SKOS Concept Scheme Modeling"^^xsd:string .
+

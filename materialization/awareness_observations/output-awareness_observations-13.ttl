@@ -1,0 +1,33 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Carla a aplo-ont:Learner ;
+    rdf:value "Learner Carla"^^xsd:string ;
+    aplo-ont:hasAwarenessObservation aplo-r:awarenessObservation.Learner%20Carla.URI.Identifier%20Pattern%20Recognition.Identifier%20Pattern%20Recognition%20Scenario%20Update .
+
+aplo-r:awarenessLevel.Proficient%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Proficient Awareness"^^xsd:string .
+
+aplo-r:awarenessObservation.Learner%20Carla.URI.Identifier%20Pattern%20Recognition.Identifier%20Pattern%20Recognition%20Scenario%20Update a aplo-ont:AwarenessObservation ;
+    rdf:value "Identifier Pattern Recognition Scenario Update"^^xsd:string ;
+    aplo-ont:atTime aplo-r:temporalExtent.Learner%20Carla.URI.Identifier%20Pattern%20Recognition.Identifier%20Pattern%20Recognition%20Scenario%20Update.2026-02-04T13%3A56%3A00Z%20to%202026-02-04T14%3A21%3A00Z ;
+    aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Proficient%20Awareness ;
+    aplo-ont:onSkill aplo-r:skill.Identifier%20Pattern%20Recognition ;
+    aplo-ont:onTopic edu-r:topic.URI .
+
+aplo-r:skill.Identifier%20Pattern%20Recognition a aplo-ont:Skill ;
+    rdf:value "Identifier Pattern Recognition"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Carla.URI.Identifier%20Pattern%20Recognition.Identifier%20Pattern%20Recognition%20Scenario%20Update.2026-02-04T13%3A56%3A00Z%20to%202026-02-04T14%3A21%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "2026-02-04T13:56:00+00:00"^^xsd:dateTime,
+        "2026-02-04T14:21:00+00:00"^^xsd:dateTime,
+        "ISO 8601 UTC"^^xsd:string,
+        "TimeInterval"^^xsd:string .
+
+edu-r:topic.URI a edu-ont:Topic ;
+    rdf:value "URI"^^xsd:string .
+

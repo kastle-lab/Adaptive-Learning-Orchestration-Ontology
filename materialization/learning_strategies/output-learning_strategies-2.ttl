@@ -1,0 +1,28 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningStrategy.RDF%20Practice%20Session.Identifier%20and%20RDF%20Practice%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasDescription "Use modeled reasoning error analysis and self explanation to connect identifier decisions with RDF triple structure."^^xsd:string ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.RDF%20Practice%20Session.Interpret%20RDF%20triple%20components ;
+    aplo-ont:hasName "Identifier and RDF Practice Strategy"^^xsd:string ;
+    aplo-ont:hasPedagogicalTechnique aplo-r:pedagogicalTechnique.Error%20Analysis,
+        aplo-r:pedagogicalTechnique.Guided%20Practice,
+        aplo-r:pedagogicalTechnique.Self%20Explanation,
+        aplo-r:pedagogicalTechnique.Think%20Aloud%20Modeling .
+
+aplo-r:learningObjective.RDF%20Practice%20Session.Interpret%20RDF%20triple%20components a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Interpret RDF triple components"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Error%20Analysis a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Error Analysis"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Guided%20Practice a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Guided Practice"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Self%20Explanation a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Self Explanation"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Think%20Aloud%20Modeling a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Think Aloud Modeling"^^xsd:string .
+

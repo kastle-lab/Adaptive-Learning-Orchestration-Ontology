@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.OWL%20Modeling%20Practice.Revise%20an%20ontology%20model%20after%20feedback a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Mastery%20Learning.Corrective%20Support ;
+    aplo-ont:developsSkill aplo-r:skill.Ontology%20Model%20Revision ;
+    aplo-ont:hasDescription "Use corrective feedback to improve classes properties or axioms in a small ontology model"^^xsd:string ;
+    aplo-ont:hasName "Revise an ontology model after feedback"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.OWL%20Modeling%20Practice .
+
+aplo-r:learningSituation.OWL%20Modeling%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "OWL Modeling Practice"^^xsd:string .
+
+aplo-r:pedagogicalElement.Mastery%20Learning.Corrective%20Support a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Corrective Support"^^xsd:string .
+
+aplo-r:skill.Ontology%20Model%20Revision a aplo-ont:Skill ;
+    rdf:value "Ontology Model Revision"^^xsd:string .
+

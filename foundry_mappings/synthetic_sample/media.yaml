@@ -1,0 +1,35 @@
+metadata:
+  name: "Synthetic Media"
+  source_ext: "csv"
+
+root:
+  type: "edu-ont:Media"
+  uri: "edu-r:media"
+  varids: ["Media"]
+  connections:
+    - p: "rdf:value"
+      o:
+        datatype: "xsd:string"
+        val_source: "Media"
+    - p: "aplo-ont:supportsLearningObjective"
+      o:
+        type: "aplo-ont:LearningObjective"
+        uri: "aplo-r:learningObjective"
+        varids: ["Learning Objective Situation", "Supports Learning Objectives"]
+        split: " | "
+        connections:
+          - p: "aplo-ont:hasName"
+            o:
+              datatype: "xsd:string"
+              val_source: "Supports Learning Objectives"
+    - p: "aplo-ont:hasAssessmentExercise"
+      o:
+        type: "aplo-ont:EvaluationAssessmentExercise"
+        uri: "aplo-r:evaluationAssessmentExercise"
+        varids: ["Media", "Assessment Exercises"]
+        split: " | "
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Assessment Exercises"

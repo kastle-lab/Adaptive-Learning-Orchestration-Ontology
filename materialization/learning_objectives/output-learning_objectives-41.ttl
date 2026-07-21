@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Educational%20KG%20Facilitation%20Planning.Edit%20ontology%20models%20in%20Protege a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Gradual%20Release%20of%20Responsibility.We%20Do ;
+    aplo-ont:developsSkill aplo-r:skill.Protege%20Ontology%20Editing ;
+    aplo-ont:hasDescription "Protege Ontology Editing in Protege: Revise a flawed example until the terminology and relation choices line up."^^xsd:string ;
+    aplo-ont:hasName "Edit ontology models in Protege"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Educational%20KG%20Facilitation%20Planning .
+
+aplo-r:learningSituation.Educational%20KG%20Facilitation%20Planning a aplo-ont:LearningSituation ;
+    rdf:value "Educational KG Facilitation Planning"^^xsd:string .
+
+aplo-r:pedagogicalElement.Gradual%20Release%20of%20Responsibility.We%20Do a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "We Do"^^xsd:string .
+
+aplo-r:skill.Protege%20Ontology%20Editing a aplo-ont:Skill ;
+    rdf:value "Protege Ontology Editing"^^xsd:string .
+

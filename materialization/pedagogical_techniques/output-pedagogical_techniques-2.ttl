@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Worked%20Example a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Show a completed example with reasoning steps made explicit"^^xsd:string ;
+    aplo-ont:hasName "Worked Example"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Reduce%20Cognitive%20Load .
+
+aplo-r:pedagogicalObjective.Reduce%20Cognitive%20Load a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Support learners by making expert reasoning and solution structure visible"^^xsd:string ;
+    aplo-ont:hasName "Reduce Cognitive Load"^^xsd:string .
+

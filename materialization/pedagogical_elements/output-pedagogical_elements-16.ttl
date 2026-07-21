@@ -1,0 +1,16 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Gradual%20Release%20of%20Responsibility.I%20Do a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Instructor models the target task or reasoning process"^^xsd:string ;
+    aplo-ont:hasName "I Do"^^xsd:string ;
+    aplo-ont:hasNextPedagogicalElement aplo-r:pedagogicalElement.Gradual%20Release%20of%20Responsibility.We%20Do ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Gradual%20Release%20of%20Responsibility .
+
+aplo-r:pedagogicalElement.Gradual%20Release%20of%20Responsibility.We%20Do a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "We Do"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Gradual%20Release%20of%20Responsibility a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Gradual Release of Responsibility"^^xsd:string .
+

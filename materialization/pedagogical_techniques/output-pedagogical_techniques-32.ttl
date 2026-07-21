@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Strategy%20Revision%20Plan a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Ask learners to change their next tactic based on feedback evidence performance or persistent confusion"^^xsd:string ;
+    aplo-ont:hasName "Strategy Revision Plan"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Adapt%20Learning%20Strategy .
+
+aplo-r:pedagogicalObjective.Adapt%20Learning%20Strategy a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Convert reflection and feedback into a concrete next learning action"^^xsd:string ;
+    aplo-ont:hasName "Adapt Learning Strategy"^^xsd:string .
+

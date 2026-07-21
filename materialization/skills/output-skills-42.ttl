@@ -1,0 +1,14 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:skill.Knowledge%20Graph%20Deployment%20Planning a aplo-ont:Skill ;
+    rdf:value "Knowledge Graph Deployment Planning"^^xsd:string ;
+    aplo-ont:requiresTopic edu-r:topic.Knowledge%20Graph .
+
+edu-r:topic.Knowledge%20Graph a edu-ont:Topic ;
+    rdf:value "Knowledge Graph"^^xsd:string .
+

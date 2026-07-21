@@ -1,0 +1,12 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Universal%20Design%20for%20Learning.Engagement%20Options a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Offer meaningful choices relevance cues or collaboration paths that help learners sustain effort"^^xsd:string ;
+    aplo-ont:hasName "Engagement Options"^^xsd:string ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Universal%20Design%20for%20Learning .
+
+aplo-r:pedagogicalFramework.Universal%20Design%20for%20Learning a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Universal Design for Learning"^^xsd:string .
+

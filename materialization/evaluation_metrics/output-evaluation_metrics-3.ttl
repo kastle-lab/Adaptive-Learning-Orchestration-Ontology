@@ -1,0 +1,9 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationMetric.Confidence%20Rating a aplo-ont:EvaluationMetric ;
+    rdf:value "Confidence Rating"^^xsd:string ;
+    aplo-ont:asString "confidence rating 1 to 5"^^xsd:string .
+

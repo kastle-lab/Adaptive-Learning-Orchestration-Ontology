@@ -1,0 +1,33 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Darwin a aplo-ont:Learner ;
+    rdf:value "Learner Darwin"^^xsd:string ;
+    aplo-ont:hasAwarenessObservation aplo-r:awarenessObservation.Learner%20Darwin.Conjunction.Logic%20Operator%20Recognition.Logic%20Operator%20Recognition%20Task%20Evidence .
+
+aplo-r:awarenessLevel.Proficient%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Proficient Awareness"^^xsd:string .
+
+aplo-r:awarenessObservation.Learner%20Darwin.Conjunction.Logic%20Operator%20Recognition.Logic%20Operator%20Recognition%20Task%20Evidence a aplo-ont:AwarenessObservation ;
+    rdf:value "Logic Operator Recognition Task Evidence"^^xsd:string ;
+    aplo-ont:atTime aplo-r:temporalExtent.Learner%20Darwin.Conjunction.Logic%20Operator%20Recognition.Logic%20Operator%20Recognition%20Task%20Evidence.2026-02-05T14%3A03%3A00Z%20to%202026-02-05T14%3A28%3A00Z ;
+    aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Proficient%20Awareness ;
+    aplo-ont:onSkill aplo-r:skill.Logic%20Operator%20Recognition ;
+    aplo-ont:onTopic edu-r:topic.Conjunction .
+
+aplo-r:skill.Logic%20Operator%20Recognition a aplo-ont:Skill ;
+    rdf:value "Logic Operator Recognition"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Darwin.Conjunction.Logic%20Operator%20Recognition.Logic%20Operator%20Recognition%20Task%20Evidence.2026-02-05T14%3A03%3A00Z%20to%202026-02-05T14%3A28%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "2026-02-05T14:03:00+00:00"^^xsd:dateTime,
+        "2026-02-05T14:28:00+00:00"^^xsd:dateTime,
+        "ISO 8601 UTC"^^xsd:string,
+        "TimeInterval"^^xsd:string .
+
+edu-r:topic.Conjunction a edu-ont:Topic ;
+    rdf:value "Conjunction"^^xsd:string .
+

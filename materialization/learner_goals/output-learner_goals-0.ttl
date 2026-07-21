@@ -1,0 +1,20 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learnerGoal.Build%20Semantic%20Web%20Foundations a aplo-ont:LearnerGoal ;
+    rdf:value "Build Semantic Web Foundations"^^xsd:string ;
+    aplo-ont:targetsSkill aplo-r:skill.Knowledge%20Graph%20Purpose%20Explanation,
+        aplo-r:skill.Ontology%20Concept%20Explanation,
+        aplo-r:skill.Semantic%20Web%20Vocabulary%20Recall .
+
+aplo-r:skill.Knowledge%20Graph%20Purpose%20Explanation a aplo-ont:Skill ;
+    rdf:value "Knowledge Graph Purpose Explanation"^^xsd:string .
+
+aplo-r:skill.Ontology%20Concept%20Explanation a aplo-ont:Skill ;
+    rdf:value "Ontology Concept Explanation"^^xsd:string .
+
+aplo-r:skill.Semantic%20Web%20Vocabulary%20Recall a aplo-ont:Skill ;
+    rdf:value "Semantic Web Vocabulary Recall"^^xsd:string .
+

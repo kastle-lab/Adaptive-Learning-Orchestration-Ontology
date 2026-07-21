@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Corrective%20Mini%20Lesson a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Provide short targeted instruction after a misconception or gap is detected"^^xsd:string ;
+    aplo-ont:hasName "Corrective Mini Lesson"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Remediate%20Misconception .
+
+aplo-r:pedagogicalObjective.Remediate%20Misconception a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Correct specific misunderstandings before learners continue"^^xsd:string ;
+    aplo-ont:hasName "Remediate Misconception"^^xsd:string .
+

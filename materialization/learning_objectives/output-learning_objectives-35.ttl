@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Align%20Schema.org%20vocabulary%20terms a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Universal%20Design%20for%20Learning.Representation%20Options ;
+    aplo-ont:developsSkill aplo-r:skill.Schema.org%20Vocabulary%20Alignment ;
+    aplo-ont:hasDescription "Schema.org Vocabulary Alignment in Schema.org: Translate the concept into a concrete check a reviewer could apply."^^xsd:string ;
+    aplo-ont:hasName "Align Schema.org vocabulary terms"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Ontology%20Contribution%20Modeling%20Practice .
+
+aplo-r:learningSituation.Ontology%20Contribution%20Modeling%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "Ontology Contribution Modeling Practice"^^xsd:string .
+
+aplo-r:pedagogicalElement.Universal%20Design%20for%20Learning.Representation%20Options a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Representation Options"^^xsd:string .
+
+aplo-r:skill.Schema.org%20Vocabulary%20Alignment a aplo-ont:Skill ;
+    rdf:value "Schema.org Vocabulary Alignment"^^xsd:string .
+

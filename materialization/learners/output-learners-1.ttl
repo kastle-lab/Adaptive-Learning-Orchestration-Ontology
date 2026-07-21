@@ -1,0 +1,28 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Blair a aplo-ont:Learner ;
+    rdf:value "Learner Blair"^^xsd:string ;
+    aplo-ont:hasGoal aplo-r:learnerGoal.Interpret%20RDF%20Graph%20Data ;
+    aplo-ont:hasLearnerPreference aplo-r:learnerPreference.Guided%20Practice%20Preference ;
+    aplo-ont:hasLearningChallenge aplo-r:learningChallenge.Low%20Confidence%20With%20Formal%20Syntax,
+        aplo-r:learningChallenge.Screen%20Reader%20Requirement ;
+    aplo-ont:hasSituation aplo-r:learningSituation.RDF%20Practice%20Session .
+
+aplo-r:learnerGoal.Interpret%20RDF%20Graph%20Data a aplo-ont:LearnerGoal ;
+    rdf:value "Interpret RDF Graph Data"^^xsd:string .
+
+aplo-r:learnerPreference.Guided%20Practice%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Guided Practice Preference"^^xsd:string .
+
+aplo-r:learningChallenge.Low%20Confidence%20With%20Formal%20Syntax a aplo-ont:LearningChallenge ;
+    rdf:value "Low Confidence With Formal Syntax"^^xsd:string .
+
+aplo-r:learningChallenge.Screen%20Reader%20Requirement a aplo-ont:LearningChallenge ;
+    rdf:value "Screen Reader Requirement"^^xsd:string .
+
+aplo-r:learningSituation.RDF%20Practice%20Session a aplo-ont:LearningSituation ;
+    rdf:value "RDF Practice Session"^^xsd:string .
+

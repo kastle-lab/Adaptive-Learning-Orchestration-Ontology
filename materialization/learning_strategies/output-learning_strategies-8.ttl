@@ -1,0 +1,36 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningStrategy.Knowledge%20Graph%20Foundations%20Orientation.Knowledge%20Graph%20Foundations%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasDescription "Combine advance organizers visual representations and short retrieval checks across foundational KG terminology and tool comparisons."^^xsd:string ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Knowledge%20Graph%20Foundations%20Orientation.Compare%20reasoning%20tool%20capabilities,
+        aplo-r:learningObjective.Knowledge%20Graph%20Foundations%20Orientation.Recall%20metadata%20vocabulary,
+        aplo-r:learningObjective.Knowledge%20Graph%20Foundations%20Orientation.Validate%20RDF%20shapes%20with%20SHACL ;
+    aplo-ont:hasName "Knowledge Graph Foundations Strategy"^^xsd:string ;
+    aplo-ont:hasPedagogicalTechnique aplo-r:pedagogicalTechnique.Advance%20Organizer,
+        aplo-r:pedagogicalTechnique.Concept%20Mapping,
+        aplo-r:pedagogicalTechnique.Dual%20Coding,
+        aplo-r:pedagogicalTechnique.Retrieval%20Practice .
+
+aplo-r:learningObjective.Knowledge%20Graph%20Foundations%20Orientation.Compare%20reasoning%20tool%20capabilities a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Compare reasoning tool capabilities"^^xsd:string .
+
+aplo-r:learningObjective.Knowledge%20Graph%20Foundations%20Orientation.Recall%20metadata%20vocabulary a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Recall metadata vocabulary"^^xsd:string .
+
+aplo-r:learningObjective.Knowledge%20Graph%20Foundations%20Orientation.Validate%20RDF%20shapes%20with%20SHACL a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Validate RDF shapes with SHACL"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Advance%20Organizer a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Advance Organizer"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Concept%20Mapping a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Concept Mapping"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Dual%20Coding a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Dual Coding"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Retrieval%20Practice a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Retrieval Practice"^^xsd:string .
+

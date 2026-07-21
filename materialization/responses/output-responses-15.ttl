@@ -1,0 +1,24 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:response.Learner%20Blair.Learning%20Platform.RDF%20Triple%20Quiz%20Score a aplo-ont:Response ;
+    rdf:value "RDF Triple Quiz Score"^^xsd:string,
+        "Score percent 76 for RDF triple interpretation"^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Blair.Triple.RDF%20Triple%20Interpretation.RDF%20Triple%20Awareness%20After%20Quiz ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Blair.Learning%20Platform.RDF%20Triple%20Quiz%20Score.2026-01-17T11%3A16%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Learning%20Platform .
+
+aplo-r:awarenessObservation.Learner%20Blair.Triple.RDF%20Triple%20Interpretation.RDF%20Triple%20Awareness%20After%20Quiz a aplo-ont:AwarenessObservation ;
+    rdf:value "RDF Triple Awareness After Quiz"^^xsd:string .
+
+aplo-r:source.Learning%20Platform a aplo-ont:Source ;
+    rdf:value "Learning Platform"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Blair.Learning%20Platform.RDF%20Triple%20Quiz%20Score.2026-01-17T11%3A16%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-01-17T11:16:00+00:00"^^xsd:dateTime .
+

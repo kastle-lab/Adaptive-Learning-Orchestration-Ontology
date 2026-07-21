@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Choice%20Board a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Offer a bounded set of task options that differ by context artifact or pathway while preserving the same objective"^^xsd:string ;
+    aplo-ont:hasName "Choice Board"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Increase%20Learner%20Agency .
+
+aplo-r:pedagogicalObjective.Increase%20Learner%20Agency a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Support engagement by letting learners choose a meaningful route to the objective"^^xsd:string ;
+    aplo-ont:hasName "Increase Learner Agency"^^xsd:string .
+

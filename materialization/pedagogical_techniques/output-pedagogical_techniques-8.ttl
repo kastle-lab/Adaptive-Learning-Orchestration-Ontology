@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Project%20Brief a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Present an authentic scenario with constraints audience and goals"^^xsd:string ;
+    aplo-ont:hasName "Project Brief"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Increase%20Authentic%20Engagement .
+
+aplo-r:pedagogicalObjective.Increase%20Authentic%20Engagement a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Connect learning activity to a meaningful problem or real-world task"^^xsd:string ;
+    aplo-ont:hasName "Increase Authentic Engagement"^^xsd:string .
+

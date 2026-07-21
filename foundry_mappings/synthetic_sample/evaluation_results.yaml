@@ -1,0 +1,87 @@
+metadata:
+  name: "Synthetic Evaluation Results"
+  source_ext: "csv"
+
+root:
+  type: "aplo-ont:EvaluationResult"
+  uri: "aplo-r:evaluationResult"
+  varids: ["Learner", "Source", "Evaluation Result"]
+  connections:
+    - p: "rdf:value"
+      o:
+        datatype: "xsd:string"
+        val_source: "Evaluation Result"
+    - p: "aplo-ont:hasValue"
+      o:
+        datatype: "xsd:string"
+        val_source: "Evaluation Result Value"
+    - p: "aplo-ont:hasUnit"
+      o:
+        type: "aplo-ont:EvaluationMetric"
+        uri: "aplo-r:evaluationMetric"
+        varids: ["Evaluation Result Unit"]
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Evaluation Result Unit"
+    - p: "aplo-ont:hasSource"
+      o:
+        type: "aplo-ont:Source"
+        uri: "aplo-r:source"
+        varids: ["Source"]
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Source"
+    - p: "aplo-ont:affectsAwarenessObservation"
+      o:
+        type: "aplo-ont:AwarenessObservation"
+        uri: "aplo-r:awarenessObservation"
+        varids:
+          [
+            "Learner",
+            "Affects Awareness Observation Topic",
+            "Affects Awareness Observation Skill",
+            "Affects Awareness Observation",
+          ]
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Affects Awareness Observation"
+    - p: "aplo-ont:hasResponseTime"
+      o:
+        type: "aplo-ont:TemporalExtent"
+        uri: "aplo-r:temporalExtent"
+        varids: ["Learner", "Source", "Evaluation Result", "Response Time Key"]
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Response Time Type"
+          - p: "time:inXSDDateTime"
+            o:
+              datatype: "xsd:dateTime"
+              val_source: "Point In Time Value"
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Point In Time Reference System"
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:dateTime"
+              val_source: "Interval Start Value"
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Interval Start Reference System"
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:dateTime"
+              val_source: "Interval End Value"
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Interval End Reference System"

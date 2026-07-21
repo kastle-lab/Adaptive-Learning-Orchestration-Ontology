@@ -1,0 +1,40 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Courtney a aplo-ont:Learner ;
+    rdf:value "Learner Courtney"^^xsd:string ;
+    aplo-ont:hasGoal aplo-r:learnerGoal.Model%20and%20Query%20Knowledge%20Graph%20Data ;
+    aplo-ont:hasLearnerPreference aplo-r:learnerPreference.Collaborative%20Review%20Preference,
+        aplo-r:learnerPreference.Documentation%20Example%20Preference,
+        aplo-r:learnerPreference.Guided%20Practice%20Preference,
+        aplo-r:learnerPreference.Tooling%20Example%20Preference ;
+    aplo-ont:hasLearningChallenge aplo-r:learningChallenge.Needs%20Advanced%20Modeling%20Depth,
+        aplo-r:learningChallenge.Needs%20Collaborative%20Review%20Support ;
+    aplo-ont:hasSituation aplo-r:learningSituation.Data%20Analysis%20KG%20Modeling%20Practice .
+
+aplo-r:learnerGoal.Model%20and%20Query%20Knowledge%20Graph%20Data a aplo-ont:LearnerGoal ;
+    rdf:value "Model and Query Knowledge Graph Data"^^xsd:string .
+
+aplo-r:learnerPreference.Collaborative%20Review%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Collaborative Review Preference"^^xsd:string .
+
+aplo-r:learnerPreference.Documentation%20Example%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Documentation Example Preference"^^xsd:string .
+
+aplo-r:learnerPreference.Guided%20Practice%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Guided Practice Preference"^^xsd:string .
+
+aplo-r:learnerPreference.Tooling%20Example%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Tooling Example Preference"^^xsd:string .
+
+aplo-r:learningChallenge.Needs%20Advanced%20Modeling%20Depth a aplo-ont:LearningChallenge ;
+    rdf:value "Needs Advanced Modeling Depth"^^xsd:string .
+
+aplo-r:learningChallenge.Needs%20Collaborative%20Review%20Support a aplo-ont:LearningChallenge ;
+    rdf:value "Needs Collaborative Review Support"^^xsd:string .
+
+aplo-r:learningSituation.Data%20Analysis%20KG%20Modeling%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "Data Analysis KG Modeling Practice"^^xsd:string .
+

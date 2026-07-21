@@ -1,0 +1,32 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningStrategy.Ontology%20Vocabulary%20Modeling%20Review.Ontology%20Vocabulary%20Review%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasDescription "Use misconception probes conflict cases and analogies to refine vocabulary boundaries and relation-property decisions."^^xsd:string ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Ontology%20Vocabulary%20Modeling%20Review.Model%20SKOS%20concept%20schemes,
+        aplo-r:learningObjective.Ontology%20Vocabulary%20Modeling%20Review.Recognize%20discrete%20relation%20properties ;
+    aplo-ont:hasName "Ontology Vocabulary Review Strategy"^^xsd:string ;
+    aplo-ont:hasPedagogicalTechnique aplo-r:pedagogicalTechnique.Analogical%20Comparison,
+        aplo-r:pedagogicalTechnique.Concept%20Mapping,
+        aplo-r:pedagogicalTechnique.Conceptual%20Conflict%20Prompt,
+        aplo-r:pedagogicalTechnique.Misconception%20Probe .
+
+aplo-r:learningObjective.Ontology%20Vocabulary%20Modeling%20Review.Model%20SKOS%20concept%20schemes a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Model SKOS concept schemes"^^xsd:string .
+
+aplo-r:learningObjective.Ontology%20Vocabulary%20Modeling%20Review.Recognize%20discrete%20relation%20properties a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Recognize discrete relation properties"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Analogical%20Comparison a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Analogical Comparison"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Concept%20Mapping a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Concept Mapping"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Conceptual%20Conflict%20Prompt a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Conceptual Conflict Prompt"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Misconception%20Probe a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Misconception Probe"^^xsd:string .
+

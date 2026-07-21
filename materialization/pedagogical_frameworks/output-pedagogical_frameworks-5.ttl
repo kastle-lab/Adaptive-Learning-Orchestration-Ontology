@@ -1,0 +1,30 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalFramework.Mastery%20Learning a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasDescription "A framework in which learners practice receive feedback and continue until defined mastery criteria are met"^^xsd:string ;
+    aplo-ont:hasElement aplo-r:pedagogicalElement.Mastery%20Learning.Corrective%20Support,
+        aplo-r:pedagogicalElement.Mastery%20Learning.Enrichment,
+        aplo-r:pedagogicalElement.Mastery%20Learning.Formative%20Check,
+        aplo-r:pedagogicalElement.Mastery%20Learning.Initial%20Instruction,
+        aplo-r:pedagogicalElement.Mastery%20Learning.Reassessment ;
+    aplo-ont:hasName "Mastery Learning"^^xsd:string .
+
+aplo-r:pedagogicalElement.Mastery%20Learning.Corrective%20Support a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Corrective Support"^^xsd:string .
+
+aplo-r:pedagogicalElement.Mastery%20Learning.Enrichment a aplo-ont:LastPedagogicalElement,
+        aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Enrichment"^^xsd:string .
+
+aplo-r:pedagogicalElement.Mastery%20Learning.Formative%20Check a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Formative Check"^^xsd:string .
+
+aplo-r:pedagogicalElement.Mastery%20Learning.Initial%20Instruction a aplo-ont:FirstPedagogicalElement,
+        aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Initial Instruction"^^xsd:string .
+
+aplo-r:pedagogicalElement.Mastery%20Learning.Reassessment a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Reassessment"^^xsd:string .
+

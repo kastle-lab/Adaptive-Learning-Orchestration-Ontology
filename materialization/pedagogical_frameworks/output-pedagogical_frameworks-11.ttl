@@ -1,0 +1,26 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalFramework.Collaborative%20Learning a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasDescription "A framework for shared inquiry where learners frame problems negotiate meaning construct artifacts and reflect together"^^xsd:string ;
+    aplo-ont:hasElement aplo-r:pedagogicalElement.Collaborative%20Learning.Group%20Reflection,
+        aplo-r:pedagogicalElement.Collaborative%20Learning.Joint%20Construction,
+        aplo-r:pedagogicalElement.Collaborative%20Learning.Peer%20Negotiation,
+        aplo-r:pedagogicalElement.Collaborative%20Learning.Shared%20Problem%20Framing ;
+    aplo-ont:hasName "Collaborative Learning"^^xsd:string .
+
+aplo-r:pedagogicalElement.Collaborative%20Learning.Group%20Reflection a aplo-ont:LastPedagogicalElement,
+        aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Group Reflection"^^xsd:string .
+
+aplo-r:pedagogicalElement.Collaborative%20Learning.Joint%20Construction a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Joint Construction"^^xsd:string .
+
+aplo-r:pedagogicalElement.Collaborative%20Learning.Peer%20Negotiation a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Peer Negotiation"^^xsd:string .
+
+aplo-r:pedagogicalElement.Collaborative%20Learning.Shared%20Problem%20Framing a aplo-ont:FirstPedagogicalElement,
+        aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Shared Problem Framing"^^xsd:string .
+

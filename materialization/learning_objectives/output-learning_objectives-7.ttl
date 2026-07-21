@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.SPARQL%20Query%20Practice.Construct%20a%20basic%20SPARQL%20SELECT%20query a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Exploration ;
+    aplo-ont:developsSkill aplo-r:skill.SPARQL%20Query%20Construction ;
+    aplo-ont:hasDescription "Write a simple SPARQL query that selects resources matching a graph pattern"^^xsd:string ;
+    aplo-ont:hasName "Construct a basic SPARQL SELECT query"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.SPARQL%20Query%20Practice .
+
+aplo-r:learningSituation.SPARQL%20Query%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "SPARQL Query Practice"^^xsd:string .
+
+aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Exploration a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Exploration"^^xsd:string .
+
+aplo-r:skill.SPARQL%20Query%20Construction a aplo-ont:Skill ;
+    rdf:value "SPARQL Query Construction"^^xsd:string .
+

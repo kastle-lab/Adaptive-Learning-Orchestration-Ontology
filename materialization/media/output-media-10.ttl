@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:media.RDFS a edu-ont:Media ;
+    rdf:value "RDFS"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.RDFS.RDFS%20Schema%20Reasoning%20Exercise ;
+    aplo-ont:supportsLearningObjective aplo-r:learningObjective.RDFS%20Schema%20Practice.Apply%20RDFS%20domain%20and%20range%20constraints .
+
+aplo-r:evaluationAssessmentExercise.RDFS.RDFS%20Schema%20Reasoning%20Exercise a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "RDFS Schema Reasoning Exercise"^^xsd:string .
+
+aplo-r:learningObjective.RDFS%20Schema%20Practice.Apply%20RDFS%20domain%20and%20range%20constraints a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Apply RDFS domain and range constraints"^^xsd:string .
+

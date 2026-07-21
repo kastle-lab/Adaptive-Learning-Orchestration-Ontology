@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:module.What%20is%20Metadata%3F a edu-ont:Module ;
+    rdf:value "What is Metadata?"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.What%20is%20Metadata%3F.Metadata%20Example%20Sort ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Knowledge%20Graph%20Foundations%20Orientation.Recall%20metadata%20vocabulary .
+
+aplo-r:evaluationAssessmentExercise.What%20is%20Metadata%3F.Metadata%20Example%20Sort a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Metadata Example Sort"^^xsd:string .
+
+aplo-r:learningObjective.Knowledge%20Graph%20Foundations%20Orientation.Recall%20metadata%20vocabulary a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Recall metadata vocabulary"^^xsd:string .
+

@@ -1,0 +1,40 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationTechnique.Ontology%20Modeling%20Review a aplo-ont:EvaluationTechnique ;
+    rdf:value "Ontology Modeling Review"^^xsd:string ;
+    aplo-ont:assessesLearningFeedback aplo-r:learningFeedback.Learner%20Connie.Instructor%20Reviewer.Modular%20Ontology%20Design%20Next%20Step%20Note ;
+    aplo-ont:assessesLearningObjective aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Design%20modular%20ontology%20components ;
+    aplo-ont:hasEvaluationMetric aplo-r:evaluationMetric.Confidence%20Rating,
+        aplo-r:evaluationMetric.Rubric%20Level ;
+    aplo-ont:hasEvaluationTechniqueType aplo-r:evaluationTechniqueType.Instructor%20Reviewed,
+        aplo-r:evaluationTechniqueType.Modeling%20Artifact,
+        aplo-r:evaluationTechniqueType.Summative ;
+    aplo-ont:provideFeedback aplo-r:response.Learner%20Connie.Adaptive%20Tutor.Modular%20Ontology%20Design%20Tutor%20Note .
+
+aplo-r:evaluationMetric.Confidence%20Rating a aplo-ont:EvaluationMetric ;
+    rdf:value "Confidence Rating"^^xsd:string .
+
+aplo-r:evaluationMetric.Rubric%20Level a aplo-ont:EvaluationMetric ;
+    rdf:value "Rubric Level"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Instructor%20Reviewed a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Instructor Reviewed"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Modeling%20Artifact a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Modeling Artifact"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Summative a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Summative"^^xsd:string .
+
+aplo-r:learningFeedback.Learner%20Connie.Instructor%20Reviewer.Modular%20Ontology%20Design%20Next%20Step%20Note a aplo-ont:LearningFeedback ;
+    rdf:value "Modular Ontology Design Next Step Note"^^xsd:string .
+
+aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Design%20modular%20ontology%20components a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Design modular ontology components"^^xsd:string .
+
+aplo-r:response.Learner%20Connie.Adaptive%20Tutor.Modular%20Ontology%20Design%20Tutor%20Note a aplo-ont:Response ;
+    rdf:value "Modular Ontology Design Tutor Note"^^xsd:string .
+

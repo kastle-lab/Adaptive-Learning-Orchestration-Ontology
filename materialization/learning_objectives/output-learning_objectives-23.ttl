@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Ontology%20Vocabulary%20Modeling%20Review.Recognize%20discrete%20relation%20properties a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Remember ;
+    aplo-ont:developsSkill aplo-r:skill.Discrete%20Relation%20Property%20Recognition ;
+    aplo-ont:hasDescription "Discrete Relation Property Recognition in Introduction to Discrete Mathematics: Translate the concept into a concrete check a reviewer could apply."^^xsd:string ;
+    aplo-ont:hasName "Recognize discrete relation properties"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Ontology%20Vocabulary%20Modeling%20Review .
+
+aplo-r:learningSituation.Ontology%20Vocabulary%20Modeling%20Review a aplo-ont:LearningSituation ;
+    rdf:value "Ontology Vocabulary Modeling Review"^^xsd:string .
+
+aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Remember a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Remember"^^xsd:string .
+
+aplo-r:skill.Discrete%20Relation%20Property%20Recognition a aplo-ont:Skill ;
+    rdf:value "Discrete Relation Property Recognition"^^xsd:string .
+

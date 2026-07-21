@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Ontology%20Contribution%20Modeling%20Practice.Plan%20knowledge%20graph%20documentation a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Self-Regulated%20Learning.Strategic%20Planning ;
+    aplo-ont:developsSkill aplo-r:skill.Knowledge%20Graph%20Documentation%20Planning ;
+    aplo-ont:hasDescription "Knowledge Graph Documentation Planning in Survey of Documentation Practices: Use the module artifact to defend one explicit design choice."^^xsd:string ;
+    aplo-ont:hasName "Plan knowledge graph documentation"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Ontology%20Contribution%20Modeling%20Practice .
+
+aplo-r:learningSituation.Ontology%20Contribution%20Modeling%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "Ontology Contribution Modeling Practice"^^xsd:string .
+
+aplo-r:pedagogicalElement.Self-Regulated%20Learning.Strategic%20Planning a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Strategic Planning"^^xsd:string .
+
+aplo-r:skill.Knowledge%20Graph%20Documentation%20Planning a aplo-ont:Skill ;
+    rdf:value "Knowledge Graph Documentation Planning"^^xsd:string .
+

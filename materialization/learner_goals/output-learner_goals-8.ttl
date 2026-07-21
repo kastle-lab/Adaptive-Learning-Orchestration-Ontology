@@ -1,0 +1,20 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learnerGoal.Evaluate%20Knowledge%20Graph%20Business%20Value a aplo-ont:LearnerGoal ;
+    rdf:value "Evaluate Knowledge Graph Business Value"^^xsd:string ;
+    aplo-ont:targetsSkill aplo-r:skill.Dublin%20Core%20Metadata%20Mapping,
+        aplo-r:skill.Predicate%20Logic%20Statement%20Interpretation,
+        aplo-r:skill.RDF%20Plus%20Property%20Reasoning .
+
+aplo-r:skill.Dublin%20Core%20Metadata%20Mapping a aplo-ont:Skill ;
+    rdf:value "Dublin Core Metadata Mapping"^^xsd:string .
+
+aplo-r:skill.Predicate%20Logic%20Statement%20Interpretation a aplo-ont:Skill ;
+    rdf:value "Predicate Logic Statement Interpretation"^^xsd:string .
+
+aplo-r:skill.RDF%20Plus%20Property%20Reasoning a aplo-ont:Skill ;
+    rdf:value "RDF Plus Property Reasoning"^^xsd:string .
+

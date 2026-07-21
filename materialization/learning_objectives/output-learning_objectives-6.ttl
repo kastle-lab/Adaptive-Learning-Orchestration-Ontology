@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.RDF%20Practice%20Session.Compare%20RDF%20serialization%20formats a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Community%20of%20Inquiry.Cognitive%20Presence ;
+    aplo-ont:developsSkill aplo-r:skill.RDF%20Serialization%20Comparison ;
+    aplo-ont:hasDescription "Compare RDF XML JSON LD and Turtle for representing RDF graph content"^^xsd:string ;
+    aplo-ont:hasName "Compare RDF serialization formats"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.RDF%20Practice%20Session .
+
+aplo-r:learningSituation.RDF%20Practice%20Session a aplo-ont:LearningSituation ;
+    rdf:value "RDF Practice Session"^^xsd:string .
+
+aplo-r:pedagogicalElement.Community%20of%20Inquiry.Cognitive%20Presence a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Cognitive Presence"^^xsd:string .
+
+aplo-r:skill.RDF%20Serialization%20Comparison a aplo-ont:Skill ;
+    rdf:value "RDF Serialization Comparison"^^xsd:string .
+

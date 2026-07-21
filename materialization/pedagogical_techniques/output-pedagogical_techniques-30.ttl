@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Progress%20Monitoring%20Checklist a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Provide criteria or checkpoints that learners use to monitor completion quality and confidence while working"^^xsd:string ;
+    aplo-ont:hasName "Progress Monitoring Checklist"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Monitor%20Progress .
+
+aplo-r:pedagogicalObjective.Monitor%20Progress a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Help learners notice progress and gaps before final evaluation"^^xsd:string ;
+    aplo-ont:hasName "Monitor Progress"^^xsd:string .
+

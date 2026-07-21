@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Data%20Analysis%20KG%20Modeling%20Practice.Translate%20Manchester%20syntax%20axioms a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Articulation ;
+    aplo-ont:developsSkill aplo-r:skill.Manchester%20Syntax%20Translation ;
+    aplo-ont:hasDescription "Manchester Syntax Translation in Manchester Syntax: Separate vocabulary recall from modeling judgment in the final answer."^^xsd:string ;
+    aplo-ont:hasName "Translate Manchester syntax axioms"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Data%20Analysis%20KG%20Modeling%20Practice .
+
+aplo-r:learningSituation.Data%20Analysis%20KG%20Modeling%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "Data Analysis KG Modeling Practice"^^xsd:string .
+
+aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Articulation a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Articulation"^^xsd:string .
+
+aplo-r:skill.Manchester%20Syntax%20Translation a aplo-ont:Skill ;
+    rdf:value "Manchester Syntax Translation"^^xsd:string .
+

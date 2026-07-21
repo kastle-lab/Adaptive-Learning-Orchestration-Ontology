@@ -1,0 +1,16 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learnerGoal.Facilitate%20KG%20Learning%20Experiences a aplo-ont:LearnerGoal ;
+    rdf:value "Facilitate KG Learning Experiences"^^xsd:string ;
+    aplo-ont:targetsSkill aplo-r:skill.Protege%20Ontology%20Editing,
+        aplo-r:skill.RDF%20Graph%20Interpretation .
+
+aplo-r:skill.Protege%20Ontology%20Editing a aplo-ont:Skill ;
+    rdf:value "Protege Ontology Editing"^^xsd:string .
+
+aplo-r:skill.RDF%20Graph%20Interpretation a aplo-ont:Skill ;
+    rdf:value "RDF Graph Interpretation"^^xsd:string .
+

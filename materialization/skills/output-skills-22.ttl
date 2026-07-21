@@ -1,0 +1,38 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:skill.Set%20Relationship%20Reasoning a aplo-ont:Skill ;
+    rdf:value "Set Relationship Reasoning"^^xsd:string ;
+    aplo-ont:requiresTopic edu-r:topic.Cardinality,
+        edu-r:topic.Disjointness,
+        edu-r:topic.Disjunction,
+        edu-r:topic.Graph,
+        edu-r:topic.Intersection,
+        edu-r:topic.Tuple,
+        edu-r:topic.Union .
+
+edu-r:topic.Cardinality a edu-ont:Topic ;
+    rdf:value "Cardinality"^^xsd:string .
+
+edu-r:topic.Disjointness a edu-ont:Topic ;
+    rdf:value "Disjointness"^^xsd:string .
+
+edu-r:topic.Disjunction a edu-ont:Topic ;
+    rdf:value "Disjunction"^^xsd:string .
+
+edu-r:topic.Graph a edu-ont:Topic ;
+    rdf:value "Graph"^^xsd:string .
+
+edu-r:topic.Intersection a edu-ont:Topic ;
+    rdf:value "Intersection"^^xsd:string .
+
+edu-r:topic.Tuple a edu-ont:Topic ;
+    rdf:value "Tuple"^^xsd:string .
+
+edu-r:topic.Union a edu-ont:Topic ;
+    rdf:value "Union"^^xsd:string .
+

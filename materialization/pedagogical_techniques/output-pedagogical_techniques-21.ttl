@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Error%20Analysis a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Ask learners to inspect a flawed artifact identify the error explain its consequence and propose a correction"^^xsd:string ;
+    aplo-ont:hasName "Error Analysis"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Diagnose%20Misconception .
+
+aplo-r:pedagogicalObjective.Diagnose%20Misconception a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Build skill by connecting mistakes to principles and repair actions"^^xsd:string ;
+    aplo-ont:hasName "Diagnose Misconception"^^xsd:string .
+

@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Executive%20KG%20Value%20Review.Explain%20RDF%20Plus%20property%20reasoning a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Experiential%20Learning%20Cycle.Abstract%20Conceptualization ;
+    aplo-ont:developsSkill aplo-r:skill.RDF%20Plus%20Property%20Reasoning ;
+    aplo-ont:hasDescription "RDF Plus Property Reasoning in RDF Plus: Connect the concept to a tool, schema, or query decision."^^xsd:string ;
+    aplo-ont:hasName "Explain RDF Plus property reasoning"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Executive%20KG%20Value%20Review .
+
+aplo-r:learningSituation.Executive%20KG%20Value%20Review a aplo-ont:LearningSituation ;
+    rdf:value "Executive KG Value Review"^^xsd:string .
+
+aplo-r:pedagogicalElement.Experiential%20Learning%20Cycle.Abstract%20Conceptualization a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Abstract Conceptualization"^^xsd:string .
+
+aplo-r:skill.RDF%20Plus%20Property%20Reasoning a aplo-ont:Skill ;
+    rdf:value "RDF Plus Property Reasoning"^^xsd:string .
+

@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:module.Survey%20of%20Visualization%20Tools a edu-ont:Module ;
+    rdf:value "Survey of Visualization Tools"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.Survey%20of%20Visualization%20Tools.Visualization%20Tool%20Selection%20Brief ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.User%20Engagement%20KG%20Demonstration%20Planning.Select%20KG%20visualization%20tools .
+
+aplo-r:evaluationAssessmentExercise.Survey%20of%20Visualization%20Tools.Visualization%20Tool%20Selection%20Brief a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Visualization Tool Selection Brief"^^xsd:string .
+
+aplo-r:learningObjective.User%20Engagement%20KG%20Demonstration%20Planning.Select%20KG%20visualization%20tools a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Select KG visualization tools"^^xsd:string .
+

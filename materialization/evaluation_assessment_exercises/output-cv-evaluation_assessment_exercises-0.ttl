@@ -1,0 +1,14 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:workloadLevel.High%20Workload a aplo-ont:WorkloadLevel ;
+    rdf:value "High Workload"^^xsd:string .
+
+aplo-r:workloadLevel.Low%20Workload a aplo-ont:WorkloadLevel ;
+    rdf:value "Low Workload"^^xsd:string .
+
+aplo-r:workloadLevel.Moderate%20Workload a aplo-ont:WorkloadLevel ;
+    rdf:value "Moderate Workload"^^xsd:string .
+

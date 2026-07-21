@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:media.RDF a edu-ont:Media ;
+    rdf:value "RDF"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.RDF.RDF%20Graph%20Annotation%20Task ;
+    aplo-ont:supportsLearningObjective aplo-r:learningObjective.Educational%20KG%20Facilitation%20Planning.Interpret%20RDF%20graph%20statements .
+
+aplo-r:evaluationAssessmentExercise.RDF.RDF%20Graph%20Annotation%20Task a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "RDF Graph Annotation Task"^^xsd:string .
+
+aplo-r:learningObjective.Educational%20KG%20Facilitation%20Planning.Interpret%20RDF%20graph%20statements a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Interpret RDF graph statements"^^xsd:string .
+

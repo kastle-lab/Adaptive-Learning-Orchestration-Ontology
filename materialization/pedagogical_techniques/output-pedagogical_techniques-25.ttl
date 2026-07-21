@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Transfer%20Task a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Ask learners to apply a concept or procedure in a new context that differs from the original example"^^xsd:string ;
+    aplo-ont:hasName "Transfer Task"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Check%20Transfer .
+
+aplo-r:pedagogicalObjective.Check%20Transfer a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Determine whether learners can use knowledge beyond the practice context"^^xsd:string ;
+    aplo-ont:hasName "Check Transfer"^^xsd:string .
+

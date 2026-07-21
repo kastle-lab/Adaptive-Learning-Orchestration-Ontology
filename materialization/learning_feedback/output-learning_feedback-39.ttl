@@ -1,0 +1,31 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningFeedback.Learner%20Courtney.Instructor%20Reviewer.Reification%20Pattern%20Modeling%20Correction%20Note a aplo-ont:LearningFeedback ;
+    rdf:value "Reification Pattern Modeling Correction Note"^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Courtney.N-ary%20Relations.Reification%20Pattern%20Modeling.Reification%20Modeling%20Scenariopoint ;
+    aplo-ont:affectsStrategy aplo-r:learningStrategy.Data%20Analysis%20KG%20Modeling%20Practice.Data%20Analysis%20Modeling%20Strategy ;
+    aplo-ont:hasLearningFeedbackType aplo-r:learningFeedbackType.Motivational%20Feedback ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Courtney.Instructor%20Reviewer.Reification%20Pattern%20Modeling%20Correction%20Note.2026-03-05T14%3A14%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Instructor%20Reviewer .
+
+aplo-r:awarenessObservation.Learner%20Courtney.N-ary%20Relations.Reification%20Pattern%20Modeling.Reification%20Modeling%20Scenariopoint a aplo-ont:AwarenessObservation ;
+    rdf:value "Reification Modeling Scenariopoint"^^xsd:string .
+
+aplo-r:learningFeedbackType.Motivational%20Feedback a aplo-ont:LearningFeedbackType ;
+    rdf:value "Motivational Feedback"^^xsd:string .
+
+aplo-r:learningStrategy.Data%20Analysis%20KG%20Modeling%20Practice.Data%20Analysis%20Modeling%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasName "Data Analysis Modeling Strategy"^^xsd:string .
+
+aplo-r:source.Instructor%20Reviewer a aplo-ont:Source ;
+    rdf:value "Instructor Reviewer"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Courtney.Instructor%20Reviewer.Reification%20Pattern%20Modeling%20Correction%20Note.2026-03-05T14%3A14%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-03-05T14:14:00+00:00"^^xsd:dateTime .
+

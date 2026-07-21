@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Alternative%20Demonstration a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Allow learners to show the same understanding through a written explanation diagram query model presentation or annotated artifact"^^xsd:string ;
+    aplo-ont:hasName "Alternative Demonstration"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Diversify%20Expression .
+
+aplo-r:pedagogicalObjective.Diversify%20Expression a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Let learners demonstrate competence without requiring one narrow output form"^^xsd:string ;
+    aplo-ont:hasName "Diversify Expression"^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Collaborative%20Annotation a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Have learners jointly mark up a text model query dataset or artifact with comments questions and claims"^^xsd:string ;
+    aplo-ont:hasName "Collaborative Annotation"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Build%20Shared%20Understanding .
+
+aplo-r:pedagogicalObjective.Build%20Shared%20Understanding a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Support collective sensemaking around a shared learning object"^^xsd:string ;
+    aplo-ont:hasName "Build Shared Understanding"^^xsd:string .
+

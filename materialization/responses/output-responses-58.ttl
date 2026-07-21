@@ -1,0 +1,24 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:response.Learner%20Courtney.Adaptive%20Tutor.Open%20Closed%20World%20Assumption%20Comparison%20Revision%20Cue a aplo-ont:Response ;
+    rdf:value "Open Closed World Assumption Comparison Revision Cue"^^xsd:string,
+        "Open Closed World Assumption Comparison: mark the evidence first, then revise the answer using the Inference evidence from Assumption Boundary Scenario."^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Courtney.Inference.Open%20Closed%20World%20Assumption%20Comparison.Open%20Closed%20World%20Assumption%20Comparison%20Task%20Evidence ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Courtney.Adaptive%20Tutor.Open%20Closed%20World%20Assumption%20Comparison%20Revision%20Cue.2026-02-13T14%3A14%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Adaptive%20Tutor .
+
+aplo-r:awarenessObservation.Learner%20Courtney.Inference.Open%20Closed%20World%20Assumption%20Comparison.Open%20Closed%20World%20Assumption%20Comparison%20Task%20Evidence a aplo-ont:AwarenessObservation ;
+    rdf:value "Open Closed World Assumption Comparison Task Evidence"^^xsd:string .
+
+aplo-r:source.Adaptive%20Tutor a aplo-ont:Source ;
+    rdf:value "Adaptive Tutor"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Courtney.Adaptive%20Tutor.Open%20Closed%20World%20Assumption%20Comparison%20Revision%20Cue.2026-02-13T14%3A14%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-02-13T14:14:00+00:00"^^xsd:dateTime .
+

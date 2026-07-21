@@ -1,0 +1,28 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learnerGoal.Improve%20Ontology%20Modeling%20Decisions a aplo-ont:LearnerGoal ;
+    rdf:value "Improve Ontology Modeling Decisions"^^xsd:string ;
+    aplo-ont:targetsSkill aplo-r:skill.OWL%20Axiom%20Analysis,
+        aplo-r:skill.OWL%20Property%20Differentiation,
+        aplo-r:skill.Ontology%20Model%20Revision,
+        aplo-r:skill.RDF%20RDFS%20Mastery%20Demonstration,
+        aplo-r:skill.RDFS%20Schema%20Reasoning .
+
+aplo-r:skill.OWL%20Axiom%20Analysis a aplo-ont:Skill ;
+    rdf:value "OWL Axiom Analysis"^^xsd:string .
+
+aplo-r:skill.OWL%20Property%20Differentiation a aplo-ont:Skill ;
+    rdf:value "OWL Property Differentiation"^^xsd:string .
+
+aplo-r:skill.Ontology%20Model%20Revision a aplo-ont:Skill ;
+    rdf:value "Ontology Model Revision"^^xsd:string .
+
+aplo-r:skill.RDF%20RDFS%20Mastery%20Demonstration a aplo-ont:Skill ;
+    rdf:value "RDF RDFS Mastery Demonstration"^^xsd:string .
+
+aplo-r:skill.RDFS%20Schema%20Reasoning a aplo-ont:Skill ;
+    rdf:value "RDFS Schema Reasoning"^^xsd:string .
+

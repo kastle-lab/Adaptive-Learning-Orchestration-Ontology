@@ -1,0 +1,48 @@
+metadata:
+  name: "Synthetic Learning Objectives"
+  source_ext: "csv"
+
+root:
+  type: "aplo-ont:LearningObjective"
+  uri: "aplo-r:learningObjective"
+  varids: ["Works On Learning Situation", "Learning Objective"]
+  connections:
+    - p: "aplo-ont:hasName"
+      o:
+        datatype: "xsd:string"
+        val_source: "Learning Objective"
+    - p: "aplo-ont:hasDescription"
+      o:
+        datatype: "xsd:string"
+        val_source: "Learning Objective Description"
+    - p: "aplo-ont:worksOnSituation"
+      o:
+        type: "aplo-ont:LearningSituation"
+        uri: "aplo-r:learningSituation"
+        varids: ["Works On Learning Situation"]
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Works On Learning Situation"
+    - p: "aplo-ont:developsSkill"
+      o:
+        type: "aplo-ont:Skill"
+        uri: "aplo-r:skill"
+        varids: ["Develops Skills"]
+        split: " | "
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Develops Skills"
+    - p: "aplo-ont:alignedWith"
+      o:
+        type: "aplo-ont:PedagogicalElement"
+        uri: "aplo-r:pedagogicalElement"
+        varids: ["Aligned Pedagogical Framework", "Aligned Pedagogical Element"]
+        connections:
+          - p: "aplo-ont:hasName"
+            o:
+              datatype: "xsd:string"
+              val_source: "Aligned Pedagogical Element"

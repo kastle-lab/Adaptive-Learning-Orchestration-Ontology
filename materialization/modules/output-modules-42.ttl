@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:module.Reification a edu-ont:Module ;
+    rdf:value "Reification"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.Reification.Reification%20Modeling%20Scenario ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Data%20Analysis%20KG%20Modeling%20Practice.Model%20statements%20with%20reification .
+
+aplo-r:evaluationAssessmentExercise.Reification.Reification%20Modeling%20Scenario a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Reification Modeling Scenario"^^xsd:string .
+
+aplo-r:learningObjective.Data%20Analysis%20KG%20Modeling%20Practice.Model%20statements%20with%20reification a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Model statements with reification"^^xsd:string .
+

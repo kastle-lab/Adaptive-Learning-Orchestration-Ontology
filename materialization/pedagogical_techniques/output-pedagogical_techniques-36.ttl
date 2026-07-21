@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Group%20Synthesis a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Ask a group to combine individual findings into a single shared claim model or recommendation"^^xsd:string ;
+    aplo-ont:hasName "Group Synthesis"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Integrate%20Perspectives .
+
+aplo-r:pedagogicalObjective.Integrate%20Perspectives a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Move collaborative work from discussion toward a coherent artifact"^^xsd:string ;
+    aplo-ont:hasName "Integrate Perspectives"^^xsd:string .
+

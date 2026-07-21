@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Executive%20KG%20Outcome%20Framing.Compare%20OWL%20dialect%20tradeoffs a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Community%20of%20Inquiry.Cognitive%20Presence ;
+    aplo-ont:developsSkill aplo-r:skill.OWL%20Dialect%20Selection ;
+    aplo-ont:hasDescription "OWL Dialect Selection in OWL Dialects: Connect the concept to a tool, schema, or query decision."^^xsd:string ;
+    aplo-ont:hasName "Compare OWL dialect tradeoffs"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Executive%20KG%20Outcome%20Framing .
+
+aplo-r:learningSituation.Executive%20KG%20Outcome%20Framing a aplo-ont:LearningSituation ;
+    rdf:value "Executive KG Outcome Framing"^^xsd:string .
+
+aplo-r:pedagogicalElement.Community%20of%20Inquiry.Cognitive%20Presence a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Cognitive Presence"^^xsd:string .
+
+aplo-r:skill.OWL%20Dialect%20Selection a aplo-ont:Skill ;
+    rdf:value "OWL Dialect Selection"^^xsd:string .
+

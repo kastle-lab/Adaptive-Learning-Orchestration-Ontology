@@ -1,0 +1,34 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:skill.OWL%20Dialect%20Selection a aplo-ont:Skill ;
+    rdf:value "OWL Dialect Selection"^^xsd:string ;
+    aplo-ont:requiresTopic edu-r:topic.Expressivity,
+        edu-r:topic.OWL%20DL,
+        edu-r:topic.OWL%20EL,
+        edu-r:topic.OWL%20Full,
+        edu-r:topic.OWL%20QL,
+        edu-r:topic.OWL%20RL .
+
+edu-r:topic.Expressivity a edu-ont:Topic ;
+    rdf:value "Expressivity"^^xsd:string .
+
+edu-r:topic.OWL%20DL a edu-ont:Topic ;
+    rdf:value "OWL DL"^^xsd:string .
+
+edu-r:topic.OWL%20EL a edu-ont:Topic ;
+    rdf:value "OWL EL"^^xsd:string .
+
+edu-r:topic.OWL%20Full a edu-ont:Topic ;
+    rdf:value "OWL Full"^^xsd:string .
+
+edu-r:topic.OWL%20QL a edu-ont:Topic ;
+    rdf:value "OWL QL"^^xsd:string .
+
+edu-r:topic.OWL%20RL a edu-ont:Topic ;
+    rdf:value "OWL RL"^^xsd:string .
+

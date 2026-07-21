@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.OWL%20Modeling%20Practice.Analyze%20OWL%20axioms%20in%20a%20modeling%20scenario a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Problem%20Based%20Learning.Problem%20Analysis ;
+    aplo-ont:developsSkill aplo-r:skill.OWL%20Axiom%20Analysis ;
+    aplo-ont:hasDescription "Analyze equivalence disjointness cardinality and property characteristics in an ontology example"^^xsd:string ;
+    aplo-ont:hasName "Analyze OWL axioms in a modeling scenario"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.OWL%20Modeling%20Practice .
+
+aplo-r:learningSituation.OWL%20Modeling%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "OWL Modeling Practice"^^xsd:string .
+
+aplo-r:pedagogicalElement.Problem%20Based%20Learning.Problem%20Analysis a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Problem Analysis"^^xsd:string .
+
+aplo-r:skill.OWL%20Axiom%20Analysis a aplo-ont:Skill ;
+    rdf:value "OWL Axiom Analysis"^^xsd:string .
+

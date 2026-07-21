@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Developer%20Knowledge%20Graph%20Implementation%20Practice.Select%20entailment%20regimes a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Evaluate ;
+    aplo-ont:developsSkill aplo-r:skill.Entailment%20Regime%20Selection ;
+    aplo-ont:hasDescription "Entailment Regime Selection in Entailment Regimes: Build a concise explanation that another learner could reuse."^^xsd:string ;
+    aplo-ont:hasName "Select entailment regimes"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Developer%20Knowledge%20Graph%20Implementation%20Practice .
+
+aplo-r:learningSituation.Developer%20Knowledge%20Graph%20Implementation%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "Developer Knowledge Graph Implementation Practice"^^xsd:string .
+
+aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Evaluate a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Evaluate"^^xsd:string .
+
+aplo-r:skill.Entailment%20Regime%20Selection a aplo-ont:Skill ;
+    rdf:value "Entailment Regime Selection"^^xsd:string .
+

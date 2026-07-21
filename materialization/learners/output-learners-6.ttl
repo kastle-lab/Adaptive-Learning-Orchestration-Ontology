@@ -1,0 +1,32 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Connie a aplo-ont:Learner ;
+    rdf:value "Learner Connie"^^xsd:string ;
+    aplo-ont:hasGoal aplo-r:learnerGoal.Lead%20Modular%20Ontology%20Modeling ;
+    aplo-ont:hasLearnerPreference aplo-r:learnerPreference.Collaborative%20Review%20Preference,
+        aplo-r:learnerPreference.Documentation%20Example%20Preference ;
+    aplo-ont:hasLearningChallenge aplo-r:learningChallenge.Needs%20Advanced%20Modeling%20Depth,
+        aplo-r:learningChallenge.Needs%20Collaborative%20Review%20Support ;
+    aplo-ont:hasSituation aplo-r:learningSituation.Ontology%20Contribution%20Modeling%20Practice .
+
+aplo-r:learnerGoal.Lead%20Modular%20Ontology%20Modeling a aplo-ont:LearnerGoal ;
+    rdf:value "Lead Modular Ontology Modeling"^^xsd:string .
+
+aplo-r:learnerPreference.Collaborative%20Review%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Collaborative Review Preference"^^xsd:string .
+
+aplo-r:learnerPreference.Documentation%20Example%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Documentation Example Preference"^^xsd:string .
+
+aplo-r:learningChallenge.Needs%20Advanced%20Modeling%20Depth a aplo-ont:LearningChallenge ;
+    rdf:value "Needs Advanced Modeling Depth"^^xsd:string .
+
+aplo-r:learningChallenge.Needs%20Collaborative%20Review%20Support a aplo-ont:LearningChallenge ;
+    rdf:value "Needs Collaborative Review Support"^^xsd:string .
+
+aplo-r:learningSituation.Ontology%20Contribution%20Modeling%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "Ontology Contribution Modeling Practice"^^xsd:string .
+

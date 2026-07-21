@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Instructor%20Facilitation%20Move a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Use a timely clarification redirect summary or probing question to keep inquiry coherent"^^xsd:string ;
+    aplo-ont:hasName "Instructor Facilitation Move"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Guide%20Inquiry .
+
+aplo-r:pedagogicalObjective.Guide%20Inquiry a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Maintain productive learning discourse without taking over the learner work"^^xsd:string ;
+    aplo-ont:hasName "Guide Inquiry"^^xsd:string .
+

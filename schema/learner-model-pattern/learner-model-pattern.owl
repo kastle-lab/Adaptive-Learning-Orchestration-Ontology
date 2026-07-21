@@ -1,17 +1,17 @@
-@prefix : <https://pedagogicalontology.cs.wright.edu/lod/ontology#> .
+@prefix : <https://aplo.cs.wright.edu/lod/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix pf-r: <https://pedagogicalontology.cs.wright.edu/lod/resource#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
-@prefix pf-ont: <https://pedagogicalontology.cs.wright.edu/lod/ontology#> .
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@base <https://pedagogicalontology.cs.wright.edu/lod/ontology#> .
+@base <https://aplo.cs.wright.edu/lod/ontology#> .
 
-<https://pedagogicalontology.cs.wright.edu/lod/ontology> rdf:type owl:Ontology ;
+<https://aplo.cs.wright.edu/lod/ontology> rdf:type owl:Ontology ;
                                                           dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                                           rdfs:comment "Ontology pattern for representing learner state, goals, preferences, challenges, awareness observations, skills, topics, and learning situations" .
 
@@ -27,351 +27,351 @@ dcterms:license rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#atTime
-pf-ont:atTime rdf:type owl:ObjectProperty ;
-              owl:inverseOf pf-ont:isTimeOfAwarenessObservation ;
+###  https://aplo.cs.wright.edu/lod/ontology#atTime
+aplo-ont:atTime rdf:type owl:ObjectProperty ;
+              owl:inverseOf aplo-ont:isTimeOfAwarenessObservation ;
               rdf:type owl:AsymmetricProperty ,
                        owl:IrreflexiveProperty ;
-              rdfs:domain pf-ont:AwarenessObservation ;
-              rdfs:range pf-ont:TemporalExtent ;
+              rdfs:domain aplo-ont:AwarenessObservation ;
+              rdfs:range aplo-ont:TemporalExtent ;
               rdfs:comment "Relates an awareness observation to the time point, interval, or duration at which it was made." ;
               rdfs:label "atTime" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#developsSkill
-pf-ont:developsSkill rdf:type owl:ObjectProperty ;
-                     owl:inverseOf pf-ont:isSkillDevelopedBy ;
+###  https://aplo.cs.wright.edu/lod/ontology#developsSkill
+aplo-ont:developsSkill rdf:type owl:ObjectProperty ;
+                     owl:inverseOf aplo-ont:isSkillDevelopedBy ;
                      rdf:type owl:AsymmetricProperty ,
                               owl:IrreflexiveProperty ;
-                     rdfs:domain pf-ont:LearningObjective ;
-                     rdfs:range pf-ont:Skill ;
+                     rdfs:domain aplo-ont:LearningObjective ;
+                     rdfs:range aplo-ont:Skill ;
                      rdfs:comment "Relates a learning objective to a skill that the objective is intended to develop." ;
                      rdfs:label "developsSkill" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasAwarenessLevel
-pf-ont:hasAwarenessLevel rdf:type owl:ObjectProperty ;
-                         owl:inverseOf pf-ont:isAwarenessLevelOf ;
+###  https://aplo.cs.wright.edu/lod/ontology#hasAwarenessLevel
+aplo-ont:hasAwarenessLevel rdf:type owl:ObjectProperty ;
+                         owl:inverseOf aplo-ont:isAwarenessLevelOf ;
                          rdf:type owl:AsymmetricProperty ,
                                   owl:IrreflexiveProperty ;
-                         rdfs:domain pf-ont:AwarenessObservation ;
-                         rdfs:range pf-ont:AwarenessLevel ;
+                         rdfs:domain aplo-ont:AwarenessObservation ;
+                         rdfs:range aplo-ont:AwarenessLevel ;
                          rdfs:comment "Relates an awareness observation to the controlled awareness level assigned to it." ;
                          rdfs:label "hasAwarenessLevel" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasAwarenessObservation
-pf-ont:hasAwarenessObservation rdf:type owl:ObjectProperty ;
-                               owl:inverseOf pf-ont:isAwarenessObservationOf ;
+###  https://aplo.cs.wright.edu/lod/ontology#hasAwarenessObservation
+aplo-ont:hasAwarenessObservation rdf:type owl:ObjectProperty ;
+                               owl:inverseOf aplo-ont:isAwarenessObservationOf ;
                                rdf:type owl:AsymmetricProperty ,
                                         owl:IrreflexiveProperty ;
-                               rdfs:domain pf-ont:Learner ;
-                               rdfs:range pf-ont:AwarenessObservation ;
+                               rdfs:domain aplo-ont:Learner ;
+                               rdfs:range aplo-ont:AwarenessObservation ;
                                rdfs:comment "Relates a learner to awareness observations recorded for that learner." ;
                                rdfs:label "hasAwarenessObservation" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasGoal
-pf-ont:hasGoal rdf:type owl:ObjectProperty ;
-               owl:inverseOf pf-ont:isGoalOf ;
+###  https://aplo.cs.wright.edu/lod/ontology#hasGoal
+aplo-ont:hasGoal rdf:type owl:ObjectProperty ;
+               owl:inverseOf aplo-ont:isGoalOf ;
                rdf:type owl:AsymmetricProperty ,
                         owl:IrreflexiveProperty ;
-               rdfs:domain pf-ont:Learner ;
-               rdfs:range pf-ont:LearnerGoal ;
+               rdfs:domain aplo-ont:Learner ;
+               rdfs:range aplo-ont:LearnerGoal ;
                rdfs:comment "Relates a learner to a learner-specific goal." ;
                rdfs:label "hasGoal" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasLearnerPreference
-pf-ont:hasLearnerPreference rdf:type owl:ObjectProperty ;
-                            owl:inverseOf pf-ont:isLearnerPreferenceOf ;
+###  https://aplo.cs.wright.edu/lod/ontology#hasLearnerPreference
+aplo-ont:hasLearnerPreference rdf:type owl:ObjectProperty ;
+                            owl:inverseOf aplo-ont:isLearnerPreferenceOf ;
                             rdf:type owl:AsymmetricProperty ,
                                      owl:IrreflexiveProperty ;
-                            rdfs:domain pf-ont:Learner ;
-                            rdfs:range pf-ont:LearnerPreference ;
+                            rdfs:domain aplo-ont:Learner ;
+                            rdfs:range aplo-ont:LearnerPreference ;
                             rdfs:comment "Relates a learner to a preference used for personalization." ;
                             rdfs:label "hasLearnerPreference" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasLearningChallenge
-pf-ont:hasLearningChallenge rdf:type owl:ObjectProperty ;
-                            owl:inverseOf pf-ont:isLearningChallengeOf ;
+###  https://aplo.cs.wright.edu/lod/ontology#hasLearningChallenge
+aplo-ont:hasLearningChallenge rdf:type owl:ObjectProperty ;
+                            owl:inverseOf aplo-ont:isLearningChallengeOf ;
                             rdf:type owl:AsymmetricProperty ,
                                      owl:IrreflexiveProperty ;
-                            rdfs:domain pf-ont:Learner ;
-                            rdfs:range pf-ont:LearningChallenge ;
+                            rdfs:domain aplo-ont:Learner ;
+                            rdfs:range aplo-ont:LearningChallenge ;
                             rdfs:comment "Relates a learner to a learning challenge, barrier, or need that may affect learning." ;
                             rdfs:label "hasLearningChallenge" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasLearningObjective
-pf-ont:hasLearningObjective rdf:type owl:ObjectProperty ;
-                            owl:inverseOf pf-ont:isLearningObjectiveOfModule ;
+###  https://aplo.cs.wright.edu/lod/ontology#hasLearningObjective
+aplo-ont:hasLearningObjective rdf:type owl:ObjectProperty ;
+                            owl:inverseOf aplo-ont:isLearningObjectiveOfModule ;
                             rdfs:domain edu-ont:Module ;
-                            rdfs:range pf-ont:LearningObjective ;
+                            rdfs:range aplo-ont:LearningObjective ;
                             rdfs:comment "Relates an instructional module to a learning objective included in that module." ;
                             rdfs:label "hasLearningObjective" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasSituation
-pf-ont:hasSituation rdf:type owl:ObjectProperty ;
-                    owl:inverseOf pf-ont:isSituationOf ;
+###  https://aplo.cs.wright.edu/lod/ontology#hasSituation
+aplo-ont:hasSituation rdf:type owl:ObjectProperty ;
+                    owl:inverseOf aplo-ont:isSituationOf ;
                     rdf:type owl:AsymmetricProperty ,
                              owl:IrreflexiveProperty ;
-                    rdfs:domain pf-ont:Learner ;
-                    rdfs:range pf-ont:LearningSituation ;
+                    rdfs:domain aplo-ont:Learner ;
+                    rdfs:range aplo-ont:LearningSituation ;
                     rdfs:comment "Relates a learner to a current or relevant learning situation." ;
                     rdfs:label "hasSituation" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isAwarenessLevelOf
-pf-ont:isAwarenessLevelOf rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#isAwarenessLevelOf
+aplo-ont:isAwarenessLevelOf rdf:type owl:ObjectProperty ,
                                    owl:AsymmetricProperty ,
                                    owl:IrreflexiveProperty ;
-                          rdfs:domain pf-ont:AwarenessLevel ;
-                          rdfs:range pf-ont:AwarenessObservation ;
+                          rdfs:domain aplo-ont:AwarenessLevel ;
+                          rdfs:range aplo-ont:AwarenessObservation ;
                           rdfs:comment "Inverse of hasAwarenessLevel; relates an awareness level to observations assigned that level." ;
                           rdfs:label "isAwarenessLevelOf" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isAwarenessObservationOf
-pf-ont:isAwarenessObservationOf rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#isAwarenessObservationOf
+aplo-ont:isAwarenessObservationOf rdf:type owl:ObjectProperty ,
                                          owl:AsymmetricProperty ,
                                          owl:IrreflexiveProperty ;
-                                rdfs:domain pf-ont:AwarenessObservation ;
-                                rdfs:range pf-ont:Learner ;
+                                rdfs:domain aplo-ont:AwarenessObservation ;
+                                rdfs:range aplo-ont:Learner ;
                                 rdfs:comment "Inverse of hasAwarenessObservation; relates an awareness observation to the learner it describes." ;
                                 rdfs:label "isAwarenessObservationOf" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isGoalOf
-pf-ont:isGoalOf rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#isGoalOf
+aplo-ont:isGoalOf rdf:type owl:ObjectProperty ,
                          owl:AsymmetricProperty ,
                          owl:IrreflexiveProperty ;
-                rdfs:domain pf-ont:LearnerGoal ;
-                rdfs:range pf-ont:Learner ;
+                rdfs:domain aplo-ont:LearnerGoal ;
+                rdfs:range aplo-ont:Learner ;
                 rdfs:comment "Inverse of hasGoal; relates a learner goal to the learner who has that goal." ;
                 rdfs:label "isGoalOf" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isLearnerPreferenceOf
-pf-ont:isLearnerPreferenceOf rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#isLearnerPreferenceOf
+aplo-ont:isLearnerPreferenceOf rdf:type owl:ObjectProperty ,
                                       owl:AsymmetricProperty ,
                                       owl:IrreflexiveProperty ;
-                             rdfs:domain pf-ont:LearnerPreference ;
-                             rdfs:range pf-ont:Learner ;
+                             rdfs:domain aplo-ont:LearnerPreference ;
+                             rdfs:range aplo-ont:Learner ;
                              rdfs:comment "Inverse of hasLearnerPreference; relates a learner preference to the learner it personalizes." ;
                              rdfs:label "isLearnerPreferenceOf" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isLearningChallengeOf
-pf-ont:isLearningChallengeOf rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#isLearningChallengeOf
+aplo-ont:isLearningChallengeOf rdf:type owl:ObjectProperty ,
                                       owl:AsymmetricProperty ,
                                       owl:IrreflexiveProperty ;
-                             rdfs:domain pf-ont:LearningChallenge ;
-                             rdfs:range pf-ont:Learner ;
+                             rdfs:domain aplo-ont:LearningChallenge ;
+                             rdfs:range aplo-ont:Learner ;
                              rdfs:comment "Inverse of hasLearningChallenge; relates a learning challenge to the learner affected by it." ;
                              rdfs:label "isLearningChallengeOf" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isLearningObjectiveOfModule
-pf-ont:isLearningObjectiveOfModule rdf:type owl:ObjectProperty ;
-                                   rdfs:domain pf-ont:LearningObjective ;
+###  https://aplo.cs.wright.edu/lod/ontology#isLearningObjectiveOfModule
+aplo-ont:isLearningObjectiveOfModule rdf:type owl:ObjectProperty ;
+                                   rdfs:domain aplo-ont:LearningObjective ;
                                    rdfs:range edu-ont:Module ;
                                    rdfs:comment "Inverse of hasLearningObjective; relates a learning objective to a module that includes it." ;
                                    rdfs:label "isLearningObjectiveOfModule" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isLearningObjectiveSupportedBy
-pf-ont:isLearningObjectiveSupportedBy rdf:type owl:ObjectProperty ;
-                                      owl:inverseOf pf-ont:supportsLearningObjective ;
-                                      rdfs:domain pf-ont:LearningObjective ;
+###  https://aplo.cs.wright.edu/lod/ontology#isLearningObjectiveSupportedBy
+aplo-ont:isLearningObjectiveSupportedBy rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf aplo-ont:supportsLearningObjective ;
+                                      rdfs:domain aplo-ont:LearningObjective ;
                                       rdfs:range edu-ont:Media ;
                                       rdfs:comment "Inverse of supportsLearningObjective; relates a learning objective to media that supports it." ;
                                       rdfs:label "isLearningObjectiveSupportedBy" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isPersonaScopeOf
-pf-ont:isPersonaScopeOf rdf:type owl:ObjectProperty ;
-                        owl:inverseOf pf-ont:scopes ;
+###  https://aplo.cs.wright.edu/lod/ontology#isPersonaScopeOf
+aplo-ont:isPersonaScopeOf rdf:type owl:ObjectProperty ;
+                        owl:inverseOf aplo-ont:scopes ;
                         rdf:type owl:AsymmetricProperty ,
                                  owl:IrreflexiveProperty ;
                         rdfs:domain edu-ont:Persona ;
-                        rdfs:range pf-ont:LearningSituation ;
+                        rdfs:range aplo-ont:LearningSituation ;
                         rdfs:comment "Inverse of scopes; relates a persona to learning situations scoped by it." ;
                         rdfs:label "isPersonaScopeOf" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isPriorTopicKnowledgeFor
-pf-ont:isPriorTopicKnowledgeFor rdf:type owl:ObjectProperty ;
-                                owl:inverseOf pf-ont:requiresPriorTopicKnowledge ;
+###  https://aplo.cs.wright.edu/lod/ontology#isPriorTopicKnowledgeFor
+aplo-ont:isPriorTopicKnowledgeFor rdf:type owl:ObjectProperty ;
+                                owl:inverseOf aplo-ont:requiresTopicKnowledge ;
                                 rdf:type owl:AsymmetricProperty ,
                                          owl:IrreflexiveProperty ;
                                 rdfs:domain edu-ont:Topic ;
-                                rdfs:range pf-ont:LearningSituation ;
-                                rdfs:comment "Inverse of requiresPriorTopicKnowledge; relates a topic to learning situations requiring prior knowledge of it." ;
+                                rdfs:range aplo-ont:LearningSituation ;
+                                rdfs:comment "Inverse of requiresTopicKnowledge; relates a topic to learning situations requiring prior knowledge of it." ;
                                 rdfs:label "isPriorTopicKnowledgeFor" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isSituationOf
-pf-ont:isSituationOf rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#isSituationOf
+aplo-ont:isSituationOf rdf:type owl:ObjectProperty ,
                               owl:AsymmetricProperty ,
                               owl:IrreflexiveProperty ;
-                     rdfs:domain pf-ont:LearningSituation ;
-                     rdfs:range pf-ont:Learner ;
+                     rdfs:domain aplo-ont:LearningSituation ;
+                     rdfs:range aplo-ont:Learner ;
                      rdfs:comment "Inverse of hasSituation; relates a learning situation to the learner it describes." ;
                      rdfs:label "isSituationOf" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isSituationWorkedOnBy
-pf-ont:isSituationWorkedOnBy rdf:type owl:ObjectProperty ;
-                             owl:inverseOf pf-ont:worksOnSituation ;
+###  https://aplo.cs.wright.edu/lod/ontology#isSituationWorkedOnBy
+aplo-ont:isSituationWorkedOnBy rdf:type owl:ObjectProperty ;
+                             owl:inverseOf aplo-ont:worksOnSituation ;
                              rdf:type owl:AsymmetricProperty ,
                                       owl:IrreflexiveProperty ;
-                             rdfs:domain pf-ont:LearningSituation ;
-                             rdfs:range pf-ont:LearningObjective ;
+                             rdfs:domain aplo-ont:LearningSituation ;
+                             rdfs:range aplo-ont:LearningObjective ;
                              rdfs:comment "Inverse of worksOnSituation; relates a learning situation to learning objectives that address it." ;
                              rdfs:label "isSituationWorkedOnBy" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isSkillDevelopedBy
-pf-ont:isSkillDevelopedBy rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#isSkillDevelopedBy
+aplo-ont:isSkillDevelopedBy rdf:type owl:ObjectProperty ,
                                    owl:AsymmetricProperty ,
                                    owl:IrreflexiveProperty ;
-                          rdfs:domain pf-ont:Skill ;
-                          rdfs:range pf-ont:LearningObjective ;
+                          rdfs:domain aplo-ont:Skill ;
+                          rdfs:range aplo-ont:LearningObjective ;
                           rdfs:comment "Inverse of developsSkill; relates a skill to learning objectives that develop it." ;
                           rdfs:label "isSkillDevelopedBy" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isSkillObservedBy
-pf-ont:isSkillObservedBy rdf:type owl:ObjectProperty ;
-                         owl:inverseOf pf-ont:onSkill ;
+###  https://aplo.cs.wright.edu/lod/ontology#isSkillObservedBy
+aplo-ont:isSkillObservedBy rdf:type owl:ObjectProperty ;
+                         owl:inverseOf aplo-ont:onSkill ;
                          rdf:type owl:AsymmetricProperty ,
                                   owl:IrreflexiveProperty ;
-                         rdfs:domain pf-ont:Skill ;
-                         rdfs:range pf-ont:AwarenessObservation ;
+                         rdfs:domain aplo-ont:Skill ;
+                         rdfs:range aplo-ont:AwarenessObservation ;
                          rdfs:comment "Inverse of onSkill; relates a skill to awareness observations about that skill." ;
                          rdfs:label "isSkillObservedBy" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isTargetSkillOf
-pf-ont:isTargetSkillOf rdf:type owl:ObjectProperty ;
-                       owl:inverseOf pf-ont:targetsSkill ;
+###  https://aplo.cs.wright.edu/lod/ontology#isTargetSkillOf
+aplo-ont:isTargetSkillOf rdf:type owl:ObjectProperty ;
+                       owl:inverseOf aplo-ont:targetsSkill ;
                        rdf:type owl:AsymmetricProperty ,
                                 owl:IrreflexiveProperty ;
-                       rdfs:domain pf-ont:Skill ;
-                       rdfs:range pf-ont:LearnerGoal ;
+                       rdfs:domain aplo-ont:Skill ;
+                       rdfs:range aplo-ont:LearnerGoal ;
                        rdfs:comment "Inverse of targetsSkill; relates a skill to learner goals that target it." ;
                        rdfs:label "isTargetSkillOf" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isTimeOfAwarenessObservation
-pf-ont:isTimeOfAwarenessObservation rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#isTimeOfAwarenessObservation
+aplo-ont:isTimeOfAwarenessObservation rdf:type owl:ObjectProperty ,
                                              owl:AsymmetricProperty ,
                                              owl:IrreflexiveProperty ;
-                                    rdfs:domain pf-ont:TemporalExtent ;
-                                    rdfs:range pf-ont:AwarenessObservation ;
+                                    rdfs:domain aplo-ont:TemporalExtent ;
+                                    rdfs:range aplo-ont:AwarenessObservation ;
                                     rdfs:comment "Inverse of atTime; relates a temporal extent to awareness observations recorded at that time." ;
                                     rdfs:label "isTimeOfAwarenessObservation" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isTopicObservedBy
-pf-ont:isTopicObservedBy rdf:type owl:ObjectProperty ;
-                         owl:inverseOf pf-ont:onTopic ;
+###  https://aplo.cs.wright.edu/lod/ontology#isTopicObservedBy
+aplo-ont:isTopicObservedBy rdf:type owl:ObjectProperty ;
+                         owl:inverseOf aplo-ont:onTopic ;
                          rdf:type owl:AsymmetricProperty ,
                                   owl:IrreflexiveProperty ;
                          rdfs:domain edu-ont:Topic ;
-                         rdfs:range pf-ont:AwarenessObservation ;
+                         rdfs:range aplo-ont:AwarenessObservation ;
                          rdfs:comment "Inverse of onTopic; relates a topic to awareness observations about that topic." ;
                          rdfs:label "isTopicObservedBy" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isTopicRequiredBy
-pf-ont:isTopicRequiredBy rdf:type owl:ObjectProperty ;
-                         owl:inverseOf pf-ont:requiresTopic ;
+###  https://aplo.cs.wright.edu/lod/ontology#isTopicRequiredBy
+aplo-ont:isTopicRequiredBy rdf:type owl:ObjectProperty ;
+                         owl:inverseOf aplo-ont:requiresTopic ;
                          rdf:type owl:AsymmetricProperty ,
                                   owl:IrreflexiveProperty ;
                          rdfs:domain edu-ont:Topic ;
-                         rdfs:range pf-ont:Skill ;
+                         rdfs:range aplo-ont:Skill ;
                          rdfs:comment "Inverse of requiresTopic; relates a topic to skills that require it." ;
                          rdfs:label "isTopicRequiredBy" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#onSkill
-pf-ont:onSkill rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#onSkill
+aplo-ont:onSkill rdf:type owl:ObjectProperty ,
                         owl:AsymmetricProperty ,
                         owl:IrreflexiveProperty ;
-               rdfs:domain pf-ont:AwarenessObservation ;
-               rdfs:range pf-ont:Skill ;
+               rdfs:domain aplo-ont:AwarenessObservation ;
+               rdfs:range aplo-ont:Skill ;
                rdfs:comment "Relates an awareness observation to the skill that the observation is about." ;
                rdfs:label "onSkill" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#onTopic
-pf-ont:onTopic rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#onTopic
+aplo-ont:onTopic rdf:type owl:ObjectProperty ,
                         owl:AsymmetricProperty ,
                         owl:IrreflexiveProperty ;
-               rdfs:domain pf-ont:AwarenessObservation ;
+               rdfs:domain aplo-ont:AwarenessObservation ;
                rdfs:range edu-ont:Topic ;
                rdfs:comment "Relates an awareness observation to the topic that the observation is about." ;
                rdfs:label "onTopic" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#requiresPriorTopicKnowledge
-pf-ont:requiresPriorTopicKnowledge rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#requiresTopicKnowledge
+aplo-ont:requiresTopicKnowledge rdf:type owl:ObjectProperty ,
                                             owl:AsymmetricProperty ,
                                             owl:IrreflexiveProperty ;
-                                   rdfs:domain pf-ont:LearningSituation ;
+                                   rdfs:domain aplo-ont:LearningSituation ;
                                    rdfs:range edu-ont:Topic ;
                                    rdfs:comment "Relates a learning situation to a topic that should be known beforehand." ;
-                                   rdfs:label "requiresPriorTopicKnowledge" .
+                                   rdfs:label "requiresTopicKnowledge" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#requiresTopic
-pf-ont:requiresTopic rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#requiresTopic
+aplo-ont:requiresTopic rdf:type owl:ObjectProperty ,
                               owl:AsymmetricProperty ,
                               owl:IrreflexiveProperty ;
-                     rdfs:domain pf-ont:Skill ;
+                     rdfs:domain aplo-ont:Skill ;
                      rdfs:range edu-ont:Topic ;
                      rdfs:comment "Relates a skill to a topic required for developing or applying that skill." ;
                      rdfs:label "requiresTopic" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#scopes
-pf-ont:scopes rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#scopes
+aplo-ont:scopes rdf:type owl:ObjectProperty ,
                        owl:AsymmetricProperty ,
                        owl:IrreflexiveProperty ;
-              rdfs:domain pf-ont:LearningSituation ;
+              rdfs:domain aplo-ont:LearningSituation ;
               rdfs:range edu-ont:Persona ;
               rdfs:comment "Relates a learning situation to a persona that scopes or contextualizes it." ;
               rdfs:label "scopes" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#supportsLearningObjective
-pf-ont:supportsLearningObjective rdf:type owl:ObjectProperty ;
+###  https://aplo.cs.wright.edu/lod/ontology#supportsLearningObjective
+aplo-ont:supportsLearningObjective rdf:type owl:ObjectProperty ;
                                  rdfs:domain edu-ont:Media ;
-                                 rdfs:range pf-ont:LearningObjective ;
+                                 rdfs:range aplo-ont:LearningObjective ;
                                  rdfs:comment "Relates a media resource to a learning objective supported by that resource." ;
                                  rdfs:label "supportsLearningObjective" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#targetsSkill
-pf-ont:targetsSkill rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#targetsSkill
+aplo-ont:targetsSkill rdf:type owl:ObjectProperty ,
                              owl:AsymmetricProperty ,
                              owl:IrreflexiveProperty ;
-                    rdfs:domain pf-ont:LearnerGoal ;
-                    rdfs:range pf-ont:Skill ;
+                    rdfs:domain aplo-ont:LearnerGoal ;
+                    rdfs:range aplo-ont:Skill ;
                     rdfs:comment "Relates a learner goal to the skill targeted by that goal." ;
                     rdfs:label "targetsSkill" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#worksOnSituation
-pf-ont:worksOnSituation rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#worksOnSituation
+aplo-ont:worksOnSituation rdf:type owl:ObjectProperty ,
                                  owl:AsymmetricProperty ,
                                  owl:IrreflexiveProperty ;
-                        rdfs:domain pf-ont:LearningObjective ;
-                        rdfs:range pf-ont:LearningSituation ;
+                        rdfs:domain aplo-ont:LearningObjective ;
+                        rdfs:range aplo-ont:LearningSituation ;
                         rdfs:comment "Relates a learning objective to a learning situation addressed by that objective." ;
                         rdfs:label "worksOnSituation" .
 
@@ -400,165 +400,165 @@ edu-ont:Persona rdf:type owl:Class ;
 
 ###  https://edugate.cs.wright.edu/lod/ontology#Topic
 edu-ont:Topic rdf:type owl:Class ;
-              owl:disjointWith pf-ont:Agent ,
-                               pf-ont:AwarenessObservation ,
-                               pf-ont:LearnerGoal ,
-                               pf-ont:LearningSituation ;
+              owl:disjointWith aplo-ont:Agent ,
+                               aplo-ont:AwarenessObservation ,
+                               aplo-ont:LearnerGoal ,
+                               aplo-ont:LearningSituation ;
               rdfs:comment "Represents a subject matter topic required by skills or observed in learner awareness." ;
               rdfs:label "Topic" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#AccessibilityChallenge
-pf-ont:AccessibilityChallenge rdf:type owl:Class ;
-                              rdfs:subClassOf pf-ont:LearningChallenge ;
+###  https://aplo.cs.wright.edu/lod/ontology#AccessibilityChallenge
+aplo-ont:AccessibilityChallenge rdf:type owl:Class ;
+                              rdfs:subClassOf aplo-ont:LearningChallenge ;
                               rdfs:comment "Represents a specialized (subclass of) learning challenge related to accessibility needs, such as captions, screen-reader compatibility, alternative media, or extended time." ;
                               rdfs:label "AccessibilityChallenge" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#Agent
-pf-ont:Agent rdf:type owl:Class ;
+###  https://aplo.cs.wright.edu/lod/ontology#Agent
+aplo-ont:Agent rdf:type owl:Class ;
              rdfs:subClassOf [ rdf:type owl:Restriction ;
-                               owl:onProperty pf-ont:hasSituation ;
+                               owl:onProperty aplo-ont:hasSituation ;
                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                               owl:onClass pf-ont:LearningSituation
+                               owl:onClass aplo-ont:LearningSituation
                              ] ;
-             owl:disjointWith pf-ont:AwarenessObservation ,
-                              pf-ont:LearnerGoal ,
-                              pf-ont:LearningChallenge ,
-                              pf-ont:LearningObjective ,
-                              pf-ont:LearningSituation ,
-                              pf-ont:Skill ,
-                              pf-ont:TemporalExtent ;
+             owl:disjointWith aplo-ont:AwarenessObservation ,
+                              aplo-ont:LearnerGoal ,
+                              aplo-ont:LearningChallenge ,
+                              aplo-ont:LearningObjective ,
+                              aplo-ont:LearningSituation ,
+                              aplo-ont:Skill ,
+                              aplo-ont:TemporalExtent ;
              rdfs:comment "Represents an actor or agentive entity, including learners, whose learning state can be modeled." ;
              rdfs:label "Agent" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#AwarenessLevel
-pf-ont:AwarenessLevel rdf:type owl:Class ;
+###  https://aplo.cs.wright.edu/lod/ontology#AwarenessLevel
+aplo-ont:AwarenessLevel rdf:type owl:Class ;
                       rdfs:comment "Represents a controlled vocabulary level that models a learner's awareness on a topic or skill." ;
                       rdfs:label "AwarenessLevel" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#AwarenessObservation
-pf-ont:AwarenessObservation rdf:type owl:Class ;
+###  https://aplo.cs.wright.edu/lod/ontology#AwarenessObservation
+aplo-ont:AwarenessObservation rdf:type owl:Class ;
                             rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                              owl:onProperty pf-ont:hasAwarenessLevel ;
-                                              owl:someValuesFrom pf-ont:AwarenessLevel
+                                              owl:onProperty aplo-ont:hasAwarenessLevel ;
+                                              owl:someValuesFrom aplo-ont:AwarenessLevel
                                             ] ,
                                             [ rdf:type owl:Restriction ;
-                                              owl:onProperty pf-ont:atTime ;
+                                              owl:onProperty aplo-ont:atTime ;
                                               owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                                              owl:onClass pf-ont:TemporalExtent
+                                              owl:onClass aplo-ont:TemporalExtent
                                             ] ,
                                             [ rdf:type owl:Restriction ;
-                                              owl:onProperty pf-ont:onSkill ;
+                                              owl:onProperty aplo-ont:onSkill ;
                                               owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                                              owl:onClass pf-ont:Skill
+                                              owl:onClass aplo-ont:Skill
                                             ] ,
                                             [ rdf:type owl:Restriction ;
-                                              owl:onProperty pf-ont:onTopic ;
+                                              owl:onProperty aplo-ont:onTopic ;
                                               owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
                                               owl:onClass edu-ont:Topic
                                             ] ,
                                             [ rdf:type owl:Restriction ;
-                                              owl:onProperty pf-ont:atTime ;
+                                              owl:onProperty aplo-ont:atTime ;
                                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                              owl:onClass pf-ont:TemporalExtent
+                                              owl:onClass aplo-ont:TemporalExtent
                                             ] ,
                                             [ rdf:type owl:Restriction ;
-                                              owl:onProperty pf-ont:hasAwarenessLevel ;
+                                              owl:onProperty aplo-ont:hasAwarenessLevel ;
                                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                              owl:onClass pf-ont:AwarenessLevel
+                                              owl:onClass aplo-ont:AwarenessLevel
                                             ] ;
                             rdfs:comment "Represents an observation or assessment event that estimates a learner's awareness of a topic or skill." ;
                             rdfs:label "AwarenessObservation" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#CurrentAwarenessObservation
-pf-ont:CurrentAwarenessObservation rdf:type owl:Class ;
-                                   rdfs:subClassOf pf-ont:AwarenessObservation ;
+###  https://aplo.cs.wright.edu/lod/ontology#CurrentAwarenessObservation
+aplo-ont:CurrentAwarenessObservation rdf:type owl:Class ;
+                                   rdfs:subClassOf aplo-ont:AwarenessObservation ;
                                    rdfs:comment "Represents the current or active awareness observation used to describe a learner's present awareness observation over a scope." ;
                                    rdfs:label "CurrentAwarenessObservation" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#Learner
-pf-ont:Learner rdf:type owl:Class ;
-               rdfs:subClassOf pf-ont:Agent ,
+###  https://aplo.cs.wright.edu/lod/ontology#Learner
+aplo-ont:Learner rdf:type owl:Class ;
+               rdfs:subClassOf aplo-ont:Agent ,
                                [ rdf:type owl:Restriction ;
-                                 owl:onProperty pf-ont:hasSituation ;
-                                 owl:someValuesFrom pf-ont:LearningSituation
+                                 owl:onProperty aplo-ont:hasSituation ;
+                                 owl:someValuesFrom aplo-ont:LearningSituation
                                ] ,
                                [ rdf:type owl:Restriction ;
-                                 owl:onProperty pf-ont:hasAwarenessObservation ;
+                                 owl:onProperty aplo-ont:hasAwarenessObservation ;
                                  owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                                 owl:onClass pf-ont:AwarenessObservation
+                                 owl:onClass aplo-ont:AwarenessObservation
                                ] ,
                                [ rdf:type owl:Restriction ;
-                                 owl:onProperty pf-ont:hasGoal ;
+                                 owl:onProperty aplo-ont:hasGoal ;
                                  owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                                 owl:onClass pf-ont:LearnerGoal
+                                 owl:onClass aplo-ont:LearnerGoal
                                ] ,
                                [ rdf:type owl:Restriction ;
-                                 owl:onProperty pf-ont:hasLearnerPreference ;
+                                 owl:onProperty aplo-ont:hasLearnerPreference ;
                                  owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                                 owl:onClass pf-ont:LearnerPreference
+                                 owl:onClass aplo-ont:LearnerPreference
                                ] ,
                                [ rdf:type owl:Restriction ;
-                                 owl:onProperty pf-ont:hasLearningChallenge ;
+                                 owl:onProperty aplo-ont:hasLearningChallenge ;
                                  owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                                 owl:onClass pf-ont:LearningChallenge
+                                 owl:onClass aplo-ont:LearningChallenge
                                ] ;
                rdfs:comment "Represents the individual learning agent whose goals, preferences, challenges, awareness, and learning situations are modeled for personalization." ;
                rdfs:label "Learner" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#LearnerGoal
-pf-ont:LearnerGoal rdf:type owl:Class ;
+###  https://aplo.cs.wright.edu/lod/ontology#LearnerGoal
+aplo-ont:LearnerGoal rdf:type owl:Class ;
                    rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                     owl:onProperty pf-ont:targetsSkill ;
-                                     owl:someValuesFrom pf-ont:Skill
+                                     owl:onProperty aplo-ont:targetsSkill ;
+                                     owl:someValuesFrom aplo-ont:Skill
                                    ] ;
                    rdfs:comment "Represents a learner-specific goal, such as acquiring a skill or reaching a target learning outcome." ;
                    rdfs:label "LearnerGoal" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#LearnerPreference
-pf-ont:LearnerPreference rdf:type owl:Class ;
-                         owl:disjointWith pf-ont:LearningChallenge ;
+###  https://aplo.cs.wright.edu/lod/ontology#LearnerPreference
+aplo-ont:LearnerPreference rdf:type owl:Class ;
+                         owl:disjointWith aplo-ont:LearningChallenge ;
                          rdfs:comment "Represents learner-specific preferences used to personalize instruction, resources, feedback, delivery and recommendations (complementary to challenge)." ;
                          rdfs:label "LearnerPreference" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#LearningChallenge
-pf-ont:LearningChallenge rdf:type owl:Class ;
+###  https://aplo.cs.wright.edu/lod/ontology#LearningChallenge
+aplo-ont:LearningChallenge rdf:type owl:Class ;
                          rdfs:comment "Represents constraints, barriers, or needs that may affect a learner's ability to engage with instruction or learning material or process (complementary to preference)." ;
                          rdfs:label "LearningChallenge" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#LearningObjective
-pf-ont:LearningObjective rdf:type owl:Class ;
+###  https://aplo.cs.wright.edu/lod/ontology#LearningObjective
+aplo-ont:LearningObjective rdf:type owl:Class ;
                          rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                           owl:onProperty pf-ont:developsSkill ;
-                                           owl:someValuesFrom pf-ont:Skill
+                                           owl:onProperty aplo-ont:developsSkill ;
+                                           owl:someValuesFrom aplo-ont:Skill
                                          ] ,
                                          [ rdf:type owl:Restriction ;
-                                           owl:onProperty pf-ont:worksOnSituation ;
+                                           owl:onProperty aplo-ont:worksOnSituation ;
                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                                           owl:onClass pf-ont:LearningSituation
+                                           owl:onClass aplo-ont:LearningSituation
                                          ] ;
                          rdfs:comment "Represents the ability to capture a target learning outcome." ;
                          rdfs:label "LearningObjective" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#LearningSituation
-pf-ont:LearningSituation rdf:type owl:Class ;
+###  https://aplo.cs.wright.edu/lod/ontology#LearningSituation
+aplo-ont:LearningSituation rdf:type owl:Class ;
                          rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                           owl:onProperty pf-ont:requiresPriorTopicKnowledge ;
+                                           owl:onProperty aplo-ont:requiresTopicKnowledge ;
                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
                                            owl:onClass edu-ont:Topic
                                          ] ,
                                          [ rdf:type owl:Restriction ;
-                                           owl:onProperty pf-ont:scopes ;
+                                           owl:onProperty aplo-ont:scopes ;
                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
                                            owl:onClass edu-ont:Persona
                                          ] ;
@@ -566,18 +566,18 @@ pf-ont:LearningSituation rdf:type owl:Class ;
                          rdfs:label "LearningSituation" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#Skill
-pf-ont:Skill rdf:type owl:Class ;
+###  https://aplo.cs.wright.edu/lod/ontology#Skill
+aplo-ont:Skill rdf:type owl:Class ;
              rdfs:subClassOf [ rdf:type owl:Restriction ;
-                               owl:onProperty pf-ont:requiresTopic ;
+                               owl:onProperty aplo-ont:requiresTopic ;
                                owl:someValuesFrom edu-ont:Topic
                              ] ;
              rdfs:comment "Represents a lightweight bridge concept connecting learner goals, learning objectives, topics, and future alignment across external skill or labor market ontologies." ;
              rdfs:label "Skill" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#TemporalExtent
-pf-ont:TemporalExtent rdf:type owl:Class ;
+###  https://aplo.cs.wright.edu/lod/ontology#TemporalExtent
+aplo-ont:TemporalExtent rdf:type owl:Class ;
                       rdfs:comment "Represents a time point, interval, or duration associated with an awareness observation." ;
                       rdfs:label "TemporalExtent" .
 

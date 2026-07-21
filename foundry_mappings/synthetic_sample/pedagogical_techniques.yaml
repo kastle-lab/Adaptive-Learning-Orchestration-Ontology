@@ -1,0 +1,31 @@
+metadata:
+  name: "Synthetic Pedagogical Techniques"
+  source_ext: "csv"
+
+root:
+  type: "aplo-ont:PedagogicalTechnique"
+  uri: "aplo-r:pedagogicalTechnique"
+  varids: ["Pedagogical Technique"]
+  connections:
+    - p: "aplo-ont:hasName"
+      o:
+        datatype: "xsd:string"
+        val_source: "Pedagogical Technique"
+    - p: "aplo-ont:hasDescription"
+      o:
+        datatype: "xsd:string"
+        val_source: "Pedagogical Technique Description"
+    - p: "aplo-ont:servesPedagogicalObjective"
+      o:
+        type: "aplo-ont:PedagogicalObjective"
+        uri: "aplo-r:pedagogicalObjective"
+        varids: ["Pedagogical Objective"]
+        connections:
+          - p: "aplo-ont:hasName"
+            o:
+              datatype: "xsd:string"
+              val_source: "Pedagogical Objective"
+          - p: "aplo-ont:hasDescription"
+            o:
+              datatype: "xsd:string"
+              val_source: "Pedagogical Objective Description"

@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Think%20Aloud%20Modeling a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Demonstrate an expert process while narrating decisions uncertainties checks and corrections"^^xsd:string ;
+    aplo-ont:hasName "Think Aloud Modeling"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Make%20Expert%20Reasoning%20Visible .
+
+aplo-r:pedagogicalObjective.Make%20Expert%20Reasoning%20Visible a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Help learners see the reasoning moves behind a competent performance"^^xsd:string ;
+    aplo-ont:hasName "Make Expert Reasoning Visible"^^xsd:string .
+

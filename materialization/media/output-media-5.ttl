@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:media.What%20is%20a%20Knowledge%20Graph%3F a edu-ont:Media ;
+    rdf:value "What is a Knowledge Graph?"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.What%20is%20a%20Knowledge%20Graph%3F.Knowledge%20Graph%20Structure%20Sketch ;
+    aplo-ont:supportsLearningObjective aplo-r:learningObjective.Data%20Science%20KG%20Modeling%20Foundations.Describe%20knowledge%20graph%20structure .
+
+aplo-r:evaluationAssessmentExercise.What%20is%20a%20Knowledge%20Graph%3F.Knowledge%20Graph%20Structure%20Sketch a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Knowledge Graph Structure Sketch"^^xsd:string .
+
+aplo-r:learningObjective.Data%20Science%20KG%20Modeling%20Foundations.Describe%20knowledge%20graph%20structure a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Describe knowledge graph structure"^^xsd:string .
+

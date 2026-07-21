@@ -1,0 +1,28 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningStrategy.RDFS%20Schema%20Practice.Schema%20Reasoning%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasDescription "Move from faded schema examples into guided reasoning and analogical comparison before learners judge serialization choices."^^xsd:string ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.RDFS%20Schema%20Practice.Apply%20RDFS%20domain%20and%20range%20constraints ;
+    aplo-ont:hasName "Schema Reasoning Strategy"^^xsd:string ;
+    aplo-ont:hasPedagogicalTechnique aplo-r:pedagogicalTechnique.Analogical%20Comparison,
+        aplo-r:pedagogicalTechnique.Faded%20Worked%20Example,
+        aplo-r:pedagogicalTechnique.Guided%20Practice,
+        aplo-r:pedagogicalTechnique.Rubric%20Based%20Review .
+
+aplo-r:learningObjective.RDFS%20Schema%20Practice.Apply%20RDFS%20domain%20and%20range%20constraints a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Apply RDFS domain and range constraints"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Analogical%20Comparison a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Analogical Comparison"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Faded%20Worked%20Example a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Faded Worked Example"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Guided%20Practice a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Guided Practice"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Rubric%20Based%20Review a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Rubric Based Review"^^xsd:string .
+

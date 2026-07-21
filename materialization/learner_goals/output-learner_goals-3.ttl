@@ -1,0 +1,20 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learnerGoal.Build%20Knowledge%20Graph%20Foundations a aplo-ont:LearnerGoal ;
+    rdf:value "Build Knowledge Graph Foundations"^^xsd:string ;
+    aplo-ont:targetsSkill aplo-r:skill.Metadata%20Vocabulary%20Recall,
+        aplo-r:skill.Reasoner%20Capability%20Comparison,
+        aplo-r:skill.SHACL%20Constraint%20Validation .
+
+aplo-r:skill.Metadata%20Vocabulary%20Recall a aplo-ont:Skill ;
+    rdf:value "Metadata Vocabulary Recall"^^xsd:string .
+
+aplo-r:skill.Reasoner%20Capability%20Comparison a aplo-ont:Skill ;
+    rdf:value "Reasoner Capability Comparison"^^xsd:string .
+
+aplo-r:skill.SHACL%20Constraint%20Validation a aplo-ont:Skill ;
+    rdf:value "SHACL Constraint Validation"^^xsd:string .
+

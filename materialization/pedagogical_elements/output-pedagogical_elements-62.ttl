@@ -1,0 +1,20 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Conceptual%20Change.Concept%20Reconstruction a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Help learners build a more accurate concept relationship or explanatory model"^^xsd:string ;
+    aplo-ont:hasName "Concept Reconstruction"^^xsd:string ;
+    aplo-ont:hasNextPedagogicalElement aplo-r:pedagogicalElement.Conceptual%20Change.Transfer%20Check ;
+    aplo-ont:hasPreviousPedagogicalElement aplo-r:pedagogicalElement.Conceptual%20Change.Cognitive%20Conflict ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Conceptual%20Change .
+
+aplo-r:pedagogicalElement.Conceptual%20Change.Cognitive%20Conflict a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Cognitive Conflict"^^xsd:string .
+
+aplo-r:pedagogicalElement.Conceptual%20Change.Transfer%20Check a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Transfer Check"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Conceptual%20Change a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Conceptual Change"^^xsd:string .
+

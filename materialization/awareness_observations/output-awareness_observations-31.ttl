@@ -1,0 +1,33 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Courtney a aplo-ont:Learner ;
+    rdf:value "Learner Courtney"^^xsd:string ;
+    aplo-ont:hasAwarenessObservation aplo-r:awarenessObservation.Learner%20Courtney.Axiom.Manchester%20Syntax%20Translation.Manchester%20Syntax%20Translation%20Revision%20State .
+
+aplo-r:awarenessLevel.Working%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Working Awareness"^^xsd:string .
+
+aplo-r:awarenessObservation.Learner%20Courtney.Axiom.Manchester%20Syntax%20Translation.Manchester%20Syntax%20Translation%20Revision%20State a aplo-ont:AwarenessObservation ;
+    rdf:value "Manchester Syntax Translation Revision State"^^xsd:string ;
+    aplo-ont:atTime aplo-r:temporalExtent.Learner%20Courtney.Axiom.Manchester%20Syntax%20Translation.Manchester%20Syntax%20Translation%20Revision%20State.2026-02-22T13%3A42%3A00Z%20to%202026-02-22T14%3A07%3A00Z ;
+    aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Working%20Awareness ;
+    aplo-ont:onSkill aplo-r:skill.Manchester%20Syntax%20Translation ;
+    aplo-ont:onTopic edu-r:topic.Axiom .
+
+aplo-r:skill.Manchester%20Syntax%20Translation a aplo-ont:Skill ;
+    rdf:value "Manchester Syntax Translation"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Courtney.Axiom.Manchester%20Syntax%20Translation.Manchester%20Syntax%20Translation%20Revision%20State.2026-02-22T13%3A42%3A00Z%20to%202026-02-22T14%3A07%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "2026-02-22T13:42:00+00:00"^^xsd:dateTime,
+        "2026-02-22T14:07:00+00:00"^^xsd:dateTime,
+        "ISO 8601 UTC"^^xsd:string,
+        "TimeInterval"^^xsd:string .
+
+edu-r:topic.Axiom a edu-ont:Topic ;
+    rdf:value "Axiom"^^xsd:string .
+

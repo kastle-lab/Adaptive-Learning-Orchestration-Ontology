@@ -1,0 +1,24 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:response.Learner%20Ella.Instructor%20Reviewer.Nanopublication%20Claim%20Card%20Rubric%20Rating a aplo-ont:Response ;
+    rdf:value "Nanopublication Claim Card Rubric Rating"^^xsd:string,
+        "Nanopublication Claim Card checkpoint value: 87 Score Percent for Nanopublication Claim Modeling."^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Ella.Provenance.Nanopublication%20Claim%20Modeling.Nanopublication%20Claim%20Modeling%20Review ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Ella.Instructor%20Reviewer.Nanopublication%20Claim%20Card%20Rubric%20Rating.2026-03-14T14%3A07%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Instructor%20Reviewer .
+
+aplo-r:awarenessObservation.Learner%20Ella.Provenance.Nanopublication%20Claim%20Modeling.Nanopublication%20Claim%20Modeling%20Review a aplo-ont:AwarenessObservation ;
+    rdf:value "Nanopublication Claim Modeling Review"^^xsd:string .
+
+aplo-r:source.Instructor%20Reviewer a aplo-ont:Source ;
+    rdf:value "Instructor Reviewer"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Ella.Instructor%20Reviewer.Nanopublication%20Claim%20Card%20Rubric%20Rating.2026-03-14T14%3A07%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-03-14T14:07:00+00:00"^^xsd:dateTime .
+

@@ -1,0 +1,20 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learnerGoal.Assess%20Knowledge%20Graph%20Consulting%20Opportunities a aplo-ont:LearnerGoal ;
+    rdf:value "Assess Knowledge Graph Consulting Opportunities"^^xsd:string ;
+    aplo-ont:targetsSkill aplo-r:skill.Observation%20Ontology%20Modeling,
+        aplo-r:skill.Open%20Graph%20Metadata%20Mapping,
+        aplo-r:skill.Rule%20Based%20Inference%20Explanation .
+
+aplo-r:skill.Observation%20Ontology%20Modeling a aplo-ont:Skill ;
+    rdf:value "Observation Ontology Modeling"^^xsd:string .
+
+aplo-r:skill.Open%20Graph%20Metadata%20Mapping a aplo-ont:Skill ;
+    rdf:value "Open Graph Metadata Mapping"^^xsd:string .
+
+aplo-r:skill.Rule%20Based%20Inference%20Explanation a aplo-ont:Skill ;
+    rdf:value "Rule Based Inference Explanation"^^xsd:string .
+

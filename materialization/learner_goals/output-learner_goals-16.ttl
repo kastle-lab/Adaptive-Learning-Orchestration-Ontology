@@ -1,0 +1,16 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learnerGoal.Train%20Secure%20KG%20Implementation a aplo-ont:LearnerGoal ;
+    rdf:value "Train Secure KG Implementation"^^xsd:string ;
+    aplo-ont:targetsSkill aplo-r:skill.RDF%20Star%20Statement%20Annotation,
+        aplo-r:skill.Upper%20Ontology%20Alignment .
+
+aplo-r:skill.RDF%20Star%20Statement%20Annotation a aplo-ont:Skill ;
+    rdf:value "RDF Star Statement Annotation"^^xsd:string .
+
+aplo-r:skill.Upper%20Ontology%20Alignment a aplo-ont:Skill ;
+    rdf:value "Upper Ontology Alignment"^^xsd:string .
+

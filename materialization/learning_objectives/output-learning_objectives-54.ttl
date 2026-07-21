@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Knowledge%20Graph%20Foundations%20Orientation.Compare%20reasoning%20tool%20capabilities a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Project%20Based%20Learning.Critique%20and%20Revision ;
+    aplo-ont:developsSkill aplo-r:skill.Reasoner%20Capability%20Comparison ;
+    aplo-ont:hasDescription "Reasoner Capability Comparison in Survey of Reasoners: Classify the evidence, then state the implication for a KG workflow."^^xsd:string ;
+    aplo-ont:hasName "Compare reasoning tool capabilities"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Knowledge%20Graph%20Foundations%20Orientation .
+
+aplo-r:learningSituation.Knowledge%20Graph%20Foundations%20Orientation a aplo-ont:LearningSituation ;
+    rdf:value "Knowledge Graph Foundations Orientation"^^xsd:string .
+
+aplo-r:pedagogicalElement.Project%20Based%20Learning.Critique%20and%20Revision a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Critique and Revision"^^xsd:string .
+
+aplo-r:skill.Reasoner%20Capability%20Comparison a aplo-ont:Skill ;
+    rdf:value "Reasoner Capability Comparison"^^xsd:string .
+

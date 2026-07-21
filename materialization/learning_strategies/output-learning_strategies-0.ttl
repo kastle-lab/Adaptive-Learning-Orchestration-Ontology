@@ -1,0 +1,36 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningStrategy.Foundational%20Semantic%20Web%20Study.Semantic%20Web%20Foundations%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasDescription "Use prior-knowledge activation visual representation and retrieval checks so foundational Semantic Web terms become reusable vocabulary."^^xsd:string ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Foundational%20Semantic%20Web%20Study.Describe%20the%20purpose%20of%20a%20knowledge%20graph,
+        aplo-r:learningObjective.Foundational%20Semantic%20Web%20Study.Explain%20what%20an%20ontology%20represents,
+        aplo-r:learningObjective.Foundational%20Semantic%20Web%20Study.Recall%20core%20metadata%20terminology ;
+    aplo-ont:hasName "Semantic Web Foundations Strategy"^^xsd:string ;
+    aplo-ont:hasPedagogicalTechnique aplo-r:pedagogicalTechnique.Advance%20Organizer,
+        aplo-r:pedagogicalTechnique.Concept%20Mapping,
+        aplo-r:pedagogicalTechnique.Dual%20Coding,
+        aplo-r:pedagogicalTechnique.Retrieval%20Practice .
+
+aplo-r:learningObjective.Foundational%20Semantic%20Web%20Study.Describe%20the%20purpose%20of%20a%20knowledge%20graph a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Describe the purpose of a knowledge graph"^^xsd:string .
+
+aplo-r:learningObjective.Foundational%20Semantic%20Web%20Study.Explain%20what%20an%20ontology%20represents a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Explain what an ontology represents"^^xsd:string .
+
+aplo-r:learningObjective.Foundational%20Semantic%20Web%20Study.Recall%20core%20metadata%20terminology a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Recall core metadata terminology"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Advance%20Organizer a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Advance Organizer"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Concept%20Mapping a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Concept Mapping"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Dual%20Coding a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Dual Coding"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Retrieval%20Practice a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Retrieval Practice"^^xsd:string .
+

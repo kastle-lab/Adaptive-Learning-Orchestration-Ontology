@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Debate%20Protocol a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Structure opposing claims evidence warrants and rebuttals so learners compare competing interpretations"^^xsd:string ;
+    aplo-ont:hasName "Debate Protocol"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Evaluate%20Competing%20Claims .
+
+aplo-r:pedagogicalObjective.Evaluate%20Competing%20Claims a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Develop critical judgment through evidence-based disagreement"^^xsd:string ;
+    aplo-ont:hasName "Evaluate Competing Claims"^^xsd:string .
+

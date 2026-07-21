@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Public%20Product%20Review a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Evaluate a learner artifact as something intended for a real audience stakeholder or reuse context"^^xsd:string ;
+    aplo-ont:hasName "Public Product Review"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Prepare%20Authentic%20Output .
+
+aplo-r:pedagogicalObjective.Prepare%20Authentic%20Output a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Connect learning performance to communicable and usable outputs"^^xsd:string ;
+    aplo-ont:hasName "Prepare Authentic Output"^^xsd:string .
+

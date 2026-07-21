@@ -1,0 +1,14 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningFeedbackType.Corrective%20Feedback a aplo-ont:LearningFeedbackType ;
+    rdf:value "Corrective Feedback"^^xsd:string .
+
+aplo-r:learningFeedbackType.Motivational%20Feedback a aplo-ont:LearningFeedbackType ;
+    rdf:value "Motivational Feedback"^^xsd:string .
+
+aplo-r:learningFeedbackType.Strategic%20Feedback a aplo-ont:LearningFeedbackType ;
+    rdf:value "Strategic Feedback"^^xsd:string .
+

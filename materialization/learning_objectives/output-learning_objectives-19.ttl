@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Executive%20KG%20Value%20Review.Interpret%20predicate%20logic%20statements a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Articulation ;
+    aplo-ont:developsSkill aplo-r:skill.Predicate%20Logic%20Statement%20Interpretation ;
+    aplo-ont:hasDescription "Predicate Logic Statement Interpretation in Predicate Logic: Build a concise explanation that another learner could reuse."^^xsd:string ;
+    aplo-ont:hasName "Interpret predicate logic statements"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Executive%20KG%20Value%20Review .
+
+aplo-r:learningSituation.Executive%20KG%20Value%20Review a aplo-ont:LearningSituation ;
+    rdf:value "Executive KG Value Review"^^xsd:string .
+
+aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Articulation a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Articulation"^^xsd:string .
+
+aplo-r:skill.Predicate%20Logic%20Statement%20Interpretation a aplo-ont:Skill ;
+    rdf:value "Predicate Logic Statement Interpretation"^^xsd:string .
+

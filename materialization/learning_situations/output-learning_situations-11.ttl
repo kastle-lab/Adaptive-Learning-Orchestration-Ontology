@@ -1,0 +1,22 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningSituation.Executive%20KG%20Value%20Review a aplo-ont:LearningSituation ;
+    rdf:value "Executive KG Value Review"^^xsd:string ;
+    aplo-ont:requiresTopicKnowledge edu-r:topic.Graph,
+        edu-r:topic.Knowledge%20Graph ;
+    aplo-ont:scopes edu-r:persona.Edward .
+
+edu-r:persona.Edward a edu-ont:Persona ;
+    rdf:value "Edward"^^xsd:string .
+
+edu-r:topic.Graph a edu-ont:Topic ;
+    rdf:value "Graph"^^xsd:string .
+
+edu-r:topic.Knowledge%20Graph a edu-ont:Topic ;
+    rdf:value "Knowledge Graph"^^xsd:string .
+

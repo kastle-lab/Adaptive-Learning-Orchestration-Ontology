@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Retrieval%20Practice a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Ask learners to recall information without looking at notes to strengthen memory"^^xsd:string ;
+    aplo-ont:hasName "Retrieval Practice"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Improve%20Recall .
+
+aplo-r:pedagogicalObjective.Improve%20Recall a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Increase learner ability to retrieve foundational knowledge accurately"^^xsd:string ;
+    aplo-ont:hasName "Improve Recall"^^xsd:string .
+

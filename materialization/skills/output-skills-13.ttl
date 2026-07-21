@@ -1,0 +1,34 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:skill.Ontology%20Component%20Explanation a aplo-ont:Skill ;
+    rdf:value "Ontology Component Explanation"^^xsd:string ;
+    aplo-ont:requiresTopic edu-r:topic.Linked%20Data,
+        edu-r:topic.Ontology,
+        edu-r:topic.Schema,
+        edu-r:topic.Statement,
+        edu-r:topic.Taxonomy,
+        edu-r:topic.Triple .
+
+edu-r:topic.Linked%20Data a edu-ont:Topic ;
+    rdf:value "Linked Data"^^xsd:string .
+
+edu-r:topic.Ontology a edu-ont:Topic ;
+    rdf:value "Ontology"^^xsd:string .
+
+edu-r:topic.Schema a edu-ont:Topic ;
+    rdf:value "Schema"^^xsd:string .
+
+edu-r:topic.Statement a edu-ont:Topic ;
+    rdf:value "Statement"^^xsd:string .
+
+edu-r:topic.Taxonomy a edu-ont:Topic ;
+    rdf:value "Taxonomy"^^xsd:string .
+
+edu-r:topic.Triple a edu-ont:Topic ;
+    rdf:value "Triple"^^xsd:string .
+

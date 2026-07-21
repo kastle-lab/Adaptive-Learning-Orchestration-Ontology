@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Data%20Walkthrough a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Guide learners through a dataset graph query output or evidence table to inspect structure and implications"^^xsd:string ;
+    aplo-ont:hasName "Data Walkthrough"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Ground%20Reasoning%20In%20Evidence .
+
+aplo-r:pedagogicalObjective.Ground%20Reasoning%20In%20Evidence a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Use concrete data traces to support interpretation and modeling decisions"^^xsd:string ;
+    aplo-ont:hasName "Ground Reasoning In Evidence"^^xsd:string .
+

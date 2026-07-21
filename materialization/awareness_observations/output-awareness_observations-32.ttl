@@ -1,0 +1,33 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Ethan a aplo-ont:Learner ;
+    rdf:value "Learner Ethan"^^xsd:string ;
+    aplo-ont:hasAwarenessObservation aplo-r:awarenessObservation.Learner%20Ethan.Schema.SHACL%20Constraint%20Validation.SHACL%20Constraint%20Validation%20Rubric%20Update .
+
+aplo-r:awarenessLevel.Proficient%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Proficient Awareness"^^xsd:string .
+
+aplo-r:awarenessObservation.Learner%20Ethan.Schema.SHACL%20Constraint%20Validation.SHACL%20Constraint%20Validation%20Rubric%20Update a aplo-ont:AwarenessObservation ;
+    rdf:value "SHACL Constraint Validation Rubric Update"^^xsd:string ;
+    aplo-ont:atTime aplo-r:temporalExtent.Learner%20Ethan.Schema.SHACL%20Constraint%20Validation.SHACL%20Constraint%20Validation%20Rubric%20Update.2026-02-23T13%3A49%3A00Z%20to%202026-02-23T14%3A14%3A00Z ;
+    aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Proficient%20Awareness ;
+    aplo-ont:onSkill aplo-r:skill.SHACL%20Constraint%20Validation ;
+    aplo-ont:onTopic edu-r:topic.Schema .
+
+aplo-r:skill.SHACL%20Constraint%20Validation a aplo-ont:Skill ;
+    rdf:value "SHACL Constraint Validation"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Ethan.Schema.SHACL%20Constraint%20Validation.SHACL%20Constraint%20Validation%20Rubric%20Update.2026-02-23T13%3A49%3A00Z%20to%202026-02-23T14%3A14%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "2026-02-23T13:49:00+00:00"^^xsd:dateTime,
+        "2026-02-23T14:14:00+00:00"^^xsd:dateTime,
+        "ISO 8601 UTC"^^xsd:string,
+        "TimeInterval"^^xsd:string .
+
+edu-r:topic.Schema a edu-ont:Topic ;
+    rdf:value "Schema"^^xsd:string .
+

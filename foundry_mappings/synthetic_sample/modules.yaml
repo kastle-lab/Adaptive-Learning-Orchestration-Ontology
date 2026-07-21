@@ -1,0 +1,35 @@
+metadata:
+  name: "Synthetic Modules"
+  source_ext: "csv"
+
+root:
+  type: "edu-ont:Module"
+  uri: "edu-r:module"
+  varids: ["Module"]
+  connections:
+    - p: "rdf:value"
+      o:
+        datatype: "xsd:string"
+        val_source: "Module"
+    - p: "aplo-ont:hasLearningObjective"
+      o:
+        type: "aplo-ont:LearningObjective"
+        uri: "aplo-r:learningObjective"
+        varids: ["Learning Objective Situation", "Learning Objectives"]
+        split: " | "
+        connections:
+          - p: "aplo-ont:hasName"
+            o:
+              datatype: "xsd:string"
+              val_source: "Learning Objectives"
+    - p: "aplo-ont:hasAssessmentExercise"
+      o:
+        type: "aplo-ont:EvaluationAssessmentExercise"
+        uri: "aplo-r:evaluationAssessmentExercise"
+        varids: ["Module", "Assessment Exercises"]
+        split: " | "
+        connections:
+          - p: "rdf:value"
+            o:
+              datatype: "xsd:string"
+              val_source: "Assessment Exercises"

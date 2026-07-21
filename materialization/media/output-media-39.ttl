@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:media.Protege a edu-ont:Media ;
+    rdf:value "Protege"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.Protege.Protege%20Editing%20Lab ;
+    aplo-ont:supportsLearningObjective aplo-r:learningObjective.Educational%20KG%20Facilitation%20Planning.Edit%20ontology%20models%20in%20Protege .
+
+aplo-r:evaluationAssessmentExercise.Protege.Protege%20Editing%20Lab a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Protege Editing Lab"^^xsd:string .
+
+aplo-r:learningObjective.Educational%20KG%20Facilitation%20Planning.Edit%20ontology%20models%20in%20Protege a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Edit ontology models in Protege"^^xsd:string .
+

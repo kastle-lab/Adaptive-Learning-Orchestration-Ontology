@@ -1,0 +1,28 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationResult.Learner%20Ronnie.Instructor%20Reviewer.GraphQL%20Mapping%20Exercise%20Rubric%20Rating a aplo-ont:EvaluationResult ;
+    rdf:value "GraphQL Mapping Exercise Rubric Rating"^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Ronnie.Query.GraphQL%20Query%20Mapping.GraphQL%20Query%20Mapping%20Review ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Ronnie.Instructor%20Reviewer.GraphQL%20Mapping%20Exercise%20Rubric%20Rating.2026-03-06T14%3A21%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Instructor%20Reviewer ;
+    aplo-ont:hasUnit aplo-r:evaluationMetric.Score%20Percent ;
+    aplo-ont:hasValue "64"^^xsd:string .
+
+aplo-r:awarenessObservation.Learner%20Ronnie.Query.GraphQL%20Query%20Mapping.GraphQL%20Query%20Mapping%20Review a aplo-ont:AwarenessObservation ;
+    rdf:value "GraphQL Query Mapping Review"^^xsd:string .
+
+aplo-r:evaluationMetric.Score%20Percent a aplo-ont:EvaluationMetric ;
+    rdf:value "Score Percent"^^xsd:string .
+
+aplo-r:source.Instructor%20Reviewer a aplo-ont:Source ;
+    rdf:value "Instructor Reviewer"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Ronnie.Instructor%20Reviewer.GraphQL%20Mapping%20Exercise%20Rubric%20Rating.2026-03-06T14%3A21%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-03-06T14:21:00+00:00"^^xsd:dateTime .
+

@@ -1,0 +1,28 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Ethan a aplo-ont:Learner ;
+    rdf:value "Learner Ethan"^^xsd:string ;
+    aplo-ont:hasGoal aplo-r:learnerGoal.Build%20Knowledge%20Graph%20Foundations ;
+    aplo-ont:hasLearnerPreference aplo-r:learnerPreference.Immediate%20Feedback%20Preference,
+        aplo-r:learnerPreference.Worked%20Examples%20Preference ;
+    aplo-ont:hasLearningChallenge aplo-r:learningChallenge.Limited%20Study%20Time ;
+    aplo-ont:hasSituation aplo-r:learningSituation.Knowledge%20Graph%20Foundations%20Orientation .
+
+aplo-r:learnerGoal.Build%20Knowledge%20Graph%20Foundations a aplo-ont:LearnerGoal ;
+    rdf:value "Build Knowledge Graph Foundations"^^xsd:string .
+
+aplo-r:learnerPreference.Immediate%20Feedback%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Immediate Feedback Preference"^^xsd:string .
+
+aplo-r:learnerPreference.Worked%20Examples%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Worked Examples Preference"^^xsd:string .
+
+aplo-r:learningChallenge.Limited%20Study%20Time a aplo-ont:LearningChallenge ;
+    rdf:value "Limited Study Time"^^xsd:string .
+
+aplo-r:learningSituation.Knowledge%20Graph%20Foundations%20Orientation a aplo-ont:LearningSituation ;
+    rdf:value "Knowledge Graph Foundations Orientation"^^xsd:string .
+

@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.KG%20Curriculum%20Design%20Studio.Plan%20a%20knowledge%20engineering%20workflow a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Self-Regulated%20Learning.Strategic%20Planning ;
+    aplo-ont:developsSkill aplo-r:skill.Knowledge%20Engineering%20Workflow%20Planning ;
+    aplo-ont:hasDescription "Knowledge Engineering Workflow Planning in Introduction to Knowledge Engineering: Build a concise explanation that another learner could reuse."^^xsd:string ;
+    aplo-ont:hasName "Plan a knowledge engineering workflow"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.KG%20Curriculum%20Design%20Studio .
+
+aplo-r:learningSituation.KG%20Curriculum%20Design%20Studio a aplo-ont:LearningSituation ;
+    rdf:value "KG Curriculum Design Studio"^^xsd:string .
+
+aplo-r:pedagogicalElement.Self-Regulated%20Learning.Strategic%20Planning a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Strategic Planning"^^xsd:string .
+
+aplo-r:skill.Knowledge%20Engineering%20Workflow%20Planning a aplo-ont:Skill ;
+    rdf:value "Knowledge Engineering Workflow Planning"^^xsd:string .
+

@@ -1,0 +1,24 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:response.Learner%20Cameron.Adaptive%20Tutor.Set%20Relationship%20Reasoning%20Next%20Step a aplo-ont:Response ;
+    rdf:value "Set Relationship Reasoning Next Step"^^xsd:string,
+        "Set Relationship Reasoning: trace the decision from topic cue to final artifact using the Union evidence from Set Relationship Diagram Task."^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Cameron.Union.Set%20Relationship%20Reasoning.Set%20Relationship%20Reasoning%20Practice%20Update ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Cameron.Adaptive%20Tutor.Set%20Relationship%20Reasoning%20Next%20Step.2026-02-11T14%3A00%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Adaptive%20Tutor .
+
+aplo-r:awarenessObservation.Learner%20Cameron.Union.Set%20Relationship%20Reasoning.Set%20Relationship%20Reasoning%20Practice%20Update a aplo-ont:AwarenessObservation ;
+    rdf:value "Set Relationship Reasoning Practice Update"^^xsd:string .
+
+aplo-r:source.Adaptive%20Tutor a aplo-ont:Source ;
+    rdf:value "Adaptive Tutor"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Cameron.Adaptive%20Tutor.Set%20Relationship%20Reasoning%20Next%20Step.2026-02-11T14%3A00%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-02-11T14:00:00+00:00"^^xsd:dateTime .
+

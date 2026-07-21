@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Foundational%20Semantic%20Web%20Study.Recall%20core%20metadata%20terminology a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Remember ;
+    aplo-ont:developsSkill aplo-r:skill.Semantic%20Web%20Vocabulary%20Recall ;
+    aplo-ont:hasDescription "Recall what metadata means and identify basic examples from educational resources"^^xsd:string ;
+    aplo-ont:hasName "Recall core metadata terminology"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Foundational%20Semantic%20Web%20Study .
+
+aplo-r:learningSituation.Foundational%20Semantic%20Web%20Study a aplo-ont:LearningSituation ;
+    rdf:value "Foundational Semantic Web Study"^^xsd:string .
+
+aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Remember a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Remember"^^xsd:string .
+
+aplo-r:skill.Semantic%20Web%20Vocabulary%20Recall a aplo-ont:Skill ;
+    rdf:value "Semantic Web Vocabulary Recall"^^xsd:string .
+

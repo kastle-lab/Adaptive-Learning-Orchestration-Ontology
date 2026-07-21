@@ -1,0 +1,26 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningSituation.RDFS%20Schema%20Practice a aplo-ont:LearningSituation ;
+    rdf:value "RDFS Schema Practice"^^xsd:string ;
+    aplo-ont:requiresTopicKnowledge edu-r:topic.Domain,
+        edu-r:topic.Range,
+        edu-r:topic.Schema ;
+    aplo-ont:scopes edu-r:persona.Cameron .
+
+edu-r:persona.Cameron a edu-ont:Persona ;
+    rdf:value "Cameron"^^xsd:string .
+
+edu-r:topic.Domain a edu-ont:Topic ;
+    rdf:value "Domain"^^xsd:string .
+
+edu-r:topic.Range a edu-ont:Topic ;
+    rdf:value "Range"^^xsd:string .
+
+edu-r:topic.Schema a edu-ont:Topic ;
+    rdf:value "Schema"^^xsd:string .
+

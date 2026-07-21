@@ -1,0 +1,36 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningStrategy.Data%20Science%20KG%20Modeling%20Foundations.Data%20Science%20KG%20Modeling%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasDescription "Ground logic and description-logic work in data walkthroughs cases analogies and explicit reasoning explanations."^^xsd:string ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Data%20Science%20KG%20Modeling%20Foundations.Analyze%20description%20logic%20constraints,
+        aplo-r:learningObjective.Data%20Science%20KG%20Modeling%20Foundations.Describe%20knowledge%20graph%20structure,
+        aplo-r:learningObjective.Data%20Science%20KG%20Modeling%20Foundations.Recognize%20logic%20operators ;
+    aplo-ont:hasName "Data Science KG Modeling Strategy"^^xsd:string ;
+    aplo-ont:hasPedagogicalTechnique aplo-r:pedagogicalTechnique.Analogical%20Comparison,
+        aplo-r:pedagogicalTechnique.Case%20Based%20Scenario,
+        aplo-r:pedagogicalTechnique.Data%20Walkthrough,
+        aplo-r:pedagogicalTechnique.Self%20Explanation .
+
+aplo-r:learningObjective.Data%20Science%20KG%20Modeling%20Foundations.Analyze%20description%20logic%20constraints a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Analyze description logic constraints"^^xsd:string .
+
+aplo-r:learningObjective.Data%20Science%20KG%20Modeling%20Foundations.Describe%20knowledge%20graph%20structure a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Describe knowledge graph structure"^^xsd:string .
+
+aplo-r:learningObjective.Data%20Science%20KG%20Modeling%20Foundations.Recognize%20logic%20operators a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Recognize logic operators"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Analogical%20Comparison a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Analogical Comparison"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Case%20Based%20Scenario a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Case Based Scenario"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Data%20Walkthrough a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Data Walkthrough"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Self%20Explanation a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Self Explanation"^^xsd:string .
+

@@ -1,0 +1,22 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:skill.Predicate%20Logic%20Statement%20Interpretation a aplo-ont:Skill ;
+    rdf:value "Predicate Logic Statement Interpretation"^^xsd:string ;
+    aplo-ont:requiresTopic edu-r:topic.Object,
+        edu-r:topic.Predicate,
+        edu-r:topic.Subject .
+
+edu-r:topic.Object a edu-ont:Topic ;
+    rdf:value "Object"^^xsd:string .
+
+edu-r:topic.Predicate a edu-ont:Topic ;
+    rdf:value "Predicate"^^xsd:string .
+
+edu-r:topic.Subject a edu-ont:Topic ;
+    rdf:value "Subject"^^xsd:string .
+

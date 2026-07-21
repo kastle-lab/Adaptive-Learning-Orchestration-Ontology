@@ -1,0 +1,16 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Problem%20Based%20Learning.Problem%20Presentation a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Introduce an authentic problem that motivates inquiry"^^xsd:string ;
+    aplo-ont:hasName "Problem Presentation"^^xsd:string ;
+    aplo-ont:hasNextPedagogicalElement aplo-r:pedagogicalElement.Problem%20Based%20Learning.Problem%20Analysis ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Problem%20Based%20Learning .
+
+aplo-r:pedagogicalElement.Problem%20Based%20Learning.Problem%20Analysis a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Problem Analysis"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Problem%20Based%20Learning a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Problem Based Learning"^^xsd:string .
+

@@ -1,0 +1,26 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:media.OWL a edu-ont:Media ;
+    rdf:value "OWL"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.OWL.OWL%20Modeling%20Review ;
+    aplo-ont:supportsLearningObjective aplo-r:learningObjective.OWL%20Modeling%20Practice.Analyze%20OWL%20axioms%20in%20a%20modeling%20scenario,
+        aplo-r:learningObjective.OWL%20Modeling%20Practice.Differentiate%20OWL%20data%20and%20object%20properties,
+        aplo-r:learningObjective.OWL%20Modeling%20Practice.Revise%20an%20ontology%20model%20after%20feedback .
+
+aplo-r:evaluationAssessmentExercise.OWL.OWL%20Modeling%20Review a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "OWL Modeling Review"^^xsd:string .
+
+aplo-r:learningObjective.OWL%20Modeling%20Practice.Analyze%20OWL%20axioms%20in%20a%20modeling%20scenario a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Analyze OWL axioms in a modeling scenario"^^xsd:string .
+
+aplo-r:learningObjective.OWL%20Modeling%20Practice.Differentiate%20OWL%20data%20and%20object%20properties a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Differentiate OWL data and object properties"^^xsd:string .
+
+aplo-r:learningObjective.OWL%20Modeling%20Practice.Revise%20an%20ontology%20model%20after%20feedback a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Revise an ontology model after feedback"^^xsd:string .
+

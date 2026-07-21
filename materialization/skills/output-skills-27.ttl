@@ -1,0 +1,22 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:skill.RDF%20Serialization%20Format%20Comparison a aplo-ont:Skill ;
+    rdf:value "RDF Serialization Format Comparison"^^xsd:string ;
+    aplo-ont:requiresTopic edu-r:topic.JSON-LD,
+        edu-r:topic.RDF%2FXML,
+        edu-r:topic.Turtle .
+
+edu-r:topic.JSON-LD a edu-ont:Topic ;
+    rdf:value "JSON-LD"^^xsd:string .
+
+edu-r:topic.RDF%2FXML a edu-ont:Topic ;
+    rdf:value "RDF/XML"^^xsd:string .
+
+edu-r:topic.Turtle a edu-ont:Topic ;
+    rdf:value "Turtle"^^xsd:string .
+

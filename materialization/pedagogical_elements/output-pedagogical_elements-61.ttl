@@ -1,0 +1,20 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Conceptual%20Change.Cognitive%20Conflict a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Present evidence or examples that make an existing misconception difficult to maintain"^^xsd:string ;
+    aplo-ont:hasName "Cognitive Conflict"^^xsd:string ;
+    aplo-ont:hasNextPedagogicalElement aplo-r:pedagogicalElement.Conceptual%20Change.Concept%20Reconstruction ;
+    aplo-ont:hasPreviousPedagogicalElement aplo-r:pedagogicalElement.Conceptual%20Change.Prior%20Conception%20Elicitation ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Conceptual%20Change .
+
+aplo-r:pedagogicalElement.Conceptual%20Change.Concept%20Reconstruction a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Concept Reconstruction"^^xsd:string .
+
+aplo-r:pedagogicalElement.Conceptual%20Change.Prior%20Conception%20Elicitation a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Prior Conception Elicitation"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Conceptual%20Change a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Conceptual Change"^^xsd:string .
+

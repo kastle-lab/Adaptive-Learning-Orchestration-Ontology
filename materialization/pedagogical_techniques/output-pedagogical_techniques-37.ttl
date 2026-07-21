@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Design%20Critique a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Review an artifact against design criteria constraints audience and evidence before revision"^^xsd:string ;
+    aplo-ont:hasName "Design Critique"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Improve%20Artifact%20Quality .
+
+aplo-r:pedagogicalObjective.Improve%20Artifact%20Quality a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Help learners refine artifacts through criteria-based critique"^^xsd:string ;
+    aplo-ont:hasName "Improve Artifact Quality"^^xsd:string .
+

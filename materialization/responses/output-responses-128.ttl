@@ -1,0 +1,24 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:response.Learner%20Usman.Instructor%20Reviewer.Knowledge%20Graph%20Visualization%20Tool%20Selection%20Practice%20Cue a aplo-ont:Response ;
+    rdf:value "Knowledge Graph Visualization Tool Selection Practice Cue"^^xsd:string,
+        "Knowledge Graph Visualization Tool Selection: add evidence for the modeling choice around Knowledge Graph before resubmitting the practice artifact."^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Usman.Knowledge%20Graph.Knowledge%20Graph%20Visualization%20Tool%20Selection.Knowledge%20Graph%20Visualization%20Tool%20Selection%20Scenario%20Update ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Usman.Instructor%20Reviewer.Knowledge%20Graph%20Visualization%20Tool%20Selection%20Practice%20Cue.2026-03-08T14%3A00%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Instructor%20Reviewer .
+
+aplo-r:awarenessObservation.Learner%20Usman.Knowledge%20Graph.Knowledge%20Graph%20Visualization%20Tool%20Selection.Knowledge%20Graph%20Visualization%20Tool%20Selection%20Scenario%20Update a aplo-ont:AwarenessObservation ;
+    rdf:value "Knowledge Graph Visualization Tool Selection Scenario Update"^^xsd:string .
+
+aplo-r:source.Instructor%20Reviewer a aplo-ont:Source ;
+    rdf:value "Instructor Reviewer"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Usman.Instructor%20Reviewer.Knowledge%20Graph%20Visualization%20Tool%20Selection%20Practice%20Cue.2026-03-08T14%3A00%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-03-08T14:00:00+00:00"^^xsd:dateTime .
+

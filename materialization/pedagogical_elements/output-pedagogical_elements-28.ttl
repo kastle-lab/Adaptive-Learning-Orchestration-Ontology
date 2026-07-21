@@ -1,0 +1,20 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Mastery%20Learning.Reassessment a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Check whether corrective support produced mastery"^^xsd:string ;
+    aplo-ont:hasName "Reassessment"^^xsd:string ;
+    aplo-ont:hasNextPedagogicalElement aplo-r:pedagogicalElement.Mastery%20Learning.Enrichment ;
+    aplo-ont:hasPreviousPedagogicalElement aplo-r:pedagogicalElement.Mastery%20Learning.Corrective%20Support ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Mastery%20Learning .
+
+aplo-r:pedagogicalElement.Mastery%20Learning.Corrective%20Support a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Corrective Support"^^xsd:string .
+
+aplo-r:pedagogicalElement.Mastery%20Learning.Enrichment a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Enrichment"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Mastery%20Learning a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Mastery Learning"^^xsd:string .
+

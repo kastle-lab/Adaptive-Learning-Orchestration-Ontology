@@ -1,0 +1,35 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationAssessmentExercise.Introduction%20to%20Discrete%20Mathematics.Relation%20Property%20Classification a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Introduction to Discrete Mathematics"^^xsd:string,
+        "Relation Property Classification"^^xsd:string ;
+    aplo-ont:evaluatesTopicAwarenessOf edu-r:topic.Functionality,
+        edu-r:topic.Inverse,
+        edu-r:topic.Reflexivity,
+        edu-r:topic.Transitivity ;
+    aplo-ont:hasWorkloadLevel aplo-r:workloadLevel.Moderate%20Workload ;
+    aplo-ont:usesTechnique aplo-r:evaluationTechnique.Short%20Explanation%20Rubric .
+
+edu-r:topic.Functionality a edu-ont:Topic ;
+    rdf:value "Functionality"^^xsd:string .
+
+edu-r:topic.Inverse a edu-ont:Topic ;
+    rdf:value "Inverse"^^xsd:string .
+
+edu-r:topic.Reflexivity a edu-ont:Topic ;
+    rdf:value "Reflexivity"^^xsd:string .
+
+edu-r:topic.Transitivity a edu-ont:Topic ;
+    rdf:value "Transitivity"^^xsd:string .
+
+aplo-r:evaluationTechnique.Short%20Explanation%20Rubric a aplo-ont:EvaluationTechnique ;
+    rdf:value "Short Explanation Rubric"^^xsd:string .
+
+aplo-r:workloadLevel.Moderate%20Workload a aplo-ont:WorkloadLevel ;
+    rdf:value "Moderate Workload"^^xsd:string .
+

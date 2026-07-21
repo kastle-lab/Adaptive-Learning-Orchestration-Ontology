@@ -1,17 +1,17 @@
-@prefix : <https://pedagogicalontology.cs.wright.edu/lod/ontology#> .
+@prefix : <https://aplo.cs.wright.edu/lod/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix pf-r: <https://pedagogicalontology.cs.wright.edu/lod/resource#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
-@prefix pf-ont: <https://pedagogicalontology.cs.wright.edu/lod/ontology#> .
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
-@base <https://pedagogicalontology.cs.wright.edu/lod/ontology#> .
+@base <https://aplo.cs.wright.edu/lod/ontology#> .
 
-<https://pedagogicalontology.cs.wright.edu/lod/ontology> rdf:type owl:Ontology ;
+<https://aplo.cs.wright.edu/lod/ontology> rdf:type owl:Ontology ;
                                                           dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                                           rdfs:comment "Ontology pattern for representing learning objectives, learning strategies, learning situations, pedagogical techniques, and supporting media or module resources." .
 
@@ -27,153 +27,153 @@ dcterms:license rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#alignedWith
-pf-ont:alignedWith rdf:type owl:ObjectProperty ;
-                   owl:inverseOf pf-ont:isAlignmentFor ;
+###  https://aplo.cs.wright.edu/lod/ontology#alignedWith
+aplo-ont:alignedWith rdf:type owl:ObjectProperty ;
+                   owl:inverseOf aplo-ont:isAlignmentFor ;
                    rdf:type owl:AsymmetricProperty ,
                             owl:IrreflexiveProperty ;
-                   rdfs:domain pf-ont:LearningObjective ;
-                   rdfs:range pf-ont:PedagogicalElement ;
+                   rdfs:domain aplo-ont:LearningObjective ;
+                   rdfs:range aplo-ont:PedagogicalElement ;
                    rdfs:comment "Relates a learning objective to a pedagogical element with which the objective is aligned." ;
                    rdfs:label "alignedWith" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasLearningObjective
-pf-ont:hasLearningObjective rdf:type owl:ObjectProperty ;
-                            owl:inverseOf pf-ont:isLearningObjectiveOf ;
+###  https://aplo.cs.wright.edu/lod/ontology#hasLearningObjective
+aplo-ont:hasLearningObjective rdf:type owl:ObjectProperty ;
+                            owl:inverseOf aplo-ont:isLearningObjectiveOf ;
                             rdf:type owl:AsymmetricProperty ,
                                      owl:IrreflexiveProperty ;
                             rdfs:domain [ rdf:type owl:Class ;
                                           owl:unionOf ( edu-ont:Module
-                                                        pf-ont:LearningStrategy
+                                                        aplo-ont:LearningStrategy
                                                       )
                                         ] ;
-                            rdfs:range pf-ont:LearningObjective ;
+                            rdfs:range aplo-ont:LearningObjective ;
                             rdfs:comment "Relates a module or learning strategy to a learning objective it includes." ;
                             rdfs:label "hasLearningObjective" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasPedagogicalTechnique
-pf-ont:hasPedagogicalTechnique rdf:type owl:ObjectProperty ;
-                               owl:inverseOf pf-ont:isPedagogicalTechniqueOf ;
+###  https://aplo.cs.wright.edu/lod/ontology#hasPedagogicalTechnique
+aplo-ont:hasPedagogicalTechnique rdf:type owl:ObjectProperty ;
+                               owl:inverseOf aplo-ont:isPedagogicalTechniqueOf ;
                                rdf:type owl:AsymmetricProperty ,
                                         owl:IrreflexiveProperty ;
-                               rdfs:domain pf-ont:LearningStrategy ;
-                               rdfs:range pf-ont:PedagogicalTechnique ;
+                               rdfs:domain aplo-ont:LearningStrategy ;
+                               rdfs:range aplo-ont:PedagogicalTechnique ;
                                rdfs:comment "Relates a learning strategy to a pedagogical technique used by that strategy." ;
                                rdfs:label "hasPedagogicalTechnique" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isAlignmentFor
-pf-ont:isAlignmentFor rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#isAlignmentFor
+aplo-ont:isAlignmentFor rdf:type owl:ObjectProperty ,
                                owl:AsymmetricProperty ,
                                owl:IrreflexiveProperty ;
-                      rdfs:domain pf-ont:PedagogicalElement ;
-                      rdfs:range pf-ont:LearningObjective ;
+                      rdfs:domain aplo-ont:PedagogicalElement ;
+                      rdfs:range aplo-ont:LearningObjective ;
                       rdfs:comment "Inverse of alignedWith; relates a pedagogical element to learning objectives aligned with it." ;
                       rdfs:label "isAlignmentFor" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isLearningObjectiveOf
-pf-ont:isLearningObjectiveOf rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#isLearningObjectiveOf
+aplo-ont:isLearningObjectiveOf rdf:type owl:ObjectProperty ,
                                       owl:AsymmetricProperty ,
                                       owl:IrreflexiveProperty ;
-                             rdfs:domain pf-ont:LearningObjective ;
+                             rdfs:domain aplo-ont:LearningObjective ;
                              rdfs:range [ rdf:type owl:Class ;
                                           owl:unionOf ( edu-ont:Module
-                                                        pf-ont:LearningStrategy
+                                                        aplo-ont:LearningStrategy
                                                       )
                                         ] ;
                              rdfs:comment "Inverse of hasLearningObjective; relates a learning objective to a module or learning strategy that includes it." ;
                              rdfs:label "isLearningObjectiveOf" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isLearningObjectiveSupportedBy
-pf-ont:isLearningObjectiveSupportedBy rdf:type owl:ObjectProperty ;
-                                      owl:inverseOf pf-ont:supportsLearningObjective ;
+###  https://aplo.cs.wright.edu/lod/ontology#isLearningObjectiveSupportedBy
+aplo-ont:isLearningObjectiveSupportedBy rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf aplo-ont:supportsLearningObjective ;
                                       rdf:type owl:AsymmetricProperty ,
                                                owl:IrreflexiveProperty ;
-                                      rdfs:domain pf-ont:LearningObjective ;
+                                      rdfs:domain aplo-ont:LearningObjective ;
                                       rdfs:range edu-ont:Media ;
                                       rdfs:comment "Inverse of supportsLearningObjective; relates a learning objective to media that supports it." ;
                                       rdfs:label "isLearningObjectiveSupportedBy" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isLearningObjectiveTargetedBy
-pf-ont:isLearningObjectiveTargetedBy rdf:type owl:ObjectProperty ;
-                                     owl:inverseOf pf-ont:targetsLearningObjective ;
+###  https://aplo.cs.wright.edu/lod/ontology#isLearningObjectiveTargetedBy
+aplo-ont:isLearningObjectiveTargetedBy rdf:type owl:ObjectProperty ;
+                                     owl:inverseOf aplo-ont:targetsLearningObjective ;
                                      rdf:type owl:AsymmetricProperty ,
                                               owl:IrreflexiveProperty ;
-                                     rdfs:domain pf-ont:LearningObjective ;
-                                     rdfs:range pf-ont:PedagogicalTechnique ;
+                                     rdfs:domain aplo-ont:LearningObjective ;
+                                     rdfs:range aplo-ont:PedagogicalTechnique ;
                                      rdfs:comment "Inverse of targetsLearningObjective; relates a learning objective to pedagogical techniques that target it." ;
                                      rdfs:label "isLearningObjectiveTargetedBy" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isPedagogicalTechniqueOf
-pf-ont:isPedagogicalTechniqueOf rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#isPedagogicalTechniqueOf
+aplo-ont:isPedagogicalTechniqueOf rdf:type owl:ObjectProperty ,
                                          owl:AsymmetricProperty ,
                                          owl:IrreflexiveProperty ;
-                                rdfs:domain pf-ont:PedagogicalTechnique ;
-                                rdfs:range pf-ont:LearningStrategy ;
+                                rdfs:domain aplo-ont:PedagogicalTechnique ;
+                                rdfs:range aplo-ont:LearningStrategy ;
                                 rdfs:comment "Inverse of hasPedagogicalTechnique; relates a pedagogical technique to learning strategies that use it." ;
                                 rdfs:label "isPedagogicalTechniqueOf" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isPriorTopicKnowledgeFor
-pf-ont:isPriorTopicKnowledgeFor rdf:type owl:ObjectProperty ;
-                                owl:inverseOf pf-ont:requiresPriorTopicKnowledge ;
+###  https://aplo.cs.wright.edu/lod/ontology#isPriorTopicKnowledgeFor
+aplo-ont:isPriorTopicKnowledgeFor rdf:type owl:ObjectProperty ;
+                                owl:inverseOf aplo-ont:requiresTopicKnowledge ;
                                 rdfs:domain edu-ont:Topic ;
-                                rdfs:range pf-ont:LearningSituation ;
-                                rdfs:comment "Inverse of requiresPriorTopicKnowledge; relates a topic to learning situations requiring prior knowledge of it." ;
+                                rdfs:range aplo-ont:LearningSituation ;
+                                rdfs:comment "Inverse of requiresTopicKnowledge; relates a topic to learning situations requiring prior knowledge of it." ;
                                 rdfs:label "isPriorTopicKnowledgeFor" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#isSituationWorkedOnBy
-pf-ont:isSituationWorkedOnBy rdf:type owl:ObjectProperty ;
-                             owl:inverseOf pf-ont:worksOnSituation ;
+###  https://aplo.cs.wright.edu/lod/ontology#isSituationWorkedOnBy
+aplo-ont:isSituationWorkedOnBy rdf:type owl:ObjectProperty ;
+                             owl:inverseOf aplo-ont:worksOnSituation ;
                              rdf:type owl:AsymmetricProperty ,
                                       owl:IrreflexiveProperty ;
-                             rdfs:domain pf-ont:LearningSituation ;
-                             rdfs:range pf-ont:LearningObjective ;
+                             rdfs:domain aplo-ont:LearningSituation ;
+                             rdfs:range aplo-ont:LearningObjective ;
                              rdfs:comment "Inverse of worksOnSituation; relates a learning situation to learning objectives that address it." ;
                              rdfs:label "isSituationWorkedOnBy" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#requiresPriorTopicKnowledge
-pf-ont:requiresPriorTopicKnowledge rdf:type owl:ObjectProperty ;
-                                   rdfs:domain pf-ont:LearningSituation ;
+###  https://aplo.cs.wright.edu/lod/ontology#requiresTopicKnowledge
+aplo-ont:requiresTopicKnowledge rdf:type owl:ObjectProperty ;
+                                   rdfs:domain aplo-ont:LearningSituation ;
                                    rdfs:range edu-ont:Topic ;
                                    rdfs:comment "Relates a learning situation to a topic that should be known beforehand." ;
-                                   rdfs:label "requiresPriorTopicKnowledge" .
+                                   rdfs:label "requiresTopicKnowledge" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#supportsLearningObjective
-pf-ont:supportsLearningObjective rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#supportsLearningObjective
+aplo-ont:supportsLearningObjective rdf:type owl:ObjectProperty ,
                                           owl:AsymmetricProperty ,
                                           owl:IrreflexiveProperty ;
                                  rdfs:domain edu-ont:Media ;
-                                 rdfs:range pf-ont:LearningObjective ;
+                                 rdfs:range aplo-ont:LearningObjective ;
                                  rdfs:comment "Relates a media resource to a learning objective supported by that resource." ;
                                  rdfs:label "supportsLearningObjective" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#targetsLearningObjective
-pf-ont:targetsLearningObjective rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#targetsLearningObjective
+aplo-ont:targetsLearningObjective rdf:type owl:ObjectProperty ,
                                          owl:AsymmetricProperty ,
                                          owl:IrreflexiveProperty ;
-                                rdfs:domain pf-ont:PedagogicalTechnique ;
-                                rdfs:range pf-ont:LearningObjective ;
+                                rdfs:domain aplo-ont:PedagogicalTechnique ;
+                                rdfs:range aplo-ont:LearningObjective ;
                                 rdfs:comment "Relates a pedagogical technique to a learning objective targeted by that technique." ;
                                 rdfs:label "targetsLearningObjective" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#worksOnSituation
-pf-ont:worksOnSituation rdf:type owl:ObjectProperty ,
+###  https://aplo.cs.wright.edu/lod/ontology#worksOnSituation
+aplo-ont:worksOnSituation rdf:type owl:ObjectProperty ,
                                  owl:AsymmetricProperty ,
                                  owl:IrreflexiveProperty ;
-                        rdfs:domain pf-ont:LearningObjective ;
-                        rdfs:range pf-ont:LearningSituation ;
+                        rdfs:domain aplo-ont:LearningObjective ;
+                        rdfs:range aplo-ont:LearningSituation ;
                         rdfs:comment "Relates a learning objective to a learning situation addressed by that objective." ;
                         rdfs:label "worksOnSituation" .
 
@@ -182,11 +182,11 @@ pf-ont:worksOnSituation rdf:type owl:ObjectProperty ,
 #    Data properties
 #################################################################
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasDescription
-pf-ont:hasDescription rdf:type owl:DatatypeProperty ;
+###  https://aplo.cs.wright.edu/lod/ontology#hasDescription
+aplo-ont:hasDescription rdf:type owl:DatatypeProperty ;
                       rdfs:domain [ rdf:type owl:Class ;
-                                    owl:unionOf ( pf-ont:LearningObjective
-                                                  pf-ont:LearningStrategy
+                                    owl:unionOf ( aplo-ont:LearningObjective
+                                                  aplo-ont:LearningStrategy
                                                 )
                                   ] ;
                       rdfs:range xsd:string ;
@@ -194,11 +194,11 @@ pf-ont:hasDescription rdf:type owl:DatatypeProperty ;
                       rdfs:label "hasDescription" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#hasName
-pf-ont:hasName rdf:type owl:DatatypeProperty ;
+###  https://aplo.cs.wright.edu/lod/ontology#hasName
+aplo-ont:hasName rdf:type owl:DatatypeProperty ;
                rdfs:domain [ rdf:type owl:Class ;
-                             owl:unionOf ( pf-ont:LearningObjective
-                                           pf-ont:LearningStrategy
+                             owl:unionOf ( aplo-ont:LearningObjective
+                                           aplo-ont:LearningStrategy
                                          )
                            ] ;
                rdfs:range xsd:string ;
@@ -213,8 +213,8 @@ pf-ont:hasName rdf:type owl:DatatypeProperty ;
 ###  https://edugate.cs.wright.edu/lod/ontology#Media
 edu-ont:Media rdf:type owl:Class ;
               rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                owl:onProperty pf-ont:supportsLearningObjective ;
-                                owl:someValuesFrom pf-ont:LearningObjective
+                                owl:onProperty aplo-ont:supportsLearningObjective ;
+                                owl:someValuesFrom aplo-ont:LearningObjective
                               ] ;
               rdfs:comment "Represents a learning media resource that supports one or more learning objectives." ;
               rdfs:label "Media" .
@@ -223,8 +223,8 @@ edu-ont:Media rdf:type owl:Class ;
 ###  https://edugate.cs.wright.edu/lod/ontology#Module
 edu-ont:Module rdf:type owl:Class ;
                rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                 owl:onProperty pf-ont:hasLearningObjective ;
-                                 owl:someValuesFrom pf-ont:LearningObjective
+                                 owl:onProperty aplo-ont:hasLearningObjective ;
+                                 owl:someValuesFrom aplo-ont:LearningObjective
                                ] ;
                rdfs:comment "Represents an instructional module that includes one or more learning objectives." ;
                rdfs:label "Module" .
@@ -232,109 +232,109 @@ edu-ont:Module rdf:type owl:Class ;
 
 ###  https://edugate.cs.wright.edu/lod/ontology#Topic
 edu-ont:Topic rdf:type owl:Class ;
-              owl:disjointWith pf-ont:LearningObjective ,
-                               pf-ont:LearningSituation ,
-                               pf-ont:LearningStrategy ,
-                               pf-ont:PedagogicalElement ,
-                               pf-ont:PedagogicalTechnique ;
+              owl:disjointWith aplo-ont:LearningObjective ,
+                               aplo-ont:LearningSituation ,
+                               aplo-ont:LearningStrategy ,
+                               aplo-ont:PedagogicalElement ,
+                               aplo-ont:PedagogicalTechnique ;
               rdfs:comment "Represents a subject matter topic that can be required as prior knowledge for a learning situation." ;
               rdfs:label "Topic" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#LearningObjective
-pf-ont:LearningObjective rdf:type owl:Class ;
+###  https://aplo.cs.wright.edu/lod/ontology#LearningObjective
+aplo-ont:LearningObjective rdf:type owl:Class ;
                          rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                           owl:onProperty pf-ont:alignedWith ;
+                                           owl:onProperty aplo-ont:alignedWith ;
                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                                           owl:onClass pf-ont:PedagogicalElement
+                                           owl:onClass aplo-ont:PedagogicalElement
                                          ] ,
                                          [ rdf:type owl:Restriction ;
-                                           owl:onProperty pf-ont:worksOnSituation ;
+                                           owl:onProperty aplo-ont:worksOnSituation ;
                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                                           owl:onClass pf-ont:LearningSituation
+                                           owl:onClass aplo-ont:LearningSituation
                                          ] ,
                                          [ rdf:type owl:Restriction ;
-                                           owl:onProperty pf-ont:hasName ;
+                                           owl:onProperty aplo-ont:hasName ;
                                            owl:someValuesFrom xsd:string
                                          ] ,
                                          [ rdf:type owl:Restriction ;
-                                           owl:onProperty pf-ont:hasDescription ;
+                                           owl:onProperty aplo-ont:hasDescription ;
                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
                                            owl:onDataRange xsd:string
                                          ] ,
                                          [ rdf:type owl:Restriction ;
-                                           owl:onProperty pf-ont:hasDescription ;
+                                           owl:onProperty aplo-ont:hasDescription ;
                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                            owl:onDataRange xsd:string
                                          ] ,
                                          [ rdf:type owl:Restriction ;
-                                           owl:onProperty pf-ont:hasName ;
+                                           owl:onProperty aplo-ont:hasName ;
                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                            owl:onDataRange xsd:string
                                          ] ;
-                         owl:disjointWith pf-ont:LearningSituation ,
-                                          pf-ont:LearningStrategy ,
-                                          pf-ont:PedagogicalElement ,
-                                          pf-ont:PedagogicalTechnique ;
+                         owl:disjointWith aplo-ont:LearningSituation ,
+                                          aplo-ont:LearningStrategy ,
+                                          aplo-ont:PedagogicalElement ,
+                                          aplo-ont:PedagogicalTechnique ;
                          rdfs:comment "Represents the ability to capture a target learning outcome." ;
                          rdfs:label "LearningObjective" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#LearningSituation
-pf-ont:LearningSituation rdf:type owl:Class ;
-                         owl:disjointWith pf-ont:LearningStrategy ,
-                                          pf-ont:PedagogicalElement ,
-                                          pf-ont:PedagogicalTechnique ;
+###  https://aplo.cs.wright.edu/lod/ontology#LearningSituation
+aplo-ont:LearningSituation rdf:type owl:Class ;
+                         owl:disjointWith aplo-ont:LearningStrategy ,
+                                          aplo-ont:PedagogicalElement ,
+                                          aplo-ont:PedagogicalTechnique ;
                          rdfs:comment "Represents the ability to capture the current state or situation of a learner (e.g. learner context, prior knowledge, etc.)." ;
                          rdfs:label "LearningSituation" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#LearningStrategy
-pf-ont:LearningStrategy rdf:type owl:Class ;
+###  https://aplo.cs.wright.edu/lod/ontology#LearningStrategy
+aplo-ont:LearningStrategy rdf:type owl:Class ;
                         rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                          owl:onProperty pf-ont:hasLearningObjective ;
-                                          owl:someValuesFrom pf-ont:LearningObjective
+                                          owl:onProperty aplo-ont:hasLearningObjective ;
+                                          owl:someValuesFrom aplo-ont:LearningObjective
                                         ] ,
                                         [ rdf:type owl:Restriction ;
-                                          owl:onProperty pf-ont:hasPedagogicalTechnique ;
-                                          owl:someValuesFrom pf-ont:PedagogicalTechnique
+                                          owl:onProperty aplo-ont:hasPedagogicalTechnique ;
+                                          owl:someValuesFrom aplo-ont:PedagogicalTechnique
                                         ] ,
                                         [ rdf:type owl:Restriction ;
-                                          owl:onProperty pf-ont:hasName ;
+                                          owl:onProperty aplo-ont:hasName ;
                                           owl:someValuesFrom xsd:string
                                         ] ,
                                         [ rdf:type owl:Restriction ;
-                                          owl:onProperty pf-ont:hasDescription ;
+                                          owl:onProperty aplo-ont:hasDescription ;
                                           owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
                                           owl:onDataRange xsd:string
                                         ] ,
                                         [ rdf:type owl:Restriction ;
-                                          owl:onProperty pf-ont:hasDescription ;
+                                          owl:onProperty aplo-ont:hasDescription ;
                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                           owl:onDataRange xsd:string
                                         ] ,
                                         [ rdf:type owl:Restriction ;
-                                          owl:onProperty pf-ont:hasName ;
+                                          owl:onProperty aplo-ont:hasName ;
                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                           owl:onDataRange xsd:string
                                         ] ;
-                        owl:disjointWith pf-ont:PedagogicalElement ;
+                        owl:disjointWith aplo-ont:PedagogicalElement ;
                         rdfs:comment "Represents the ability to capture how instructional components come together in a teaching plan." ;
                         rdfs:label "LearningStrategy" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#PedagogicalElement
-pf-ont:PedagogicalElement rdf:type owl:Class ;
+###  https://aplo.cs.wright.edu/lod/ontology#PedagogicalElement
+aplo-ont:PedagogicalElement rdf:type owl:Class ;
                           rdfs:comment "Represents the atomic finite element that is part of a pedagogical framework" ;
                           rdfs:label "PedagogicalElement" .
 
 
-###  https://pedagogicalontology.cs.wright.edu/lod/ontology#PedagogicalTechnique
-pf-ont:PedagogicalTechnique rdf:type owl:Class ;
+###  https://aplo.cs.wright.edu/lod/ontology#PedagogicalTechnique
+aplo-ont:PedagogicalTechnique rdf:type owl:Class ;
                             rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                              owl:onProperty pf-ont:targetsLearningObjective ;
+                                              owl:onProperty aplo-ont:targetsLearningObjective ;
                                               owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                                              owl:onClass pf-ont:LearningObjective
+                                              owl:onClass aplo-ont:LearningObjective
                                             ] ;
                             rdfs:comment "Represents the ability to capture a specific instructional method that is used in instructional design" ;
                             rdfs:label "PedagogicalTechnique" .

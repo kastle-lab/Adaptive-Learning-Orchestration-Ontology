@@ -1,0 +1,50 @@
+metadata:
+  name: "Synthetic Pedagogical Elements"
+  source_ext: "csv"
+
+root:
+  type: "aplo-ont:PedagogicalElement"
+  uri: "aplo-r:pedagogicalElement"
+  varids: ["Associated Pedagogical Framework", "Pedagogical Element"]
+  connections:
+    - p: "aplo-ont:hasName"
+      o:
+        datatype: "xsd:string"
+        val_source: "Pedagogical Element"
+    - p: "aplo-ont:hasDescription"
+      o:
+        datatype: "xsd:string"
+        val_source: "Pedagogical Element Description"
+    - p: "aplo-ont:hasPreviousPedagogicalElement"
+      o:
+        type: "aplo-ont:PedagogicalElement"
+        uri: "aplo-r:pedagogicalElement"
+        varids:
+          ["Associated Pedagogical Framework", "Previous Pedagogical Element"]
+        split: " | "
+        connections:
+          - p: "aplo-ont:hasName"
+            o:
+              datatype: "xsd:string"
+              val_source: "Previous Pedagogical Element"
+    - p: "aplo-ont:hasNextPedagogicalElement"
+      o:
+        type: "aplo-ont:PedagogicalElement"
+        uri: "aplo-r:pedagogicalElement"
+        varids: ["Associated Pedagogical Framework", "Next Pedagogical Element"]
+        split: " | "
+        connections:
+          - p: "aplo-ont:hasName"
+            o:
+              datatype: "xsd:string"
+              val_source: "Next Pedagogical Element"
+    - p: "aplo-ont:isElementOf"
+      o:
+        type: "aplo-ont:PedagogicalFramework"
+        uri: "aplo-r:pedagogicalFramework"
+        varids: ["Associated Pedagogical Framework"]
+        connections:
+          - p: "aplo-ont:hasName"
+            o:
+              datatype: "xsd:string"
+              val_source: "Associated Pedagogical Framework"

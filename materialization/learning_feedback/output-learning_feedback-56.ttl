@@ -1,0 +1,31 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningFeedback.Learner%20Riley.Learning%20Platform.Semantic%20Web%20Foundation%20Baseline%20Feedback a aplo-ont:LearningFeedback ;
+    rdf:value "Semantic Web Foundation Baseline Feedback"^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Riley.Metadata.Semantic%20Web%20Vocabulary%20Recall.Semantic%20Web%20Foundation%20Baseline%20Awareness ;
+    aplo-ont:affectsStrategy aplo-r:learningStrategy.Foundational%20Semantic%20Web%20Study.Semantic%20Web%20Foundations%20Strategy ;
+    aplo-ont:hasLearningFeedbackType aplo-r:learningFeedbackType.Corrective%20Feedback ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Riley.Learning%20Platform.Semantic%20Web%20Foundation%20Baseline%20Feedback.2026-03-22T14%3A00%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Learning%20Platform .
+
+aplo-r:awarenessObservation.Learner%20Riley.Metadata.Semantic%20Web%20Vocabulary%20Recall.Semantic%20Web%20Foundation%20Baseline%20Awareness a aplo-ont:AwarenessObservation ;
+    rdf:value "Semantic Web Foundation Baseline Awareness"^^xsd:string .
+
+aplo-r:learningFeedbackType.Corrective%20Feedback a aplo-ont:LearningFeedbackType ;
+    rdf:value "Corrective Feedback"^^xsd:string .
+
+aplo-r:learningStrategy.Foundational%20Semantic%20Web%20Study.Semantic%20Web%20Foundations%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasName "Semantic Web Foundations Strategy"^^xsd:string .
+
+aplo-r:source.Learning%20Platform a aplo-ont:Source ;
+    rdf:value "Learning Platform"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Riley.Learning%20Platform.Semantic%20Web%20Foundation%20Baseline%20Feedback.2026-03-22T14%3A00%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-03-22T14:00:00+00:00"^^xsd:dateTime .
+

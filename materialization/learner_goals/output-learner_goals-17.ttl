@@ -1,0 +1,16 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learnerGoal.Evaluate%20Supply%20Chain%20KG%20Use%20Cases a aplo-ont:LearnerGoal ;
+    rdf:value "Evaluate Supply Chain KG Use Cases"^^xsd:string ;
+    aplo-ont:targetsSkill aplo-r:skill.SWRL%20Rule%20Inference%20Explanation,
+        aplo-r:skill.Semantic%20Web%20History%20Explanation .
+
+aplo-r:skill.SWRL%20Rule%20Inference%20Explanation a aplo-ont:Skill ;
+    rdf:value "SWRL Rule Inference Explanation"^^xsd:string .
+
+aplo-r:skill.Semantic%20Web%20History%20Explanation a aplo-ont:Skill ;
+    rdf:value "Semantic Web History Explanation"^^xsd:string .
+

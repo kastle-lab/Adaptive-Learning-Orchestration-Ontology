@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Peer%20Explanation a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Ask learners to explain reasoning or solutions to peers"^^xsd:string ;
+    aplo-ont:hasName "Peer Explanation"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Promote%20Elaboration .
+
+aplo-r:pedagogicalObjective.Promote%20Elaboration a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Strengthen understanding through explanation comparison and clarification"^^xsd:string ;
+    aplo-ont:hasName "Promote Elaboration"^^xsd:string .
+

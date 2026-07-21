@@ -1,0 +1,23 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationAssessmentExercise.What%20is%20a%20Knowledge%20Graph%3F.Knowledge%20Graph%20Purpose%20Check a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Knowledge Graph Purpose Check"^^xsd:string,
+        "What is a Knowledge Graph?"^^xsd:string ;
+    aplo-ont:evaluatesTopicAwarenessOf edu-r:topic.Knowledge%20Graph ;
+    aplo-ont:hasWorkloadLevel aplo-r:workloadLevel.Low%20Workload ;
+    aplo-ont:usesTechnique aplo-r:evaluationTechnique.Auto%20Scored%20Concept%20Check .
+
+edu-r:topic.Knowledge%20Graph a edu-ont:Topic ;
+    rdf:value "Knowledge Graph"^^xsd:string .
+
+aplo-r:evaluationTechnique.Auto%20Scored%20Concept%20Check a aplo-ont:EvaluationTechnique ;
+    rdf:value "Auto Scored Concept Check"^^xsd:string .
+
+aplo-r:workloadLevel.Low%20Workload a aplo-ont:WorkloadLevel ;
+    rdf:value "Low Workload"^^xsd:string .
+

@@ -1,0 +1,44 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningStrategy.Data%20Analysis%20KG%20Modeling%20Practice.Data%20Analysis%20Modeling%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasDescription "Use data walkthroughs analogical comparison and error analysis to connect graph interpretation with queryable data structures."^^xsd:string ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.Data%20Analysis%20KG%20Modeling%20Practice.Compare%20open%20and%20closed%20world%20assumptions,
+        aplo-r:learningObjective.Data%20Analysis%20KG%20Modeling%20Practice.Compare%20triplestore%20options,
+        aplo-r:learningObjective.Data%20Analysis%20KG%20Modeling%20Practice.Interpret%20Datalog%20rules,
+        aplo-r:learningObjective.Data%20Analysis%20KG%20Modeling%20Practice.Model%20statements%20with%20reification,
+        aplo-r:learningObjective.Data%20Analysis%20KG%20Modeling%20Practice.Translate%20Manchester%20syntax%20axioms ;
+    aplo-ont:hasName "Data Analysis Modeling Strategy"^^xsd:string ;
+    aplo-ont:hasPedagogicalTechnique aplo-r:pedagogicalTechnique.Analogical%20Comparison,
+        aplo-r:pedagogicalTechnique.Data%20Walkthrough,
+        aplo-r:pedagogicalTechnique.Error%20Analysis,
+        aplo-r:pedagogicalTechnique.Rubric%20Based%20Review .
+
+aplo-r:learningObjective.Data%20Analysis%20KG%20Modeling%20Practice.Compare%20open%20and%20closed%20world%20assumptions a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Compare open and closed world assumptions"^^xsd:string .
+
+aplo-r:learningObjective.Data%20Analysis%20KG%20Modeling%20Practice.Compare%20triplestore%20options a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Compare triplestore options"^^xsd:string .
+
+aplo-r:learningObjective.Data%20Analysis%20KG%20Modeling%20Practice.Interpret%20Datalog%20rules a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Interpret Datalog rules"^^xsd:string .
+
+aplo-r:learningObjective.Data%20Analysis%20KG%20Modeling%20Practice.Model%20statements%20with%20reification a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Model statements with reification"^^xsd:string .
+
+aplo-r:learningObjective.Data%20Analysis%20KG%20Modeling%20Practice.Translate%20Manchester%20syntax%20axioms a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Translate Manchester syntax axioms"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Analogical%20Comparison a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Analogical Comparison"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Data%20Walkthrough a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Data Walkthrough"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Error%20Analysis a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Error Analysis"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Rubric%20Based%20Review a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Rubric Based Review"^^xsd:string .
+

@@ -1,0 +1,38 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:skill.SPARQL%20Query%20Pattern%20Construction a aplo-ont:Skill ;
+    rdf:value "SPARQL Query Pattern Construction"^^xsd:string ;
+    aplo-ont:requiresTopic edu-r:topic.Construct,
+        edu-r:topic.Delete,
+        edu-r:topic.Explain,
+        edu-r:topic.Insert,
+        edu-r:topic.Query,
+        edu-r:topic.Select,
+        edu-r:topic.Update .
+
+edu-r:topic.Construct a edu-ont:Topic ;
+    rdf:value "Construct"^^xsd:string .
+
+edu-r:topic.Delete a edu-ont:Topic ;
+    rdf:value "Delete"^^xsd:string .
+
+edu-r:topic.Explain a edu-ont:Topic ;
+    rdf:value "Explain"^^xsd:string .
+
+edu-r:topic.Insert a edu-ont:Topic ;
+    rdf:value "Insert"^^xsd:string .
+
+edu-r:topic.Query a edu-ont:Topic ;
+    rdf:value "Query"^^xsd:string .
+
+edu-r:topic.Select a edu-ont:Topic ;
+    rdf:value "Select"^^xsd:string .
+
+edu-r:topic.Update a edu-ont:Topic ;
+    rdf:value "Update"^^xsd:string .
+

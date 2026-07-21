@@ -1,0 +1,28 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Elias a aplo-ont:Learner ;
+    rdf:value "Learner Elias"^^xsd:string ;
+    aplo-ont:hasGoal aplo-r:learnerGoal.Facilitate%20KG%20Learning%20Experiences ;
+    aplo-ont:hasLearnerPreference aplo-r:learnerPreference.Scaffolded%20Sequence%20Preference,
+        aplo-r:learnerPreference.Worked%20Examples%20Preference ;
+    aplo-ont:hasLearningChallenge aplo-r:learningChallenge.Needs%20Documentation%20Examples ;
+    aplo-ont:hasSituation aplo-r:learningSituation.Educational%20KG%20Facilitation%20Planning .
+
+aplo-r:learnerGoal.Facilitate%20KG%20Learning%20Experiences a aplo-ont:LearnerGoal ;
+    rdf:value "Facilitate KG Learning Experiences"^^xsd:string .
+
+aplo-r:learnerPreference.Scaffolded%20Sequence%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Scaffolded Sequence Preference"^^xsd:string .
+
+aplo-r:learnerPreference.Worked%20Examples%20Preference a aplo-ont:LearnerPreference ;
+    rdf:value "Worked Examples Preference"^^xsd:string .
+
+aplo-r:learningChallenge.Needs%20Documentation%20Examples a aplo-ont:LearningChallenge ;
+    rdf:value "Needs Documentation Examples"^^xsd:string .
+
+aplo-r:learningSituation.Educational%20KG%20Facilitation%20Planning a aplo-ont:LearningSituation ;
+    rdf:value "Educational KG Facilitation Planning"^^xsd:string .
+

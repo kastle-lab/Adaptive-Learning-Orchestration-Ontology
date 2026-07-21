@@ -1,0 +1,28 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learnerGoal.Model%20and%20Query%20Knowledge%20Graph%20Data a aplo-ont:LearnerGoal ;
+    rdf:value "Model and Query Knowledge Graph Data"^^xsd:string ;
+    aplo-ont:targetsSkill aplo-r:skill.Datalog%20Rule%20Interpretation,
+        aplo-r:skill.Manchester%20Syntax%20Translation,
+        aplo-r:skill.Open%20Closed%20World%20Assumption%20Comparison,
+        aplo-r:skill.Reification%20Pattern%20Modeling,
+        aplo-r:skill.Triplestore%20Selection .
+
+aplo-r:skill.Datalog%20Rule%20Interpretation a aplo-ont:Skill ;
+    rdf:value "Datalog Rule Interpretation"^^xsd:string .
+
+aplo-r:skill.Manchester%20Syntax%20Translation a aplo-ont:Skill ;
+    rdf:value "Manchester Syntax Translation"^^xsd:string .
+
+aplo-r:skill.Open%20Closed%20World%20Assumption%20Comparison a aplo-ont:Skill ;
+    rdf:value "Open Closed World Assumption Comparison"^^xsd:string .
+
+aplo-r:skill.Reification%20Pattern%20Modeling a aplo-ont:Skill ;
+    rdf:value "Reification Pattern Modeling"^^xsd:string .
+
+aplo-r:skill.Triplestore%20Selection a aplo-ont:Skill ;
+    rdf:value "Triplestore Selection"^^xsd:string .
+

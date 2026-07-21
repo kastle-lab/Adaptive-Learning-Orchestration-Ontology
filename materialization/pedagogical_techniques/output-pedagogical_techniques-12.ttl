@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Advance%20Organizer a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Provide a concise conceptual preview that orients learners to key terms relationships and task purpose before instruction"^^xsd:string ;
+    aplo-ont:hasName "Advance Organizer"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Prepare%20Prior%20Knowledge .
+
+aplo-r:pedagogicalObjective.Prepare%20Prior%20Knowledge a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Activate relevant prior knowledge and reduce confusion before learners enter a new topic"^^xsd:string ;
+    aplo-ont:hasName "Prepare Prior Knowledge"^^xsd:string .
+

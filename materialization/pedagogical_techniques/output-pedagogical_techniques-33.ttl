@@ -1,0 +1,13 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalTechnique.Peer%20Review%20Protocol a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasDescription "Use structured peer feedback with criteria evidence requests and revision suggestions"^^xsd:string ;
+    aplo-ont:hasName "Peer Review Protocol"^^xsd:string ;
+    aplo-ont:servesPedagogicalObjective aplo-r:pedagogicalObjective.Improve%20Through%20Peer%20Critique .
+
+aplo-r:pedagogicalObjective.Improve%20Through%20Peer%20Critique a aplo-ont:PedagogicalObjective ;
+    aplo-ont:hasDescription "Help learners evaluate and improve work through accountable peer review"^^xsd:string ;
+    aplo-ont:hasName "Improve Through Peer Critique"^^xsd:string .
+

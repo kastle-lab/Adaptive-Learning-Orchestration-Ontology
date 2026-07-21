@@ -1,0 +1,20 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Articulation a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Require learners to explain their reasoning decisions assumptions and evidence explicitly"^^xsd:string ;
+    aplo-ont:hasName "Articulation"^^xsd:string ;
+    aplo-ont:hasNextPedagogicalElement aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Reflection ;
+    aplo-ont:hasPreviousPedagogicalElement aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Scaffolding ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Cognitive%20Apprenticeship .
+
+aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Reflection a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Reflection"^^xsd:string .
+
+aplo-r:pedagogicalElement.Cognitive%20Apprenticeship.Scaffolding a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Scaffolding"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Cognitive%20Apprenticeship a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Cognitive Apprenticeship"^^xsd:string .
+

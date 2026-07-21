@@ -1,0 +1,40 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationTechnique.Auto%20Scored%20Concept%20Check a aplo-ont:EvaluationTechnique ;
+    rdf:value "Auto Scored Concept Check"^^xsd:string ;
+    aplo-ont:assessesLearningFeedback aplo-r:learningFeedback.Learner%20Blair.Learning%20Platform.Corrective%20Feedback%20on%20Identifier%20Patterns ;
+    aplo-ont:assessesLearningObjective aplo-r:learningObjective.Identifier%20Practice%20Session.Identify%20URI%20namespace%20and%20hash%20or%20slash%20patterns ;
+    aplo-ont:hasEvaluationMetric aplo-r:evaluationMetric.Correctness%20Flag,
+        aplo-r:evaluationMetric.Score%20Percent ;
+    aplo-ont:hasEvaluationTechniqueType aplo-r:evaluationTechniqueType.Automated,
+        aplo-r:evaluationTechniqueType.Formative,
+        aplo-r:evaluationTechniqueType.Low%20Stakes ;
+    aplo-ont:provideFeedback aplo-r:response.Learner%20Blair.Learning%20Platform.Identifier%20Hint%20Response .
+
+aplo-r:evaluationMetric.Correctness%20Flag a aplo-ont:EvaluationMetric ;
+    rdf:value "Correctness Flag"^^xsd:string .
+
+aplo-r:evaluationMetric.Score%20Percent a aplo-ont:EvaluationMetric ;
+    rdf:value "Score Percent"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Automated a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Automated"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Formative a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Formative"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Low%20Stakes a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Low Stakes"^^xsd:string .
+
+aplo-r:learningFeedback.Learner%20Blair.Learning%20Platform.Corrective%20Feedback%20on%20Identifier%20Patterns a aplo-ont:LearningFeedback ;
+    rdf:value "Corrective Feedback on Identifier Patterns"^^xsd:string .
+
+aplo-r:learningObjective.Identifier%20Practice%20Session.Identify%20URI%20namespace%20and%20hash%20or%20slash%20patterns a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Identify URI namespace and hash or slash patterns"^^xsd:string .
+
+aplo-r:response.Learner%20Blair.Learning%20Platform.Identifier%20Hint%20Response a aplo-ont:Response ;
+    rdf:value "Identifier Hint Response"^^xsd:string .
+

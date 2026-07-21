@@ -1,0 +1,18 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+edu-r:module.Property%20Graphs a edu-ont:Module ;
+    rdf:value "Property Graphs"^^xsd:string ;
+    aplo-ont:hasAssessmentExercise aplo-r:evaluationAssessmentExercise.Property%20Graphs.Property%20Graph%20Comparison%20Brief ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.KG%20Research%20Representation%20Study.Compare%20property%20graph%20representations .
+
+aplo-r:evaluationAssessmentExercise.Property%20Graphs.Property%20Graph%20Comparison%20Brief a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Property Graph Comparison Brief"^^xsd:string .
+
+aplo-r:learningObjective.KG%20Research%20Representation%20Study.Compare%20property%20graph%20representations a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Compare property graph representations"^^xsd:string .
+

@@ -1,0 +1,17 @@
+metadata:
+  name: "Synthetic Learning Challenges"
+  source_ext: "csv"
+
+root:
+  type: "aplo-ont:LearningChallenge"
+  uri: "aplo-r:learningChallenge"
+  varids: ["Learning Challenge"]
+  connections:
+    - p: "rdf:value"
+      o:
+        datatype: "xsd:string"
+        val_source: "Learning Challenge"
+    - p: "rdf:value"
+      o:
+        datatype: "xsd:string"
+        val_source: "Learning Challenge Type"

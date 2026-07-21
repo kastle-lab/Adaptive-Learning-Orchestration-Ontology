@@ -1,0 +1,20 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Project%20Based%20Learning.Critique%20and%20Revision a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Use criteria peer review or expert feedback to improve the project artifact or decision"^^xsd:string ;
+    aplo-ont:hasName "Critique and Revision"^^xsd:string ;
+    aplo-ont:hasNextPedagogicalElement aplo-r:pedagogicalElement.Project%20Based%20Learning.Public%20Product ;
+    aplo-ont:hasPreviousPedagogicalElement aplo-r:pedagogicalElement.Project%20Based%20Learning.Sustained%20Inquiry ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Project%20Based%20Learning .
+
+aplo-r:pedagogicalElement.Project%20Based%20Learning.Public%20Product a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Public Product"^^xsd:string .
+
+aplo-r:pedagogicalElement.Project%20Based%20Learning.Sustained%20Inquiry a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Sustained Inquiry"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Project%20Based%20Learning a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Project Based Learning"^^xsd:string .
+

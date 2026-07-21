@@ -1,0 +1,16 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Project%20Based%20Learning.Project%20Reflection a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Explain what the project evidence shows what changed and what should be improved next"^^xsd:string ;
+    aplo-ont:hasName "Project Reflection"^^xsd:string ;
+    aplo-ont:hasPreviousPedagogicalElement aplo-r:pedagogicalElement.Project%20Based%20Learning.Public%20Product ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Project%20Based%20Learning .
+
+aplo-r:pedagogicalElement.Project%20Based%20Learning.Public%20Product a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Public Product"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Project%20Based%20Learning a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Project Based Learning"^^xsd:string .
+

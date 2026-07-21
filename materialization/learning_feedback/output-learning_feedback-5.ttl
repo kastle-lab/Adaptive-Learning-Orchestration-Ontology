@@ -1,0 +1,31 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningFeedback.Learner%20Casey.Instructor%20Reviewer.Strategic%20Feedback%20on%20OWL%20Modeling a aplo-ont:LearningFeedback ;
+    rdf:value "Strategic Feedback on OWL Modeling"^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Casey.OWL.OWL%20Axiom%20Analysis.OWL%20Modeling%20Awareness%20After%20Review ;
+    aplo-ont:affectsStrategy aplo-r:learningStrategy.OWL%20Modeling%20Practice.OWL%20Modeling%20Revision%20Strategy ;
+    aplo-ont:hasLearningFeedbackType aplo-r:learningFeedbackType.Strategic%20Feedback ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Casey.Instructor%20Reviewer.Strategic%20Feedback%20on%20OWL%20Modeling.2026-01-20T16%3A40%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Instructor%20Reviewer .
+
+aplo-r:awarenessObservation.Learner%20Casey.OWL.OWL%20Axiom%20Analysis.OWL%20Modeling%20Awareness%20After%20Review a aplo-ont:AwarenessObservation ;
+    rdf:value "OWL Modeling Awareness After Review"^^xsd:string .
+
+aplo-r:learningFeedbackType.Strategic%20Feedback a aplo-ont:LearningFeedbackType ;
+    rdf:value "Strategic Feedback"^^xsd:string .
+
+aplo-r:learningStrategy.OWL%20Modeling%20Practice.OWL%20Modeling%20Revision%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasName "OWL Modeling Revision Strategy"^^xsd:string .
+
+aplo-r:source.Instructor%20Reviewer a aplo-ont:Source ;
+    rdf:value "Instructor Reviewer"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Casey.Instructor%20Reviewer.Strategic%20Feedback%20on%20OWL%20Modeling.2026-01-20T16%3A40%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-01-20T16:40:00+00:00"^^xsd:dateTime .
+

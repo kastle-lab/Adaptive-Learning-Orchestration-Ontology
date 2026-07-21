@@ -1,0 +1,9 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningChallenge.Screen%20Reader%20Requirement a aplo-ont:LearningChallenge ;
+    rdf:value "AccessibilityChallenge"^^xsd:string,
+        "Screen Reader Requirement"^^xsd:string .
+

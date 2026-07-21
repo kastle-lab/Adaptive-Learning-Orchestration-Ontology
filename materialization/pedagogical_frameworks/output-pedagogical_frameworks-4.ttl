@@ -1,0 +1,30 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalFramework.Problem%20Based%20Learning a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasDescription "A learner-centered framework organized around investigating and resolving an authentic problem"^^xsd:string ;
+    aplo-ont:hasElement aplo-r:pedagogicalElement.Problem%20Based%20Learning.Presentation%20and%20Reflection,
+        aplo-r:pedagogicalElement.Problem%20Based%20Learning.Problem%20Analysis,
+        aplo-r:pedagogicalElement.Problem%20Based%20Learning.Problem%20Presentation,
+        aplo-r:pedagogicalElement.Problem%20Based%20Learning.Self%20Directed%20Learning,
+        aplo-r:pedagogicalElement.Problem%20Based%20Learning.Solution%20Development ;
+    aplo-ont:hasName "Problem Based Learning"^^xsd:string .
+
+aplo-r:pedagogicalElement.Problem%20Based%20Learning.Presentation%20and%20Reflection a aplo-ont:LastPedagogicalElement,
+        aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Presentation and Reflection"^^xsd:string .
+
+aplo-r:pedagogicalElement.Problem%20Based%20Learning.Problem%20Analysis a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Problem Analysis"^^xsd:string .
+
+aplo-r:pedagogicalElement.Problem%20Based%20Learning.Problem%20Presentation a aplo-ont:FirstPedagogicalElement,
+        aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Problem Presentation"^^xsd:string .
+
+aplo-r:pedagogicalElement.Problem%20Based%20Learning.Self%20Directed%20Learning a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Self Directed Learning"^^xsd:string .
+
+aplo-r:pedagogicalElement.Problem%20Based%20Learning.Solution%20Development a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Solution Development"^^xsd:string .
+

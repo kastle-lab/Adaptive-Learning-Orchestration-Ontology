@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Executive%20KG%20Value%20Review.Map%20Dublin%20Core%20metadata%20fields a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Universal%20Design%20for%20Learning.Representation%20Options ;
+    aplo-ont:developsSkill aplo-r:skill.Dublin%20Core%20Metadata%20Mapping ;
+    aplo-ont:hasDescription "Dublin Core Metadata Mapping in Dublin Core: Sort examples and define the boundary conditions for Metadata."^^xsd:string ;
+    aplo-ont:hasName "Map Dublin Core metadata fields"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Executive%20KG%20Value%20Review .
+
+aplo-r:learningSituation.Executive%20KG%20Value%20Review a aplo-ont:LearningSituation ;
+    rdf:value "Executive KG Value Review"^^xsd:string .
+
+aplo-r:pedagogicalElement.Universal%20Design%20for%20Learning.Representation%20Options a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Representation Options"^^xsd:string .
+
+aplo-r:skill.Dublin%20Core%20Metadata%20Mapping a aplo-ont:Skill ;
+    rdf:value "Dublin Core Metadata Mapping"^^xsd:string .
+

@@ -1,0 +1,23 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationAssessmentExercise.Entailment%20Regimes.Entailment%20Regime%20Selection%20Scenario a aplo-ont:EvaluationAssessmentExercise ;
+    rdf:value "Entailment Regime Selection Scenario"^^xsd:string,
+        "Entailment Regimes"^^xsd:string ;
+    aplo-ont:evaluatesTopicAwarenessOf edu-r:topic.Inference ;
+    aplo-ont:hasWorkloadLevel aplo-r:workloadLevel.Moderate%20Workload ;
+    aplo-ont:usesTechnique aplo-r:evaluationTechnique.Short%20Explanation%20Rubric .
+
+edu-r:topic.Inference a edu-ont:Topic ;
+    rdf:value "Inference"^^xsd:string .
+
+aplo-r:evaluationTechnique.Short%20Explanation%20Rubric a aplo-ont:EvaluationTechnique ;
+    rdf:value "Short Explanation Rubric"^^xsd:string .
+
+aplo-r:workloadLevel.Moderate%20Workload a aplo-ont:WorkloadLevel ;
+    rdf:value "Moderate Workload"^^xsd:string .
+

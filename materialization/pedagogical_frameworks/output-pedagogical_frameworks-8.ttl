@@ -1,0 +1,20 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalFramework.Community%20of%20Inquiry a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasDescription "A collaborative learning framework that organizes educational experience through social cognitive and teaching presence"^^xsd:string ;
+    aplo-ont:hasElement aplo-r:pedagogicalElement.Community%20of%20Inquiry.Cognitive%20Presence,
+        aplo-r:pedagogicalElement.Community%20of%20Inquiry.Social%20Presence,
+        aplo-r:pedagogicalElement.Community%20of%20Inquiry.Teaching%20Presence ;
+    aplo-ont:hasName "Community of Inquiry"^^xsd:string .
+
+aplo-r:pedagogicalElement.Community%20of%20Inquiry.Cognitive%20Presence a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Cognitive Presence"^^xsd:string .
+
+aplo-r:pedagogicalElement.Community%20of%20Inquiry.Social%20Presence a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Social Presence"^^xsd:string .
+
+aplo-r:pedagogicalElement.Community%20of%20Inquiry.Teaching%20Presence a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Teaching Presence"^^xsd:string .
+

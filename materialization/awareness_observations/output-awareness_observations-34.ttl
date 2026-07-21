@@ -1,0 +1,33 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix edu-ont: <https://edugate.cs.wright.edu/lod/ontology#> .
+@prefix edu-r: <https://edugate.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learner.Learner%20Edward a aplo-ont:Learner ;
+    rdf:value "Learner Edward"^^xsd:string ;
+    aplo-ont:hasAwarenessObservation aplo-r:awarenessObservation.Learner%20Edward.Metadata.Dublin%20Core%20Metadata%20Mapping.Dublin%20Core%20Metadata%20Mapping%20Taskpoint .
+
+aplo-r:awarenessLevel.Basic%20Awareness a aplo-ont:AwarenessLevel ;
+    rdf:value "Basic Awareness"^^xsd:string .
+
+aplo-r:awarenessObservation.Learner%20Edward.Metadata.Dublin%20Core%20Metadata%20Mapping.Dublin%20Core%20Metadata%20Mapping%20Taskpoint a aplo-ont:AwarenessObservation ;
+    rdf:value "Dublin Core Metadata Mapping Taskpoint"^^xsd:string ;
+    aplo-ont:atTime aplo-r:temporalExtent.Learner%20Edward.Metadata.Dublin%20Core%20Metadata%20Mapping.Dublin%20Core%20Metadata%20Mapping%20Taskpoint.2026-02-25T14%3A03%3A00Z%20to%202026-02-25T14%3A28%3A00Z ;
+    aplo-ont:hasAwarenessLevel aplo-r:awarenessLevel.Basic%20Awareness ;
+    aplo-ont:onSkill aplo-r:skill.Dublin%20Core%20Metadata%20Mapping ;
+    aplo-ont:onTopic edu-r:topic.Metadata .
+
+aplo-r:skill.Dublin%20Core%20Metadata%20Mapping a aplo-ont:Skill ;
+    rdf:value "Dublin Core Metadata Mapping"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Edward.Metadata.Dublin%20Core%20Metadata%20Mapping.Dublin%20Core%20Metadata%20Mapping%20Taskpoint.2026-02-25T14%3A03%3A00Z%20to%202026-02-25T14%3A28%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "2026-02-25T14:03:00+00:00"^^xsd:dateTime,
+        "2026-02-25T14:28:00+00:00"^^xsd:dateTime,
+        "ISO 8601 UTC"^^xsd:string,
+        "TimeInterval"^^xsd:string .
+
+edu-r:topic.Metadata a edu-ont:Topic ;
+    rdf:value "Metadata"^^xsd:string .
+

@@ -1,0 +1,36 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:evaluationTechnique.Mastery%20Reassessment a aplo-ont:EvaluationTechnique ;
+    rdf:value "Mastery Reassessment"^^xsd:string ;
+    aplo-ont:assessesLearningFeedback aplo-r:learningFeedback.Learner%20Casey.Learning%20Platform.Mastery%20Feedback%20on%20RDF%20RDFS%20Basics ;
+    aplo-ont:assessesLearningObjective aplo-r:learningObjective.RDFS%20Schema%20Practice.Demonstrate%20mastery%20of%20RDF%20and%20RDFS%20basics ;
+    aplo-ont:hasEvaluationMetric aplo-r:evaluationMetric.Rubric%20Level,
+        aplo-r:evaluationMetric.Score%20Percent ;
+    aplo-ont:hasEvaluationTechniqueType aplo-r:evaluationTechniqueType.Automated,
+        aplo-r:evaluationTechniqueType.Summative ;
+    aplo-ont:provideFeedback aplo-r:response.Learner%20Casey.Learning%20Platform.Mastery%20Response .
+
+aplo-r:evaluationMetric.Rubric%20Level a aplo-ont:EvaluationMetric ;
+    rdf:value "Rubric Level"^^xsd:string .
+
+aplo-r:evaluationMetric.Score%20Percent a aplo-ont:EvaluationMetric ;
+    rdf:value "Score Percent"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Automated a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Automated"^^xsd:string .
+
+aplo-r:evaluationTechniqueType.Summative a aplo-ont:EvaluationTechniqueType ;
+    rdf:value "Summative"^^xsd:string .
+
+aplo-r:learningFeedback.Learner%20Casey.Learning%20Platform.Mastery%20Feedback%20on%20RDF%20RDFS%20Basics a aplo-ont:LearningFeedback ;
+    rdf:value "Mastery Feedback on RDF RDFS Basics"^^xsd:string .
+
+aplo-r:learningObjective.RDFS%20Schema%20Practice.Demonstrate%20mastery%20of%20RDF%20and%20RDFS%20basics a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Demonstrate mastery of RDF and RDFS basics"^^xsd:string .
+
+aplo-r:response.Learner%20Casey.Learning%20Platform.Mastery%20Response a aplo-ont:Response ;
+    rdf:value "Mastery Response"^^xsd:string .
+

@@ -1,0 +1,21 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningObjective.Consulting%20KG%20Opportunity%20Review.Model%20observations%20with%20SOSA%20SSN a aplo-ont:LearningObjective ;
+    aplo-ont:alignedWith aplo-r:pedagogicalElement.Experiential%20Learning%20Cycle.Concrete%20Experience ;
+    aplo-ont:developsSkill aplo-r:skill.Observation%20Ontology%20Modeling ;
+    aplo-ont:hasDescription "Observation Ontology Modeling in SOSA & SSN: Explain the representation choice, then test it against a second example."^^xsd:string ;
+    aplo-ont:hasName "Model observations with SOSA SSN"^^xsd:string ;
+    aplo-ont:worksOnSituation aplo-r:learningSituation.Consulting%20KG%20Opportunity%20Review .
+
+aplo-r:learningSituation.Consulting%20KG%20Opportunity%20Review a aplo-ont:LearningSituation ;
+    rdf:value "Consulting KG Opportunity Review"^^xsd:string .
+
+aplo-r:pedagogicalElement.Experiential%20Learning%20Cycle.Concrete%20Experience a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Concrete Experience"^^xsd:string .
+
+aplo-r:skill.Observation%20Ontology%20Modeling a aplo-ont:Skill ;
+    rdf:value "Observation Ontology Modeling"^^xsd:string .
+

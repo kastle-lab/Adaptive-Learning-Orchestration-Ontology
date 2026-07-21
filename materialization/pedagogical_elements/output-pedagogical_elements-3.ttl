@@ -1,0 +1,20 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Analyze a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasDescription "Break material into parts and determine relationships or structure"^^xsd:string ;
+    aplo-ont:hasName "Analyze"^^xsd:string ;
+    aplo-ont:hasNextPedagogicalElement aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Evaluate ;
+    aplo-ont:hasPreviousPedagogicalElement aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Apply ;
+    aplo-ont:isElementOf aplo-r:pedagogicalFramework.Bloom%27s%20Taxonomy .
+
+aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Apply a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Apply"^^xsd:string .
+
+aplo-r:pedagogicalElement.Bloom%27s%20Taxonomy.Evaluate a aplo-ont:PedagogicalElement ;
+    aplo-ont:hasName "Evaluate"^^xsd:string .
+
+aplo-r:pedagogicalFramework.Bloom%27s%20Taxonomy a aplo-ont:PedagogicalFramework ;
+    aplo-ont:hasName "Bloom's Taxonomy"^^xsd:string .
+

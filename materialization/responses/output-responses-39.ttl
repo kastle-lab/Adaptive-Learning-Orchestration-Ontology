@@ -1,0 +1,24 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:response.Learner%20Connie.Learning%20Platform.Proposition%20Truth%20Table%20Task%20Review%20Result a aplo-ont:Response ;
+    rdf:value "Proposition Truth Table Task Review Result"^^xsd:string,
+        "Proposition Truth Table Task review summary: 66 Score Percent for Propositional Statement Reasoning."^^xsd:string ;
+    aplo-ont:affectsAwarenessObservation aplo-r:awarenessObservation.Learner%20Connie.Conjunction.Propositional%20Statement%20Reasoning.Propositional%20Statement%20Reasoning%20Revision%20State ;
+    aplo-ont:hasResponseTime aplo-r:temporalExtent.Learner%20Connie.Learning%20Platform.Proposition%20Truth%20Table%20Task%20Review%20Result.2026-02-06T14%3A00%3A00Z ;
+    aplo-ont:hasSource aplo-r:source.Learning%20Platform .
+
+aplo-r:awarenessObservation.Learner%20Connie.Conjunction.Propositional%20Statement%20Reasoning.Propositional%20Statement%20Reasoning%20Revision%20State a aplo-ont:AwarenessObservation ;
+    rdf:value "Propositional Statement Reasoning Revision State"^^xsd:string .
+
+aplo-r:source.Learning%20Platform a aplo-ont:Source ;
+    rdf:value "Learning Platform"^^xsd:string .
+
+aplo-r:temporalExtent.Learner%20Connie.Learning%20Platform.Proposition%20Truth%20Table%20Task%20Review%20Result.2026-02-06T14%3A00%3A00Z a aplo-ont:TemporalExtent ;
+    rdf:value "ISO 8601 UTC"^^xsd:string,
+        "PointInTime"^^xsd:string ;
+    time:inXSDDateTime "2026-02-06T14:00:00+00:00"^^xsd:dateTime .
+

@@ -1,0 +1,32 @@
+@prefix aplo-ont: <https://aplo.cs.wright.edu/lod/ontology#> .
+@prefix aplo-r: <https://aplo.cs.wright.edu/lod/resource#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aplo-r:learningStrategy.RDFS%20Schema%20Practice.OWL%20Modeling%20Revision%20Strategy a aplo-ont:LearningStrategy ;
+    aplo-ont:hasDescription "Surface modeling misconceptions with conflict cases then use error analysis and corrective support to improve OWL decisions."^^xsd:string ;
+    aplo-ont:hasLearningObjective aplo-r:learningObjective.RDFS%20Schema%20Practice.Demonstrate%20mastery%20of%20RDF%20and%20RDFS%20basics ;
+    aplo-ont:hasName "OWL Modeling Revision Strategy"^^xsd:string ;
+    aplo-ont:hasPedagogicalTechnique aplo-r:pedagogicalTechnique.Conceptual%20Conflict%20Prompt,
+        aplo-r:pedagogicalTechnique.Corrective%20Mini%20Lesson,
+        aplo-r:pedagogicalTechnique.Error%20Analysis,
+        aplo-r:pedagogicalTechnique.Misconception%20Probe,
+        aplo-r:pedagogicalTechnique.Rubric%20Based%20Review .
+
+aplo-r:learningObjective.RDFS%20Schema%20Practice.Demonstrate%20mastery%20of%20RDF%20and%20RDFS%20basics a aplo-ont:LearningObjective ;
+    aplo-ont:hasName "Demonstrate mastery of RDF and RDFS basics"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Conceptual%20Conflict%20Prompt a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Conceptual Conflict Prompt"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Corrective%20Mini%20Lesson a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Corrective Mini Lesson"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Error%20Analysis a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Error Analysis"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Misconception%20Probe a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Misconception Probe"^^xsd:string .
+
+aplo-r:pedagogicalTechnique.Rubric%20Based%20Review a aplo-ont:PedagogicalTechnique ;
+    aplo-ont:hasName "Rubric Based Review"^^xsd:string .
+
